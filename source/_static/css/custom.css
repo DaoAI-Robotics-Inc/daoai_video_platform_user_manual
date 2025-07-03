@@ -1,0 +1,9 @@
+.wy-nav-content {
+    max-width: none;
+}
+
+
+.rst-content img {
+    max-width: 100%;
+    height: auto !important;
+}
