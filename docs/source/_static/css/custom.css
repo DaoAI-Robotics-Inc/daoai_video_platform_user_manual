@@ -7,3 +7,50 @@
     max-width: 100%;
     height: auto !important;
 }
+
+/* Block gallery card grid */
+table.block-cards {
+    border-collapse: separate;
+    border-spacing: 16px 16px; /* gutters */
+    width: 100%;
+}
+table.block-cards td,
+table.block-cards th {
+    border: none !important;
+    background: transparent;
+    padding: 0; /* padding handled by inner card */
+}
+table.block-cards td > p {
+    margin: 0;
+}
+table.block-cards td {
+    vertical-align: top;
+    border: 1px solid #e5e7eb !important;
+    border-radius: 10px;
+    background: #fff;
+    padding: 18px 20px !important;
+    min-height: 120px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+    transition: box-shadow .2s ease, transform .2s ease, border-color .2s ease;
+}
+table.block-cards td:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    border-color: #d1d5db !important;
+}
+/* title paragraph (with link) */
+table.block-cards td p:first-child a {
+    display: block;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #111827;
+    text-decoration: none;
+}
+/* description paragraph */
+table.block-cards td p:nth-child(2) {
+    font-size: 13px;
+    line-height: 1.6;
+    color: #475569;
+}

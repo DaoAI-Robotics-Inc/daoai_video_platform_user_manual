@@ -22,6 +22,7 @@ extensions = [
     'sphinx.ext.autosectionlabel',
     'sphinxemoji.sphinxemoji',
     "sphinx_multiversion",
+    "sphinx_design",
 ]
 
 html_static_path = ['_static']
@@ -44,6 +45,7 @@ language = 'zh_CN'
 html_search_language = 'zh'
 
 html_theme = 'sphinx_rtd_theme'
+html_show_sourcelink = False
 
 # -- Options for EPUB output
 epub_show_urls = 'footnote'
