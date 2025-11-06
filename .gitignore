@@ -52,4 +52,4 @@ Thumbs.db
 .vscode
 
 # Sphinx
-build/
+docs/_build/

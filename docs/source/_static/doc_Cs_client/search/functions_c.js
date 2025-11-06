@@ -1,0 +1,5 @@
+var searchData=
+[
+  ['unsuperviseddefectsegmentation_0',['UnsupervisedDefectSegmentation',['../class_dao_a_i_1_1_inference_client_1_1_unsupervised_defect_segmentation.html#aa6a202c31beee44fc4e2c9cb9648b9f6',1,'DaoAI::InferenceClient::UnsupervisedDefectSegmentation']]],
+  ['unsuperviseddefectsegmentationresult_1',['UnsupervisedDefectSegmentationResult',['../class_dao_a_i_1_1_inference_client_1_1_unsupervised_defect_segmentation_result.html#a470d63a527e4dd2a90d752191413b94d',1,'DaoAI.InferenceClient.UnsupervisedDefectSegmentationResult.UnsupervisedDefectSegmentationResult()'],['../class_dao_a_i_1_1_inference_client_1_1_unsupervised_defect_segmentation_result.html#a9493e63d8ba22a5c5ac259aef6262e3f',1,'DaoAI.InferenceClient.UnsupervisedDefectSegmentationResult.UnsupervisedDefectSegmentationResult(string json_string)']]]
+];
