@@ -48,10 +48,10 @@
      - 留空
    * - **Input Image**
      - 指定输入图像的来源，可以是上游节点的输出或工作流的输入参数
-     - ``polygon_zone_visualization_1.image``
+     - ``input.image``
    * - **Copy Image**
      - 是否创建输入图像的副本进行可视化，启用后不会修改原始图像
-     - ``True``（推荐）
+     - ``True(推荐)``
    * - **Predictions Display**
      - 要可视化的模型预测结果，选择检测模型的输出
      - 从下拉菜单选择
@@ -103,8 +103,8 @@
 **Color Axis（颜色轴）**
 
 - ``CLASS``：根据物体类别着色，同类物体使用相同颜色
-- ``INSTANCE``：为每个实例分配不同颜色（如果支持）
-- ``CONFIDENCE``：根据置信度着色（如果支持）
+- ``INDEX``：为每个物体分配不同颜色
+- ``TRACK``：待定
 
 **Bounding Box Thickness（边界框粗细）**
 
@@ -116,8 +116,8 @@
 **Corner Roundness（圆角半径）**
 
 - ``0``：标准直角矩形
-- ``5-10``：轻微圆角，更柔和
-- ``15-20``：明显圆角，更美观
+- ``0.5``：轻微圆角，更柔和
+- ``1.0``：明显圆角，更美观
 
 使用步骤
 --------
@@ -140,139 +140,11 @@
 4. **调整样式**
    
    - 设置 **Bounding Box Thickness**（建议2-4）
-   - 设置 **Corner Roundness**（0为直角，5-15为圆角）
+   - 设置 **Corner Roundness**（0为直角，1为圆角）
 
 5. **保存配置**
    
    确认 **Copy Image** 为True（推荐），点击保存按钮。
-
-配置示例
---------
-
-**基础配置**
-
-.. code-block:: json
-
-   {
-     "step_name": "bbox_display_1",
-     "input_image": "input.image",
-     "predictions": "detection_model.predictions",
-     "copy_image": true,
-     "color_palette": "DEFAULT",
-     "color_axis": "CLASS",
-     "thickness": 2,
-     "corner_roundness": 0
-   }
-
-**自定义颜色配置**
-
-为不同类别指定特定颜色：
-
-.. code-block:: json
-
-   {
-     "step_name": "custom_bbox_display",
-     "input_image": "camera.frame",
-     "predictions": "vehicle_detection.predictions",
-     "copy_image": true,
-     "color_palette": "CUSTOM",
-     "custom_colors": [
-       "#FF0000",
-       "#00FF00",
-       "#0000FF",
-       "#FFFF00",
-       "#FF00FF"
-     ],
-     "color_axis": "CLASS",
-     "thickness": 3,
-     "corner_roundness": 0
-   }
-
-**圆角边界框配置**
-
-更美观的圆角显示效果：
-
-.. code-block:: json
-
-   {
-     "step_name": "rounded_bbox_display",
-     "input_image": "product.image",
-     "predictions": "defect_detection.predictions",
-     "copy_image": true,
-     "color_palette": "DEFAULT",
-     "color_axis": "CLASS",
-     "thickness": 4,
-     "corner_roundness": 10
-   }
-
-**演示用高对比度配置**
-
-适合演示和展示的配置：
-
-.. code-block:: json
-
-   {
-     "step_name": "demo_bbox_display",
-     "input_image": "demo.image",
-     "predictions": "model.predictions",
-     "copy_image": true,
-     "color_palette": "CUSTOM",
-     "custom_colors": [
-       "#FF3B30",
-       "#34C759",
-       "#007AFF",
-       "#FF9500",
-       "#AF52DE"
-     ],
-     "color_axis": "CLASS",
-     "thickness": 5,
-     "corner_roundness": 8
-   }
-
-使用技巧与最佳实践
-------------------
-
-1. **颜色选择建议**
-   
-   - **高对比度**：使用鲜艳的纯色（红、绿、蓝、黄等）
-   - **多类别场景**：确保相邻类别的颜色差异明显
-   - **黑白背景**：避免使用黑色或白色边界框
-   - **品牌一致性**：使用企业标准色系
-
-2. **线条粗细建议**
-   
-   .. list-table::
-      :header-rows: 1
-      :widths: 40 60
-
-      * - 图像分辨率
-        - 推荐粗细
-      * - 640×480 (VGA)
-        - 1-2像素
-      * - 1280×720 (HD)
-        - 2-3像素
-      * - 1920×1080 (Full HD)
-        - 3-4像素
-      * - 3840×2160 (4K)
-        - 5-8像素
-
-3. **性能优化**
-   
-   - 启用 **Copy Image** 可以保护原图，但会增加内存使用
-   - 如果后续不再需要原图，可设置为False以节省内存
-   - 绘制操作通常很快，对实时性影响小
-
-4. **多层可视化**
-   
-   - 可以连续使用多个可视化节点叠加不同信息
-   - 边界框 → 标签 → 置信度，逐层添加
-   - 确保中间节点都启用 **Copy Image** 或正确传递图像
-
-5. **调试技巧**
-   
-   - 使用不同颜色区分不同模型的输出
-   - 调整粗细突出重要类别
-   - 使用圆角增强视觉效果
 
 常见问题
 --------
