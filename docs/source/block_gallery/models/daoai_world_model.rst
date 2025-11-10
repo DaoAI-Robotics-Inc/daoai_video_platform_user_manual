@@ -51,6 +51,18 @@ DaoAI World模型节点用于运行在DaoAI World平台训练的AI模型，支�
 
 DaoAI World模型节点支持以下7种模型类型，每种类型适用于不同的应用场景：
 
+.. toctree::
+   :maxdepth: 1
+   :hidden:
+
+   daoai_world_object_detection
+   daoai_world_classification
+   daoai_world_instance_segmentation
+   daoai_world_keypoint_detection
+   daoai_world_semantic_segmentation
+   daoai_world_mixed_model
+   daoai_world_ocr
+
 .. list-table::
    :header-rows: 1
    :widths: 25 50 25

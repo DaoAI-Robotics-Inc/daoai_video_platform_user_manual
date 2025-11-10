@@ -375,3 +375,5 @@ A: 直接使用输出中的 ``percentage`` 字段，或用 ``pixel_count / (widt
 - :ref:`分类模型 <daoai_world_classification>` - 如只需整体类别判断
 
 
+
+
