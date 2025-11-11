@@ -307,3 +307,5 @@ A: 使用 ``area`` 字段获得像素面积，然后根据相机标定参数转�
 - :ref:`语义分割模型 <daoai_world_semantic_segmentation>` - 如不需要区分实例
 
 
+
+

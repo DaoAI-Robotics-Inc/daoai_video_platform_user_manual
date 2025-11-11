@@ -370,3 +370,5 @@ A: 可以。模型会为每个检测到的人输出独立的关键点集合，�
 - :ref:`实例分割模型 <daoai_world_instance_segmentation>` - 结合使用获得完整信息
 
 
+
+
