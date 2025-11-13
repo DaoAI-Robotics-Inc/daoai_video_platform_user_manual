@@ -7,7 +7,7 @@
    :maxdepth: 1
    :hidden:
 
-   display_color
+   background_color
    blur_display
    bbox_display
    circle_display
@@ -38,7 +38,7 @@
    :widths: 33 34 33
    :class: block-cards
 
-   * - :ref:`显示颜色`
+   * - :ref:`背景颜色`
 
        在图像中，用选择覆盖所有检测到的区域以外的区域
      - :ref:`模糊显示`
