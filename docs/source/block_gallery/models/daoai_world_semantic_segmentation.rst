@@ -379,3 +379,8 @@ A: 直接使用输出中的 ``percentage`` 字段，或用 ``pixel_count / (widt
 
 
 
+
+
+
+
+
