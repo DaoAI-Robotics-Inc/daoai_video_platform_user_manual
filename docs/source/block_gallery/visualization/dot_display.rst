@@ -10,6 +10,13 @@
 
 该节点特别适合标中心点或小型目标位置，支持多种颜色方案和自定义点大小配置。相比圆形标记，实心点更加简洁明了。
 
+效果展示：
+
+  .. image:: ../images/visualization/dot_display.png
+    :alt: Dot Visualization Example
+    :align: center
+    :width: 80%
+
 输入 / 输出
 -----------
 
@@ -102,6 +109,21 @@
 - ``CLASS``：根据物体类别着色，同类物体使用相同颜色
 - ``INDEX``：为每个物体分配不同颜色
 - ``TRACK``：根据Tracker ID着色，每个Tracker ID使用不同颜色
+
+**坐标位置**
+
+点标记的锚点位置，可选值包括：
+
+- ``CENTER``：点标记以坐标点为中心
+- ``CENTER_LEFT``：点标记以坐标点为左侧中心
+- ``CENTER_RIGHT``：点标记以坐标点为右侧中心
+- ``TOP_CENTER``：点标记以坐标点为上侧中心
+- ``TOP_LEFT``：点标记以坐标点为左上角
+- ``TOP_RIGHT``：点标记以坐标点为右上角
+- ``BOTTOM_LEFT``：点标记以坐标点为左下角
+- ``BOTTOM_RIGHT``：点标记以坐标点为右下角
+- ``BOTTOM_CENTER``：点标记以坐标点为下侧中心
+- ``CENTER OF MASS``：点标记以检测框的质心位置为中心
 
 **点大小**
 

@@ -10,6 +10,13 @@
 
 该节点会根据检测框自动计算椭圆参数，支持多种颜色方案、线条粗细调节和角度范围配置，可用于突出显示目标或创建特殊的视觉效果。
 
+效果展示：
+
+  .. image:: ../images/visualization/ellipse_display.png
+    :alt: Ellipse Visualization Example
+    :align: center
+    :width: 80%
+    
 输入 / 输出
 -----------
 

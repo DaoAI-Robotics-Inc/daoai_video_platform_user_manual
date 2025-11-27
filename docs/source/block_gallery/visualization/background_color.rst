@@ -8,6 +8,12 @@
 
 背景颜色模块用于在图像中用指定颜色覆盖所有检测到的区域**以外**的区域，从而突出显示检测目标。该模块可以帮助用户聚焦关注检测到的对象，隐藏背景干扰信息。
 
+效果展示：
+  .. image:: ../images/visualization/background.png
+    :alt: Background Color Visualization Example
+    :align: center
+    :width: 80%
+
 输入 / 输出
 -----------
 

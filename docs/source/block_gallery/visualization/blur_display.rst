@@ -8,6 +8,12 @@
 
 模糊显示模块用于对图像中检测到的对象进行模糊处理。该模块常用于隐私保护场景，如人脸模糊、车牌模糊等，通过对检测区域应用模糊效果来隐藏敏感信息。
 
+效果展示：
+  .. image:: ../images/visualization/blur.png
+    :alt: Blur Visualization Example
+    :align: center
+    :width: 80%
+    
 输入 / 输出
 -----------
 

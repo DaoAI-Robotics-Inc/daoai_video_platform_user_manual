@@ -10,6 +10,14 @@
 
 该节点相比完整边界框更加轻量，不会遮挡过多图像内容，同时能够清晰标识出目标位置和范围。支持多种颜色方案和自定义样式配置。
 
+效果展示：
+
+  .. image:: ../images/visualization/corner_display.png
+    :alt: Corner Visualization Example
+    :align: center
+    :width: 80%
+   
+    
 输入 / 输出
 -----------
 

@@ -10,6 +10,13 @@
 
 该节点支持多种颜色方案、文本样式和位置配置，可以清晰地标注检测结果，是最常用的可视化节点之一。标签会自动定位在检测框的附近，提供清晰的目标识别信息。
 
+效果展示：
+
+  .. image:: ../images/visualization/label_display.png
+    :alt: Label Visualization Example
+    :align: center
+    :width: 80%
+    
 输入 / 输出
 -----------
 

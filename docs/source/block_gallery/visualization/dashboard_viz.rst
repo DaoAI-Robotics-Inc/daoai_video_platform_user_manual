@@ -10,6 +10,12 @@
 
 该节点是可视化流程的终端节点，将经过各种可视化处理后的图像推送到平台的 **实时警报仪表板** 界面，供用户实时查看检测、分类等模型的运行结果。
 
+效果展示：
+  .. image:: ../images/visualization/dashboard_visualization.png
+    :alt: Dashboard Visualization Example
+    :align: center
+    :width: 80%
+    
 输入 / 输出
 -----------
 

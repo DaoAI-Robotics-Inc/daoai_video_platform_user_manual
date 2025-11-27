@@ -8,6 +8,12 @@
 
 圆形显示节点用于在图像中检测到的对象周围绘制圆形标记，特别适合标注点状目标、关键点或需要突出显示的区域中心。该节点支持多种颜色方案、自定义样式和灵活的配置选项，可以清晰地展示关键点检测、目标中心定位等模型的预测结果。
 
+效果展示：
+  .. image:: ../images/visualization/circle_display.png
+    :alt: Circle Visualization Example
+    :align: center
+    :width: 80%
+    
 适用场景
 --------
 
