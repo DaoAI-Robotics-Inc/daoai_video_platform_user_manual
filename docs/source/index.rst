@@ -7,6 +7,7 @@ DAOAI 天眼系统用户手册
    :caption: 介绍
 
    quick_start/index
+   quick_start/offline_setup
    quick_start/release-notes
 
 .. toctree::
