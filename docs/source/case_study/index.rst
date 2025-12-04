@@ -5,9 +5,7 @@
 
 .. toctree::
    :maxdepth: 1
-   
-   high-resolu
-   pcb_inspect
-   tool_classification
-   Fine_defect_detection
-   OCR
+   :caption: 场景列表
+
+   kitchen_allergy
+
