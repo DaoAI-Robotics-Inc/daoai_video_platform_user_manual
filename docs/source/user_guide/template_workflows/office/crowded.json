@@ -1,0 +1,240 @@
+{
+    "name": "人员聚集检测",
+    "category": "Office",
+    "notes": {
+      "notes_cn": "根据画面中指定区域内人员数量判断聚集程度，用于识别会议区、公共区域的拥挤或聚集现象，需要用户自行配置区域坐标。",
+      "notes_en": "Determine the degree of crowding based on the size of the people in the image, used to identify the crowded or clustered phenomenon in the meeting area and public area, need to configure the region coordinates by yourself."
+    },
+    "definition": {
+      "version": "1.0",
+      "inputs": [
+        {
+          "type": "WorkflowImage",
+          "name": "image"
+        }
+      ],
+      "steps": [
+        {
+          "type": "daoai/general_obj_det@v1",
+          "name": "general_object_detection_1",
+          "comments": null,
+          "images": "$inputs.image",
+          "classes": [
+            "person"
+          ],
+          "confidence_threshold": null,
+          "label_confidence_thresholds": null,
+          "max_detections": 100
+        },
+        {
+          "type": "core/detections_filter@v1",
+          "name": "detections_filter_1",
+          "comments": null,
+          "predictions": "$steps.general_object_detection_1.predictions",
+          "operations": [
+            {
+              "type": "DetectionsFilter",
+              "filter_operation": {
+                "type": "StatementGroup",
+                "statements": []
+              }
+            }
+          ],
+          "image": "$steps.line_counter_visualization_1.image",
+          "uistate": {
+            "operations": {
+              "filterBy": "zone",
+              "parentClassName": "",
+              "objectClassEnabled": false,
+              "objectClassType": "include",
+              "objectClasses": "",
+              "attributeEnabled": false,
+              "attributeType": "include",
+              "attributes": "",
+              "confidenceEnabled": false,
+              "confidenceOperator": ">=",
+              "confidenceValue": 0.5,
+              "imageInput": "$inputs.image",
+              "detectionSizeOperator": "<=",
+              "detectionSizeValue": 5,
+              "detectionLocation": "in",
+              "detectionReferencePoint": "center",
+              "zoneDefinition": "Define in Editor",
+              "zonePoints": [],
+              "zoneJson": "[]"
+            }
+          }
+        },
+        {
+          "type": "core/continue_if@v1",
+          "name": "continue_if_1",
+          "comments": null,
+          "condition_statement": {
+            "type": "StatementGroup",
+            "statements": [
+              {
+                "type": "BinaryStatement",
+                "left_operand": {
+                  "type": "DynamicOperand",
+                  "operand_name": "left",
+                  "operations": [
+                    {
+                      "type": "DetectionsFilter",
+                      "filter_operation": {
+                        "type": "StatementGroup",
+                        "operator": "and",
+                        "statements": [
+                          {
+                            "type": "BinaryStatement",
+                            "negate": false,
+                            "left_operand": {
+                              "type": "DynamicOperand",
+                              "operand_name": "_",
+                              "operations": [
+                                {
+                                  "type": "ExtractDetectionProperty",
+                                  "property_name": "class_name"
+                                }
+                              ]
+                            },
+                            "comparator": {
+                              "type": "in (Sequence)"
+                            },
+                            "right_operand": {
+                              "type": "StaticOperand",
+                              "value": [
+                                "person"
+                              ]
+                            }
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "type": "SequenceLength"
+                    }
+                  ]
+                },
+                "comparator": {
+                  "type": "(Number) >="
+                },
+                "right_operand": {
+                  "type": "StaticOperand",
+                  "value": 4
+                }
+              }
+            ],
+            "operator": "and",
+            "uistate": {
+              "leftOperand": "$steps.detections_filter_1.predictions",
+              "detectionsEvaluationProperty": "detection_count",
+              "selectedFilterType": "class_confidence",
+              "isClassFilteringActive": true,
+              "isAttrFilteringActive": false,
+              "isConfidenceFilteringActive": false,
+              "classSetInclusionMode": "include",
+              "classList": [
+                "person"
+              ],
+              "attrList": [],
+              "attrSetInclusionMode": "include",
+              "confidenceThreshold": 0.5,
+              "confidenceOperator": ">=",
+              "referenceImage": null,
+              "sizeThreshold": 5,
+              "sizeThresholdOperator": "<=",
+              "zoneOperator": "in",
+              "zonePoints": [],
+              "detectionReferencePoint": "center",
+              "isZoneStatic": true,
+              "dynamicZone": null,
+              "runtimeParameter": null,
+              "parentClassName": "",
+              "confidenceAggregationMode": "max",
+              "confidenceAggregationOperator": ">=",
+              "confidenceAggregationThreshold": 0.5,
+              "comparator": "(Number) ==",
+              "comparisonType": "Statically",
+              "comparisonValue": "0",
+              "detectionsNumberOperator": "(Number) >=",
+              "detectionsNumberThreshold": "4",
+              "extractedImageProperty": "height",
+              "propertyValueOperator": ">=",
+              "referenceValue": "4",
+              "isReferenceValueStatic": true,
+              "nonImageInputOperation": "(Number) ==",
+              "isMultiLabel": false,
+              "multiLabelOperation": "==",
+              "isFilteringEnabled": true
+            }
+          },
+          "evaluation_parameters": {
+            "left": "$steps.detections_filter_1.predictions"
+          },
+          "next_steps": [
+            "$steps.event_saver_1"
+          ],
+          "image": "$inputs.image"
+        },
+        {
+          "type": "core/bounding_box_visualization@v1",
+          "name": "bounding_box_visualization_1",
+          "comments": null,
+          "image": "$inputs.image",
+          "copy_image": true,
+          "predictions": "$steps.general_object_detection_1.predictions",
+          "color_palette": "DEFAULT",
+          "palette_size": 10,
+          "custom_colors": [],
+          "color_axis": "CLASS",
+          "thickness": 2,
+          "roundness": 0
+        },
+        {
+          "type": "daoai/event_saver@v1",
+          "name": "event_saver_1",
+          "comments": null,
+          "event_type": "Crowded",
+          "image": "$steps.label_visualization_1.image",
+          "original_image": "$inputs.image",
+          "save_video": true,
+          "video_length_seconds": 30,
+          "cooldown_seconds": 20,
+          "cooldown_session_key": null,
+          "per_type_cooldown_seconds": 30
+        },
+        {
+          "type": "core/label_visualization@v1",
+          "name": "label_visualization_1",
+          "comments": null,
+          "image": "$steps.bounding_box_visualization_1.image",
+          "copy_image": true,
+          "predictions": "$steps.general_object_detection_1.predictions",
+          "color_palette": "DEFAULT",
+          "palette_size": 10,
+          "custom_colors": [],
+          "color_axis": "CLASS",
+          "text": "Class",
+          "text_position": "TOP_LEFT",
+          "text_color": "WHITE",
+          "text_scale": 1,
+          "text_thickness": 1,
+          "text_padding": 10,
+          "border_radius": 0
+        }
+      ],
+      "outputs": [
+        {
+          "name": "detections_filter_1_1",
+          "type": "JsonField",
+          "selector": "$steps.detections_filter_1.predictions"
+        },
+        {
+          "name": "label_visualization_1_1",
+          "type": "JsonField",
+          "selector": "$steps.label_visualization_1.image"
+        }
+      ]
+    }
+
+}

@@ -1,0 +1,272 @@
+{
+  "name": "异常行为检测",
+  "category": "Office",
+  "notes": {
+    "notes_cn": "检测并识别抽烟、打电话、玩手机、摔倒、睡岗、翻越围栏等不当或异常行为，需要用户使用dw训练对应行为的检测模型",
+    "notes_en": "Detect and identify smoking, calling, playing with mobile phones, falling down, sleeping on duty, crossing fences and other improper or abnormal behaviors, need to use dw to train the detection model for the corresponding behavior."
+  },
+  "definition": {
+    "version": "1.0",
+    "inputs": [
+      {
+        "type": "WorkflowImage",
+        "name": "image"
+      }
+    ],
+    "steps": [
+      {
+        "type": "daoai/general_detection_model@v1",
+        "name": "general_detection_model_fast_1",
+        "comments": null,
+        "images": "$inputs.image",
+        "classes": ["Abnormal behavior"],
+        "confidence_threshold": null,
+        "label_confidence_thresholds": null,
+        "precision": "fp32",
+        "image_size": "640"
+      },
+      {
+        "type": "core/detections_filter@v1",
+        "name": "detections_filter_1",
+        "comments": null,
+        "predictions": "$steps.general_detection_model_fast_1.predictions",
+        "operations": [
+          {
+            "type": "DetectionsFilter",
+            "filter_operation": {
+              "type": "StatementGroup",
+              "statements": [
+                {
+                  "type": "BinaryStatement",
+                  "left_operand": {
+                    "type": "DynamicOperand",
+                    "operations": [
+                      {
+                        "type": "ExtractDetectionProperty",
+                        "property_name": "class_name"
+                      }
+                    ]
+                  },
+                  "comparator": {
+                    "type": "in (Sequence)"
+                  },
+                  "right_operand": {
+                    "type": "StaticOperand",
+                    "value": ["Abnormal behavior"]
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "image": "$inputs.image",
+        "uistate": {
+          "operations": {
+            "filterBy": "class_confidence",
+            "parentClassName": "",
+            "objectClassEnabled": true,
+            "objectClassType": "include",
+            "objectClasses": "Abnormal behavior",
+            "attributeEnabled": false,
+            "attributeType": "include",
+            "attributes": "",
+            "confidenceEnabled": false,
+            "confidenceOperator": ">=",
+            "confidenceValue": 0.5,
+            "imageInput": "$inputs.image",
+            "detectionSizeOperator": "<=",
+            "detectionSizeValue": 5,
+            "detectionLocation": "in",
+            "detectionReferencePoint": "center",
+            "zoneDefinition": "Define in Editor",
+            "zonePoints": [],
+            "zoneJson": "[]"
+          }
+        }
+      },
+      {
+        "type": "core/continue_if@v1",
+        "name": "continue_if_1",
+        "comments": null,
+        "condition_statement": {
+          "type": "StatementGroup",
+          "statements": [
+            {
+              "type": "BinaryStatement",
+              "left_operand": {
+                "type": "DynamicOperand",
+                "operand_name": "left",
+                "operations": [
+                  {
+                    "type": "SequenceLength"
+                  }
+                ]
+              },
+              "comparator": {
+                "type": "(Number) >="
+              },
+              "right_operand": {
+                "type": "StaticOperand",
+                "value": 1
+              }
+            }
+          ],
+          "operator": "and",
+          "uistate": {
+            "leftOperand": "$steps.detections_filter_1.predictions",
+            "detectionsEvaluationProperty": "detection_count",
+            "selectedFilterType": "not_selected",
+            "isClassFilteringActive": false,
+            "isAttrFilteringActive": false,
+            "isConfidenceFilteringActive": false,
+            "classSetInclusionMode": "include",
+            "classList": [],
+            "attrList": [],
+            "attrSetInclusionMode": "include",
+            "confidenceThreshold": 0.5,
+            "confidenceOperator": ">=",
+            "referenceImage": null,
+            "sizeThreshold": 5,
+            "sizeThresholdOperator": "<=",
+            "zoneOperator": "in",
+            "zonePoints": [],
+            "detectionReferencePoint": "center",
+            "isZoneStatic": true,
+            "dynamicZone": null,
+            "runtimeParameter": null,
+            "parentClassName": "",
+            "confidenceAggregationMode": "max",
+            "confidenceAggregationOperator": ">=",
+            "confidenceAggregationThreshold": 0.5,
+            "comparator": "(Number) ==",
+            "comparisonType": "Statically",
+            "comparisonValue": "0",
+            "detectionsNumberOperator": "(Number) >=",
+            "detectionsNumberThreshold": 1,
+            "extractedImageProperty": "height",
+            "propertyValueOperator": ">=",
+            "referenceValue": 1,
+            "isReferenceValueStatic": true,
+            "nonImageInputOperation": "(Number) ==",
+            "isMultiLabel": false,
+            "multiLabelOperation": "==",
+            "isFilteringEnabled": false
+          }
+        },
+        "evaluation_parameters": {
+          "left": "$steps.detections_filter_1.predictions"
+        },
+        "next_steps": ["$steps.bounding_box_visualization_1"],
+        "image": "$inputs.image"
+      },
+      {
+        "type": "core/bounding_box_visualization@v1",
+        "name": "bounding_box_visualization_1",
+        "comments": null,
+        "image": "$inputs.image",
+        "copy_image": true,
+        "predictions": "$steps.general_detection_model_fast_1.predictions",
+        "color_palette": "DEFAULT",
+        "palette_size": 10,
+        "custom_colors": [],
+        "color_axis": "CLASS",
+        "thickness": 2,
+        "roundness": 0
+      },
+      {
+        "type": "core/label_visualization@v1",
+        "name": "label_visualization_1",
+        "comments": null,
+        "image": "$steps.bounding_box_visualization_1.image",
+        "copy_image": true,
+        "predictions": "$steps.general_detection_model_fast_1.predictions",
+        "color_palette": "DEFAULT",
+        "palette_size": 10,
+        "custom_colors": [],
+        "color_axis": "CLASS",
+        "text": "Class",
+        "text_position": "TOP_LEFT",
+        "text_color": "WHITE",
+        "text_scale": 1,
+        "text_thickness": 1,
+        "text_padding": 10,
+        "border_radius": 0
+      },
+      {
+        "type": "daoai/event_saver@v1",
+        "name": "event_saver_1",
+        "comments": null,
+        "event_type": "Abnormal Behavior Detected",
+        "image": "$steps.label_visualization_1.image",
+        "original_image": "$inputs.image",
+        "save_video": true,
+        "video_length_seconds": 30,
+        "cooldown_seconds": 20,
+        "cooldown_session_key": null,
+        "per_type_cooldown_seconds": 30
+      },
+      {
+        "type": "daoai/dashboard_visualization@v1",
+        "name": "dashboard_visualization_1",
+        "comments": null,
+        "image": "$steps.label_visualization_1.image"
+      }
+    ],
+    "outputs": [
+      {
+        "type": "JsonField",
+        "name": "general_detection_model_fast_1_1",
+        "coordinates_system": "own",
+        "selector": "$steps.general_detection_model_fast_1.predictions"
+      },
+      {
+        "type": "JsonField",
+        "name": "detections_filter_1_1",
+        "coordinates_system": "own",
+        "selector": "$steps.detections_filter_1.predictions"
+      },
+      {
+        "type": "JsonField",
+        "name": "bounding_box_visualization_1_1",
+        "coordinates_system": "own",
+        "selector": "$steps.bounding_box_visualization_1.image"
+      },
+      {
+        "type": "JsonField",
+        "name": "label_visualization_1_1",
+        "coordinates_system": "own",
+        "selector": "$steps.label_visualization_1.image"
+      },
+      {
+        "type": "JsonField",
+        "name": "event_saver_1_1",
+        "coordinates_system": "own",
+        "selector": "$steps.event_saver_1.error_status"
+      },
+      {
+        "type": "JsonField",
+        "name": "event_saver_1_2",
+        "coordinates_system": "own",
+        "selector": "$steps.event_saver_1.throttling_status"
+      },
+      {
+        "type": "JsonField",
+        "name": "event_saver_1_3",
+        "coordinates_system": "own",
+        "selector": "$steps.event_saver_1.message"
+      },
+      {
+        "type": "JsonField",
+        "name": "event_saver_1_4",
+        "coordinates_system": "own",
+        "selector": "$steps.event_saver_1.image_url"
+      },
+      {
+        "type": "JsonField",
+        "name": "event_saver_1_5",
+        "coordinates_system": "own",
+        "selector": "$steps.event_saver_1.video_url"
+      }
+    ]
+  }
+}

@@ -1,0 +1,899 @@
+{
+    "name": "交通拥堵检测",
+    "category": "Highway",
+    "notes": {
+      "notes_cn": "结合检测结果的置信度与车辆分布特征，识别道路拥堵程度，并按轻度、中度、重度触发不同级别报警，需要用户自行配置车道信息",
+      "notes_en": "Combine the confidence of detection results and the distribution characteristics of vehicles to identify the degree of road congestion, and trigger different levels of alarms according to light, medium, and heavy congestion."
+    },
+    "definition": {
+        "version": "1.0",
+        "inputs": [
+          {
+            "type": "WorkflowImage",
+            "name": "image"
+          }
+        ],
+        "steps": [
+          {
+            "type": "daoai/highway_tracker@v1",
+            "name": "highway_tracker_1",
+            "comments": null,
+            "image": "$inputs.image",
+            "detections": "$steps.general_detection_model_fast_1.predictions",
+            "track_activation_threshold": 0.5,
+            "lost_track_buffer": 15,
+            "minimum_matching_threshold": 0.3,
+            "minimum_consecutive_frames": 1,
+            "instances_cache_size": 16384
+          },
+          {
+            "type": "daoai/highway_speed@v1",
+            "name": "highway_speed_1",
+            "comments": null,
+            "image": "$inputs.image",
+            "detections": "$steps.highway_tracker_1.already_seen_instances",
+            "calibration_polygon": [
+              [
+                1025.3333333333337,
+                318.6666666666667
+              ],
+              [
+                1628,
+                312
+              ],
+              [
+                1758,
+                728
+              ],
+              [
+                0.3333333333333495,
+                674.3655913978495
+              ]
+            ],
+            "edge_distances": [
+              20,
+              200,
+              20,
+              200
+            ],
+            "direction_points": [
+              [
+                903.0208333333334,
+                893.3333333333334
+              ],
+              [
+                1207.5,
+                596.6666666666667
+              ]
+            ],
+            "output_unit": "kmh",
+            "smoothing_alpha": 0.5
+          },
+          {
+            "type": "core/bounding_box_visualization@v1",
+            "name": "bounding_box_visualization_1",
+            "comments": null,
+            "image": "$inputs.image",
+            "copy_image": true,
+            "predictions": "$steps.highway_tracker_1.tracked_detections",
+            "color_palette": "DEFAULT",
+            "palette_size": 10,
+            "custom_colors": [],
+            "color_axis": "CLASS",
+            "thickness": 2,
+            "roundness": 0
+          },
+          {
+            "type": "core/label_visualization@v1",
+            "name": "label_visualization_1",
+            "comments": null,
+            "image": "$steps.bounding_box_visualization_1.image",
+            "copy_image": true,
+            "predictions": "$steps.highway_speed_1.highway_speed_detections",
+            "color_palette": "DEFAULT",
+            "palette_size": 10,
+            "custom_colors": [],
+            "color_axis": "CLASS",
+            "text": "Speed",
+            "text_position": "TOP_LEFT",
+            "text_color": "WHITE",
+            "text_scale": 1,
+            "text_thickness": 1,
+            "text_padding": 10,
+            "border_radius": 0
+          },
+          {
+            "type": "daoai/highway_detection@v1",
+            "name": "highway_detection_1",
+            "comments": null,
+            "image": "$inputs.image",
+            "model_predictions": "$steps.general_detection_model_fast_1.predictions",
+            "tracked_detections": "$steps.highway_tracker_1.tracked_detections",
+            "velocity_detections": "$steps.highway_speed_1.highway_speed_detections",
+            "timed_detections": "$steps.time_in_zone_1.timed_detections",
+            "lane_zones": [
+              {
+                "lane_id": 1,
+                "name": "1",
+                "zone": [
+                  [
+                    1529,
+                    325
+                  ],
+                  [
+                    1620,
+                    319
+                  ],
+                  [
+                    1700,
+                    427
+                  ],
+                  [
+                    1729,
+                    564
+                  ],
+                  [
+                    1757,
+                    826
+                  ],
+                  [
+                    1763,
+                    932
+                  ],
+                  [
+                    1355,
+                    915
+                  ],
+                  [
+                    1503,
+                    573
+                  ],
+                  [
+                    1535,
+                    436
+                  ],
+                  [
+                    1523,
+                    313
+                  ]
+                ]
+              },
+              {
+                "lane_id": 2,
+                "name": "2",
+                "zone": [
+                  [
+                    1404,
+                    321
+                  ],
+                  [
+                    1520,
+                    326
+                  ],
+                  [
+                    1529,
+                    440
+                  ],
+                  [
+                    1478,
+                    645
+                  ],
+                  [
+                    1358,
+                    910
+                  ],
+                  [
+                    896,
+                    893
+                  ],
+                  [
+                    1081,
+                    720
+                  ],
+                  [
+                    1224,
+                    566
+                  ],
+                  [
+                    1347,
+                    432
+                  ],
+                  [
+                    1401,
+                    318
+                  ]
+                ]
+              },
+              {
+                "lane_id": 3,
+                "name": "3",
+                "zone": [
+                  [
+                    1284,
+                    312
+                  ],
+                  [
+                    1406,
+                    312
+                  ],
+                  [
+                    1355,
+                    395
+                  ],
+                  [
+                    1287,
+                    497
+                  ],
+                  [
+                    1190,
+                    606
+                  ],
+                  [
+                    1030,
+                    757
+                  ],
+                  [
+                    888,
+                    891
+                  ],
+                  [
+                    426,
+                    873
+                  ],
+                  [
+                    654,
+                    731
+                  ],
+                  [
+                    776,
+                    671
+                  ],
+                  [
+                    948,
+                    571
+                  ],
+                  [
+                    1099,
+                    472
+                  ],
+                  [
+                    1235,
+                    366
+                  ],
+                  [
+                    1275,
+                    312
+                  ]
+                ]
+              },
+              {
+                "lane_id": 4,
+                "name": "4",
+                "zone": [
+                  [
+                    1167,
+                    309
+                  ],
+                  [
+                    1275,
+                    309
+                  ],
+                  [
+                    1181,
+                    406
+                  ],
+                  [
+                    1090,
+                    466
+                  ],
+                  [
+                    896,
+                    603
+                  ],
+                  [
+                    762,
+                    677
+                  ],
+                  [
+                    543,
+                    791
+                  ],
+                  [
+                    420,
+                    882
+                  ],
+                  [
+                    10,
+                    856
+                  ],
+                  [
+                    509,
+                    634
+                  ],
+                  [
+                    714,
+                    534
+                  ],
+                  [
+                    945,
+                    440
+                  ],
+                  [
+                    1101,
+                    349
+                  ],
+                  [
+                    1167,
+                    303
+                  ]
+                ]
+              },
+              {
+                "lane_id": 5,
+                "name": "5",
+                "zone": [
+                  [
+                    1050,
+                    306
+                  ],
+                  [
+                    1164,
+                    301
+                  ],
+                  [
+                    990,
+                    409
+                  ],
+                  [
+                    805,
+                    489
+                  ],
+                  [
+                    563,
+                    594
+                  ],
+                  [
+                    352,
+                    705
+                  ],
+                  [
+                    10,
+                    853
+                  ],
+                  [
+                    7,
+                    682
+                  ],
+                  [
+                    98,
+                    645
+                  ],
+                  [
+                    543,
+                    500
+                  ],
+                  [
+                    885,
+                    372
+                  ],
+                  [
+                    1042,
+                    303
+                  ]
+                ]
+              }
+            ],
+            "enable_car_count": false,
+            "car_count_labels_to_count": null,
+            "car_count_flags_to_count": null,
+            "car_count_counting_line": [
+              [
+                0,
+                0
+              ],
+              [
+                100,
+                100
+              ]
+            ],
+            "car_count_pixel_distance": 50,
+            "car_count_triggering_anchor": "CENTER",
+            "car_count_reporting_window_min": 60,
+            "enable_average_speed": false,
+            "avg_speed_entry_line": [
+              [
+                0,
+                0
+              ],
+              [
+                100,
+                0
+              ]
+            ],
+            "avg_speed_exit_line": [
+              [
+                0,
+                100
+              ],
+              [
+                100,
+                100
+              ]
+            ],
+            "avg_speed_lane_ids": null,
+            "avg_speed_reporting_window_min": 30,
+            "avg_speed_max_speed_kph": 180,
+            "avg_speed_labels_to_count": null,
+            "enable_traffic_jam": true,
+            "jam_max_avg_speed_kph": 60,
+            "jam_min_count": 6,
+            "jam_occupancy_threshold": 0.5,
+            "jam_speed_limit_kph": 120,
+            "enable_illegal_events": true,
+            "illegal_forbidden_lanes": [
+              1
+            ],
+            "illegal_forbidden_lane_change_pairs": [
+              [
+                1,
+                2
+              ],
+              [
+                2,
+                3
+              ],
+              [
+                3,
+                4
+              ],
+              [
+                4,
+                5
+              ]
+            ],
+            "illegal_excluded_labels": [],
+            "illegal_max_speed_kph": 144,
+            "illegal_max_lane_changes": 2,
+            "illegal_time_limit_s": 15,
+            "enable_illegal_moving_backward": true,
+            "backward_time_threshold_s": 3,
+            "enable_illegal_parking": false,
+            "parking_lane_ids": null,
+            "parking_time_threshold_s": 20,
+            "parking_excluded_labels": [],
+            "enable_traffic_accident": false,
+            "accident_time_threshold_s": 10,
+            "accident_distance_threshold_px": 20,
+            "accident_triggering_labels": [
+              "emergency_warning_triangle"
+            ]
+          },
+          {
+            "type": "core/time_in_zone@v3",
+            "name": "time_in_zone_1",
+            "comments": null,
+            "image": "$inputs.image",
+            "detections": "$steps.highway_tracker_1.tracked_detections",
+            "zone": [
+              [
+                1025.3333333333337,
+                318.6666666666667
+              ],
+              [
+                1628,
+                312
+              ],
+              [
+                1758,
+                728
+              ],
+              [
+                0.3333333333333495,
+                674.3655913978495
+              ]
+            ],
+            "triggering_anchor": "CENTER",
+            "remove_out_of_zone_detections": true,
+            "reset_out_of_zone_detections": true,
+            "count_out_of_zone_time": false,
+            "count_out_of_image": false,
+            "clear_disappeared_track": false,
+            "clear_disappeared_track_gap_threshold": 8
+          },
+          {
+            "type": "daoai/general_detection_model@v1",
+            "name": "general_detection_model_fast_1",
+            "comments": null,
+            "images": "$inputs.image",
+            "classes": [
+              "car",
+              "truck",
+              "motorcycle"
+            ],
+            "confidence_threshold": null,
+            "label_confidence_thresholds": null,
+            "precision": "fp32",
+            "image_size": "640"
+          },
+          {
+            "type": "core/expression@v1",
+            "name": "expression_1",
+            "comments": null,
+            "data": {
+              "para_1": "$steps.highway_detection_1.traffic_jam"
+            },
+            "data_operations": {},
+            "switch": {
+              "type": "CasesDefinition",
+              "default": {
+                "type": "StaticCaseResult",
+                "value": false
+              },
+              "cases": [
+                {
+                  "type": "CaseDefinition",
+                  "condition": {
+                    "type": "StatementGroup",
+                    "statements": [
+                      {
+                        "type": "BinaryStatement",
+                        "left_operand": {
+                          "type": "DynamicOperand",
+                          "operand_name": "para_1",
+                          "operations": []
+                        },
+                        "comparator": {
+                          "type": "=="
+                        },
+                        "right_operand": {
+                          "type": "StaticOperand",
+                          "value": true
+                        }
+                      }
+                    ]
+                  },
+                  "result": {
+                    "type": "StaticCaseResult",
+                    "value": true
+                  }
+                }
+              ]
+            },
+            "image": "$inputs.image"
+          },
+          {
+            "type": "core/continue_if@v1",
+            "name": "continue_if_1",
+            "comments": null,
+            "condition_statement": {
+              "type": "StatementGroup",
+              "statements": [
+                {
+                  "type": "UnaryStatement",
+                  "operand": {
+                    "type": "DynamicOperand",
+                    "operand_name": "left"
+                  },
+                  "operator": {
+                    "type": "(Boolean) is True"
+                  }
+                }
+              ],
+              "uistate": {
+                "leftOperand": "$steps.expression_1.output",
+                "detectionsEvaluationProperty": "value",
+                "selectedFilterType": "not_selected",
+                "isClassFilteringActive": false,
+                "isAttrFilteringActive": false,
+                "isConfidenceFilteringActive": false,
+                "classSetInclusionMode": "include",
+                "classList": [],
+                "attrList": [],
+                "attrSetInclusionMode": "include",
+                "confidenceThreshold": 0.5,
+                "confidenceOperator": ">=",
+                "referenceImage": null,
+                "sizeThreshold": 5,
+                "sizeThresholdOperator": "<=",
+                "zoneOperator": "in",
+                "zonePoints": [],
+                "detectionReferencePoint": "center",
+                "isZoneStatic": true,
+                "dynamicZone": null,
+                "runtimeParameter": null,
+                "parentClassName": "",
+                "confidenceAggregationMode": "max",
+                "confidenceAggregationOperator": ">=",
+                "confidenceAggregationThreshold": 0.5,
+                "comparator": "(Number) ==",
+                "comparisonType": "Statically",
+                "comparisonValue": "0",
+                "detectionsNumberOperator": "(Number) >=",
+                "detectionsNumberThreshold": 1,
+                "extractedImageProperty": "height",
+                "propertyValueOperator": ">=",
+                "referenceValue": 1,
+                "isReferenceValueStatic": true,
+                "nonImageInputOperation": "(Number) ==",
+                "isMultiLabel": false,
+                "multiLabelOperation": "==",
+                "isFilteringEnabled": false
+              }
+            },
+            "evaluation_parameters": {
+              "left": "$steps.expression_1.output"
+            },
+            "next_steps": [
+              "$steps.highway_visualization_1"
+            ],
+            "image": "$inputs.image"
+          },
+          {
+            "type": "daoai/highway_visualization@v1",
+            "name": "highway_visualization_1",
+            "comments": null,
+            "image": "$inputs.image",
+            "copy_image": true,
+            "predictions": "$steps.highway_detection_1.violations_detections",
+            "color_palette": "DEFAULT",
+            "palette_size": 10,
+            "custom_colors": [],
+            "color_axis": "CLASS",
+            "show_event_labels": true,
+            "show_timestamp": true,
+            "show_status_info": true,
+            "bbox_thickness": 4,
+            "roundness": 0,
+            "text_position": "TOP_LEFT",
+            "text_color": "WHITE",
+            "text_scale": 1,
+            "text_thickness": 1,
+            "text_padding": 10,
+            "border_radius": 0
+          },
+          {
+            "type": "daoai/event_saver@v1",
+            "name": "event_saver_1",
+            "comments": null,
+            "event_type": "$steps.highway_detection_1.event_type",
+            "image": "$steps.highway_visualization_1.image",
+            "original_image": "$inputs.image",
+            "save_video": true,
+            "video_length_seconds": 30,
+            "cooldown_seconds": 20,
+            "cooldown_session_key": null,
+            "per_type_cooldown_seconds": 30
+          },
+          {
+            "type": "daoai/dashboard_visualization@v1",
+            "name": "dashboard_visualization_1",
+            "comments": null,
+            "image": "$steps.label_visualization_1.image"
+          }
+        ],
+        "outputs": [
+          {
+            "type": "JsonField",
+            "name": "highway_tracker_1_1",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_tracker_1.tracked_detections"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_tracker_1_2",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_tracker_1.new_instances"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_tracker_1_3",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_tracker_1.already_seen_instances"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_speed_1_1",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_speed_1.highway_speed_detections"
+          },
+          {
+            "type": "JsonField",
+            "name": "bounding_box_visualization_1_1",
+            "coordinates_system": "own",
+            "selector": "$steps.bounding_box_visualization_1.image"
+          },
+          {
+            "type": "JsonField",
+            "name": "label_visualization_1_1",
+            "coordinates_system": "own",
+            "selector": "$steps.label_visualization_1.image"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_detection_1_1",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_detection_1.count"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_detection_1_2",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_detection_1.count_by_label"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_detection_1_3",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_detection_1.count_by_flag"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_detection_1_4",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_detection_1.car_count_triggered"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_detection_1_5",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_detection_1.average_speed_kph"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_detection_1_6",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_detection_1.average_speed_triggered"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_detection_1_7",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_detection_1.lane_average_speeds"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_detection_1_8",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_detection_1.illegal_event"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_detection_1_9",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_detection_1.illegal_moving_backward"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_detection_1_10",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_detection_1.traffic_jam"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_detection_1_11",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_detection_1.jam_level"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_detection_1_12",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_detection_1.occupancy"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_detection_1_13",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_detection_1.illegal_parking"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_detection_1_14",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_detection_1.traffic_accident"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_detection_1_15",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_detection_1.violations_detections"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_detection_1_16",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_detection_1.event_flags"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_detection_1_17",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_detection_1.event_type"
+          },
+          {
+            "type": "JsonField",
+            "name": "time_in_zone_1_1",
+            "coordinates_system": "own",
+            "selector": "$steps.time_in_zone_1.timed_detections"
+          },
+          {
+            "type": "JsonField",
+            "name": "time_in_zone_1_2",
+            "coordinates_system": "own",
+            "selector": "$steps.time_in_zone_1.disappeared_detections"
+          },
+          {
+            "type": "JsonField",
+            "name": "general_detection_model_fast_1_1",
+            "coordinates_system": "own",
+            "selector": "$steps.general_detection_model_fast_1.predictions"
+          },
+          {
+            "type": "JsonField",
+            "name": "expression_1_1",
+            "coordinates_system": "own",
+            "selector": "$steps.expression_1.output"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_visualization_1_1",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_visualization_1.image"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_visualization_1_2",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_visualization_1.output_image_base64"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_visualization_1_3",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_visualization_1.image_bytes"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_visualization_1_4",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_visualization_1.has_violations"
+          },
+          {
+            "type": "JsonField",
+            "name": "highway_visualization_1_5",
+            "coordinates_system": "own",
+            "selector": "$steps.highway_visualization_1.event_summary"
+          },
+          {
+            "type": "JsonField",
+            "name": "event_saver_1_1",
+            "coordinates_system": "own",
+            "selector": "$steps.event_saver_1.error_status"
+          },
+          {
+            "type": "JsonField",
+            "name": "event_saver_1_2",
+            "coordinates_system": "own",
+            "selector": "$steps.event_saver_1.throttling_status"
+          },
+          {
+            "type": "JsonField",
+            "name": "event_saver_1_3",
+            "coordinates_system": "own",
+            "selector": "$steps.event_saver_1.message"
+          },
+          {
+            "type": "JsonField",
+            "name": "event_saver_1_4",
+            "coordinates_system": "own",
+            "selector": "$steps.event_saver_1.image_url"
+          },
+          {
+            "type": "JsonField",
+            "name": "event_saver_1_5",
+            "coordinates_system": "own",
+            "selector": "$steps.event_saver_1.video_url"
+          }
+        ]
+      }
+}

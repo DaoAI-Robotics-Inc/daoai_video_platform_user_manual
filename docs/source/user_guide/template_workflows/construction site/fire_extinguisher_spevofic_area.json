@@ -1,0 +1,274 @@
+{
+    "name": "灭火器存在检测",
+    "category": "Construction Site",
+    "notes": {
+      "notes_cn": "使用通用目标检测模型检测图片特定区域中是否存在灭火器，需要用户自行配置区域坐标。",
+      "notes_en": "Use the general detection model to detect whether there is a fire extinguisher in the specific area of the image, need to configure the region coordinates by yourself."
+    },
+    "definition": {
+      "version": "1.0",
+      "inputs": [
+        {
+          "type": "WorkflowImage",
+          "name": "image"
+        }
+      ],
+      "steps": [
+        {
+          "type": "core/bounding_box_visualization@v1",
+          "name": "bounding_box_visualization_1",
+          "comments": null,
+          "image": "$inputs.image",
+          "copy_image": true,
+          "predictions": "$steps.highway_tracker_1.tracked_detections",
+          "color_palette": "DEFAULT",
+          "palette_size": 10,
+          "custom_colors": [],
+          "color_axis": "CLASS",
+          "thickness": 2,
+          "roundness": 0
+        },
+        {
+          "type": "daoai/general_obj_det@v1",
+          "name": "general_object_detection_1",
+          "comments": null,
+          "images": "$inputs.image",
+          "classes": [
+            "fire extinguisher"
+          ],
+          "confidence_threshold": 0.5,
+          "label_confidence_thresholds": null,
+          "max_detections": 100
+        },
+        {
+          "type": "core/label_visualization@v1",
+          "name": "label_visualization_1",
+          "comments": null,
+          "image": "$steps.bounding_box_visualization_1.image",
+          "copy_image": true,
+          "predictions": "$steps.highway_tracker_1.tracked_detections",
+          "color_palette": "DEFAULT",
+          "palette_size": 10,
+          "custom_colors": [],
+          "color_axis": "CLASS",
+          "text": "Class",
+          "text_position": "TOP_LEFT",
+          "text_color": "WHITE",
+          "text_scale": 1,
+          "text_thickness": 1,
+          "text_padding": 10,
+          "border_radius": 0
+        },
+        {
+          "type": "daoai/time_out_zone@v1",
+          "name": "time_out_of_zone_1",
+          "comments": null,
+          "image": "$inputs.image",
+          "detections": "$steps.highway_tracker_1.tracked_detections",
+          "zone": [],
+          "triggering_anchor": "CENTER",
+          "remove_in_zone_detections": true
+        },
+        {
+          "type": "core/property_definition@v1",
+          "name": "property_definition_1",
+          "comments": null,
+          "data": "$steps.time_out_of_zone_1.timed_detections",
+          "operations": [
+            {
+              "type": "DetectionsPropertyExtract",
+              "property_name": "time_out_of_zone"
+            },
+            {
+              "type": "NumericSequenceAggregate",
+              "function": "max"
+            }
+          ],
+          "image": "$inputs.image"
+        },
+        {
+          "type": "core/continue_if@v1",
+          "name": "continue_if_1",
+          "comments": null,
+          "condition_statement": {
+            "type": "StatementGroup",
+            "statements": [
+              {
+                "type": "BinaryStatement",
+                "left_operand": {
+                  "type": "DynamicOperand",
+                  "operand_name": "left"
+                },
+                "comparator": {
+                  "type": "(Number) >="
+                },
+                "right_operand": {
+                  "type": "StaticOperand",
+                  "value": 3
+                }
+              }
+            ],
+            "operator": "and",
+            "uistate": {
+              "leftOperand": "$steps.property_definition_1.output",
+              "detectionsEvaluationProperty": "value",
+              "selectedFilterType": "not_selected",
+              "isClassFilteringActive": false,
+              "isAttrFilteringActive": false,
+              "isConfidenceFilteringActive": false,
+              "classSetInclusionMode": "include",
+              "classList": [],
+              "attrList": [],
+              "attrSetInclusionMode": "include",
+              "confidenceThreshold": 0.5,
+              "confidenceOperator": ">=",
+              "referenceImage": null,
+              "sizeThreshold": 5,
+              "sizeThresholdOperator": "<=",
+              "zoneOperator": "in",
+              "zonePoints": [],
+              "detectionReferencePoint": "center",
+              "isZoneStatic": true,
+              "dynamicZone": null,
+              "runtimeParameter": null,
+              "parentClassName": "",
+              "confidenceAggregationMode": "max",
+              "confidenceAggregationOperator": ">=",
+              "confidenceAggregationThreshold": 0.5,
+              "comparator": "(Number) ==",
+              "comparisonType": "Statically",
+              "comparisonValue": "0",
+              "detectionsNumberOperator": "(Number) >=",
+              "detectionsNumberThreshold": 1,
+              "extractedImageProperty": "height",
+              "propertyValueOperator": ">=",
+              "referenceValue": 1,
+              "isReferenceValueStatic": true,
+              "nonImageInputOperation": "(Number) ==",
+              "isMultiLabel": false,
+              "multiLabelOperation": "==",
+              "isFilteringEnabled": false
+            }
+          },
+          "evaluation_parameters": {
+            "left": "$steps.property_definition_1.output"
+          },
+          "next_steps": [
+            "$steps.event_saver_1"
+          ],
+          "image": "$inputs.image"
+        },
+        {
+          "type": "daoai/event_saver@v1",
+          "name": "event_saver_1",
+          "comments": null,
+          "event_type": "Fire Extinguisher Lost",
+          "image": "$steps.label_visualization_1.image",
+          "original_image": "$inputs.image",
+          "save_video": true,
+          "video_length_seconds": 30,
+          "cooldown_seconds": 20,
+          "cooldown_session_key": null,
+          "per_type_cooldown_seconds": 30
+        },
+        {
+          "type": "daoai/dashboard_visualization@v1",
+          "name": "dashboard_visualization_1",
+          "comments": null,
+          "image": "$steps.label_visualization_1.image"
+        },
+        {
+          "type": "daoai/highway_tracker@v1",
+          "name": "highway_tracker_1",
+          "comments": null,
+          "image": "$inputs.image",
+          "detections": "$steps.general_object_detection_1.predictions",
+          "track_activation_threshold": 0.25,
+          "lost_track_buffer": 15,
+          "minimum_matching_threshold": 0.7,
+          "minimum_consecutive_frames": 1,
+          "instances_cache_size": 16384
+        }
+      ],
+      "outputs": [
+        {
+          "type": "JsonField",
+          "name": "bounding_box_visualization_1_1",
+          "coordinates_system": "own",
+          "selector": "$steps.bounding_box_visualization_1.image"
+        },
+        {
+          "type": "JsonField",
+          "name": "general_object_detection_1_1",
+          "coordinates_system": "own",
+          "selector": "$steps.general_object_detection_1.predictions"
+        },
+        {
+          "type": "JsonField",
+          "name": "label_visualization_1_1",
+          "coordinates_system": "own",
+          "selector": "$steps.label_visualization_1.image"
+        },
+        {
+          "type": "JsonField",
+          "name": "time_out_of_zone_1_1",
+          "coordinates_system": "own",
+          "selector": "$steps.time_out_of_zone_1.timed_detections"
+        },
+        {
+          "type": "JsonField",
+          "name": "property_definition_1_1",
+          "coordinates_system": "own",
+          "selector": "$steps.property_definition_1.output"
+        },
+        {
+          "type": "JsonField",
+          "name": "event_saver_1_1",
+          "coordinates_system": "own",
+          "selector": "$steps.event_saver_1.error_status"
+        },
+        {
+          "type": "JsonField",
+          "name": "event_saver_1_2",
+          "coordinates_system": "own",
+          "selector": "$steps.event_saver_1.throttling_status"
+        },
+        {
+          "type": "JsonField",
+          "name": "event_saver_1_3",
+          "coordinates_system": "own",
+          "selector": "$steps.event_saver_1.message"
+        },
+        {
+          "type": "JsonField",
+          "name": "event_saver_1_4",
+          "coordinates_system": "own",
+          "selector": "$steps.event_saver_1.image_url"
+        },
+        {
+          "type": "JsonField",
+          "name": "event_saver_1_5",
+          "coordinates_system": "own",
+          "selector": "$steps.event_saver_1.video_url"
+        },
+        {
+          "type": "JsonField",
+          "name": "highway_tracker_1_1",
+          "coordinates_system": "own",
+          "selector": "$steps.highway_tracker_1.tracked_detections"
+        },
+        {
+          "type": "JsonField",
+          "name": "highway_tracker_1_2",
+          "coordinates_system": "own",
+          "selector": "$steps.highway_tracker_1.new_instances"
+        },
+        {
+          "type": "JsonField",
+          "name": "highway_tracker_1_3",
+          "coordinates_system": "own",
+          "selector": "$steps.highway_tracker_1.already_seen_instances"
+        }
+      ]
+    }
+  }

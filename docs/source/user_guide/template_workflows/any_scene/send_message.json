@@ -1,0 +1,205 @@
+{
+    "name": "外部消息触发",
+    "category": "Any Scene",
+    "notes": {
+      "notes_cn": "使用 custom python 和 webhook sink 将检测结果实时推送至外部系统，实现平台联动与事件通知，需要用户自行配置 url。",
+      "notes_en": "Use custom python and webhook sink to push the detection results to the external system in real time, achieving platform linkage and event notification, need to configure the url by yourself."
+    },
+    "definition":{
+        "version": "1.0",
+        "inputs": [
+          {
+            "type": "WorkflowImage",
+            "name": "image"
+          }
+        ],
+        "steps": [
+          {
+            "type": "daoai/general_detection_model@v1",
+            "name": "general_detection_model_fast_1",
+            "comments": null,
+            "images": "$inputs.image",
+            "classes": [
+              "person"
+            ],
+            "confidence_threshold": null,
+            "label_confidence_thresholds": null,
+            "precision": "fp32",
+            "image_size": "640"
+          },
+          {
+            "type": "core/continue_if@v1",
+            "name": "continue_if_1",
+            "comments": null,
+            "condition_statement": {
+              "type": "StatementGroup",
+              "statements": [
+                {
+                  "type": "BinaryStatement",
+                  "left_operand": {
+                    "type": "DynamicOperand",
+                    "operand_name": "left",
+                    "operations": [
+                      {
+                        "type": "SequenceLength"
+                      }
+                    ]
+                  },
+                  "comparator": {
+                    "type": "(Number) >="
+                  },
+                  "right_operand": {
+                    "type": "StaticOperand",
+                    "value": 1
+                  }
+                }
+              ],
+              "operator": "and",
+              "uistate": {
+                "leftOperand": "$steps.general_detection_model_fast_1.predictions",
+                "detectionsEvaluationProperty": "detection_count",
+                "selectedFilterType": "not_selected",
+                "isClassFilteringActive": false,
+                "isAttrFilteringActive": false,
+                "isConfidenceFilteringActive": false,
+                "classSetInclusionMode": "include",
+                "classList": [],
+                "attrList": [],
+                "attrSetInclusionMode": "include",
+                "confidenceThreshold": 0.5,
+                "confidenceOperator": ">=",
+                "referenceImage": null,
+                "sizeThreshold": 5,
+                "sizeThresholdOperator": "<=",
+                "zoneOperator": "in",
+                "zonePoints": [],
+                "detectionReferencePoint": "center",
+                "isZoneStatic": true,
+                "dynamicZone": null,
+                "runtimeParameter": null,
+                "parentClassName": "",
+                "confidenceAggregationMode": "max",
+                "confidenceAggregationOperator": ">=",
+                "confidenceAggregationThreshold": 0.5,
+                "comparator": "(Number) ==",
+                "comparisonType": "Statically",
+                "comparisonValue": "0",
+                "detectionsNumberOperator": "(Number) >=",
+                "detectionsNumberThreshold": 1,
+                "extractedImageProperty": "height",
+                "propertyValueOperator": ">=",
+                "referenceValue": 1,
+                "isReferenceValueStatic": true,
+                "nonImageInputOperation": "(Number) ==",
+                "isMultiLabel": false,
+                "multiLabelOperation": "==",
+                "isFilteringEnabled": false
+              }
+            },
+            "evaluation_parameters": {
+              "left": "$steps.general_detection_model_fast_1.predictions"
+            },
+            "next_steps": [
+              "$steps.Warning",
+              "$steps.webhook_sink_1"
+            ],
+            "image": "$inputs.image"
+          },
+          {
+            "type": "Warning",
+            "name": "Warning",
+            "img": "$inputs.image"
+          },
+          {
+            "type": "core/webhook_sink@v1",
+            "name": "webhook_sink_1",
+            "comments": null,
+            "url": "",
+            "method": "POST",
+            "headers": {
+              "Content-Type": "application/json; charset=utf-8"
+            },
+            "json_payload": {
+              "text": "$steps.Warning.msg"
+            },
+            "json_payload_operations": {},
+            "request_timeout": 2,
+            "fire_and_forget": true,
+            "disable_sink": false,
+            "cooldown_seconds": 5,
+            "image": "$inputs.image"
+          }
+        ],
+        "outputs": [
+          {
+            "type": "JsonField",
+            "name": "general_detection_model_fast_1_1",
+            "coordinates_system": "own",
+            "selector": "$steps.general_detection_model_fast_1.predictions"
+          },
+          {
+            "type": "JsonField",
+            "name": "msg",
+            "coordinates_system": "own",
+            "selector": "$steps.Warning.msg"
+          },
+          {
+            "type": "JsonField",
+            "name": "webhook_sink_1_1",
+            "coordinates_system": "own",
+            "selector": "$steps.webhook_sink_1.error_status"
+          },
+          {
+            "type": "JsonField",
+            "name": "webhook_sink_1_2",
+            "coordinates_system": "own",
+            "selector": "$steps.webhook_sink_1.throttling_status"
+          },
+          {
+            "type": "JsonField",
+            "name": "webhook_sink_1_3",
+            "coordinates_system": "own",
+            "selector": "$steps.webhook_sink_1.message"
+          }
+        ],
+        "dynamic_blocks_definitions": [
+          {
+            "type": "DynamicBlockDefinition",
+            "manifest": {
+              "type": "ManifestDescription",
+              "description": "",
+              "block_type": "Warning",
+              "inputs": {
+                "img": {
+                  "type": "DynamicInputDefinition",
+                  "selector_types": [
+                    "input_image",
+                    "step_output_image"
+                  ],
+                  "selector_data_kind": {
+                    "input_image": [
+                      "image"
+                    ],
+                    "step_output_image": [
+                      "image"
+                    ]
+                  }
+                }
+              },
+              "outputs": {
+                "msg": {
+                  "type": "DynamicOutputDefinition",
+                  "kind": [
+                    "string"
+                  ]
+                }
+              }
+            },
+            "code": {
+              "type": "PythonCode",
+              "run_function_code": "def run(self, img) -> BlockResult:\n    # Todo: write your code here\n    return {\"msg\": \"Pedestrian Detected\"}"
+            }
+          }
+        ]
+      }
+}

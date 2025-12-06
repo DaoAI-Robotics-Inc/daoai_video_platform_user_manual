@@ -3,7 +3,7 @@ DAOAI 天眼系统用户手册
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: 介绍
 
    quick_start/index
@@ -14,15 +14,17 @@ DAOAI 天眼系统用户手册
    :maxdepth: 2
    :caption: 使用
 
-   user_guide/index
-   data/workspace/index
+   user_guide/create_workflow
+   user_guide/deployment
+   user_guide/alarm_management
+   user_guide/template_workflows
+   user_guide/dynamic_python_blocks
 
 .. toctree::
    :maxdepth: 3
    :caption: 模块
 
    block_gallery/index
-   data/workspace/index
 
 .. toctree::
    :maxdepth: 2

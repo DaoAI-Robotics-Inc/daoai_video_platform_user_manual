@@ -1,0 +1,132 @@
+{
+  "version": "1.0",
+  "inputs": [
+    {
+      "type": "WorkflowImage",
+      "name": "image"
+    }
+  ],
+  "steps": [
+    {
+      "type": "daoai/general_obj_det@v1",
+      "name": "general_object_detection_1",
+      "comments": null,
+      "images": "$inputs.image",
+      "classes": [
+        "car"
+      ],
+      "confidence_threshold": null,
+      "label_confidence_thresholds": null,
+      "max_detections": 100
+    },
+    {
+      "type": "Send_Http_Request",
+      "name": "Send Http Request",
+      "input_url": "http://206.12.6.247:9000",
+      "prediction": "$steps.general_object_detection_1.predictions"
+    },
+    {
+      "type": "core/bounding_box_visualization@v1",
+      "name": "bounding_box_visualization_1",
+      "comments": null,
+      "image": "$inputs.image",
+      "copy_image": true,
+      "predictions": "$steps.general_object_detection_1.predictions",
+      "color_palette": "DEFAULT",
+      "palette_size": 10,
+      "custom_colors": [],
+      "color_axis": "CLASS",
+      "thickness": 2,
+      "roundness": 0
+    }
+  ],
+  "outputs": [
+    {
+      "type": "JsonField",
+      "name": "general_object_detection_1_1",
+      "coordinates_system": "own",
+      "selector": "$steps.general_object_detection_1.predictions"
+    },
+    {
+      "type": "JsonField",
+      "name": "status_code",
+      "coordinates_system": "own",
+      "selector": "$steps.Send Http Request.status_code"
+    },
+    {
+      "type": "JsonField",
+      "name": "message",
+      "coordinates_system": "own",
+      "selector": "$steps.Send Http Request.message"
+    },
+    {
+      "type": "JsonField",
+      "name": "bounding_box_visualization_1_1",
+      "coordinates_system": "own",
+      "selector": "$steps.bounding_box_visualization_1.image"
+    }
+  ],
+  "dynamic_blocks_definitions": [
+    {
+      "type": "DynamicBlockDefinition",
+      "manifest": {
+        "type": "ManifestDescription",
+        "description": "sends http request to 3rd party service",
+        "block_type": "Send_Http_Request",
+        "inputs": {
+          "input_url": {
+            "type": "DynamicInputDefinition",
+            "selector_types": [
+              "input_parameter",
+              "step_output"
+            ],
+            "selector_data_kind": {
+              "input_parameter": [
+                "string"
+              ],
+              "step_output": [
+                "string"
+              ]
+            },
+            "value_types": [
+              "string"
+            ]
+          },
+          "prediction": {
+            "type": "DynamicInputDefinition",
+            "selector_types": [
+              "input_parameter",
+              "step_output"
+            ],
+            "selector_data_kind": {
+              "input_parameter": [
+                "object_detection_prediction"
+              ],
+              "step_output": [
+                "object_detection_prediction"
+              ]
+            }
+          }
+        },
+        "outputs": {
+          "status_code": {
+            "type": "DynamicOutputDefinition",
+            "kind": [
+              "integer"
+            ]
+          },
+          "message": {
+            "type": "DynamicOutputDefinition",
+            "kind": [
+              "string"
+            ]
+          }
+        }
+      },
+      "code": {
+        "type": "PythonCode",
+        "run_function_code": "import requests\nimport numpy as np\n\ndef run(self, input_url, prediction) -> BlockResult:\n    url = input_url\n\n    car_number = int(np.sum(prediction.data['class_name'] == \"car\"))\n    payload = {\n        \"number_of_cars_detected\": car_number\n    }\n\n    try:\n        response = requests.post(\n            url=url,\n            json=payload,\n            timeout=5\n        )\n\n        return {\n            \"status_code\": response.status_code,\n            \"message\": response.text\n        }\n\n    except Exception as e:\n        return {\n            \"status_code\": -1,\n            \"message\": str(e)\n        }\n"
+      }
+    }
+  ]
+}
