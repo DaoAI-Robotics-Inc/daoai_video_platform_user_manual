@@ -56,6 +56,7 @@
 - 左侧显示 **按日/按周的事件分析图（daily / weekly event analysis graph）**；
 - 右侧显示 **实时事件列表（real-time event list）**，可及时查看告警条目与状态。
 
+
 HTTP API 调用（系统内置 REST 接口）
 ----------------------------------
 
@@ -64,6 +65,10 @@ HTTP API 调用（系统内置 REST 接口）
 参考接口文档：
 
 - ``http://<服务器IP>:38080/docs``
+
+.. note::
+    
+    该 API 不仅支持触发并运行工作流，还提供与天眼后台交互的一系列能力（如工作流管理、相机管理、运行状态查询等）。更多端点与示例请参见完整文档。
 
 调用步骤：
 
@@ -77,18 +82,91 @@ HTTP API 调用（系统内置 REST 接口）
 
 .. code-block:: bash
 
+   BASE_URL="http://<server_ip>:38080"
+   WORKFLOW_ID="<workflow_id>"
    curl --location \
-        --request POST "http://<server_ip>:38080/workflows/<workflow_id>/run" \
-        --header "Content-Type: multipart/form-data" \
-        --form "input_image=@C:/path/to/your/image.jpg" 
+       --request POST "$BASE_URL/workflows/$WORKFLOW_ID/run" \
+       --header "Content-Type: multipart/form-data" \
+       --form "input_image=@C:/path/to/your/image.jpg"
 
 说明：
 
-- 若使用 Postman，请选择 ``form-data`` 模式，``input_image`` 类型设为 File，``test_definition`` 类型设为 Text 并填入 JSON 字符串。
+- 若使用 Postman：选择 ``form-data``，``input_image`` 类型设为 File，``test_definition`` 类型设为 Text 并填入 JSON 字符串。
 
 返回结果：
 
 - 成功时返回工作流输出字典（例如 JSON 字段、多媒体 URL 等），字段名与工作流定义的 ``outputs`` 对应；
 - 若可视化产生较大图像，建议仅返回 URL（由服务端写入对象存储），以降低响应体积。
 
+
+调用webRTC
+---------------
+
+当相机在天眼系统中完成配置并运行后，除了在平台的“实时警报”页面查看画面，还可通过 WebRTC 协议在外部系统中订阅并播放这些实时视频流，实现无缝集成与低延迟传输。
+
+WebRTC 接入步骤：
+
+1. 获取摄像头的临时访问 Token（JWT）
+
+     - 接口：``POST /cameras/{camera_id}/token``
+     - 示例：
+
+         ``http://<IP>:38080/cameras/5/token``
+
+     - 响应示例（JWT 字符串）：
+
+         ``"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ2aWRlbyI6eyJyb29tSm9pbiI6dHJ1ZSwicm9vbSI6ImNhbWVyYV8xNCIsImNhblB1Ymxpc2giOnRydWUsImNhblN1YnNjcmliZSI6dHJ1ZSwiY2FuUHVibGlzaERhdGEiOnRydWV9LCJzdWIiOiJ2aWV3ZXJfMTc2NTIyMzcyOTYzMF9xZTcycXAiLCJpc3MiOiJUV1dlOThGT0dmdVVDd0d0UEhkMlJRIiwibmJmIjoxNzY1MjIzNzI4LCJleHAiOjE3NjUyNDUzMjh9.YBrSQu5NuGcP8Ql1ZPkAUAs48f9fB-f8GtsMPBaeIyI"``
+
+     - 说明：该 Token 包含房间、发布订阅权限等信息，且有失效时间（exp）。请在 Token 有效期内使用。
+
+2. 获取 LiveKit 服务地址（WebSocket 信令）
+
+     - 接口：``GET /livekit-server``
+     - 示例：
+
+         ``http://<IP>:38080/livekit-server``
+
+    - 响应：返回用于连接的 WebSocket 地址（例如：``ws://<livekit-host>/ws``）。
+
+3. 使用 LiveKit 客户端库连接并订阅流
+
+     - 使用步骤：
+         - 从步骤 2 取得的 LiveKit 信令地址；
+         - 使用步骤 1 获取的 Token 进行鉴权；
+         - 连接后订阅对应房间与轨道（tracks），即可接收相机推送的实时视频/音频流。
+
+     - 参考伪代码（JavaScript，仅示意）：
+
+         .. code-block:: javascript
+
+                import { connect } from 'livekit-client';
+
+                async function start() {
+                    const livekitUrl = 'ws://<livekit-host>/ws'; // 来自 /livekit-server
+                    const token = '<JWT_FROM_STEP_1>'; // 来自 /cameras/{id}/token
+
+                    const room = await connect(livekitUrl, token);
+                    room.on('trackSubscribed', (track, publication, participant) => {
+                        if (track.kind === 'video') {
+                            const el = track.attach();
+                            document.getElementById('video').appendChild(el);
+                        }
+                    });
+                }
+
+                start();
+
+     - Python/Node 等语言均有 LiveKit 客户端实现，可按官方文档选择对应 SDK。
+
+4. 常见问题与建议
+
+     - 若无法连接，请检查：
+         - Token 是否仍在有效期内；
+         - 防火墙是否允许 WebSocket 流量；
+         - LiveKit 服务地址是否可达；
+     - 若画面卡顿：
+         - 检查相机运行的 FPS 与网络带宽；
+         - 服务器 GPU/CPU 资源占用情况；
+     - 安全建议：
+         - Token 仅在需要时签发，设定合理的过期时间；
 
