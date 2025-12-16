@@ -1,0 +1,184 @@
+{
+  "version": "1.0",
+  "inputs": [
+    {
+      "type": "WorkflowImage",
+      "name": "image"
+    }
+  ],
+  "steps": [
+    {
+      "type": "daoai/face_recognition_model@v1",
+      "name": "face_recognition_model_1",
+      "comments": null,
+      "images": "$inputs.image",
+      "max_faces": 10,
+      "similarity_threshold": 0.5,
+      "regions": null
+    },
+    {
+      "type": "core/bounding_box_visualization@v1",
+      "name": "bounding_box_visualization_1",
+      "comments": null,
+      "image": "$inputs.image",
+      "copy_image": true,
+      "predictions": "$steps.face_recognition_model_1.predictions",
+      "color_palette": "DEFAULT",
+      "palette_size": 10,
+      "custom_colors": [],
+      "color_axis": "CLASS",
+      "thickness": 2,
+      "roundness": 0
+    },
+    {
+      "type": "core/label_visualization@v1",
+      "name": "label_visualization_1",
+      "comments": null,
+      "image": "$steps.bounding_box_visualization_1.image",
+      "copy_image": true,
+      "predictions": "$steps.face_recognition_model_1.predictions",
+      "color_palette": "DEFAULT",
+      "palette_size": 10,
+      "custom_colors": [],
+      "color_axis": "CLASS",
+      "text": "Class",
+      "text_position": "TOP_LEFT",
+      "text_color": "WHITE",
+      "text_scale": 1,
+      "text_thickness": 1,
+      "text_padding": 10,
+      "border_radius": 0
+    },
+    {
+      "type": "daoai/dashboard_visualization@v1",
+      "name": "dashboard_visualization_1",
+      "comments": null,
+      "image": "$steps.label_visualization_1.image"
+    },
+    {
+      "type": "Face_recognition_handler",
+      "name": "Face_recognition_handler",
+      "url": "http://127.0.0.1:9000",
+      "prediction": "$steps.face_recognition_model_1.predictions"
+    }
+  ],
+  "outputs": [
+    {
+      "type": "JsonField",
+      "name": "face_recognition_model_1_1",
+      "coordinates_system": "own",
+      "selector": "$steps.face_recognition_model_1.predictions"
+    },
+    {
+      "type": "JsonField",
+      "name": "bounding_box_visualization_1_1",
+      "coordinates_system": "own",
+      "selector": "$steps.bounding_box_visualization_1.image"
+    },
+    {
+      "type": "JsonField",
+      "name": "label_visualization_1_1",
+      "coordinates_system": "own",
+      "selector": "$steps.label_visualization_1.image"
+    },
+    {
+      "type": "JsonField",
+      "name": "message",
+      "coordinates_system": "own",
+      "selector": "$steps.Face_recognition_handler.message"
+    },
+    {
+      "type": "JsonField",
+      "name": "status_code",
+      "coordinates_system": "own",
+      "selector": "$steps.Face_recognition_handler.status_code"
+    },
+    {
+      "type": "JsonField",
+      "name": "debug_message",
+      "coordinates_system": "own",
+      "selector": "$steps.Face_recognition_handler.debug_message"
+    }
+  ],
+  "dynamic_blocks_definitions": [
+    {
+      "type": "DynamicBlockDefinition",
+      "manifest": {
+        "type": "ManifestDescription",
+        "description": "处理人脸识别的结果，并发送http请求",
+        "block_type": "Face_recognition_handler",
+        "inputs": {
+          "prediction": {
+            "type": "DynamicInputDefinition",
+            "selector_types": [
+              "input_parameter",
+              "step_output"
+            ],
+            "selector_data_kind": {
+              "input_parameter": [
+                "object_detection_prediction"
+              ],
+              "step_output": [
+                "object_detection_prediction"
+              ]
+            }
+          },
+          "url": {
+            "type": "DynamicInputDefinition",
+            "selector_types": [
+              "input_parameter",
+              "step_output"
+            ],
+            "selector_data_kind": {
+              "input_parameter": [
+                "string"
+              ],
+              "step_output": [
+                "string"
+              ]
+            },
+            "value_types": [
+              "string"
+            ]
+          }
+        },
+        "outputs": {
+          "message": {
+            "type": "DynamicOutputDefinition",
+            "kind": [
+              "string"
+            ]
+          },
+          "status_code": {
+            "type": "DynamicOutputDefinition",
+            "kind": [
+              "string"
+            ]
+          },
+          "debug_message": {
+            "type": "DynamicOutputDefinition",
+            "kind": [
+              "string"
+            ]
+          },
+          "time": {
+            "type": "DynamicOutputDefinition",
+            "kind": [
+              "string"
+            ]
+          },
+          "identity": {
+            "type": "DynamicOutputDefinition",
+            "kind": [
+              "string"
+            ]
+          }
+        }
+      },
+      "code": {
+        "type": "PythonCode",
+        "run_function_code": "import time\nimport requests\nimport numpy as np\n\n\ndef run(self, prediction, url) -> BlockResult:\n    start_time = time.time()\n\n    try:\n        # class_name 是 array-like（numpy / pandas）\n        class_names = prediction.data['class_name']\n\n        message = \"未检测到人员\"\n        identity = \"\"\n\n        if class_names is not None and len(class_names) > 0:\n            # 转成字符串列表，防止 numpy 类型问题\n            class_list = [str(c) for c in class_names]\n\n            if np.any(np.char.lower(class_names.astype(str)) == \"unknown\"):\n                message = \"未在身份库中匹配到对应人员\"\n                identity = \"unknown\"\n            else:\n                unique_people = sorted(set(class_list))\n                identity = \", \".join(unique_people)\n                message = f\"识别到人员：{identity}\"\n\n        payload = {\n            \"message\": message,\n            \"timestamp\": int(time.time())\n        }\n\n        response = requests.post(\n            url,\n            json=payload,\n            timeout=5\n        )\n\n        return {\n            \"message\": message,\n            \"identity\": identity,          # ✅ 按你要求加在 return 里\n            \"status_code\": response.status_code,\n            \"debug_message\": response.text,\n            \"time\": round(time.time() - start_time, 3)\n        }\n\n    except Exception as e:\n        return {\n            \"message\": None,\n            \"identity\": \"\",\n            \"status_code\": -1,\n            \"debug_message\": str(e),\n            \"time\": round(time.time() - start_time, 3)\n        }\n"
+      }
+    }
+  ]
+}
