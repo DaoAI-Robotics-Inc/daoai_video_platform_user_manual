@@ -15,3 +15,6 @@
    classical_cv/index
    highway_detection/index
    advanced/index
+   industrial_integration/index
+   custom/index
+   
