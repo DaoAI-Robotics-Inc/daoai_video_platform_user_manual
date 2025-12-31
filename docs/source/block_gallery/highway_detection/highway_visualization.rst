@@ -1,12 +1,12 @@
-.. _Highway Visualization:
+.. _高速公路可视化:
 
-Highway Visualization
+高速公路可视化
 ==================
 
 简介
 ----
 
-Highway Visualization
+高速公路可视化，用于展示高速公路监控统计信息。
 
 输入 / 输出
 -----------

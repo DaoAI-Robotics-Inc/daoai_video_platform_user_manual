@@ -1,4 +1,4 @@
-高速检测（5 项）
+高速检测（3 项）
 ================
 
 专门用于高速公路场景的检测和分析功能。
@@ -9,9 +9,7 @@
 
    highway_detection
    highway_speed
-   highway_tracker
    highway_visualization
-   time_out_of_zone
 
 .. list-table::
    :header-rows: 0
@@ -24,14 +22,7 @@
      - :ref:`高速公路测速`
 
        使用相机标定计算高速公路上跟踪对象的精确速度
-     - :ref:`高速公路追踪器`
+     - :ref:`高速公路可视化`
 
-       使用为高速公路优化的 ByteTrack 跟踪并更新视频帧中的对象位置
-   * - :ref:`Highway Visualization`
-
-       Highway Visualization
-     - :ref:`区域外停留时间`
-
-       追踪对象在指定区域外停留的时间，包括滞留天时间
-     -
+       用于展示高速公路监控统计信息。
 
