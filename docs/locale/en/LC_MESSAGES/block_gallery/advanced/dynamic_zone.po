@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/advanced/dynamic_zone.rst:4
+msgid "动态区域"
+msgstr "dynamic area"
+
+#: ../../source/block_gallery/advanced/dynamic_zone.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/advanced/dynamic_zone.rst:9
+msgid "简化多边形，使其几何上方凸，并且仅包含所有需数据的顶点"
+msgstr ""
+"Simplify the polygon so that its geometry is convex and contains only all "
+"vertices that require data"
+
+#: ../../source/block_gallery/advanced/dynamic_zone.rst:12
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/advanced/dynamic_zone.rst:14
+msgid "输入：多边形坐标"
+msgstr "Input: polygon coordinates"
+
+#: ../../source/block_gallery/advanced/dynamic_zone.rst:15
+msgid "输出：简化的凸多边形"
+msgstr "Output: Simplified convex polygon"
+
+#: ../../source/block_gallery/advanced/dynamic_zone.rst:18
+#: ../../source/block_gallery/advanced/dynamic_zone.rst:24
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/advanced/dynamic_zone.rst:25
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/advanced/dynamic_zone.rst:26
+msgid "默认值"
+msgstr "default value"
+
+#: ../../source/block_gallery/advanced/dynamic_zone.rst:27
+msgid "simplification_level"
+msgstr "simplification_level"
+
+#: ../../source/block_gallery/advanced/dynamic_zone.rst:28
+msgid "简化级别（0~1）"
+msgstr "Simplification level (0~1)"
+
+#: ../../source/block_gallery/advanced/dynamic_zone.rst:29
+msgid "0.5"
+msgstr "0.5"
+
+#: ../../source/block_gallery/advanced/dynamic_zone.rst:32
+msgid "使用步骤"
+msgstr "Usage steps"
+
+#: ../../source/block_gallery/advanced/dynamic_zone.rst:34
+msgid "在工作流编辑器中添加本模块。"
+msgstr "Add this module in the workflow editor."
+
+#: ../../source/block_gallery/advanced/dynamic_zone.rst:35
+msgid "设置简化级别。"
+msgstr "Set the simplification level."
+
+#: ../../source/block_gallery/advanced/dynamic_zone.rst:36
+msgid "点击保存。"
+msgstr "Click Save."
+
+#: ../../source/block_gallery/advanced/dynamic_zone.rst:39
+msgid "注意事项"
+msgstr "Things to note"
+
+#: ../../source/block_gallery/advanced/dynamic_zone.rst:41
+msgid "用于动态调整监控区域。"
+msgstr "Used to dynamically adjust the monitoring area."

@@ -1,0 +1,495 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:4
+msgid "实例分割模型 (Instance Segmentation)"
+msgstr "Instance Segmentation"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:7
+msgid "本页面介绍DaoAI World模型的实例分割类型。返回 :ref:`DaoAI World模型主页 <DaoAI World模型>`"
+msgstr ""
+"This page introduces the instance segmentation types of the DaoAI World "
+"model.Return :ref:`DaoAI World model homepage <DaoAI World model>`"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:10
+msgid "模型简介"
+msgstr "Model introduction"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:12
+msgid ""
+"实例分割模型是目标检测的增强版本，不仅能识别物体并输出边界框，还能为每个物体实例生成精确的像素级分割掩码。这使得您可以获得物体的准确轮廓，而不仅仅是矩形框。"
+msgstr ""
+"The instance segmentation model is an enhanced version of object detection "
+"that not only identifies objects and outputs bounding boxes, but also "
+"generates accurate pixel-level segmentation masks for each object "
+"instance.This allows you to get an accurate outline of the object, not just "
+"a rectangular box."
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:14
+msgid "**输出内容：**"
+msgstr "**Output content:**"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:16
+msgid "**边界框坐标** (x, y, width, height)"
+msgstr "**Bounding box coordinates** (x, y, width, height)"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:17
+msgid "**类别标签** (如：car, person, dog等)"
+msgstr "**Category tag** (such as: car, person, dog, etc.)"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:18
+msgid "**置信度分数** (0~1之间的浮点数)"
+msgstr "**Confidence score** (floating point number between 0~1)"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:19
+msgid "**分割掩码** (像素级的二值掩码或多边形轮廓)"
+msgstr "**Segmentation Mask** (pixel-level binary mask or polygonal outline)"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:22
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:298
+msgid "适用场景"
+msgstr "Applicable scenarios"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:24
+msgid "实例分割模型适用于以下需要精确物体轮廓的场景："
+msgstr ""
+"The instance segmentation model is suitable for the following scenarios that"
+" require precise object contours:"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:26
+msgid "**图像编辑**：背景替换、物体抠图、自动合成"
+msgstr ""
+"**Image editing**: background replacement, object cutout, automatic "
+"synthesis"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:27
+msgid "**医学影像**：器官分割、肿瘤轮廓提取"
+msgstr "**Medical Imaging**: Organ segmentation, tumor contour extraction"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:28
+msgid "**自动驾驶**：车道线检测、车辆精确定位"
+msgstr ""
+"**Autonomous driving**: lane line detection, precise vehicle positioning"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:29
+msgid "**机器人视觉**：物体抓取、障碍物规避"
+msgstr "**Robot Vision**: Object grabbing, obstacle avoidance"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:30
+msgid "**精确计数**：物体重叠场景的准确计数"
+msgstr "**Accurate Count**: Accurate counting of objects overlapping scenes"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:31
+msgid "**面积测量**：物体面积、尺寸的精确计算"
+msgstr ""
+"**Area Measurement**: Accurate calculation of area and size of objects"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:32
+msgid "**3D重建**：物体轮廓作为3D建模的输入"
+msgstr "**3D Reconstruction**: Object contours as input for 3D modeling"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:35
+msgid "输出格式"
+msgstr "Output format"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:37
+msgid "实例分割模型的输出包含检测信息和分割掩码："
+msgstr ""
+"The output of the instance segmentation model contains detection information"
+" and segmentation masks:"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:79
+msgid "**字段说明：**"
+msgstr "**Field description:**"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:81
+msgid "``class``: 物体类别"
+msgstr "``class``: object class"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:82
+msgid "``confidence``: 检测置信度"
+msgstr "``confidence``: detection confidence"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:83
+msgid "``bbox``: 边界框坐标"
+msgstr "``bbox``: bounding box coordinates"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:84
+msgid "``mask``: 分割掩码数据"
+msgstr "``mask``: split mask data"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:86
+msgid "``type``: 掩码格式（polygon多边形 或 rle游程编码）"
+msgstr "``type``: mask format (polygon polygon or rle run-length encoding)"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:87
+msgid "``points``: 多边形顶点坐标列表（polygon格式）"
+msgstr "``points``: list of polygon vertex coordinates (polygon format)"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:88
+msgid "``data``: RLE编码的掩码数据（rle格式）"
+msgstr "``data``: RLE encoded mask data (rle format)"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:90
+msgid "``area``: 分割区域的像素面积"
+msgstr "``area``: the pixel area of ​​the divided area"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:91
+msgid "``instance_id``: 实例唯一标识符"
+msgstr "``instance_id``: unique identifier of the instance"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:94
+msgid "配置示例"
+msgstr "Configuration example"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:96
+msgid "**基础配置**"
+msgstr "**Basic configuration**"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:107
+msgid "**高精度场景**"
+msgstr "**High precision scene**"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:109
+msgid "适用于需要精确分割的场景，如医学影像："
+msgstr ""
+"Suitable for scenes that require precise segmentation, such as medical "
+"imaging:"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:124
+msgid "**多类别物体分割**"
+msgstr "**Multi-category object segmentation**"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:142
+msgid "使用技巧与最佳实践"
+msgstr "Tips and best practices"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:144
+msgid "**掩码格式选择**"
+msgstr "**Mask format selection**"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:146
+msgid "**Polygon（多边形）**：适合轮廓简单的物体，数据量小，易于可视化"
+msgstr ""
+"**Polygon**: Suitable for objects with simple outlines, small amount of "
+"data, and easy to visualize"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:147
+msgid "**RLE（游程编码）**：适合复杂轮廓，保留更多细节，但数据量较大"
+msgstr ""
+"**RLE (Run-Length Encoding)**: suitable for complex contours, retaining more"
+" details, but with a larger amount of data"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:149
+msgid "**置信度阈值调整**"
+msgstr "**Confidence threshold adjustment**"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:151
+msgid "初始建议值：0.5-0.6"
+msgstr "Initial recommended value: 0.5-0.6"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:152
+msgid "高精度需求（如医疗）：0.8-0.9"
+msgstr "High precision requirements (such as medical): 0.8-0.9"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:153
+msgid "实时应用：0.5-0.7（平衡速度和精度）"
+msgstr "Real-time applications: 0.5-0.7 (balance speed and accuracy)"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:155
+msgid "**处理遮挡场景**"
+msgstr "**Handling occlusion scenes**"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:157
+msgid "实例分割能区分重叠物体的不同实例"
+msgstr ""
+"Instance segmentation can distinguish different instances of overlapping "
+"objects"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:158
+msgid "通过 ``instance_id`` 追踪每个独立的物体实例"
+msgstr "Track each individual object instance by ``instance_id``"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:159
+msgid "使用 ``area`` 字段过滤部分遮挡的物体"
+msgstr "Use the ``area`` field to filter partially occluded objects"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:161
+msgid "**性能优化**"
+msgstr "**Performance Optimization**"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:163
+msgid "实例分割比目标检测计算量更大"
+msgstr ""
+"Instance segmentation is more computationally intensive than object "
+"detection"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:164
+msgid "高分辨率图像建议使用GPU加速"
+msgstr "GPU acceleration is recommended for high resolution images"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:165
+msgid "考虑降低输入分辨率以提升速度"
+msgstr "Consider lowering the input resolution to improve speed"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:167
+msgid "**后处理技巧**"
+msgstr "**Post-Processing Tips**"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:169
+msgid "对掩码进行形态学操作（膨胀、腐蚀）优化边缘"
+msgstr ""
+"Perform morphological operations (dilation, erosion) on masks to optimize "
+"edges"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:170
+msgid "使用面积阈值过滤过小的检测结果"
+msgstr "Use area threshold to filter out detection results that are too small"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:171
+msgid "合并相邻的同类实例（如需要）"
+msgstr "Merge adjacent instances of the same type (if necessary)"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:174
+msgid "常见问题"
+msgstr "FAQ"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:176
+msgid "**Q: 实例分割和语义分割有什么区别？**"
+msgstr ""
+"**Q: What is the difference between instance segmentation and semantic "
+"segmentation?**"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:178
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:192
+msgid "A:"
+msgstr "A:"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:179
+msgid "**实例分割**：区分同类物体的不同实例（如3辆车会被标记为car_1, car_2, car_3）"
+msgstr ""
+"**Instance Segmentation**: Distinguish different instances of the same "
+"object (for example, 3 cars will be marked as car_1, car_2, car_3)"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:180
+msgid "**语义分割**：只区分类别（如3辆车都被标记为car，不区分是哪一辆）"
+msgstr ""
+"**Semantic Segmentation**: Only distinguish categories (for example, 3 cars "
+"are all labeled as cars, without distinguishing which one they are)"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:182
+msgid "**Q: 掩码的坐标系统是什么？**"
+msgstr "**Q: What is the coordinate system of the mask?**"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:184
+msgid "A: 掩码坐标与输入图像的像素坐标系统一致，左上角为原点(0,0)。"
+msgstr ""
+"A: The mask coordinates are consistent with the pixel coordinate system of "
+"the input image, and the upper left corner is the origin (0,0)."
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:186
+msgid "**Q: 如何使用掩码进行抠图？**"
+msgstr "**Q: How to use mask to cut out images?**"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:188
+msgid "A: 可以将掩码作为alpha通道，或在下游节点中使用掩码区域提取对应的图像像素。"
+msgstr ""
+"A: You can use the mask as an alpha channel, or use the mask area in a "
+"downstream node to extract the corresponding image pixels."
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:190
+msgid "**Q: 分割边缘不够精确怎么办？**"
+msgstr ""
+"**Q: What should I do if the segmentation edges are not accurate enough?**"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:193
+msgid "提高输入图像分辨率"
+msgstr "Increase input image resolution"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:194
+msgid "使用更大的模型"
+msgstr "Use a larger model"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:195
+msgid "在训练时增加边缘质量的标注"
+msgstr "Add edge quality annotation during training"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:196
+msgid "后处理时使用GrabCut等算法优化边缘"
+msgstr ""
+"Use algorithms such as GrabCut to optimize edges during post-processing"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:198
+msgid "**Q: 如何计算物体的实际尺寸？**"
+msgstr "**Q: How to calculate the actual size of an object?**"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:200
+msgid "A: 使用 ``area`` 字段获得像素面积，然后根据相机标定参数转换为实际尺寸。"
+msgstr ""
+"A: Use the ``area`` field to obtain the pixel area, and then convert it to "
+"the actual size according to the camera calibration parameters."
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:203
+msgid "应用案例"
+msgstr "Application cases"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:205
+msgid "**案例1：背景替换**"
+msgstr "**Case 1: Background replacement**"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:207
+msgid "使用实例分割提取人物轮廓，实现背景替换。"
+msgstr ""
+"Use instance segmentation to extract character outlines and achieve "
+"background replacement."
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:220
+msgid "工作流： 1. 使用实例分割模型提取人物掩码 2. 使用掩码将人物从原图中抠出 3. 将人物合成到新背景上"
+msgstr ""
+"Workflow: 1. Use the instance segmentation model to extract the character "
+"mask 2. Use the mask to cut out the character from the original image 3. "
+"Composite the character onto the new background"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:225
+msgid "**案例2：物体计数（重叠场景）**"
+msgstr "**Case 2: Object counting (overlapping scenes)**"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:227
+msgid "在物体重叠的场景中准确计数，如仓库中的堆叠货物。"
+msgstr ""
+"Accurate counting in scenes where objects overlap, such as stacked goods in "
+"a warehouse."
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:240
+msgid "通过 ``instance_id`` 区分每个独立的物体，即使它们相互遮挡。"
+msgstr ""
+"Each individual object is distinguished by ``instance_id``, even if they "
+"occlude each other."
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:242
+msgid "**案例3：精确面积测量**"
+msgstr "**Case 3: Accurate area measurement**"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:244
+msgid "测量物体的像素面积，用于质量控制或尺寸检测。"
+msgstr ""
+"Measure the pixel area of ​​an object for quality control or dimensional "
+"inspection."
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:257
+msgid "下游节点可以读取 ``area`` 字段，结合相机标定参数计算实际面积。"
+msgstr ""
+"Downstream nodes can read the ``area`` field and calculate the actual area "
+"combined with the camera calibration parameters."
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:259
+msgid "**案例4：医学影像分析**"
+msgstr "**Case 4: Medical Image Analysis**"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:261
+msgid "对医学扫描图像进行器官或病灶的精确分割。"
+msgstr "Precise segmentation of organs or lesions on medical scan images."
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:277
+msgid "医疗应用需要极高的准确性，建议结合专业医生审核。"
+msgstr ""
+"Medical applications require extremely high accuracy, and it is recommended "
+"to be reviewed by a professional doctor."
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:280
+msgid "性能对比"
+msgstr "Performance comparison"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:286
+msgid "特性"
+msgstr "characteristic"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:287
+msgid "目标检测"
+msgstr "Target detection"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:288
+msgid "实例分割"
+msgstr "Instance splitting"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:289
+msgid "输出精度"
+msgstr "Output accuracy"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:290
+msgid "矩形边界框"
+msgstr "Rectangular bounding box"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:291
+msgid "像素级掩码"
+msgstr "Pixel level mask"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:292
+msgid "计算复杂度"
+msgstr "computational complexity"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:293
+msgid "较低"
+msgstr "lower"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:294
+msgid "较高"
+msgstr "higher"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:295
+msgid "推理速度"
+msgstr "Reasoning speed"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:296
+msgid "快"
+msgstr "quick"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:297
+msgid "中等"
+msgstr "medium"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:299
+msgid "物体定位、计数"
+msgstr "Object positioning and counting"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:300
+msgid "精确轮廓、抠图、测量"
+msgstr "Precise outlines, cutouts, measurements"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:303
+msgid "相关链接"
+msgstr "Related links"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:305
+msgid ":ref:`DaoAI World模型主页 <DaoAI World模型>`"
+msgstr ":ref:`DaoAI World model homepage <DaoAI World model>`"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:306
+msgid ":ref:`目标检测模型 <daoai_world_object_detection>` - 如不需要精确轮廓"
+msgstr ""
+":ref:`Object detection model <daoai_world_object_detection>` - if precise "
+"contours are not required"
+
+#: ../../source/block_gallery/models/daoai_world_instance_segmentation.rst:307
+msgid ":ref:`语义分割模型 <daoai_world_semantic_segmentation>` - 如不需要区分实例"
+msgstr ""
+":ref:`Semantic Segmentation Model <daoai_world_semantic_segmentation>` - if "
+"there is no need to distinguish instances"

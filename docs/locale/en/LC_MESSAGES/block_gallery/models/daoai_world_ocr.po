@@ -1,0 +1,797 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:4
+msgid "OCR模型 (Optical Character Recognition)"
+msgstr "OCR model (Optical Character Recognition)"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:7
+msgid ""
+"本页面介绍DaoAI World模型的OCR光学字符识别类型。返回 :ref:`DaoAI World模型主页 <DaoAI World模型>`"
+msgstr ""
+"This page introduces the OCR optical character recognition type of DaoAI "
+"World model.Return :ref:`DaoAI World model homepage <DaoAI World model>`"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:10
+msgid "模型简介"
+msgstr "Model introduction"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:12
+msgid ""
+"OCR（光学字符识别）模型用于检测并识别图像中的文字内容，支持多种语言和字体。模型不仅能识别文字内容，还能输出文字的位置信息，适用于各种文字识别和文档理解任务。"
+msgstr ""
+"The OCR (Optical Character Recognition) model is used to detect and "
+"recognize text content in images, supporting multiple languages ​​and "
+"fonts.The model can not only recognize the text content, but also output the"
+" location information of the text, which is suitable for various text "
+"recognition and document understanding tasks."
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:14
+msgid "**输出内容：**"
+msgstr "**Output content:**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:16
+msgid "**文本内容** (识别的文字)"
+msgstr "**Text content** (recognized text)"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:17
+msgid "**文本位置** (边界框或多边形)"
+msgstr "**text position** (bounding box or polygon)"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:18
+msgid "**置信度** (识别准确度)"
+msgstr "**Confidence** (recognition accuracy)"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:19
+msgid "**文本属性** (方向、语言等)"
+msgstr "**Text Properties** (direction, language, etc.)"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:22
+msgid "适用场景"
+msgstr "Applicable scenarios"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:24
+msgid "OCR模型适用于以下场景："
+msgstr "The OCR model is suitable for the following scenarios:"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:26
+msgid "**文档数字化**：纸质文档扫描、图书数字化、档案管理"
+msgstr ""
+"**Document Digitization**: Paper document scanning, book digitization, file "
+"management"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:27
+msgid "**证件识别**：身份证、护照、驾照、银行卡识别"
+msgstr ""
+"**Document recognition**: ID card, passport, driver's license, bank card "
+"recognition"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:28
+msgid "**车牌识别**：停车场管理、交通监控、违章检测"
+msgstr ""
+"**License Plate Recognition**: parking lot management, traffic monitoring, "
+"violation detection"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:29
+msgid "**票据识别**：发票、收据、账单自动录入"
+msgstr ""
+"**Bill Recognition**: Automatic entry of invoices, receipts, and bills"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:30
+msgid "**场景文字识别**：路牌、店铺招牌、产品标签"
+msgstr "**Scene text recognition**: street signs, store signs, product labels"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:31
+msgid "**工业应用**：生产日期识别、序列号识别、条码扫描"
+msgstr ""
+"**Industrial Application**: Production date identification, serial number "
+"identification, barcode scanning"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:32
+msgid "**智能翻译**：实时文字翻译、菜单翻译"
+msgstr ""
+"**Intelligent translation**: real-time text translation, menu translation"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:33
+msgid "**辅助阅读**：为视障人士朗读文字内容"
+msgstr ""
+"**Assisted Reading**: Read text content aloud for visually impaired people"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:36
+msgid "输出格式"
+msgstr "Output format"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:38
+msgid "OCR模型的输出包含检测到的所有文本及其详细信息："
+msgstr ""
+"The output of the OCR model contains all detected text and its details:"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:82
+msgid "**字段说明：**"
+msgstr "**Field description:**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:84
+msgid "``text``: 识别的文字内容"
+msgstr "``text``: recognized text content"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:85
+msgid "``confidence``: 识别置信度（0~1）"
+msgstr "``confidence``: recognition confidence (0~1)"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:86
+msgid "``bbox``: 文本边界框（矩形）"
+msgstr "``bbox``: Text bounding box (rectangle)"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:88
+msgid "``x``, ``y``: 左上角坐标"
+msgstr "``x``, ``y``: coordinates of the upper left corner"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:89
+msgid "``width``, ``height``: 宽度和高度"
+msgstr "``width``, ``height``: width and height"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:91
+msgid "``polygon``: 文本区域的精确多边形轮廓（支持倾斜文本）"
+msgstr ""
+"``polygon``: an exact polygonal outline of the text area (supports slanted "
+"text)"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:92
+msgid "``language``: 识别的语言类型"
+msgstr "``language``: the recognized language type"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:93
+msgid "``direction``: 文本方向（horizontal水平, vertical垂直）"
+msgstr "``direction``: text direction (horizontal, vertical)"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:94
+msgid "``text_id``: 文本块的唯一标识符"
+msgstr "``text_id``: unique identifier of the text block"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:95
+msgid "``full_text``: 所有文本按阅读顺序拼接的完整内容"
+msgstr ""
+"``full_text``: the complete content of all texts spliced ​​in reading order"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:96
+msgid "``count``: 检测到的文本块总数"
+msgstr "``count``: total number of text blocks detected"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:97
+msgid "``languages``: 图像中包含的所有语言"
+msgstr "``languages``: all languages ​​contained in the image"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:100
+msgid "配置示例"
+msgstr "Configuration example"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:102
+msgid "**通用文字识别**"
+msgstr "**Universal Text Recognition**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:113
+msgid "**高精度证件识别**"
+msgstr "**High-precision document recognition**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:129
+msgid "**车牌识别**"
+msgstr "**License Plate Recognition**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:140
+msgid "**场景文字检测（低阈值，高召回）**"
+msgstr "**Scene text detection (low threshold, high recall)**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:152
+msgid "使用技巧与最佳实践"
+msgstr "Tips and best practices"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:154
+msgid "**置信度阈值设置**"
+msgstr "**Confidence threshold setting**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:156
+msgid "**通用场景**：0.5-0.7"
+msgstr "**General Scenario**: 0.5-0.7"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:157
+msgid "**高精度需求（证件、票据）**：0.8-0.95"
+msgstr "**High precision requirements (documents, bills)**: 0.8-0.95"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:158
+msgid "**场景文字（复杂背景）**：0.3-0.5（高召回率）"
+msgstr "**Scene text (complex background)**: 0.3-0.5 (high recall rate)"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:159
+msgid "**工业应用（生产日期等）**：0.7-0.9"
+msgstr "**Industrial application (production date, etc.)**: 0.7-0.9"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:161
+msgid "**图像预处理**"
+msgstr "**Image preprocessing**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:163
+msgid "**提高对比度**：增强文字与背景的对比"
+msgstr ""
+"**Increase Contrast**: Enhance the contrast between text and background"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:164
+msgid "**去噪**：减少图像噪点"
+msgstr "**Denoising**: Reduce image noise"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:165
+msgid "**倾斜校正**：对倾斜的文档进行校正"
+msgstr "**Skew Correction**: Correct skewed documents"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:166
+msgid "**二值化**：对于黑白文档，二值化可提高识别率"
+msgstr ""
+"**Binarization**: For black and white documents, binarization can improve "
+"the recognition rate"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:167
+msgid "**分辨率**：确保文字清晰，最小字符高度建议>20像素"
+msgstr ""
+"**Resolution**: Ensure the text is clear, the minimum character height is "
+"recommended to be >20 pixels"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:169
+msgid "**处理不同场景**"
+msgstr "**Handle different scenarios**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:171
+msgid "**规整文档**：使用文档OCR模式，可获得更好的排版"
+msgstr ""
+"**Organize documents**: Use document OCR mode to get better typesetting"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:172
+msgid "**场景文字**：使用通用OCR模式，能处理各种字体和角度"
+msgstr ""
+"**Scene Text**: Uses universal OCR mode, able to handle various fonts and "
+"angles"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:173
+msgid "**手写文字**：需要专门的手写识别模型"
+msgstr ""
+"**Handwritten text**: Requires specialized handwriting recognition model"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:174
+msgid "**混合语言**：确保模型支持多语言识别"
+msgstr ""
+"**Mixed Language**: Make sure the model supports multi-language recognition"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:176
+msgid "**后处理优化**"
+msgstr "**Post-processing optimization**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:178
+msgid "**拼写检查**：使用字典纠正识别错误"
+msgstr "**Spell Check**: Use a dictionary to correct recognition errors"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:179
+msgid "**格式验证**：对特定格式（如身份证号）进行格式校验"
+msgstr ""
+"**Format Verification**: Format verification of specific formats (such as ID"
+" number)"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:180
+msgid "**上下文优化**：利用语言模型优化识别结果"
+msgstr ""
+"**Context Optimization**: Use language models to optimize recognition "
+"results"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:181
+msgid "**合并文本块**：根据位置关系合并属于同一行/段的文本"
+msgstr ""
+"**Merge Text Blocks**: Merge text belonging to the same line/paragraph based"
+" on positional relationship"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:183
+msgid "**性能优化**"
+msgstr "**Performance Optimization**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:185
+msgid "OCR计算量较大，建议使用GPU"
+msgstr ""
+"OCR requires a lot of calculations, so it is recommended to use a GPU."
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:186
+msgid "对于大图像，可以先检测文字区域再识别"
+msgstr ""
+"For large images, you can first detect the text area and then recognize it"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:187
+msgid "批量处理可提高吞吐量"
+msgstr "Batch processing improves throughput"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:190
+msgid "常见问题"
+msgstr "FAQ"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:192
+msgid "**Q: 识别准确率不高怎么办？**"
+msgstr "**Q: What should I do if the recognition accuracy is not high?**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:194
+msgid "A: 尝试以下方法："
+msgstr "A: Try the following:"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:196
+msgid "提高图像质量（清晰度、对比度）"
+msgstr "Improve image quality (sharpness, contrast)"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:197
+msgid "增加图像分辨率，确保文字清晰"
+msgstr "Increase image resolution to ensure text is clear"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:198
+msgid "调整置信度阈值，过滤低质量结果"
+msgstr "Adjust confidence threshold to filter out low-quality results"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:199
+msgid "使用预处理技术（去噪、增强）"
+msgstr "Use preprocessing techniques (denoising, enhancement)"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:200
+msgid "确保光照均匀，避免反光和阴影"
+msgstr "Ensure even lighting and avoid reflections and shadows"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:202
+msgid "**Q: 如何识别倾斜的文字？**"
+msgstr "**Q: How to identify slanted text?**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:204
+msgid ""
+"A: OCR模型通常支持一定角度的倾斜文字（通常±15度）。输出的 ``polygon`` "
+"字段会给出倾斜文字的精确轮廓。对于大角度倾斜，建议先进行图像旋转校正。"
+msgstr ""
+"A: OCR models usually support tilted text at a certain angle (usually ±15 "
+"degrees).The output polygon field gives the precise outline of the slanted "
+"text.For large angle tilts, it is recommended to perform image rotation "
+"correction first."
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:206
+msgid "**Q: 能识别手写文字吗？**"
+msgstr "**Q: Can handwritten text be recognized?**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:208
+msgid "A: 通用OCR模型主要针对印刷体文字。手写文字需要专门的手写识别模型。手写识别通常准确率较低，特别是对于潦草的手写。"
+msgstr ""
+"A: The general OCR model is mainly for printed text.Handwritten text "
+"requires specialized handwriting recognition models.Handwriting recognition "
+"is often less accurate, especially for sloppy handwriting."
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:210
+msgid "**Q: 如何获得文字的阅读顺序？**"
+msgstr "**Q: How to get the reading order of text?**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:212
+msgid "A:"
+msgstr "A:"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:213
+msgid "使用 ``full_text`` 字段获得按阅读顺序排列的完整文本"
+msgstr "Use the ``full_text`` field to get the full text in reading order"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:214
+msgid "或根据每个文本块的 ``bbox`` 坐标，按照从上到下、从左到右的规则排序"
+msgstr ""
+"Or sort according to the rules of top to bottom and left to right according "
+"to the ``bbox`` coordinates of each text block"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:216
+msgid "**Q: 为什么有些文字没被识别？**"
+msgstr "**Q: Why are some characters not recognized?**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:218
+msgid "A: 可能的原因："
+msgstr "A: Possible reasons:"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:220
+msgid "文字太小或模糊"
+msgstr "Text is too small or blurry"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:221
+msgid "置信度阈值过高"
+msgstr "Confidence threshold is too high"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:222
+msgid "文字与背景对比度低"
+msgstr "Low contrast between text and background"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:223
+msgid "字体过于特殊或艺术化"
+msgstr "Fonts are too specific or artistic"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:224
+msgid "严重遮挡或损坏"
+msgstr "Severely obscured or damaged"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:226
+msgid "**Q: OCR支持哪些语言？**"
+msgstr "**Q: What languages ​​does OCR support?**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:228
+msgid "A: 取决于具体模型，常见的包括："
+msgstr "A: Depends on the specific model, common ones include:"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:230
+msgid "中文（简体、繁体）"
+msgstr "Chinese (simplified, traditional)"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:231
+msgid "英文"
+msgstr "English"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:232
+msgid "日文"
+msgstr "Japanese"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:233
+msgid "韩文"
+msgstr "Korean"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:234
+msgid "以及其他主要语言"
+msgstr "and other major languages"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:237
+msgid "应用案例"
+msgstr "Application cases"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:239
+msgid "**案例1：身份证识别**"
+msgstr "**Case 1: ID card recognition**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:241
+msgid "自动识别身份证上的姓名、身份证号、地址等信息。"
+msgstr ""
+"Automatically identify the name, ID number, address and other information on"
+" the ID card."
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:257
+msgid "**后处理：**"
+msgstr "**Post-processing:**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:259
+msgid "使用正则表达式验证身份证号格式"
+msgstr "Use regular expressions to verify ID number format"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:260
+msgid "检查日期的合法性"
+msgstr "Check date validity"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:261
+msgid "对关键字段进行二次确认"
+msgstr "Confirm key fields a second time"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:263
+msgid "**案例2：车牌识别系统**"
+msgstr "**Case 2: License Plate Recognition System**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:265
+msgid "识别车辆牌照，用于停车场管理或交通监控。"
+msgstr ""
+"Identify vehicle license plates for parking lot management or traffic "
+"monitoring."
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:275
+msgid "**特点：**"
+msgstr "**Features:**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:277
+msgid "高置信度要求（0.95+）"
+msgstr "High confidence requirement (0.95+)"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:278
+msgid "通常只有7-8个字符"
+msgstr "Usually only 7-8 characters"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:279
+msgid "使用格式验证确保准确性（如：京A12345）"
+msgstr "Use format validation to ensure accuracy (eg: JingA12345)"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:281
+msgid "**案例3：发票自动录入**"
+msgstr "**Case 3: Automatic entry of invoices**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:283
+msgid "识别发票上的金额、日期、税号等关键信息。"
+msgstr ""
+"Identify key information such as amount, date, tax ID number on the invoice."
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:299
+msgid "**处理流程：**"
+msgstr "**Processing process:**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:301
+msgid "OCR识别所有文字"
+msgstr "OCR recognizes all text"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:302
+msgid "使用关键词定位特定字段（如\"金额\"、\"税号\"）"
+msgstr "Use keywords to target specific fields (such as \"Amount\", \"Tax ID\")"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:303
+msgid "提取字段值"
+msgstr "Extract field value"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:304
+msgid "格式验证和数据清洗"
+msgstr "Format validation and data cleaning"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:305
+msgid "录入系统"
+msgstr "Entry system"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:307
+msgid "**案例4：产品包装日期识别**"
+msgstr "**Case 4: Product packaging date identification**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:309
+msgid "识别产品包装上的生产日期、保质期等信息。"
+msgstr ""
+"Identify the production date, shelf life and other information on product "
+"packaging."
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:319
+msgid "**应用：**"
+msgstr "**application:**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:321
+msgid "质量追溯"
+msgstr "Quality traceability"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:322
+msgid "过期产品检测"
+msgstr "Expired product detection"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:323
+msgid "库存管理"
+msgstr "Inventory management"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:325
+msgid "**案例5：场景翻译**"
+msgstr "**Case 5: Scene Translation**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:327
+msgid "识别街道、菜单、路牌上的文字，进行实时翻译。"
+msgstr ""
+"Recognize text on streets, menus, and street signs and translate them in "
+"real time."
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:337
+msgid "**工作流：**"
+msgstr "**Workflow:**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:339
+msgid "OCR识别文字和位置"
+msgstr "OCR recognizes text and location"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:340
+msgid "翻译文字内容"
+msgstr "Translate text content"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:341
+msgid "在原位置渲染翻译后的文字（AR效果）"
+msgstr "Render translated text in its original position (AR effect)"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:344
+msgid "OCR特殊类型"
+msgstr "OCR special type"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:346
+msgid "**表格识别**"
+msgstr "**Form recognition**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:348
+msgid "识别表格结构和内容，保持单元格关系。"
+msgstr ""
+"Recognize table structure and content and maintain cell relationships."
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:350
+msgid "**公式识别**"
+msgstr "**Formula Recognition**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:352
+msgid "识别数学公式，输出LaTeX格式。"
+msgstr "Recognize mathematical formulas and output them in LaTeX format."
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:354
+msgid "**版面分析**"
+msgstr "**Layout Analysis**"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:356
+msgid "识别文档的标题、段落、图片、表格等元素及其层次关系。"
+msgstr ""
+"Identify document titles, paragraphs, pictures, tables and other elements "
+"and their hierarchical relationships."
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:359
+msgid "性能参考"
+msgstr "Performance reference"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:365
+msgid "场景类型"
+msgstr "scene type"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:366
+msgid "推荐阈值"
+msgstr "Recommended threshold"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:367
+msgid "典型准确率"
+msgstr "Typical accuracy"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:368
+msgid "规整文档"
+msgstr "Organize documents"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:369
+msgid "0.7-0.9"
+msgstr "0.7-0.9"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:370
+msgid "95%+"
+msgstr "95%+"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:371
+msgid "证件票据"
+msgstr "Documents and bills"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:372
+msgid "0.85-0.95"
+msgstr "0.85-0.95"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:373
+msgid "98%+"
+msgstr "98%+"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:374
+msgid "车牌识别"
+msgstr "license plate recognition"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:375
+msgid "0.9-0.98"
+msgstr "0.9-0.98"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:376
+msgid "99%+"
+msgstr "99%+"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:377
+msgid "场景文字"
+msgstr "scene text"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:378
+msgid "0.5-0.7"
+msgstr "0.5-0.7"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:379
+msgid "85-90%"
+msgstr "85-90%"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:380
+msgid "产品标签"
+msgstr "product label"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:381
+msgid "0.7-0.85"
+msgstr "0.7-0.85"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:382
+msgid "90-95%"
+msgstr "90-95%"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:385
+msgid "识别质量影响因素"
+msgstr "Identify factors affecting quality"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:391
+msgid "因素"
+msgstr "factor"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:392
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:393
+msgid "图像分辨率"
+msgstr "Image resolution"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:394
+msgid "建议文字高度>20像素，分辨率过低会严重影响识别"
+msgstr ""
+"It is recommended that the text height be >20 pixels. If the resolution is "
+"too low, it will seriously affect the recognition."
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:395
+msgid "光照条件"
+msgstr "Lighting conditions"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:396
+msgid "均匀光照最佳，避免强反光和阴影"
+msgstr "Uniform lighting is best, avoid strong reflections and shadows"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:397
+msgid "文字清晰度"
+msgstr "text clarity"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:398
+msgid "模糊、失焦会降低准确率"
+msgstr "Blur and out-of-focus will reduce accuracy"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:399
+msgid "背景复杂度"
+msgstr "background complexity"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:400
+msgid "简单背景更易识别，复杂背景需要更低的置信度阈值"
+msgstr ""
+"Simple backgrounds are easier to identify, while complex backgrounds require"
+" a lower confidence threshold."
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:401
+msgid "字体类型"
+msgstr "Font type"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:402
+msgid "常规印刷体最易识别，艺术字、手写体较难"
+msgstr ""
+"Regular printed fonts are easiest to recognize, while artistic fonts and "
+"handwritten fonts are more difficult to identify."
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:403
+msgid "文字大小"
+msgstr "text size"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:404
+msgid "过小或过大的文字都可能影响识别"
+msgstr "Text that is too small or too large may affect recognition"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:405
+msgid "倾斜角度"
+msgstr "tilt angle"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:406
+msgid "±15度内可正常识别，更大角度需要校正"
+msgstr ""
+"Normal recognition is possible within ±15 degrees, larger angles require "
+"correction."
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:409
+msgid "相关链接"
+msgstr "Related links"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:411
+msgid ":ref:`DaoAI World模型主页 <DaoAI World模型>`"
+msgstr ":ref:`DaoAI World model homepage <DaoAI World model>`"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:412
+msgid ":ref:`目标检测模型 <daoai_world_object_detection>` - 先检测文字区域"
+msgstr ""
+":ref:`Object detection model <daoai_world_object_detection>` - detect text "
+"area first"
+
+#: ../../source/block_gallery/models/daoai_world_ocr.rst:413
+msgid ":ref:`分类模型 <daoai_world_classification>` - 识别文档类型"
+msgstr ""
+":ref:`Classification model <daoai_world_classification>` - identifies "
+"document types"

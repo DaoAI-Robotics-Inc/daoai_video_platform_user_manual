@@ -1,0 +1,583 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:4
+msgid "检测过滤"
+msgstr "detection filter"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:9
+msgid "检测过滤节点用于根据指定条件对检测结果进行筛选，保留符合条件的检测框，过滤掉不符合要求的检测结果。"
+msgstr ""
+"The detection filter node is used to filter detection results according to "
+"specified conditions, retain detection boxes that meet the conditions, and "
+"filter out detection results that do not meet the requirements."
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:11
+msgid "该节点支持多种过滤维度，包括："
+msgstr "This node supports multiple filtering dimensions, including:"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:13
+msgid "**类别与置信度**：基于检测类别名称、属性名称或置信度进行过滤"
+msgstr ""
+"**Category and Confidence**: Filter based on detection category name, "
+"attribute name or confidence level"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:14
+msgid "**检测尺寸**：基于检测框的宽度、高度或面积进行过滤"
+msgstr ""
+"**Detection size**: Filter based on the width, height or area of ​​the "
+"detection frame"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:15
+msgid "**区域**：基于检测框与指定区域的位置关系进行过滤"
+msgstr ""
+"**Area**: Filter based on the positional relationship between the detection "
+"frame and the specified area"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:16
+msgid "**父级检测**：基于父级检测框的存在性进行过滤"
+msgstr ""
+"**Parent Detection**: Filter based on the existence of the parent detection "
+"frame"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:18
+msgid "该节点常用于去除低置信度检测、筛选特定类别、过滤尺寸异常的检测框等场景，是工作流中重要的数据预处理节点。"
+msgstr ""
+"This node is often used in scenarios such as removing low-confidence "
+"detections, filtering specific categories, and filtering detection frames "
+"with abnormal sizes. It is an important data preprocessing node in the "
+"workflow."
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:21
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:23
+msgid "**输入**："
+msgstr "**enter**:"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:25
+msgid "检测结果（来自模型、区域内时间等节点的检测输出）"
+msgstr ""
+"Detection results (detection output from nodes such as model, time in the "
+"area, etc.)"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:26
+msgid "过滤条件配置"
+msgstr "Filter configuration"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:28
+msgid "**输出**："
+msgstr "**Output**:"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:30
+msgid "过滤后的检测结果（符合条件的检测框集合）"
+msgstr "Filtered detection results (set of qualified detection boxes)"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:33
+msgid "配置参数概览"
+msgstr "Configuration parameters overview"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:39
+msgid "参数名称"
+msgstr "Parameter name"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:40
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:41
+msgid "示例/默认值"
+msgstr "Example/Default"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:42
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:58
+msgid "**节点名称**"
+msgstr "**Node name**"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:43
+msgid "步骤名称，用于标识该节点的唯一标识符"
+msgstr "Step name, a unique identifier used to identify this node"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:44
+msgid "``detections_filter_1``"
+msgstr "``detections_filter_1``"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:45
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:62
+msgid "**备注**"
+msgstr "**Remark**"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:46
+msgid "可选的备注信息，用于描述该步骤的用途"
+msgstr "Optional remarks describing the purpose of this step"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:47
+msgid "留空"
+msgstr "Leave blank"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:48
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:66
+msgid "**预测过滤**"
+msgstr "**Predictive filtering**"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:49
+msgid "选择要过滤的检测结果来源"
+msgstr "Select the source of test results to filter"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:50
+msgid "下拉菜单选择"
+msgstr "Drop down menu selection"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:51
+msgid "**操作**"
+msgstr "**operate**"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:52
+msgid "点击\"配置检测过滤\"按钮，进入过滤条件配置页面"
+msgstr ""
+"Click the \"Configure Detection Filter\" button to enter the filter "
+"condition configuration page"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:53
+msgid "点击配置"
+msgstr "Click configure"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:56
+msgid "参数详细说明"
+msgstr "Detailed description of parameters"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:60
+msgid "为该检测过滤节点指定唯一的标识符。"
+msgstr "Specify a unique identifier for this detection filter node."
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:64
+msgid "可选的备注信息，用于记录该过滤节点的具体用途、过滤条件说明或注意事项。"
+msgstr ""
+"Optional remark information, used to record the specific purpose of the "
+"filter node, filter condition description or precautions."
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:68
+msgid "选择要进行过滤的检测结果来源，主要来自："
+msgstr "Select the source of test results to be filtered, mainly from:"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:70
+msgid "**模型节点**：如 ``detection_model.predictions``"
+msgstr "**Model node**: such as ``detection_model.predictions``"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:72
+msgid "**操作 - 配置检测过滤**"
+msgstr "**Action - Configure Detection Filtering**"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:74
+msgid "点击\"配置检测过滤\"按钮后，进入过滤条件配置页面。系统支持添加多个过滤条件，所有条件需同时满足（AND 逻辑）。"
+msgstr ""
+"After clicking the \"Configure Detection Filtering\" button, you will enter "
+"the filter condition configuration page.The system supports adding multiple "
+"filter conditions, and all conditions must be met at the same time (AND "
+"logic)."
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:77
+msgid "过滤条件配置详解"
+msgstr "Detailed explanation of filter condition configuration"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:80
+msgid "类别与置信度"
+msgstr "Category and Confidence"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:82
+msgid "基于对象类别与置信度过滤检测结果。"
+msgstr "Filter detection results based on object category and confidence."
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:84
+msgid "**过滤依据**：``类别与置信度``"
+msgstr "**Filter based on**: ``Category and Confidence``"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:86
+msgid "**说明**：基于对象类别与置信度过滤检测结果"
+msgstr ""
+"**Description**: Filter detection results based on object category and "
+"confidence level"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:88
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:134
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:165
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:208
+msgid "**配置参数**："
+msgstr "**Configuration Parameters**:"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:90
+msgid "**过滤检测条件**"
+msgstr "**Filter detection conditions**"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:92
+msgid "选择要过滤的条件类型："
+msgstr "Select the type of criteria to filter on:"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:94
+msgid "**按类别名称**"
+msgstr "**By Category Name**"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:96
+msgid "根据检测对象的类别名称进行过滤"
+msgstr "Filter based on the category name of the detected object"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:97
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:114
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:145
+msgid "**比较操作符**："
+msgstr "**Comparison operators**:"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:99
+msgid "``包含``：检测类别包含指定的类别（支持多个，用逗号分隔）"
+msgstr ""
+"``Contains``: The detection category contains the specified category "
+"(supports multiple, separated by commas)"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:100
+msgid "其他字符串比较操作符"
+msgstr "Other string comparison operators"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:102
+msgid "**输入对象类别**：输入要过滤的类别名称，多个类别用逗号分隔"
+msgstr ""
+"**Input object category**: Enter the name of the category to be filtered. "
+"Multiple categories are separated by commas."
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:103
+msgid "**提示**：输入对象类别，用逗号分隔"
+msgstr "**Tip**: Enter object categories, separated by commas"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:104
+msgid "**示例**：``person,car,bicycle``"
+msgstr "**Example**: ``person,car,bicycle``"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:106
+msgid "**按属性名称**"
+msgstr "**By attribute name**"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:108
+msgid "根据检测框的自定义属性名称进行过滤"
+msgstr "Filter based on the custom attribute name of the detection box"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:109
+msgid "比较操作符同字符串比较"
+msgstr "Comparison operators are the same as string comparisons"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:111
+msgid "**置信度**"
+msgstr "**Confidence**"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:113
+msgid "根据检测框的置信度分数进行过滤"
+msgstr "Filter based on the confidence score of the detection box"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:116
+msgid "``大于...`` （>=）"
+msgstr "``Greater than...`` (>=)"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:117
+msgid "``小于...`` （<=）"
+msgstr "``less than...`` (<=)"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:118
+msgid "``大于`` （>）"
+msgstr "``Greater than`` (>)"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:119
+msgid "``小于`` （<）"
+msgstr "``less than`` (<)"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:120
+msgid "``等于`` （==）"
+msgstr "``Equals`` (==)"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:122
+msgid "**输入数值**：输入置信度阈值（0-1之间的小数）"
+msgstr ""
+"**Enter value**: Enter the confidence threshold (a decimal between 0-1)"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:123
+msgid "**示例**：``0.5``、``0.8``"
+msgstr "**Example**: ``0.5``, ``0.8``"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:126
+msgid "检测尺寸"
+msgstr "Detection size"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:128
+msgid "基于图像尺寸大小过滤检测结果。"
+msgstr "Filter detection results based on image size."
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:130
+msgid "**过滤依据**：``检测尺寸``"
+msgstr "**Filter basis**: ``Detection size``"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:132
+msgid "**说明**：基于图像尺寸大小对过滤检测结果"
+msgstr "**Description**: Filter detection results based on image size"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:136
+msgid "**图像**"
+msgstr "**image**"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:138
+msgid "选择用于计算检测框尺寸的参考图像"
+msgstr "Select the reference image used to calculate the detection box size"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:139
+msgid "通常选择：``$inputs.image`` （工作流输入的原始图像）"
+msgstr ""
+"Typically selected: ``$inputs.image`` (the original image of the workflow "
+"input)"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:140
+msgid "用途：确定检测框在图像中的相对尺寸"
+msgstr ""
+"Purpose: Determine the relative size of the detection frame in the image"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:142
+msgid "**如果检测尺寸为**"
+msgstr "**If the detection size is**"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:144
+msgid "选择尺寸比较的操作符和阈值"
+msgstr "Select operators and thresholds for size comparisons"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:147
+msgid "``小于...`` （<=）：检测框尺寸小于等于指定值"
+msgstr ""
+"``Less than...`` (<=): The detection frame size is less than or equal to the"
+" specified value"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:148
+msgid "``大于...`` （>=）：检测框尺寸大于等于指定值"
+msgstr ""
+"``Greater than...`` (>=): The detection frame size is greater than or equal "
+"to the specified value"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:149
+msgid "``小于`` （<）：检测框尺寸小于指定值"
+msgstr ""
+"``Less than`` (<): The detection frame size is smaller than the specified "
+"value"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:150
+msgid "``大于`` （>）：检测框尺寸大于指定值"
+msgstr ""
+"``Greater than`` (>): The detection frame size is greater than the specified"
+" value"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:151
+msgid "``等于`` （==）：检测框尺寸等于指定值"
+msgstr ""
+"``Equals`` (==): The detection frame size is equal to the specified value"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:153
+msgid "**输入数值**：输入尺寸阈值（具体含义取决于所选的尺寸类型）"
+msgstr ""
+"**Enter value**: Enter the size threshold (the specific meaning depends on "
+"the selected size type)"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:154
+msgid "**示例**：``5``、``100``"
+msgstr "**Example**: ``5``, ``100``"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:157
+msgid "区域"
+msgstr "area"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:159
+msgid "基于特定区域过滤检测结果。"
+msgstr "Filter detection results based on specific areas."
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:161
+msgid "**过滤依据**：``区域``"
+msgstr "**Filter by**: ``Region``"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:163
+msgid "**说明**：基于特定区域过滤检测结果"
+msgstr "**Description**: Filter detection results based on specific areas"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:167
+msgid "**检测位置**"
+msgstr "**Detection location**"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:169
+msgid "选择检测框与区域的位置关系判断方式"
+msgstr ""
+"Select the method to determine the positional relationship between the "
+"detection frame and the area"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:170
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:178
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:189
+msgid "可选值："
+msgstr "Optional values:"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:172
+msgid "``在``：检测框在指定区域内"
+msgstr "``In``: the detection frame is within the specified area"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:173
+msgid "``不在``：检测框不在指定区域内"
+msgstr "``Not'': the detection frame is not within the specified area"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:175
+msgid "**检测参考点**"
+msgstr "**Detection reference point**"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:177
+msgid "选择用于判断位置关系的检测框参考点"
+msgstr ""
+"Select the detection frame reference point used to determine the position "
+"relationship"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:180
+msgid "``中心``：使用检测框的中心点进行判断"
+msgstr ""
+"``Center``: Use the center point of the detection frame to make judgments"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:181
+msgid "``左上``：使用检测框的左上角进行判断"
+msgstr ""
+"``Upper Left'': Use the upper left corner of the detection frame to make "
+"judgments"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:182
+msgid "``右上``：使用检测框的右上角进行判断"
+msgstr ""
+"``Upper right``: Use the upper right corner of the detection box to make "
+"judgments"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:183
+msgid "``左下``：使用检测框的左下角进行判断"
+msgstr ""
+"``Bottom Left'': Use the lower left corner of the detection frame to make "
+"judgments"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:184
+msgid "``右下``：使用检测框的右下角进行判断"
+msgstr ""
+"``Bottom Right'': Use the lower right corner of the detection frame to make "
+"judgments"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:186
+msgid "**区域定义**"
+msgstr "**Area Definition**"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:188
+msgid "选择要用于过滤的区域"
+msgstr "Select the area to use for filtering"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:191
+msgid "``在编辑器中定义``：在工作流编辑器中定义新的多边形区域"
+msgstr ""
+"``Define in Editor``: Define a new polygon region in the workflow editor"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:192
+msgid "``手动输入``：手动输入区域坐标"
+msgstr "``Manual input``: Manually enter area coordinates"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:194
+msgid "**设置多边形区域**"
+msgstr "**Set polygon area**"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:196
+msgid "点击橙色按钮\"设置多边形区域\""
+msgstr "Click the orange button \"Set Polygon Area\""
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:197
+msgid "在可视化编辑器中绘制或调整区域多边形"
+msgstr "Draw or adjust area polygons in the visual editor"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:200
+msgid "父级检测"
+msgstr "Parent detection"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:202
+msgid "基于父级边界框类别过滤检测结果。"
+msgstr "Filter detection results based on the parent bounding box category."
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:204
+msgid "**过滤依据**：``父级检测``"
+msgstr "**Filter based on**: ``Parent detection``"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:206
+msgid "**说明**：基于父级边界框类别过滤检测结果（用于处理嵌套检测的场景）"
+msgstr ""
+"**Description**: Filter detection results based on the parent bounding box "
+"category (used to handle nested detection scenarios)"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:210
+msgid "**父级类别名称**"
+msgstr "**Parent Category Name**"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:212
+msgid "输入要匹配的父级检测框的类别名称"
+msgstr "Enter the category name of the parent detection box to match"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:213
+msgid "**输入框提示**：输入父级类别名称"
+msgstr "**Input box prompt**: Enter the parent category name"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:214
+msgid "**用途**：只保留父级检测框类别符合条件的子检测框"
+msgstr ""
+"**Purpose**: Only retain child detection boxes that meet the conditions of "
+"the parent detection box category"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:215
+msgid "**示例**："
+msgstr "**Example**:"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:217
+msgid "输入 ``person``：只保留父级为\"person\"检测框内的子检测"
+msgstr ""
+"Enter ``person``: only keep sub-detections whose parent is the \"person\" "
+"detection box"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:218
+msgid "输入空值：筛选没有父级的顶级检测框"
+msgstr ""
+"Enter a null value: filter for top-level detection boxes that have no parent"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:220
+msgid "**典型应用场景**："
+msgstr "**Typical application scenarios**:"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:222
+msgid "在人脸检测中，先检测人体（父级），再在人体区域内检测人脸（子级）"
+msgstr ""
+"In face detection, the human body (parent) is detected first, and then the "
+"face is detected within the human body area (child)"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:223
+msgid "过滤出特定父级类别下的子对象"
+msgstr "Filter out child objects under a specific parent category"
+
+#: ../../source/block_gallery/logic_processor/detection_filter.rst:224
+msgid "区分顶级检测和嵌套检测"
+msgstr "Distinguish between top-level and nested detections"

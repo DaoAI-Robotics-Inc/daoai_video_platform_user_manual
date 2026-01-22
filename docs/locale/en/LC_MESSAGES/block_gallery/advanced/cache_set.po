@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/advanced/cache_set.rst:4
+msgid "缓存设置"
+msgstr "Cache settings"
+
+#: ../../source/block_gallery/advanced/cache_set.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/advanced/cache_set.rst:9
+msgid "将值存储在缓存条目中以便后续检索"
+msgstr "Store values ​​in cache entries for subsequent retrieval"
+
+#: ../../source/block_gallery/advanced/cache_set.rst:12
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/advanced/cache_set.rst:14
+msgid "输入：键值对"
+msgstr "Input: key-value pairs"
+
+#: ../../source/block_gallery/advanced/cache_set.rst:15
+msgid "输出：存储状态"
+msgstr "Output: storage state"
+
+#: ../../source/block_gallery/advanced/cache_set.rst:18
+#: ../../source/block_gallery/advanced/cache_set.rst:24
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/advanced/cache_set.rst:25
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/advanced/cache_set.rst:26
+msgid "默认值"
+msgstr "default value"
+
+#: ../../source/block_gallery/advanced/cache_set.rst:27
+msgid "cache_key"
+msgstr "cache_key"
+
+#: ../../source/block_gallery/advanced/cache_set.rst:28
+msgid "缓存键名"
+msgstr "Cache key name"
+
+#: ../../source/block_gallery/advanced/cache_set.rst:29
+msgid "无"
+msgstr "none"
+
+#: ../../source/block_gallery/advanced/cache_set.rst:30
+msgid "ttl"
+msgstr "ttl"
+
+#: ../../source/block_gallery/advanced/cache_set.rst:31
+msgid "过期时间（秒）"
+msgstr "Expiration time (seconds)"
+
+#: ../../source/block_gallery/advanced/cache_set.rst:32
+msgid "3600"
+msgstr "3600"
+
+#: ../../source/block_gallery/advanced/cache_set.rst:35
+msgid "使用步骤"
+msgstr "Usage steps"
+
+#: ../../source/block_gallery/advanced/cache_set.rst:37
+msgid "在工作流编辑器中添加本模块。"
+msgstr "Add this module in the workflow editor."
+
+#: ../../source/block_gallery/advanced/cache_set.rst:38
+msgid "设置缓存键名和过期时间。"
+msgstr "Set the cache key name and expiration time."
+
+#: ../../source/block_gallery/advanced/cache_set.rst:39
+msgid "点击保存。"
+msgstr "Click Save."
+
+#: ../../source/block_gallery/advanced/cache_set.rst:42
+msgid "注意事项"
+msgstr "Things to note"
+
+#: ../../source/block_gallery/advanced/cache_set.rst:44
+msgid "用于跨工作流共享数据。"
+msgstr "For sharing data across workflows."

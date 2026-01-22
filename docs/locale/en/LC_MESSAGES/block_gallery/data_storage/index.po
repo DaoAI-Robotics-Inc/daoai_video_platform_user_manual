@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/data_storage/index.rst:2
+msgid "数据存储（6 项）"
+msgstr "Data Storage (6 items)"
+
+#: ../../source/block_gallery/data_storage/index.rst:4
+msgid "保存和上传工作流的数据和结果。"
+msgstr "Save and upload workflow data and results."
+
+#: ../../source/block_gallery/data_storage/index.rst:22
+msgid ":ref:`CSV格式化`"
+msgstr ":ref:`CSV format`"
+
+#: ../../source/block_gallery/data_storage/index.rst:24
+msgid "按指定列创建CSV文件"
+msgstr "Create CSV file by specified columns"
+
+#: ../../source/block_gallery/data_storage/index.rst:25
+msgid ":ref:`数据聚合`"
+msgstr ":ref:`Data aggregation`"
+
+#: ../../source/block_gallery/data_storage/index.rst:27
+msgid "聚合工作流数据以仅在成或于时间间隔的统计信息"
+msgstr ""
+"Aggregate workflow data to show statistics only over time or intervals"
+
+#: ../../source/block_gallery/data_storage/index.rst:28
+msgid ":ref:`数据集上传`"
+msgstr ":ref:`Dataset upload`"
+
+#: ../../source/block_gallery/data_storage/index.rst:30
+msgid "上传图像和预测到DaoAI世界数据集。"
+msgstr "Upload images and predictions to the DaoAI world dataset."
+
+#: ../../source/block_gallery/data_storage/index.rst:31
+msgid ":ref:`事件保存`"
+msgstr ":ref:`Event Save`"
+
+#: ../../source/block_gallery/data_storage/index.rst:33
+msgid "储存警报事件和一个图片、一段视频录像（可选）到数据库。"
+msgstr ""
+"Store alarm events and a picture and a video recording (optional) to the "
+"database."
+
+#: ../../source/block_gallery/data_storage/index.rst:34
+msgid ":ref:`本地文件输出`"
+msgstr ":ref:`Local file output`"
+
+#: ../../source/block_gallery/data_storage/index.rst:36
+msgid "将数据储存到本地文件"
+msgstr "Save data to local file"
+
+#: ../../source/block_gallery/data_storage/index.rst:37
+msgid ":ref:`Webhook接收`"
+msgstr ":ref:`Webhook receiving`"
+
+#: ../../source/block_gallery/data_storage/index.rst:39
+msgid "向远程 API 发送带有工作流结果的请求"
+msgstr "Send a request with workflow results to the remote API"

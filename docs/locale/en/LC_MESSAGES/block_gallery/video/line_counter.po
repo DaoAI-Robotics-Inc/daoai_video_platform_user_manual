@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/video/line_counter.rst:4
+msgid "线条计数"
+msgstr "line count"
+
+#: ../../source/block_gallery/video/line_counter.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/video/line_counter.rst:9
+msgid "统计穿过线条的检测数量，可配置线段、计数判断点与检测源。"
+msgstr ""
+"Count the number of detections crossing the line, and configure the line "
+"segments, counting judgment points and detection sources."
+
+#: ../../source/block_gallery/video/line_counter.rst:12
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/video/line_counter.rst:14
+msgid "输入：检测/跟踪结果 + 线条坐标"
+msgstr "Input: detection/tracking results + line coordinates"
+
+#: ../../source/block_gallery/video/line_counter.rst:15
+msgid "输出：计数结果"
+msgstr "Output: count result"
+
+#: ../../source/block_gallery/video/line_counter.rst:18
+#: ../../source/block_gallery/video/line_counter.rst:24
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/video/line_counter.rst:25
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/video/line_counter.rst:26
+msgid "示例/ ``默认值``"
+msgstr "Example/``DefaultValue``"
+
+#: ../../source/block_gallery/video/line_counter.rst:27
+msgid "节点名称"
+msgstr "Node name"
+
+#: ../../source/block_gallery/video/line_counter.rst:28
+msgid "工作流中该节点的名称。"
+msgstr "The name of this node in the workflow."
+
+#: ../../source/block_gallery/video/line_counter.rst:29
+msgid "``line_counter_1``"
+msgstr "``line_counter_1``"
+
+#: ../../source/block_gallery/video/line_counter.rst:30
+msgid "备注"
+msgstr "Remark"
+
+#: ../../source/block_gallery/video/line_counter.rst:31
+msgid "可选备注信息，记录用途。"
+msgstr "Optional remark information to record the purpose."
+
+#: ../../source/block_gallery/video/line_counter.rst:32
+msgid "``留空``"
+msgstr "``leave blank``"
+
+#: ../../source/block_gallery/video/line_counter.rst:33
+msgid "Image"
+msgstr "Image"
+
+#: ../../source/block_gallery/video/line_counter.rst:34
+msgid "输入图像来源。"
+msgstr "Enter the image source."
+
+#: ../../source/block_gallery/video/line_counter.rst:35
+msgid "``input.image``"
+msgstr "``input.image``"
+
+#: ../../source/block_gallery/video/line_counter.rst:36
+msgid "检测配置"
+msgstr "Detect configuration"
+
+#: ../../source/block_gallery/video/line_counter.rst:37
+msgid "模型预测/统计计线定义来源。"
+msgstr "Model prediction/statistic line definition source."
+
+#: ../../source/block_gallery/video/line_counter.rst:38
+msgid "选择上游检测/跟踪输出"
+msgstr "Select upstream detection/trace output"
+
+#: ../../source/block_gallery/video/line_counter.rst:39
+msgid "线条段落"
+msgstr "line paragraph"
+
+#: ../../source/block_gallery/video/line_counter.rst:40
+msgid "由两点组成的线段列表，如 ``[[0,0],[100,100]]``。"
+msgstr ""
+"A list of line segments consisting of two points, such as "
+"``[[0,0],[100,100]]``."
+
+#: ../../source/block_gallery/video/line_counter.rst:41
+msgid "点击绘制线条进入绘制页面进行绘制"
+msgstr "Click Draw Line to enter the drawing page to draw."
+
+#: ../../source/block_gallery/video/line_counter.rst:42
+msgid "判定点"
+msgstr "decision point"
+
+#: ../../source/block_gallery/video/line_counter.rst:43
+msgid "检测对象必须穿过线条才被计数的点，常用 ``CENTER``。"
+msgstr ""
+"Detect the point where the object must cross the line to be counted, "
+"commonly used ``CENTER``."
+
+#: ../../source/block_gallery/video/line_counter.rst:44
+msgid "``CENTER``"
+msgstr "``CENTER``"

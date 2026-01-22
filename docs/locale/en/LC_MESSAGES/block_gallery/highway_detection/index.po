@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/highway_detection/index.rst:2
+msgid "高速检测（3 项）"
+msgstr "High-speed testing (3 items)"
+
+#: ../../source/block_gallery/highway_detection/index.rst:4
+msgid "专门用于高速公路场景的检测和分析功能。"
+msgstr ""
+"Specially used for detection and analysis functions of highway scenes."
+
+#: ../../source/block_gallery/highway_detection/index.rst:19
+msgid ":ref:`高速检测`"
+msgstr ":ref:`High-speed detection`"
+
+#: ../../source/block_gallery/highway_detection/index.rst:21
+msgid "对高速视频进行车辆计数、平均速度计算、车道速度计算以及车速计算以处理预测问隔帧的算法。"
+msgstr ""
+"An algorithm that performs vehicle counting, average speed calculation, lane"
+" speed calculation, and vehicle speed calculation on high-speed videos to "
+"process predicted interframes."
+
+#: ../../source/block_gallery/highway_detection/index.rst:22
+msgid ":ref:`高速公路测速`"
+msgstr ":ref:`Highway speed test`"
+
+#: ../../source/block_gallery/highway_detection/index.rst:24
+msgid "使用相机标定计算高速公路上跟踪对象的精确速度"
+msgstr ""
+"Calculate the precise speed of tracked objects on highways using camera "
+"calibration"
+
+#: ../../source/block_gallery/highway_detection/index.rst:25
+msgid ":ref:`高速公路可视化`"
+msgstr ":ref:`Highway Visualization`"
+
+#: ../../source/block_gallery/highway_detection/index.rst:27
+msgid "用于展示高速公路监控统计信息。"
+msgstr "Used to display highway monitoring statistics."

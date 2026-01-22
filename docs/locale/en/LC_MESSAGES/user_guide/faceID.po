@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/user_guide/faceID.rst:2
+msgid "注册人脸身份"
+msgstr "Register face identity"
+
+#: ../../source/user_guide/faceID.rst:4
+msgid "在DaoAI World的设置页面，可以点击人脸身份库。"
+msgstr ""
+"On the settings page of DaoAI World, you can click Face Identity Library."
+
+#: ../../source/user_guide/faceID.rst:10
+msgid "注册新档案"
+msgstr "Register new profile"
+
+#: ../../source/user_guide/faceID.rst:12
+msgid "点击左侧菜单中的 **人脸识别**，进入人脸库管理模块。点击【注册新档案】，进入如下页面："
+msgstr ""
+"Click **Face Recognition** in the left menu to enter the face database "
+"management module.Click [Register New Profile] to enter the following page:"
+
+#: ../../source/user_guide/faceID.rst:19
+msgid "字段说明"
+msgstr "Field description"
+
+#: ../../source/user_guide/faceID.rst:21
+msgid "**姓名/ID** （必填）：输入该员工的识别唯一标识（如姓名、工号等）"
+msgstr ""
+"**Name/ID** (required): Enter the employee’s unique identifier (such as "
+"name, job number, etc.)"
+
+#: ../../source/user_guide/faceID.rst:22
+msgid "**备注** （选填）：可用于填写所属班组、角色等描述信息"
+msgstr ""
+"**Remarks** (optional): Can be used to fill in descriptive information such "
+"as team, role, etc."
+
+#: ../../source/user_guide/faceID.rst:23
+msgid "**图片** （必填）：支持以下两种方式上传图像："
+msgstr ""
+"**Image** (required): Supports the following two methods to upload images:"
+
+#: ../../source/user_guide/faceID.rst:25
+msgid "拖拽人脸图像到上传框内"
+msgstr "Drag the face image into the upload box"
+
+#: ../../source/user_guide/faceID.rst:26
+msgid "点击【选择文件】上传本地图片"
+msgstr "Click [Select File] to upload local images"
+
+#: ../../source/user_guide/faceID.rst:27
+msgid "或点击【使用摄像头】通过 USB 摄像头现场拍照"
+msgstr "Or click [Use Camera] to take photos on-site through USB camera"
+
+#: ../../source/user_guide/faceID.rst:30
+msgid "照片要求"
+msgstr "photo request"
+
+#: ../../source/user_guide/faceID.rst:32
+msgid "为确保后续识别效果，上传照片需满足以下标准："
+msgstr ""
+"To ensure subsequent recognition results, uploaded photos must meet the "
+"following standards:"
+
+#: ../../source/user_guide/faceID.rst:34
+msgid "**图像质量**"
+msgstr "**Image Quality**"
+
+#: ../../source/user_guide/faceID.rst:36
+msgid "图像必须清晰、对焦准确，不可模糊"
+msgstr "The image must be clear, in focus, and not blurry"
+
+#: ../../source/user_guide/faceID.rst:37
+msgid "支持彩色或黑白图像，背景清晰，无反光，无阴影"
+msgstr ""
+"Support color or black and white images, clear background, no reflection, no"
+" shadow"
+
+#: ../../source/user_guide/faceID.rst:38
+msgid "避免强光直射或逆光，应保证脸部与背景明暗区分清晰"
+msgstr ""
+"Avoid direct sunlight or backlighting, and ensure that the face and "
+"background are clearly distinguished from light and dark."
+
+#: ../../source/user_guide/faceID.rst:39
+msgid "建议正面直视，展现完整面部特征"
+msgstr ""
+"It is recommended to look straight forward to show the complete facial "
+"features"
+
+#: ../../source/user_guide/faceID.rst:42
+msgid "注意事项"
+msgstr "Things to note"
+
+#: ../../source/user_guide/faceID.rst:44
+msgid "每个用户仅需注册一次，系统会自动提取并存储特征向量"
+msgstr ""
+"Each user only needs to register once, and the system will automatically "
+"extract and store feature vectors"
+
+#: ../../source/user_guide/faceID.rst:45
+msgid "建议优先使用高清摄像头采集，以提升后续识别准确率"
+msgstr ""
+"It is recommended to give priority to using high-definition camera "
+"collection to improve subsequent recognition accuracy."
+
+#: ../../source/user_guide/faceID.rst:46
+msgid "如需删除已注册人员，请返回识别库主界面，点击人员头像管理"
+msgstr ""
+"If you need to delete a registered person, please return to the main "
+"interface of the identification library and click Personnel Avatar "
+"Management"

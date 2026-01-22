@@ -1,0 +1,636 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:4
+msgid "语义分割模型 (Semantic Segmentation)"
+msgstr "Semantic Segmentation model (Semantic Segmentation)"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:7
+msgid "本页面介绍DaoAI World模型的语义分割类型。返回 :ref:`DaoAI World模型主页 <DaoAI World模型>`"
+msgstr ""
+"This page introduces the semantic segmentation types of the DaoAI World "
+"model.Return :ref:`DaoAI World model homepage <DaoAI World model>`"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:10
+msgid "模型简介"
+msgstr "Model introduction"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:12
+msgid ""
+"语义分割模型对图像中的每个像素进行分类，将图像分割成不同的语义区域。与实例分割不同，语义分割不区分同类物体的不同实例，所有同类像素都被归为同一类别。"
+msgstr ""
+"Semantic segmentation models classify each pixel in the image and segment "
+"the image into different semantic regions.Unlike instance segmentation, "
+"semantic segmentation does not distinguish between different instances of "
+"the same object, and all pixels of the same type are classified into the "
+"same category."
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:14
+msgid "**输出内容：**"
+msgstr "**Output content:**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:16
+msgid "**分割图** (每个像素的类别标签)"
+msgstr "**Segmentation Map** (category label for each pixel)"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:17
+msgid "**类别统计** (每个类别的像素数量和占比)"
+msgstr ""
+"**Category statistics** (number and proportion of pixels in each category)"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:18
+msgid "**彩色可视化图** (可选)"
+msgstr "**Color visualization** (optional)"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:21
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:343
+msgid "适用场景"
+msgstr "Applicable scenarios"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:23
+msgid "语义分割模型适用于以下需要整体场景理解的场景："
+msgstr ""
+"The semantic segmentation model is suitable for the following scenarios that"
+" require overall scene understanding:"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:25
+msgid "**自动驾驶**：道路分割、车道线识别、可行驶区域检测"
+msgstr ""
+"**Autonomous driving**: road segmentation, lane line recognition, drivable "
+"area detection"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:26
+msgid "**医学影像**：组织分割、病灶区域标记"
+msgstr "**Medical Imaging**: Tissue segmentation, lesion area marking"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:27
+msgid "**卫星遥感**：土地类型分类、植被覆盖分析"
+msgstr ""
+"**Satellite Remote Sensing**: Land type classification, vegetation cover "
+"analysis"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:28
+msgid "**场景理解**：室内场景布局分析、空间规划"
+msgstr "**Scene Understanding**: Indoor scene layout analysis, space planning"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:29
+msgid "**视频会议**：背景虚化、虚拟背景"
+msgstr "**Video conferencing**: background blur, virtual background"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:30
+msgid "**农业应用**：作物与杂草分割、耕地识别"
+msgstr ""
+"**Agricultural applications**: crop and weed segmentation, cultivated land "
+"identification"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:31
+msgid "**工业检测**：表面缺陷区域分割"
+msgstr "**Industrial Inspection**: Surface defect area segmentation"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:34
+msgid "输出格式"
+msgstr "Output format"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:36
+msgid "语义分割模型的输出包含分割掩码和统计信息："
+msgstr ""
+"The output of a semantic segmentation model contains segmentation masks and "
+"statistics:"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:81
+msgid "**字段说明：**"
+msgstr "**Field description:**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:83
+msgid "``segmentation``: 分割掩码数据"
+msgstr "``segmentation``: segmentation mask data"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:85
+msgid "``type``: 掩码类型（通常为mask）"
+msgstr "``type``: mask type (usually mask)"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:86
+msgid "``width``, ``height``: 分割图尺寸"
+msgstr "``width``, ``height``: split image size"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:87
+msgid "``data``: Base64编码的分割图数据"
+msgstr "``data``: Base64 encoded segmentation map data"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:88
+msgid "``encoding``: 编码格式（png、jpg等）"
+msgstr "``encoding``: encoding format (png, jpg, etc.)"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:90
+msgid "``classes``: 检测到的类别列表"
+msgstr "``classes``: list of detected classes"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:92
+msgid "``class``: 类别名称"
+msgstr "``class``: category name"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:93
+msgid "``label_id``: 类别ID（对应分割图中的像素值）"
+msgstr ""
+"``label_id``: category ID (corresponding to the pixel value in the "
+"segmentation map)"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:94
+msgid "``pixel_count``: 该类别的像素总数"
+msgstr "``pixel_count``: the total number of pixels in this category"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:95
+msgid "``percentage``: 占图像的百分比"
+msgstr "``percentage``: Percentage of the image"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:96
+msgid "``color``: 可视化时使用的颜色(RGB)"
+msgstr "``color``: the color (RGB) used for visualization"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:98
+msgid "``num_classes``: 检测到的类别总数"
+msgstr "``num_classes``: total number of detected classes"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:101
+msgid "配置示例"
+msgstr "Configuration example"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:103
+msgid "**道路场景分割**"
+msgstr "**Road Scene Segmentation**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:114
+msgid "**高精度医学影像分割**"
+msgstr "**High-precision medical image segmentation**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:129
+msgid "**遥感图像分析**"
+msgstr "**Remote sensing image analysis**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:147
+msgid "使用技巧与最佳实践"
+msgstr "Tips and best practices"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:149
+msgid "**分割粒度选择**"
+msgstr "**Segmentation granularity selection**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:151
+msgid "**粗粒度**：大类别（如建筑、道路、天空）"
+msgstr "**Coarse-grained**: large categories (such as buildings, roads, sky)"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:152
+msgid "**细粒度**：详细分类（如人行道、车道、路肩）"
+msgstr ""
+"**Fine-grained**: Detailed classification (e.g. sidewalk, lane, shoulder)"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:153
+msgid "根据应用需求平衡分类精细度和模型复杂度"
+msgstr ""
+"Balance classification granularity and model complexity according to "
+"application requirements"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:155
+msgid "**置信度阈值设置**"
+msgstr "**Confidence threshold setting**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:157
+msgid "一般场景：0.5-0.6"
+msgstr "General scene: 0.5-0.6"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:158
+msgid "高精度需求：0.7-0.9"
+msgstr "High precision requirements: 0.7-0.9"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:159
+msgid "注意：语义分割的置信度通常针对整体输出，而不是单个像素"
+msgstr ""
+"Note: Confidence in semantic segmentation is usually for the overall output,"
+" not individual pixels"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:161
+msgid "**处理边界模糊**"
+msgstr "**Handling Boundary Blurs**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:163
+msgid "分类边界处的像素可能存在不确定性"
+msgstr "There may be uncertainty about pixels at classification boundaries"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:164
+msgid "可使用形态学操作（开运算、闭运算）优化边界"
+msgstr ""
+"Boundaries can be optimized using morphological operations (opening, "
+"closing)"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:165
+msgid "使用条件随机场(CRF)进行后处理优化"
+msgstr "Post-processing optimization using conditional random fields (CRF)"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:167
+msgid "**类别不平衡处理**"
+msgstr "**Category imbalance processing**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:169
+msgid "小面积类别可能被忽略"
+msgstr "Small area categories may be ignored"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:170
+msgid "为重要的小面积类别降低置信度阈值"
+msgstr "Lower confidence threshold for important small area categories"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:171
+msgid "使用加权损失函数训练模型"
+msgstr "Train the model using a weighted loss function"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:173
+msgid "**性能优化**"
+msgstr "**Performance Optimization**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:175
+msgid "语义分割计算密集，强烈建议使用GPU"
+msgstr ""
+"Semantic segmentation is computationally intensive and GPU usage is highly "
+"recommended"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:176
+msgid "可以降低输出分辨率以提升速度"
+msgstr "Output resolution can be reduced to increase speed"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:177
+msgid "使用轻量级模型架构（如MobileNet）提升实时性"
+msgstr ""
+"Improve real-time performance using lightweight model architectures such as "
+"MobileNet"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:179
+msgid "**多尺度处理**"
+msgstr "**Multi-Scale Processing**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:181
+msgid "对于复杂场景，使用多尺度输入可提高精度"
+msgstr "For complex scenes, using multi-scale input improves accuracy"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:182
+msgid "融合不同尺度的预测结果"
+msgstr "Fusion of prediction results at different scales"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:185
+msgid "常见问题"
+msgstr "FAQ"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:187
+msgid "**Q: 语义分割和实例分割的主要区别是什么？**"
+msgstr ""
+"**Q: What is the main difference between semantic segmentation and instance "
+"segmentation?**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:189
+msgid "A:"
+msgstr "A:"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:190
+msgid "**语义分割**：只关注\"是什么\"，不区分个体。例如，多辆车都标记为\"car\"类别"
+msgstr ""
+"**Semantic Segmentation**: Only focus on \"what is\" and do not distinguish "
+"between individuals.For example, multiple cars are tagged with the \"car\" "
+"category"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:191
+msgid "**实例分割**：区分\"是哪个\"，每辆车有独立的ID和掩码"
+msgstr ""
+"**Instance segmentation**: distinguish \"which one\", each vehicle has an "
+"independent ID and mask"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:193
+msgid "**选择建议：**"
+msgstr "**Selection suggestions:**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:195
+msgid "需要区分个体（如计数、跟踪）→ 使用实例分割"
+msgstr ""
+"Need to distinguish individuals (e.g. counting, tracking) → use instance "
+"segmentation"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:196
+msgid "只需要区域分类（如可行驶区域、背景分割）→ 使用语义分割"
+msgstr ""
+"Only area classification is required (e.g. drivable area, background "
+"segmentation) → use semantic segmentation"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:198
+msgid "**Q: 分割图的像素值代表什么？**"
+msgstr "**Q: What do the pixel values ​​of the segmentation map represent?**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:200
+msgid "A: 分割图中每个像素的值对应该像素的类别ID（label_id）。例如，值为0的像素属于label_id为0的类别。"
+msgstr ""
+"A: The value of each pixel in the segmentation map corresponds to the "
+"category ID (label_id) of the pixel.For example, a pixel with value 0 "
+"belongs to the category with label_id 0."
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:202
+msgid "**Q: 如何提取特定类别的区域？**"
+msgstr "**Q: How to extract areas of a specific category?**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:204
+msgid ""
+"A: 1. 读取分割图 2. 找到对应类别的label_id 3. 创建二值掩码：mask = (segmentation == label_id) "
+"4. 使用该掩码提取原图对应区域"
+msgstr ""
+"A: 1. Read the segmentation image 2. Find the label_id of the corresponding "
+"category 3. Create a binary mask: mask = (segmentation == label_id) 4. Use "
+"this mask to extract the corresponding area of ​​the original image"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:210
+msgid "**Q: 为什么分割边缘不够平滑？**"
+msgstr "**Q: Why are the segmented edges not smooth enough?**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:212
+msgid "A: 可能的原因和解决方案："
+msgstr "A: Possible causes and solutions:"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:214
+msgid "模型输出分辨率低：使用更高分辨率的模型"
+msgstr "Model output resolution is low: use a higher resolution model"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:215
+msgid "图像质量差：提高输入图像质量"
+msgstr "Poor image quality: Improve input image quality"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:216
+msgid "后处理：使用双边滤波、CRF等优化边缘"
+msgstr "Post-processing: Optimize edges using bilateral filtering, CRF, etc."
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:218
+msgid "**Q: 如何计算某个类别的面积占比？**"
+msgstr "**Q: How to calculate the area proportion of a certain category?**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:220
+msgid ""
+"A: 直接使用输出中的 ``percentage`` 字段，或用 ``pixel_count / (width * height)`` 计算。"
+msgstr ""
+"A: Use the ``percentage`` field in the output directly, or calculate it with"
+" ``pixel_count / (width * height)``."
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:223
+msgid "应用案例"
+msgstr "Application cases"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:225
+msgid "**案例1：自动驾驶场景理解**"
+msgstr "**Case 1: Autonomous driving scene understanding**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:227
+msgid "识别道路、车道线、人行道、车辆、行人等，为决策提供依据。"
+msgstr ""
+"Identify roads, lane lines, sidewalks, vehicles, pedestrians, etc. to "
+"provide a basis for decision-making."
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:247
+msgid "**应用逻辑：**"
+msgstr "**Application logic:**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:249
+msgid "识别可行驶区域（road + lane_marking）"
+msgstr "Identify drivable areas (road + lane_marking)"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:250
+msgid "检测障碍物（vehicle, pedestrian）"
+msgstr "Detect obstacles (vehicle, pedestrian)"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:251
+msgid "辅助路径规划"
+msgstr "Assisted path planning"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:253
+msgid "**案例2：视频会议背景虚化**"
+msgstr "**Case 2: Video conference background blur**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:255
+msgid "分割人物和背景，实现背景虚化或替换。"
+msgstr "Separate characters and background to blur or replace the background."
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:269
+msgid "**处理流程：**"
+msgstr "**Processing process:**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:271
+msgid "使用语义分割提取人物区域"
+msgstr "Extract person areas using semantic segmentation"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:272
+msgid "对背景区域应用模糊效果"
+msgstr "Apply a blur effect to background areas"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:273
+msgid "或将背景替换为虚拟背景"
+msgstr "Or replace the background with a virtual background"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:275
+msgid "**案例3：农田作物监测**"
+msgstr "**Case 3: Farmland Crop Monitoring**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:277
+msgid "分析卫星或无人机图像，识别不同的土地类型和作物。"
+msgstr ""
+"Analyze satellite or drone imagery to identify different land types and "
+"crops."
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:294
+msgid "**分析内容：**"
+msgstr "**Analysis content:**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:296
+msgid "计算各类作物的种植面积"
+msgstr "Calculate the planting area of ​​various crops"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:297
+msgid "监测作物生长状态"
+msgstr "Monitor crop growth status"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:298
+msgid "检测水源分布"
+msgstr "Detect water source distribution"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:300
+msgid "**案例4：工业表面检测**"
+msgstr "**Case 4: Industrial Surface Inspection**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:302
+msgid "分割产品表面的缺陷区域，用于质量控制。"
+msgstr "Segment defective areas on the product surface for quality control."
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:318
+msgid "**质检流程：**"
+msgstr "**Quality inspection process:**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:320
+msgid "分割出所有缺陷区域"
+msgstr "Segment out all defective areas"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:321
+msgid "计算缺陷面积占比"
+msgstr "Calculate defect area ratio"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:322
+msgid "根据阈值判定产品是否合格"
+msgstr ""
+"Determine whether the product is qualified based on the threshold value"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:325
+msgid "性能对比"
+msgstr "Performance comparison"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:331
+msgid "特性"
+msgstr "characteristic"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:332
+msgid "语义分割"
+msgstr "Semantic segmentation"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:333
+msgid "实例分割"
+msgstr "Instance splitting"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:334
+msgid "输出粒度"
+msgstr "Output granularity"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:335
+msgid "类别级别"
+msgstr "category level"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:336
+msgid "实例级别"
+msgstr "instance level"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:337
+msgid "区分个体"
+msgstr "Distinguish between individuals"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:338
+msgid "否"
+msgstr "no"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:339
+msgid "是"
+msgstr "yes"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:340
+msgid "计算复杂度"
+msgstr "computational complexity"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:341
+msgid "中等"
+msgstr "medium"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:342
+msgid "较高"
+msgstr "higher"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:344
+msgid "场景理解、区域分类"
+msgstr "Scene understanding, regional classification"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:345
+msgid "物体计数、个体追踪"
+msgstr "Object counting, individual tracking"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:348
+msgid "常用类别集"
+msgstr "Common category set"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:350
+msgid "**城市街道场景 (Cityscapes)**"
+msgstr "**Cityscapes**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:352
+msgid "road, sidewalk, building, wall, fence"
+msgstr "road, sidewalk, building, wall, fence"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:353
+msgid "pole, traffic_light, traffic_sign"
+msgstr "pole, traffic_light, traffic_sign"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:354
+msgid "vegetation, terrain, sky"
+msgstr "vegetation, terrain, sky"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:355
+msgid "person, rider, car, truck, bus, train"
+msgstr "person, rider, car, truck, bus, train"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:356
+msgid "motorcycle, bicycle"
+msgstr "motorcycle, bicycle"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:358
+msgid "**室内场景 (ADE20K)**"
+msgstr "**Indoor Scene (ADE20K)**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:360
+msgid "wall, floor, ceiling, window, door"
+msgstr "wall, floor, ceiling, window, door"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:361
+msgid "table, chair, sofa, bed"
+msgstr "table, chair, sofa, bed"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:362
+msgid "cabinet, shelf, lamp"
+msgstr "cabinet, shelf, lamp"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:363
+msgid "person, tv, computer"
+msgstr "person, tv, computer"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:365
+msgid "**医学影像**"
+msgstr "**Medical Imaging**"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:367
+msgid "background, organ, tumor, vessel"
+msgstr "background, organ, tumor, vessel"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:368
+msgid "bone, soft_tissue"
+msgstr "bone, soft_tissue"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:371
+msgid "相关链接"
+msgstr "Related links"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:373
+msgid ":ref:`DaoAI World模型主页 <DaoAI World模型>`"
+msgstr ":ref:`DaoAI World model homepage <DaoAI World model>`"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:374
+msgid ":ref:`实例分割模型 <daoai_world_instance_segmentation>` - 如需区分个体实例"
+msgstr ""
+":ref:`Instance segmentation model <daoai_world_instance_segmentation>` - if "
+"you need to distinguish individual instances"
+
+#: ../../source/block_gallery/models/daoai_world_semantic_segmentation.rst:375
+msgid ":ref:`分类模型 <daoai_world_classification>` - 如只需整体类别判断"
+msgstr ""
+":ref:`Classification model <daoai_world_classification>` - if you only need "
+"the overall category judgment"

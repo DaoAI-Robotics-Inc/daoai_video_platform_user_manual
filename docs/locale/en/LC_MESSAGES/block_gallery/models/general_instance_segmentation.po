@@ -1,0 +1,166 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:4
+msgid "通用实例分割模型"
+msgstr "Universal instance segmentation model"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:9
+msgid "无需训练的通用实例分割模型，对输入图像/视频帧中的物体进行分割，返回边界框与分割掩码。"
+msgstr ""
+"A general instance segmentation model that requires no training, segments "
+"objects in input images/video frames, and returns bounding boxes and "
+"segmentation masks."
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:12
+msgid "输入/输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:14
+msgid "输入（Input）:"
+msgstr "Input:"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:15
+msgid "图像 （来自上游节点或工作流输入）。"
+msgstr "Image (from upstream node or workflow input)."
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:17
+msgid "输出（Output）:"
+msgstr "Output:"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:18
+msgid "所有实例分割结果"
+msgstr "All instance segmentation results"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:19
+msgid "推理是否成功"
+msgstr "Is the reasoning successful?"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:20
+msgid "推理耗时"
+msgstr "Reasoning takes time"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:24
+msgid "该模型只检测物体框和返回物体分割掩码，想要在前端大屏显示出物体分割结果，需要添加一个 :ref:`遮罩显示 <遮罩显示>` 模块。"
+msgstr ""
+"This model only detects object frames and returns object segmentation masks."
+" If you want to display the object segmentation results on the front-end "
+"large screen, you need to add a :ref:`Mask Display <Mask Display>` module."
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:27
+msgid "配置参数详解"
+msgstr "Detailed explanation of configuration parameters"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:33
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:34
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:35
+msgid "示例/ ``默认值``"
+msgstr "Example/``DefaultValue``"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:36
+msgid "节点名称"
+msgstr "Node name"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:37
+msgid "工作流中该节点的名称。"
+msgstr "The name of this node in the workflow."
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:38
+msgid "``general_instance_segmentation_1``"
+msgstr "``general_instance_segmentation_1``"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:39
+msgid "备注"
+msgstr "Remark"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:40
+msgid "可选的备注信息，用于描述该步骤的用途。"
+msgstr "Optional remarks describing the purpose of this step."
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:41
+msgid "``留空``"
+msgstr "``leave blank``"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:42
+msgid "图像"
+msgstr "image"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:43
+msgid "指定输入图像来源。"
+msgstr "Specify the input image source."
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:44
+msgid "``input.image``"
+msgstr "``input.image``"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:45
+msgid "检测分类"
+msgstr "Detection classification"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:46
+msgid "需要检测的类别列表，英文提示词，建议用 JSON/数组形式填写。"
+msgstr ""
+"List of categories that need to be detected, English prompt words, it is "
+"recommended to fill in the form of JSON/array."
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:47
+msgid "``[\"person\", \"car\"]``"
+msgstr "``[\"person\", \"car\"]``"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:48
+msgid "置信度阈值"
+msgstr "confidence threshold"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:49
+msgid "全局置信度阈值，范围 0~1。"
+msgstr "Global confidence threshold, range 0~1."
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:50
+msgid "``0.3``"
+msgstr "``0.3``"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:51
+msgid "最大检测数量"
+msgstr "Maximum number of tests"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:52
+msgid "设置每张图像中最多检测出的物体数量，超过该数量的检测结果将被忽略。"
+msgstr ""
+"Set the maximum number of detected objects in each image. Detection results "
+"exceeding this number will be ignored."
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:53
+msgid "``100``"
+msgstr "``100``"
+
+#: ../../source/block_gallery/models/general_instance_segmentation.rst:56
+msgid "检测分类示例"
+msgstr "Detection classification example"

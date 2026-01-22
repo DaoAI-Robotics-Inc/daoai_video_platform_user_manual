@@ -1,0 +1,412 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:4
+msgid "点显示"
+msgstr "point display"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:9
+msgid "点显示节点用于根据提供的检测结果，在图像的特定坐标位置绘制实心点标记。"
+msgstr ""
+"The Point Display node is used to draw solid point markers at specific "
+"coordinate locations in the image based on the provided detection results."
+
+#: ../../source/block_gallery/visualization/dot_display.rst:11
+msgid "该节点特别适合标中心点或小型目标位置，支持多种颜色方案和自定义点大小配置。相比圆形标记，实心点更加简洁明了。"
+msgstr ""
+"This node is ideal for marking center points or small target locations, and "
+"supports multiple color schemes and custom point size "
+"configurations.Compared to round marks, solid dots are more concise and "
+"clear."
+
+#: ../../source/block_gallery/visualization/dot_display.rst:13
+msgid "效果展示："
+msgstr "Effect display:"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:15
+msgid "Dot Visualization Example"
+msgstr "Dot Visualization Example"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:21
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:23
+msgid "**输入**："
+msgstr "**enter**:"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:25
+msgid "图像（来自上游节点或工作流输入）"
+msgstr "Image (from upstream node or workflow input)"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:26
+msgid "检测结果（包含坐标点、类别等信息）"
+msgstr ""
+"Detection results (including coordinate points, categories and other "
+"information)"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:28
+msgid "**输出**："
+msgstr "**Output**:"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:30
+msgid "绘制了点标记的可视化图像"
+msgstr "Visualization with point markers drawn"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:33
+msgid "配置参数详解"
+msgstr "Detailed explanation of configuration parameters"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:39
+msgid "参数名称"
+msgstr "Parameter name"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:40
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:41
+msgid "示例/默认值"
+msgstr "Example/Default"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:42
+msgid "**节点名称**"
+msgstr "**Node name**"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:43
+msgid "步骤名称，用于标识该节点的唯一标识符"
+msgstr "Step name, a unique identifier used to identify this node"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:44
+msgid "``dot_visualization_1``"
+msgstr "``dot_visualization_1``"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:45
+msgid "**备注**"
+msgstr "**Remark**"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:46
+msgid "可选的备注信息，用于描述该步骤的用途"
+msgstr "Optional remarks describing the purpose of this step"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:47
+msgid "留空"
+msgstr "Leave blank"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:48
+msgid "**输入图像**"
+msgstr "**Input image**"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:49
+msgid "指定输入图像的来源，可以是上游节点的输出或工作流的输入参数"
+msgstr ""
+"Specify the source of the input image, which can be the output of an "
+"upstream node or an input parameter of a workflow"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:50
+msgid "``input.image``"
+msgstr "``input.image``"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:51
+#: ../../source/block_gallery/visualization/dot_display.rst:82
+msgid "**复制图像**"
+msgstr "**COPY IMAGE**"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:52
+msgid "是否创建输入图像的副本进行可视化，启用后不会修改原始图像"
+msgstr ""
+"Whether to create a copy of the input image for visualization. When enabled,"
+" the original image will not be modified."
+
+#: ../../source/block_gallery/visualization/dot_display.rst:53
+msgid "``True(推荐)``"
+msgstr "``True(recommended)``"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:54
+msgid "**预测显示**"
+msgstr "**Forecast Display**"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:55
+msgid "要可视化的模型预测结果，选择检测模型的输出"
+msgstr "To visualize model predictions, select Detection Model Outputs"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:56
+msgid "从下拉菜单选择"
+msgstr "Select from drop-down menu"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:57
+#: ../../source/block_gallery/visualization/dot_display.rst:87
+msgid "**调色板**"
+msgstr "**Palette**"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:58
+msgid "颜色调色板方案，用于为不同类别分配颜色"
+msgstr "Color palette scheme for assigning colors to different categories"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:59
+msgid "``DEFAULT``"
+msgstr "``DEFAULT``"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:60
+msgid "**调色板大小**"
+msgstr "**Palette size**"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:61
+msgid "调色板中的颜色数量，适用于使用自定义或Matplotlib调色板时"
+msgstr ""
+"Number of colors in the palette, applicable when using a custom or "
+"Matplotlib palette"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:62
+msgid "``10``"
+msgstr "``10``"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:63
+#: ../../source/block_gallery/visualization/dot_display.rst:95
+msgid "**自定义颜色**"
+msgstr "**Custom Color**"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:64
+msgid "自定义颜色列表，使用HEX格式定义点颜色"
+msgstr "Custom color list, use HEX format to define point colors"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:65
+msgid "``[\"#FF0000\", \"#00FF00\", \"#0000FF\"]``"
+msgstr "``[\"#FF0000\", \"#00FF00\", \"#0000FF\"]``"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:66
+msgid "**颜色坐标轴**"
+msgstr "**Color Axis**"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:67
+msgid "颜色分配的依据，通常基于类别（CLASS）来着色"
+msgstr ""
+"The basis for color assignment, usually coloring based on category (CLASS)"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:68
+msgid "``CLASS``"
+msgstr "``CLASS``"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:69
+#: ../../source/block_gallery/visualization/dot_display.rst:113
+msgid "**坐标位置**"
+msgstr "**Coordinate location**"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:70
+msgid "点的锚点位置"
+msgstr "anchor position of point"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:71
+msgid "``CENTER``"
+msgstr "``CENTER``"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:72
+#: ../../source/block_gallery/visualization/dot_display.rst:128
+msgid "**点大小**"
+msgstr "**Point size**"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:73
+msgid "点的半径大小（像素）"
+msgstr "Point radius size (pixels)"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:74
+msgid "``4``"
+msgstr "``4``"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:75
+#: ../../source/block_gallery/visualization/dot_display.rst:138
+msgid "**轮廓粗细**"
+msgstr "**Contour Thickness**"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:76
+msgid "点的轮廓粗细（以像素为单位）"
+msgstr "The outline thickness of the point in pixels"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:77
+msgid "``0``"
+msgstr "``0``"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:80
+msgid "参数详细说明"
+msgstr "Detailed description of parameters"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:84
+msgid "**True**：创建图像副本，原始图像保持不变，可用于后续其他可视化操作"
+msgstr ""
+"**True**: Create a copy of the image, the original image remains unchanged "
+"and can be used for other subsequent visualization operations"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:85
+msgid "**False**：直接在原图上绘制，节省内存但会修改原图"
+msgstr ""
+"**False**: Draw directly on the original image, saving memory but modifying "
+"the original image."
+
+#: ../../source/block_gallery/visualization/dot_display.rst:89
+msgid "支持多种颜色调色板方案："
+msgstr "Supports multiple color palette schemes:"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:91
+msgid "``DEFAULT``：系统默认配色方案"
+msgstr "``DEFAULT``: system default color scheme"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:92
+msgid "``MATPLOTLIB``：使用Matplotlib的颜色方案"
+msgstr "``MATPLOTLIB``: Use Matplotlib's color scheme"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:93
+msgid "``CUSTOM``：使用自定义颜色列表（需配置自定义颜色参数）"
+msgstr ""
+"``CUSTOM``: Use a custom color list (custom color parameters need to be "
+"configured)"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:97
+msgid "当调色板选择 ``CUSTOM`` 时，使用HEX格式定义颜色列表："
+msgstr ""
+"When ``CUSTOM`` is selected for the palette, use HEX format to define the "
+"color list:"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:103
+msgid "分别对应红色、绿色、蓝色、黄色、紫色，颜色会按顺序分配给不同的类别。"
+msgstr ""
+"Corresponding to red, green, blue, yellow, and purple, the colors will be "
+"assigned to different categories in order."
+
+#: ../../source/block_gallery/visualization/dot_display.rst:105
+msgid "**颜色坐标轴(在CUSTOM模式下会被忽略)**"
+msgstr "**Color axis (ignored in CUSTOM mode)**"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:107
+msgid "决定如何为点标记分配颜色："
+msgstr "Decide how to assign colors to point markers:"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:109
+msgid "``CLASS``：根据物体类别着色，同类物体使用相同颜色"
+msgstr ""
+"``CLASS``: Color according to object category, similar objects use the same "
+"color"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:110
+msgid "``INDEX``：为每个物体分配不同颜色"
+msgstr "``INDEX``: assign a different color to each object"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:111
+msgid "``TRACK``：根据Tracker ID着色，每个Tracker ID使用不同颜色"
+msgstr ""
+"``TRACK``: Colored according to Tracker ID, use different colors for each "
+"Tracker ID"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:115
+msgid "点标记的锚点位置，可选值包括："
+msgstr ""
+"The anchor point position of the point marker. Optional values ​​include:"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:117
+msgid "``CENTER``：点标记以坐标点为中心"
+msgstr "``CENTER``: The point marker is centered on the coordinate point"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:118
+msgid "``CENTER_LEFT``：点标记以坐标点为左侧中心"
+msgstr ""
+"``CENTER_LEFT``: The point mark uses the coordinate point as the left center"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:119
+msgid "``CENTER_RIGHT``：点标记以坐标点为右侧中心"
+msgstr ""
+"``CENTER_RIGHT``: The point mark uses the coordinate point as the right "
+"center"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:120
+msgid "``TOP_CENTER``：点标记以坐标点为上侧中心"
+msgstr ""
+"``TOP_CENTER``: The point mark takes the coordinate point as the upper "
+"center"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:121
+msgid "``TOP_LEFT``：点标记以坐标点为左上角"
+msgstr ""
+"``TOP_LEFT``: The point mark uses the coordinate point as the upper left "
+"corner"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:122
+msgid "``TOP_RIGHT``：点标记以坐标点为右上角"
+msgstr ""
+"``TOP_RIGHT``: The point mark uses the coordinate point as the upper right "
+"corner"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:123
+msgid "``BOTTOM_LEFT``：点标记以坐标点为左下角"
+msgstr ""
+"``BOTTOM_LEFT``: The point marker uses the coordinate point as the lower "
+"left corner"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:124
+msgid "``BOTTOM_RIGHT``：点标记以坐标点为右下角"
+msgstr ""
+"``BOTTOM_RIGHT``: The point mark uses the coordinate point as the lower "
+"right corner"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:125
+msgid "``BOTTOM_CENTER``：点标记以坐标点为下侧中心"
+msgstr ""
+"``BOTTOM_CENTER``: The point mark uses the coordinate point as the lower "
+"center"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:126
+msgid "``CENTER OF MASS``：点标记以检测框的质心位置为中心"
+msgstr ""
+"``CENTER OF MASS``: The point marker is centered on the center of mass "
+"position of the detection frame"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:130
+msgid "设置点标记的半径大小，单位为像素。默认值为 ``4``。"
+msgstr ""
+"Set the radius size of the point marker in pixels. The default value is "
+"``4``."
+
+#: ../../source/block_gallery/visualization/dot_display.rst:132
+msgid "``3``：较小的点"
+msgstr "``3``: smaller points"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:133
+msgid "``5``：标准大小（默认）"
+msgstr "``5``: standard size (default)"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:134
+msgid "``8`` 及以上：较大的点"
+msgstr "``8`` and above: Larger points"
+
+#: ../../source/block_gallery/visualization/dot_display.rst:136
+msgid "点半径越大，标记越明显，但可能遮挡更多图像细节。建议根据图像分辨率和标注目标的大小调整此参数。"
+msgstr ""
+"The larger the point radius, the more obvious the mark will be, but may "
+"obscure more image details.It is recommended to adjust this parameter based "
+"on the image resolution and the size of the annotation target."
+
+#: ../../source/block_gallery/visualization/dot_display.rst:140
+msgid "设置点外圈的轮廓粗细，单位为像素。默认值为 ``0``。"
+msgstr ""
+"Set the outline thickness of the outer circle of points, in pixels.The "
+"default value is ``0``."

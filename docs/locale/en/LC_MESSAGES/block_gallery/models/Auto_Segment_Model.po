@@ -1,0 +1,90 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/models/Auto_Segment_Model.rst:4
+msgid "自动分割模型"
+msgstr "Automatically segment models"
+
+#: ../../source/block_gallery/models/Auto_Segment_Model.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/models/Auto_Segment_Model.rst:9
+msgid "在无需训练的情况下，对输入图像中的物体进行自动实例分割。"
+msgstr ""
+"Automatic instance segmentation of objects in input images without training."
+
+#: ../../source/block_gallery/models/Auto_Segment_Model.rst:12
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/models/Auto_Segment_Model.rst:14
+msgid "输入：视频帧 / 图像"
+msgstr "Input: video frames/images"
+
+#: ../../source/block_gallery/models/Auto_Segment_Model.rst:15
+msgid "输出：分割掩码（PNG / 多边形）"
+msgstr "Output: Segmentation Mask (PNG/Polygon)"
+
+#: ../../source/block_gallery/models/Auto_Segment_Model.rst:18
+#: ../../source/block_gallery/models/Auto_Segment_Model.rst:24
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/models/Auto_Segment_Model.rst:25
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/models/Auto_Segment_Model.rst:26
+msgid "默认值"
+msgstr "default value"
+
+#: ../../source/block_gallery/models/Auto_Segment_Model.rst:27
+msgid "threshold"
+msgstr "threshold"
+
+#: ../../source/block_gallery/models/Auto_Segment_Model.rst:28
+msgid "置信度阈值（0~1）"
+msgstr "Confidence threshold (0~1)"
+
+#: ../../source/block_gallery/models/Auto_Segment_Model.rst:29
+msgid "0.5"
+msgstr "0.5"
+
+#: ../../source/block_gallery/models/Auto_Segment_Model.rst:32
+msgid "使用步骤"
+msgstr "Usage steps"
+
+#: ../../source/block_gallery/models/Auto_Segment_Model.rst:34
+msgid "在工作流编辑器中添加本模块。"
+msgstr "Add this module in the workflow editor."
+
+#: ../../source/block_gallery/models/Auto_Segment_Model.rst:35
+msgid "选择模型与参数，点击保存。"
+msgstr "Select the model and parameters and click Save."
+
+#: ../../source/block_gallery/models/Auto_Segment_Model.rst:38
+msgid "注意事项"
+msgstr "Things to note"
+
+#: ../../source/block_gallery/models/Auto_Segment_Model.rst:40
+msgid "对高分辨率图像建议开启 GPU。"
+msgstr "It is recommended to turn on the GPU for high-resolution images."

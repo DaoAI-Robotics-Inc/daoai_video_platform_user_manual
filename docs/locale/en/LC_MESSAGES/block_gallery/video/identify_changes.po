@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/video/identify_changes.rst:4
+msgid "识别更改"
+msgstr "Identify changes"
+
+#: ../../source/block_gallery/video/identify_changes.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/video/identify_changes.rst:9
+msgid "通过较入问数识别与先前数据的差异"
+msgstr "Identify differences from previous data by comparing numbers"
+
+#: ../../source/block_gallery/video/identify_changes.rst:12
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/video/identify_changes.rst:14
+msgid "输入：当前数据 + 历史数据"
+msgstr "Input: current data + historical data"
+
+#: ../../source/block_gallery/video/identify_changes.rst:15
+msgid "输出：变化标记"
+msgstr "Output: change markers"
+
+#: ../../source/block_gallery/video/identify_changes.rst:18
+#: ../../source/block_gallery/video/identify_changes.rst:24
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/video/identify_changes.rst:25
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/video/identify_changes.rst:26
+msgid "默认值"
+msgstr "default value"
+
+#: ../../source/block_gallery/video/identify_changes.rst:27
+msgid "threshold"
+msgstr "threshold"
+
+#: ../../source/block_gallery/video/identify_changes.rst:28
+msgid "变化阈值"
+msgstr "change threshold"
+
+#: ../../source/block_gallery/video/identify_changes.rst:29
+msgid "0.1"
+msgstr "0.1"
+
+#: ../../source/block_gallery/video/identify_changes.rst:32
+msgid "使用步骤"
+msgstr "Usage steps"
+
+#: ../../source/block_gallery/video/identify_changes.rst:34
+msgid "在工作流编辑器中添加本模块。"
+msgstr "Add this module in the workflow editor."
+
+#: ../../source/block_gallery/video/identify_changes.rst:35
+msgid "设置变化阈值。"
+msgstr "Set change threshold."
+
+#: ../../source/block_gallery/video/identify_changes.rst:36
+msgid "点击保存。"
+msgstr "Click Save."
+
+#: ../../source/block_gallery/video/identify_changes.rst:39
+msgid "注意事项"
+msgstr "Things to note"
+
+#: ../../source/block_gallery/video/identify_changes.rst:41
+msgid "用于检测场景或对象的显著变化。"
+msgstr "Used to detect significant changes in scenes or objects."

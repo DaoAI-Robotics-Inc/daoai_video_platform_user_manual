@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/transformation/camera_calibration.rst:4
+msgid "相机标定"
+msgstr "Camera calibration"
+
+#: ../../source/block_gallery/transformation/camera_calibration.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/transformation/camera_calibration.rst:9
+msgid "使用校准从图像中去除桶形机头变"
+msgstr "Using calibration to remove barrel nose distortion from images"
+
+#: ../../source/block_gallery/transformation/camera_calibration.rst:12
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/transformation/camera_calibration.rst:14
+msgid "输入：图像 + 标定参数"
+msgstr "Input: image + calibration parameters"
+
+#: ../../source/block_gallery/transformation/camera_calibration.rst:15
+msgid "输出：矫正后的图像"
+msgstr "Output: rectified image"
+
+#: ../../source/block_gallery/transformation/camera_calibration.rst:18
+#: ../../source/block_gallery/transformation/camera_calibration.rst:24
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/transformation/camera_calibration.rst:25
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/transformation/camera_calibration.rst:26
+msgid "默认值"
+msgstr "default value"
+
+#: ../../source/block_gallery/transformation/camera_calibration.rst:27
+msgid "calibration_file"
+msgstr "calibration_file"
+
+#: ../../source/block_gallery/transformation/camera_calibration.rst:28
+msgid "标定文件路径"
+msgstr "Calibration file path"
+
+#: ../../source/block_gallery/transformation/camera_calibration.rst:29
+msgid "无"
+msgstr "none"
+
+#: ../../source/block_gallery/transformation/camera_calibration.rst:32
+msgid "使用步骤"
+msgstr "Usage steps"
+
+#: ../../source/block_gallery/transformation/camera_calibration.rst:34
+msgid "在工作流编辑器中添加本模块。"
+msgstr "Add this module in the workflow editor."
+
+#: ../../source/block_gallery/transformation/camera_calibration.rst:35
+msgid "上传相机标定文件。"
+msgstr "Upload the camera calibration file."
+
+#: ../../source/block_gallery/transformation/camera_calibration.rst:36
+msgid "点击保存。"
+msgstr "Click Save."
+
+#: ../../source/block_gallery/transformation/camera_calibration.rst:39
+msgid "注意事项"
+msgstr "Things to note"
+
+#: ../../source/block_gallery/transformation/camera_calibration.rst:41
+msgid "需要预先完成相机标定。"
+msgstr "Camera calibration needs to be completed in advance."

@@ -1,0 +1,528 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/case_study/kitchen_allergy.rst:2
+msgid "场景1：厨房手套佩戴分析"
+msgstr "Scenario 1: Analysis of wearing kitchen gloves"
+
+#: ../../source/case_study/kitchen_allergy.rst:3
+msgid ""
+"本案例演示如何在 ``DaoAI天眼`` 平台上搭建完整的检测工作流，精准识别厨房员工是否规范佩戴防护手套，帮助降低过敏原交叉污染与其他安全隐患。"
+msgstr ""
+"This case demonstrates how to build a complete detection workflow on the "
+"DaoAI Video Analysis Platform platform to accurately identify whether kitchen employees are "
+"wearing protective gloves in compliance with regulations, helping to reduce "
+"allergen cross-contamination and other safety hazards."
+
+#: ../../source/case_study/kitchen_allergy.rst:6
+msgid "视频讲解："
+msgstr "Video explanation:"
+
+#: ../../source/case_study/kitchen_allergy.rst:18
+msgid "第一步：数据收集与标注"
+msgstr "Step One: Data Collection and Labeling"
+
+#: ../../source/case_study/kitchen_allergy.rst:20
+msgid "并非所有检测任务都需要训练自定义模型，可根据业务目标选择直接使用预训练模型或自行训练模型。"
+msgstr ""
+"Not all detection tasks require training a custom model. You can choose to "
+"use a pre-trained model directly or train a model yourself according to your"
+" business goals."
+
+#: ../../source/case_study/kitchen_allergy.rst:22
+msgid ""
+"我们首先采集真实厨房场景中的视频，重点记录员工在处理食材时的手部动作。随后借助 ``DaoAI World`` "
+"标注工具逐帧标记，明确区分“正确佩戴手套”与“未佩戴手套”两类样本。"
+msgstr ""
+"We first collected videos in real kitchen scenes, focusing on recording the "
+"hand movements of employees when handling ingredients.Then, the DaoAI World "
+"annotation tool was used to mark the samples frame by frame to clearly "
+"distinguish between \"correctly wearing gloves\" and \"not wearing gloves\" "
+"samples."
+
+#: ../../source/case_study/kitchen_allergy.rst:24
+msgid "示例：标注未佩戴手套"
+msgstr "Example: Marking that gloves are not worn"
+
+#: ../../source/case_study/kitchen_allergy.rst:26
+msgid "标注未佩戴手套"
+msgstr "Mark not wearing gloves"
+
+#: ../../source/case_study/kitchen_allergy.rst:31
+msgid "示例：标注正确佩戴手套"
+msgstr "Example: Marking the correct wearing of gloves"
+
+#: ../../source/case_study/kitchen_allergy.rst:33
+msgid "标注正确佩戴手套"
+msgstr "Mark the correct wearing of gloves"
+
+#: ../../source/case_study/kitchen_allergy.rst:38
+msgid "完成标注后，训练数据集并导出 ``dwm`` 格式模型，为后续部署做准备。"
+msgstr ""
+"After completing the annotation, train the data set and export the model in "
+"``dwm`` format to prepare for subsequent deployment."
+
+#: ../../source/case_study/kitchen_allergy.rst:41
+msgid ""
+"我们可以通过天眼平台来直接收集视频数据到标注平台，详情请参阅 `收集数据训练 <http://docs.welinkirt.com/daoai-"
+"world-user-manual/latest/train/train_model/index.html>`_ 和 `模型部署 "
+"<http://docs.welinkirt.com/daoai-world-user-"
+"manual/latest/deploy/deploy_device/index.html>`_ 。"
+msgstr ""
+"We can directly collect video data to the annotation platform through the "
+"Tianyan platform. For details, please refer to `Collecting data training "
+"<http://docs.welinkirt.com/daoai-world-user-"
+"manual/latest/train/train_model/index.html>`_ and `Model deployment "
+"<http://docs.welinkirt.com/daoai-world-user-"
+"manual/latest/deploy/deploy_device/index.html>`_ ."
+
+#: ../../source/case_study/kitchen_allergy.rst:43
+msgid ""
+"更完整的标注流程请参阅 `DaoAI World标注指南 <http://docs.welinkirt.com/daoai-world-user-"
+"manual/latest/introduce/quick_start/offline_setup.html>`_。"
+msgstr ""
+"For a more complete annotation process, please refer to `DaoAI World "
+"Annotation Guide <http://docs.welinkirt.com/daoai-world-user-"
+"manual/latest/introduce/quick_start/offline_setup.html>`_."
+
+#: ../../source/case_study/kitchen_allergy.rst:47
+msgid "第二步：创建工作流"
+msgstr "Step 2: Create a workflow"
+
+#: ../../source/case_study/kitchen_allergy.rst:49
+msgid "拥有标注数据与模型后，即可在 **DaoAI天眼** 平台中构建工作流，串联各模块完成手套佩戴检测。"
+msgstr ""
+"Once you have annotated data and models, you can build a workflow in the "
+"**DaoAI Video Analysis Platform** platform and connect various modules in series to complete"
+" glove wearing detection."
+
+#: ../../source/case_study/kitchen_allergy.rst:51
+msgid "登录 **DaoAI天眼** 平台，进入“工作流”页面。"
+msgstr "Log in to the **DaoAI Tianyan** platform and enter the \"Workflow\" page."
+
+#: ../../source/case_study/kitchen_allergy.rst:52
+msgid "点击右上角 ``新建工作流`` ，建立新的工作流项目。"
+msgstr ""
+"Click \"New Workflow\" in the upper right corner to create a new workflow "
+"project."
+
+#: ../../source/case_study/kitchen_allergy.rst:54
+msgid "工作流界面"
+msgstr "Workflow interface"
+
+#: ../../source/case_study/kitchen_allergy.rst:59
+msgid "打开工作流编辑器后，点击中央的 ``添加模型`` 按钮导入检测模型。"
+msgstr ""
+"After opening the workflow editor, click the \"Add Model\" button in the "
+"center to import the detection model."
+
+#: ../../source/case_study/kitchen_allergy.rst:60
+msgid "在弹出的模型选择窗口中，切换到 ``DaoAI World模型`` 选项卡，再次点击该模块进入配置界面。"
+msgstr ""
+"In the pop-up model selection window, switch to the ``DaoAI World Model`` "
+"tab, and click the module again to enter the configuration interface."
+
+#: ../../source/case_study/kitchen_allergy.rst:61
+msgid "在配置界面中点击 ``未选择模型`` ，选择模型类型。"
+msgstr ""
+"Click \"No model selected\" in the configuration interface and select the "
+"model type."
+
+#: ../../source/case_study/kitchen_allergy.rst:62
+msgid "依次选择 ``目标检测`` → ``导入训练模型``，上传第一步导出的 ``dwm`` 模型文件。"
+msgstr ""
+"Select ``Target Detection`` → ``Import Training Model`` and upload the "
+"``dwm`` model file exported in the first step."
+
+#: ../../source/case_study/kitchen_allergy.rst:63
+msgid "选中上传完成的模型，点击右上角 ``保存``。"
+msgstr "Select the uploaded model and click Save in the upper right corner."
+
+#: ../../source/case_study/kitchen_allergy.rst:65
+msgid "上传自定义模型"
+msgstr "Upload custom model"
+
+#: ../../source/case_study/kitchen_allergy.rst:70
+msgid "模型准备就绪后，即可继续配置各个模块。"
+msgstr ""
+"Once the model is ready, you can proceed with configuring the individual "
+"modules."
+
+#: ../../source/case_study/kitchen_allergy.rst:73
+msgid "第三步：配置工作流"
+msgstr "Step 3: Configure workflow"
+
+#: ../../source/case_study/kitchen_allergy.rst:75
+msgid "熟悉 :ref:`工作流模块` 中的功能后，按照以下步骤逐一连线配置。"
+msgstr ""
+"After you are familiar with the functions in :ref:`workflow module`, follow "
+"the steps below to connect and configure them one by one."
+
+#: ../../source/case_study/kitchen_allergy.rst:77
+msgid "添加检测过滤模块，用于筛出未佩戴手套的检测结果。"
+msgstr ""
+"Add a detection filter module to filter out test results without wearing "
+"gloves."
+
+#: ../../source/case_study/kitchen_allergy.rst:78
+msgid "在模型模块下方点击 ``+`` ，选择 ``逻辑处理器``。"
+msgstr "Click ``+`` under the model module and select ``Logical Processor``."
+
+#: ../../source/case_study/kitchen_allergy.rst:79
+msgid "在弹窗中选择 ``检测过滤`` 并添加。"
+msgstr "Select ``Detection Filtering`` in the pop-up window and add it."
+
+#: ../../source/case_study/kitchen_allergy.rst:80
+msgid "打开模块，点击 ``配置检测过滤``。"
+msgstr "Open the module and click Configure Detection Filtering."
+
+#: ../../source/case_study/kitchen_allergy.rst:81
+msgid "在配置窗口中勾选 ``对象类别``，输入自定义的“未佩戴手套”类别名称（需与标注一致）。"
+msgstr ""
+"Check Object Category in the configuration window and enter the custom \"Not"
+" Wearing Gloves\" category name (which must be consistent with the label)."
+
+#: ../../source/case_study/kitchen_allergy.rst:82
+msgid "本案例使用 **unequip** 作为类别，因此输入 **unequip** 后点击 ``保存``。"
+msgstr ""
+"This case uses **unequip** as the category, so enter **unequip** and click "
+"``Save``."
+
+#: ../../source/case_study/kitchen_allergy.rst:84
+msgid "检测过滤配置"
+msgstr "Detect filter configuration"
+
+#: ../../source/case_study/kitchen_allergy.rst:88
+msgid "添加 ``继续执行`` 模块，确保仅在检测到未佩戴手套时才往下流转。"
+msgstr ""
+"Added a ``continue`` module to ensure that only flow down is detected when "
+"no gloves are being worn."
+
+#: ../../source/case_study/kitchen_allergy.rst:89
+msgid "在模型模块下方再次点击 ``+``，选择 ``逻辑处理器``。"
+msgstr ""
+"Click the ``+`` again under the model module and select ``Logical "
+"Processor``."
+
+#: ../../source/case_study/kitchen_allergy.rst:90
+msgid "在弹窗中选择 ``继续执行`` 并添加。"
+msgstr "Select Continue in the pop-up window and add."
+
+#: ../../source/case_study/kitchen_allergy.rst:91
+msgid "点击模块，选择 ``未配置条件`` 进入条件配置。"
+msgstr ""
+"Click on the module and select \"Unconfigured conditions\" to enter "
+"condition configuration."
+
+#: ../../source/case_study/kitchen_allergy.rst:92
+msgid "在条件配置中，将检测目标指向上一模块 ``detection_filter_1``。"
+msgstr ""
+"In the condition configuration, point the detection target to the previous "
+"module ``detection_filter_1``."
+
+#: ../../source/case_study/kitchen_allergy.rst:93
+msgid "设置检测阈值为 **大于等于 1**，表示任意一个“未佩戴手套”目标即可继续执行。"
+msgstr ""
+"Set the detection threshold to **greater than or equal to 1**, which means "
+"that any \"not wearing gloves\" target can continue to execute."
+
+#: ../../source/case_study/kitchen_allergy.rst:94
+msgid "点击 ``保存``。该模块的下一步稍后再行连接。"
+msgstr "Click ``Save``.The next step of this module will be connected later."
+
+#: ../../source/case_study/kitchen_allergy.rst:96
+msgid "继续执行模块添加"
+msgstr "Continue to add modules"
+
+#: ../../source/case_study/kitchen_allergy.rst:101
+msgid "添加 ``边界框可视`` 模块，在画面中直观呈现检测结果。"
+msgstr ""
+"Add the ``bounding box visual`` module to visually present the detection "
+"results on the screen."
+
+#: ../../source/case_study/kitchen_allergy.rst:102
+msgid "在 ``继续执行`` 模块下方点击 ``+``，选择 ``可视化``。"
+msgstr ""
+"Click the ``+`` under the ``Continue`` module and select ``Visualize``."
+
+#: ../../source/case_study/kitchen_allergy.rst:103
+msgid "在弹窗中选择 ``边界框可视`` 并添加。"
+msgstr "Select \"Bounding box visible\" in the pop-up window and add it."
+
+#: ../../source/case_study/kitchen_allergy.rst:104
+msgid "返回 ``继续执行`` 模块，将“下一步”指向新添加的 ``边界框可视`` 模块，完成连线。"
+msgstr ""
+"Return to the ``Continue Execution`` module, point \"Next\" to the newly "
+"added ``Bounding Box Visual`` module, and complete the connection."
+
+#: ../../source/case_study/kitchen_allergy.rst:105
+msgid "打开 ``边界框可视``，在 ``模型预测显示`` 中选择 ``detection_filter_1`` 作为输入。"
+msgstr ""
+"Turn on ``Bounding box visual`` and select ``detection_filter_1`` as input "
+"in ``Model prediction display``."
+
+#: ../../source/case_study/kitchen_allergy.rst:106
+#: ../../source/case_study/kitchen_allergy.rst:120
+#: ../../source/case_study/kitchen_allergy.rst:134
+msgid "点击 ``保存``。"
+msgstr "Click ``Save``."
+
+#: ../../source/case_study/kitchen_allergy.rst:108
+msgid "边界框可视模块配置"
+msgstr "Bounding box visual module configuration"
+
+#: ../../source/case_study/kitchen_allergy.rst:113
+msgid "仍可根据需求调整边界框颜色、标签样式等参数，具体请参阅 :ref:`边界框显示`。如需更丰富的呈现，可继续串联其他可视化模块。"
+msgstr ""
+"You can still adjust the bounding box color, label style and other "
+"parameters according to your needs. For details, please refer to "
+":ref:`Bounding Box Display`.If you need a richer presentation, you can "
+"continue to connect other visualization modules in series."
+
+#: ../../source/case_study/kitchen_allergy.rst:115
+msgid "添加告警模块，在检测到未佩戴手套时触发事件保存。"
+msgstr ""
+"Add an alarm module to trigger event saving when no gloves are detected."
+
+#: ../../source/case_study/kitchen_allergy.rst:116
+msgid "在 ``边界框可视`` 模块下方点击 ``+``，选择 ``数据存储``。"
+msgstr ""
+"Click the ``+`` under the ``Bounding Box Visible`` module and select ``Data "
+"Storage``."
+
+#: ../../source/case_study/kitchen_allergy.rst:117
+msgid "在弹窗中选择 ``事件保存`` 并添加。"
+msgstr "Select ``Event Save`` in the pop-up window and add it."
+
+#: ../../source/case_study/kitchen_allergy.rst:118
+msgid "在配置界面中于 ``事件类型`` 填写告警内容，此处填写 **glove missing**。"
+msgstr ""
+"In the configuration interface, fill in the alarm content in the ``event "
+"type``, fill in **glove missing** here."
+
+#: ../../source/case_study/kitchen_allergy.rst:119
+msgid "视需求调整输入图像与其他参数，本例仅将“最大视频保存时长”设为 **10 秒**。"
+msgstr ""
+"Adjust the input image and other parameters as needed. In this example, only"
+" set the \"Maximum video storage duration\" to **10 seconds**."
+
+#: ../../source/case_study/kitchen_allergy.rst:122
+msgid "告警模块配置"
+msgstr "Alarm module configuration"
+
+#: ../../source/case_study/kitchen_allergy.rst:127
+msgid "请保持“原始输入图像”配置为 ``input image``。"
+msgstr ""
+"Please keep the \"original input image\" configuration as ``input image``."
+
+#: ../../source/case_study/kitchen_allergy.rst:129
+msgid "添加仪表盘可视化模块，将检测结果发布到前端。"
+msgstr ""
+"Add a dashboard visualization module to publish detection results to the "
+"front end."
+
+#: ../../source/case_study/kitchen_allergy.rst:130
+msgid "在 ``事件保存`` 模块下方点击 ``+``，选择 ``可视化``。"
+msgstr ""
+"Click ``+`` under the ``Event Saving`` module and select ``Visualization``."
+
+#: ../../source/case_study/kitchen_allergy.rst:131
+msgid "在弹窗中选择 ``仪表盘可视化`` 并添加。"
+msgstr "Select ``Dashboard Visualization`` in the pop-up window and add it."
+
+#: ../../source/case_study/kitchen_allergy.rst:132
+msgid "点击模块，选择 ``配置仪表盘可视化``。"
+msgstr "Click on Modules and select Configure Dashboard Visualization."
+
+#: ../../source/case_study/kitchen_allergy.rst:133
+msgid "在配置窗口中挑选合适的展示模板，本例选择 ``bounding_box_visualization_1`` 以显示检测框。"
+msgstr ""
+"Select the appropriate display template in the configuration window. In this"
+" example, select ``bounding_box_visualization_1`` to display the detection "
+"box."
+
+#: ../../source/case_study/kitchen_allergy.rst:136
+msgid "仪表盘可视化模块配置"
+msgstr "Dashboard visualization module configuration"
+
+#: ../../source/case_study/kitchen_allergy.rst:141
+msgid "当存在多个可视化模块时，建议将显示配置放在最后一个模块中，以确保所有可视化结果均能呈现在前端。"
+msgstr ""
+"When there are multiple visualization modules, it is recommended to place "
+"the display configuration in the last module to ensure that all "
+"visualization results can be presented on the front end."
+
+#: ../../source/case_study/kitchen_allergy.rst:143
+msgid "至此，工作流配置完毕。请及时点击右上角 ``保存`` ，最好在每个关键步骤后顺手保存，防止配置丢失。"
+msgstr ""
+"At this point, the workflow configuration is complete.Please click Save in "
+"the upper right corner in time. It is best to save after each key step to "
+"prevent the configuration from being lost."
+
+#: ../../source/case_study/kitchen_allergy.rst:146
+msgid "举一反三"
+msgstr "learn by analogy"
+
+#: ../../source/case_study/kitchen_allergy.rst:148
+msgid ""
+"上述示例聚焦于核心检测逻辑。实际应用中，工作流还支持更丰富的可视化样式与条件分支，比如在可视化模块中叠加三角形、椭圆等标记，让呈现效果更直观。 "
+"建议在此基础上继续探索：可以增设逻辑分支，同时展示“已佩戴”和“未佩戴”两种状态，或针对现场需求微调可视化布局。"
+msgstr ""
+"The above example focuses on the core detection logic.In practical "
+"applications, the workflow also supports richer visual styles and "
+"conditional branches, such as superimposing triangles, ellipses and other "
+"markers in the visualization module to make the presentation effect more "
+"intuitive.It is recommended to continue to explore on this basis: you can "
+"add logical branches to display the two states of \"worn\" and \"not worn\" "
+"at the same time, or fine-tune the visual layout according to on-site needs."
+
+#: ../../source/case_study/kitchen_allergy.rst:151
+msgid "下方提供一套完整工作流供参考，欢迎对照学习并进一步优化。"
+msgstr ""
+"A complete set of workflows is provided below for reference. Welcome to "
+"study and further optimize."
+
+#: ../../source/case_study/kitchen_allergy.rst:153
+msgid "完整工作流示例"
+msgstr "Complete workflow example"
+
+#: ../../source/case_study/kitchen_allergy.rst:159
+msgid "第四步：配置摄像头"
+msgstr "Step 4: Configure the camera"
+
+#: ../../source/case_study/kitchen_allergy.rst:160
+msgid "完成工作流配置并 **保存** 后，就可以设置摄像头，让厨房画面与实时检测结果同步呈现。"
+msgstr ""
+"After completing the workflow configuration and **saving**, you can set up "
+"the camera so that the kitchen images and real-time detection results are "
+"presented simultaneously."
+
+#: ../../source/case_study/kitchen_allergy.rst:162
+msgid "首先进入 **摄像头输入** 页面，点击 ``新增摄像头`` 新建一个摄像头条目。"
+msgstr ""
+"First enter the **Camera Input** page and click ``Add Camera`` to create a "
+"new camera entry."
+
+#: ../../source/case_study/kitchen_allergy.rst:164
+msgid "摄像头配置界面"
+msgstr "Camera configuration interface"
+
+#: ../../source/case_study/kitchen_allergy.rst:169
+msgid "在弹窗中依次填写摄像头名称与 RTSP 视频流地址，并点击 ``预览摄像头`` 核对画面是否正常；视频解码设备保持默认的 cpu 解码即可。"
+msgstr ""
+"Fill in the camera name and RTSP video stream address in the pop-up window, "
+"and click \"Preview Camera\" to check whether the picture is normal; the "
+"video decoding device can keep the default CPU decoding."
+
+#: ../../source/case_study/kitchen_allergy.rst:171
+msgid ""
+"预览无误后点击 ``下一步``，在下拉框中选择我们稍早创建的工作流。右侧菜单可调节 fps "
+"参数：上方控制检测速度，下方控制检测频率。通常将检测频率设置为 1 fps（每秒检测 1 帧）即可满足大多数场景。"
+msgstr ""
+"After the preview is correct, click Next and select the workflow we created "
+"earlier in the drop-down box.The right menu can adjust the fps parameters: "
+"the upper part controls the detection speed, and the lower part controls the"
+" detection frequency.Typically setting the detection frequency to 1 fps "
+"(detecting 1 frame per second) is sufficient for most scenarios."
+
+#: ../../source/case_study/kitchen_allergy.rst:173
+msgid "确认各项配置无误后，点击 ``保存`` 完成设置。"
+msgstr ""
+"After confirming that all configurations are correct, click Save to complete"
+" the settings."
+
+#: ../../source/case_study/kitchen_allergy.rst:175
+msgid "摄像头工作流配置"
+msgstr "Camera workflow configuration"
+
+#: ../../source/case_study/kitchen_allergy.rst:180
+msgid "返回 **摄像头输入** 页面，点击刚创建摄像头右侧的 ``预览`` 按钮，即可看到实时检测画面的截图。"
+msgstr ""
+"Return to the **Camera Input** page and click the ``Preview`` button on the "
+"right side of the newly created camera to see a screenshot of the real-time "
+"detection screen."
+
+#: ../../source/case_study/kitchen_allergy.rst:182
+msgid "点击左侧三角形图标可以展开摄像头详情，在 AI 检测列表中点击开启图标即可运行该摄像头工作流。"
+msgstr ""
+"Click the triangle icon on the left to expand the camera details, and click "
+"the open icon in the AI ​​detection list to run the camera workflow."
+
+#: ../../source/case_study/kitchen_allergy.rst:184
+msgid "摄像头预览界面"
+msgstr "Camera preview interface"
+
+#: ../../source/case_study/kitchen_allergy.rst:189
+msgid "当检测状态显示为“运行”且吞吐量下方的 fps 数值开始上升时，就意味着工作流已成功启动，摄像头配置也随之完成。"
+msgstr ""
+"When the detection status shows \"Running\" and the fps number under "
+"Throughput starts to increase, the workflow has been successfully started "
+"and the camera configuration is complete."
+
+#: ../../source/case_study/kitchen_allergy.rst:192
+msgid "第五步：查看实时监控与警报"
+msgstr "Step 5: View real-time monitoring and alerts"
+
+#: ../../source/case_study/kitchen_allergy.rst:194
+msgid "配置完摄像头后，即可前往 **实时警报** 页面查看实时监控画面。"
+msgstr ""
+"After configuring the camera, you can go to the **Real-time Alert** page to "
+"view the real-time monitoring screen."
+
+#: ../../source/case_study/kitchen_allergy.rst:196
+msgid "在实时警报页面中，我们可以点击下方的摄像头图标并选择刚配置的摄像头，即可看到实时画面与检测结果。"
+msgstr ""
+"In the real-time alarm page, we can click the camera icon below and select "
+"the newly configured camera to see the real-time picture and detection "
+"results."
+
+#: ../../source/case_study/kitchen_allergy.rst:198
+msgid "实时警报界面"
+msgstr "Real-time alert interface"
+
+#: ../../source/case_study/kitchen_allergy.rst:203
+msgid ""
+"在这个界面中，左边部分为统计数据，会将各个事件类型的告警数量进行汇总；右边部分为实时警报消息列表，点击每条消息即可查看对应的检测报告以及解决与否的选项。"
+msgstr ""
+"In this interface, the left part is statistical data, which summarizes the "
+"number of alarms for each event type; the right part is a list of real-time "
+"alarm messages. Click on each message to view the corresponding detection "
+"report and options for resolution."
+
+#: ../../source/case_study/kitchen_allergy.rst:205
+msgid ""
+"如果是用的是虚拟视频流作为数据源，在码率 (bitrate) 较高时，可能会导致实时画面加载较慢，建议适当调低码率以提升加载速度。(例如将码率调至 "
+"3000kbps 以下)"
+msgstr ""
+"If you use a virtual video stream as the data source, when the bitrate is "
+"high, the real-time image may be loaded slowly. It is recommended to lower "
+"the bitrate appropriately to improve the loading speed.(For example, adjust "
+"the code rate to below 3000kbps)"
+
+#: ../../source/case_study/kitchen_allergy.rst:207
+msgid ""
+"至此，厨房手套佩戴检测的实例演示完毕。通过本案例，您已经掌握了从数据标注、模型训练到工作流搭建与摄像头配置的完整流程。欢迎在实际应用中根据需求进行调整与优化，提升厨房安全管理水平。"
+msgstr ""
+"At this point, the example demonstration of kitchen glove wearing detection "
+"is completed.Through this case, you have mastered the complete process from "
+"data annotation, model training to workflow construction and camera "
+"configuration.Welcome to adjust and optimize according to needs in practical"
+" applications to improve the level of kitchen safety management."

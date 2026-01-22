@@ -1,0 +1,354 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-22 10:20-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/user_guide/create_workflow.rst:2
+msgid "创建您的第一个工作流"
+msgstr "Create your first workflow"
+
+#: ../../source/user_guide/create_workflow.rst:4
+msgid ""
+"本节将带您在 DaoAI 天眼平台中，从零开始创建并运行您的第一个工作流。 通过一个完整示例，您将了解如何在可视化界面中连接各个功能模块， "
+"并运行一条从数据输入到模型推理再到业务输出的完整 AI 视觉流程。"
+msgstr ""
+"This section will take you through creating and running your first "
+"workflow from scratch in the DaoAI Tianyan platform.Through a complete "
+"example, you will learn how to connect various functional modules in the "
+"visual interface and run a complete AI visual process from data input to "
+"model inference to business output."
+
+#: ../../source/user_guide/create_workflow.rst:14
+msgid "前提条件"
+msgstr "Prerequisites"
+
+#: ../../source/user_guide/create_workflow.rst:16
+msgid "在开始之前，请确保已完成以下准备工作："
+msgstr "Before you begin, make sure you have completed the following preparations:"
+
+#: ../../source/user_guide/create_workflow.rst:18
+msgid "已成功登录 DaoAI 天眼平台。"
+msgstr "Successfully logged into DaoAI Tianyan platform."
+
+#: ../../source/user_guide/create_workflow.rst:19
+msgid "已准备好可用于推理的模型（目标检测 / 分类 / 分割模型，可为平台内置或自训练模型）。"
+msgstr ""
+"Models are ready for inference (object "
+"detection/classification/segmentation models, either built-in or self-"
+"trained for the platform)."
+
+#: ../../source/user_guide/create_workflow.rst:20
+msgid "已准备好至少一组测试数据，例如单张图片、本地文件夹、视频文件或 RTSP 摄像头流。"
+msgstr ""
+"At least one set of test data is ready, such as a single image, a local "
+"folder, a video file, or an RTSP camera stream."
+
+#: ../../source/user_guide/create_workflow.rst:24
+msgid "步骤 1：创建新工作流"
+msgstr "Step 1: Create a new workflow"
+
+#: ../../source/user_guide/create_workflow.rst:26
+msgid "打开 DaoAI 天眼平台 ``http://<your_server_ip>:38080/dashboard`` 。"
+msgstr "Open DaoAI Tianyan platform ``http://<your_server_ip>:38080/dashboard``."
+
+#: ../../source/user_guide/create_workflow.rst:27
+msgid "在上方导航栏中点击 **“工作流 (Workflows)”**。"
+msgstr "Click **\"Workflows\"** in the upper navigation bar."
+
+#: ../../source/user_guide/create_workflow.rst:28
+msgid "进入工作流管理页面后，点击 **“创建工作流”**，系统将进入工作流编辑画布界面。。"
+msgstr ""
+"After entering the workflow management page, click **\"Create "
+"Workflow\"**, and the system will enter the workflow editing canvas "
+"interface. ."
+
+#: ../../source/user_guide/create_workflow.rst:29
+msgid "输入工作流名称，例如 ``新工作流``。"
+msgstr "Enter a workflow name, such as ``New Workflow``."
+
+#: ../../source/user_guide/create_workflow.rst:30
+msgid "点击保存。"
+msgstr "Click Save."
+
+#: ../../source/user_guide/create_workflow.rst:34
+msgid "DaoAI 天眼工作流概览"
+msgstr "DaoAI Tianyan workflow overview"
+
+#: ../../source/user_guide/create_workflow.rst:40
+msgid "DaoAI Video Analysis Platform workflow overview"
+msgstr ""
+
+#: ../../source/user_guide/create_workflow.rst:46
+msgid "步骤 2：添加模型推理模块"
+msgstr "Step 2: Add the model inference module"
+
+#: ../../source/user_guide/create_workflow.rst:48
+msgid "点击添加模型，添加一个 **模型推理模块**："
+msgstr "Click Add Model to add a **Model Inference Module**:"
+
+#: ../../source/user_guide/create_workflow.rst:50
+msgid "可以选择： - DaoAI World 模型， 选择一个从DaoAI World 训练并导出的模型："
+msgstr ""
+"You can choose: - DaoAI World model, choose a model trained and exported "
+"from DaoAI World:"
+
+#: ../../source/user_guide/create_workflow.rst:53
+msgid "目标检测模型模块（Object Detection）"
+msgstr "Object Detection Model Module (Object Detection)"
+
+#: ../../source/user_guide/create_workflow.rst:54
+msgid "分类模型模块（Classification）"
+msgstr "Classification model module (Classification)"
+
+#: ../../source/user_guide/create_workflow.rst:55
+msgid "视力分割模型模块（Instance Segmentation）"
+msgstr "Vision segmentation model module (Instance Segmentation)"
+
+#: ../../source/user_guide/create_workflow.rst:56
+msgid "关键点检测模型模块（Keypoint Detection）"
+msgstr "Keypoint detection model module (Keypoint Detection)"
+
+#: ../../source/user_guide/create_workflow.rst:57
+msgid "语义分割模型模块（Segmentation）"
+msgstr "Semantic segmentation model module (Segmentation)"
+
+#: ../../source/user_guide/create_workflow.rst:58
+msgid "混合模型模块（Mixed Model）"
+msgstr "Mixed Model"
+
+#: ../../source/user_guide/create_workflow.rst:59
+msgid "OCR 模型模块（OCR Model）"
+msgstr "OCR Model module"
+
+#: ../../source/user_guide/create_workflow.rst:61
+msgid "通用检测模型模块（General Detection）"
+msgstr "General detection model module (General Detection)"
+
+#: ../../source/user_guide/create_workflow.rst:63
+msgid ""
+"本示例中，我们选择 **通用检测模型（General Detection）** 模块进行演示。 该模型支持使用英文自然语言描述目标类别， "
+"系统将基于智能多模态模型自动完成目标识别与定位。"
+msgstr ""
+"In this example, we select the **General Detection** module for "
+"demonstration. The model supports the use of English natural language to "
+"describe target categories, and the system will automatically complete "
+"target recognition and positioning based on the intelligent multi-modal "
+"model."
+
+#: ../../source/user_guide/create_workflow.rst:67
+#: ../../source/user_guide/create_workflow.rst:73
+msgid "Add Model in Workflow"
+msgstr "Add Model in Workflow"
+
+#: ../../source/user_guide/create_workflow.rst:71
+msgid "添加后，配置模型的标签，使用英文自然语言输入需要识别的目标类别，例如 ``person`` 、 ``car`` 、 ``truck`` 等。"
+msgstr ""
+"After adding, configure the label of the model and use English natural "
+"language to enter the target category to be recognized, such as "
+"``person``, ``car``, ``truck``, etc."
+
+#: ../../source/user_guide/create_workflow.rst:77
+msgid "模型模块将在工作流运行时对视频流的每帧图像数据进行实时推理，并输出预测结果。"
+msgstr ""
+"The model module will perform real-time inference on each frame of image "
+"data of the video stream when the workflow is running, and output "
+"prediction results."
+
+#: ../../source/user_guide/create_workflow.rst:80
+msgid "步骤 3：添加业务逻辑与可视化模块"
+msgstr "Step 3: Add business logic and visualization modules"
+
+#: ../../source/user_guide/create_workflow.rst:82
+msgid "根据业务需求，添加 **逻辑/规则模块**，例如："
+msgstr "According to business needs, add **logic/rule module**, for example:"
+
+#: ../../source/user_guide/create_workflow.rst:84
+msgid "检测过滤模块: 按照标签，置信度，等条件过滤检测结果；这里我们设置过滤person标签；"
+msgstr ""
+"Detection filtering module: Filter detection results according to tags, "
+"confidence, and other conditions; here we set the filtering person tag;"
+
+#: ../../source/user_guide/create_workflow.rst:85
+msgid "Filter Module"
+msgstr "Filter Module"
+
+#: ../../source/user_guide/create_workflow.rst:89
+msgid "条件判断模块: 根据配置的条件语句进行判断，并触发对应的分支逻辑；这里我们设置当检测到person数量大于5时触发报警；"
+msgstr ""
+"Conditional judgment module: judge based on the configured conditional "
+"statement and trigger the corresponding branch logic; here we set an "
+"alarm to be triggered when the number of persons detected is greater than"
+" 5;"
+
+#: ../../source/user_guide/create_workflow.rst:90
+msgid "Condition Module"
+msgstr "Condition Module"
+
+#: ../../source/user_guide/create_workflow.rst:94
+msgid ""
+"继续添加 **可视化模块**，用于在图像上叠加绘制检测结果，并在条件判断模块中将 ``下一步`` "
+"参数配置为对应的可视化模块，使工作流在条件满足后继续执行该可视化节点"
+msgstr ""
+"Continue to add the **Visualization module**, which is used to overlay "
+"and draw the detection results on the image, and configure the ``Next "
+"step`` parameter in the conditional judgment module to the corresponding "
+"visualization module, so that the workflow continues to execute the "
+"visualization node after the conditions are met."
+
+#: ../../source/user_guide/create_workflow.rst:96
+msgid "边界框可视化模块： 在图像上绘制目标检测的边界框； ``预测显示`` 参数选择模型模块的输出结果；"
+msgstr ""
+"Bounding box visualization module: Draws the bounding box of the object "
+"detection on the image; ``prediction display`` output result of the "
+"parameter selection model module;"
+
+#: ../../source/user_guide/create_workflow.rst:97
+msgid "标签可视化模块： 在图像上显示目标类别标签和置信度； ``预测显示`` 参数选择模型模块的输出结果；"
+msgstr ""
+"Label visualization module: displays the target category label and "
+"confidence on the image; ``prediction display`` output results of the "
+"parameter selection model module;"
+
+#: ../../source/user_guide/create_workflow.rst:98
+msgid "仪表盘显示模块： 在监控大屏中显示可视化结果。"
+msgstr ""
+"Dashboard display module: Displays visual results on the large monitoring"
+" screen."
+
+#: ../../source/user_guide/create_workflow.rst:100
+msgid "Visualization Module"
+msgstr "Visualization Module"
+
+#: ../../source/user_guide/create_workflow.rst:105
+msgid "步骤 4：添加事件保存模块"
+msgstr "Step 4: Add event saving module"
+
+#: ../../source/user_guide/create_workflow.rst:107
+msgid "根据业务需求，添加 **事件保存模块**，用于记录和存储检测到的事件。"
+msgstr ""
+"According to business needs, add **Event Saving Module** to record and "
+"store detected events."
+
+#: ../../source/user_guide/create_workflow.rst:109
+msgid "输入事件类型"
+msgstr "Enter event type"
+
+#: ../../source/user_guide/create_workflow.rst:110
+msgid "选择要展示的可视化输入，作为图片保存内容"
+msgstr "Select the visual input to be displayed and save the content as an image"
+
+#: ../../source/user_guide/create_workflow.rst:111
+msgid "是否保存视频：选择保存视频时，系统会将事件发生的前后15秒的视频片段和事件一同保存。"
+msgstr ""
+"Whether to save the video: When you choose to save the video, the system "
+"will save the 15 seconds of video clips before and after the event occurs"
+" together with the event."
+
+#: ../../source/user_guide/create_workflow.rst:112
+msgid "最大视频时长：事件发生时，单个视频文件的最大时长，单位为秒，默认30秒，也就是事件发生前后15秒，总共30秒的视频片段。"
+msgstr ""
+"Maximum video duration: When an event occurs, the maximum duration of a "
+"single video file, in seconds, defaults to 30 seconds, which is 15 "
+"seconds before and after the event, for a total of 30 seconds of video "
+"clips."
+
+#: ../../source/user_guide/create_workflow.rst:120
+msgid "步骤 5：保存并运行工作流"
+msgstr "Step 5: Save and run the workflow"
+
+#: ../../source/user_guide/create_workflow.rst:122
+msgid "点击画布右上角的 **“保存”** 按钮保存工作流配置。"
+msgstr ""
+"Click the **Save** button in the upper right corner of the canvas to save"
+" the workflow configuration."
+
+#: ../../source/user_guide/create_workflow.rst:123
+msgid "上传一张图片，点击 **“运行 / 测试”** 开始执行工作流："
+msgstr ""
+"Upload an image and click **\"Run/Test\"** to start executing the "
+"workflow:"
+
+#: ../../source/user_guide/create_workflow.rst:124
+msgid "运行完成后，您可以查看输出的json结果。以及可视化结果。"
+msgstr ""
+"After the run is completed, you can view the output json results.and "
+"visualize the results."
+
+#: ../../source/user_guide/create_workflow.rst:126
+#: ../../source/user_guide/create_workflow.rst:129
+msgid "Workflow Result"
+msgstr "Workflow Result"
+
+#: ../../source/user_guide/create_workflow.rst:134
+msgid "示例：基础检测工作流"
+msgstr "Example: Basic Detection Workflow"
+
+#: ../../source/user_guide/create_workflow.rst:136
+msgid "下面示例展示了一个最常见的工作流结构， 实现“目标检测 → 结果可视化 → 输出保存”的完整流程："
+msgstr ""
+"The following example shows one of the most common workflow structures, "
+"realizing the complete process of \"target detection → result "
+"visualization → output saving\":"
+
+#: ../../source/user_guide/create_workflow.rst:168
+msgid "运行工作流的多种方式"
+msgstr "Multiple ways to run workflows"
+
+#: ../../source/user_guide/create_workflow.rst:170
+msgid "您的工作流现已保存至 DaoAI 天眼系统服务器。这意味着您可以通过多种方式运行它，包括："
+msgstr ""
+"Your workflow is now saved to the DaoAI Video Analysis Platform server.This means "
+"you can run it in a variety of ways, including:"
+
+#: ../../source/user_guide/create_workflow.rst:172
+msgid "在平台中完成相机配置后直接运行；"
+msgstr "Run it directly after completing the camera configuration in the platform;"
+
+#: ../../source/user_guide/create_workflow.rst:173
+msgid "通过 HTTP API 进行调用与集成。"
+msgstr "Calls and integrations via HTTP API."
+
+#: ../../source/user_guide/create_workflow.rst:175
+msgid "详情请阅读下一章 :ref:`运行工作流`"
+msgstr "Please read the next chapter for details :ref:`Run Workflow`"
+
+#: ../../source/user_guide/create_workflow.rst:178
+msgid "用于快速复现的工作流定义"
+msgstr "Workflow definition for quick reproduction"
+
+#: ../../source/user_guide/create_workflow.rst:180
+msgid "为便于复现与分享，下面提供一份可直接复制到 UI 编辑器中的工作流定义。"
+msgstr ""
+"To facilitate reproduction and sharing, here is a workflow definition "
+"that can be copied directly into the UI editor."
+
+#: ../../source/user_guide/create_workflow.rst:182
+msgid "Workflow Definition"
+msgstr "Workflow Definition"
+
+#: ../../source/user_guide/create_workflow.rst:186
+msgid "将Json的内容复制后，在工作流的左下角打开高级编辑器，粘贴内容并保存即可。"
+msgstr ""
+"After copying the Json content, open the advanced editor in the lower "
+"left corner of the workflow, paste the content and save it."
+
+#: ../../source/user_guide/create_workflow.rst:190
+msgid "工作流定义"
+msgstr "Workflow definition"
+

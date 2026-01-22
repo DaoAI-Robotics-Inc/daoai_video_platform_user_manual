@@ -1,0 +1,556 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:4
+msgid "关键点检测模型 (Keypoint Detection)"
+msgstr "Keypoint Detection Model (Keypoint Detection)"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:7
+msgid "本页面介绍DaoAI World模型的关键点检测类型。返回 :ref:`DaoAI World模型主页 <DaoAI World模型>`"
+msgstr ""
+"This page introduces the key point detection types of the DaoAI World "
+"model.Return :ref:`DaoAI World model homepage <DaoAI World model>`"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:10
+msgid "模型简介"
+msgstr "Model introduction"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:12
+msgid ""
+"关键点检测模型用于识别物体上的特定关键点位置，输出每个关键点的坐标和可见性信息。最常见的应用是人体姿态估计，但也可用于任何需要定位关键特征点的场景。"
+msgstr ""
+"The keypoint detection model is used to identify specific keypoint locations"
+" on an object and output the coordinates and visibility information of each "
+"keypoint.The most common application is human pose estimation, but it can "
+"also be used in any scenario where key feature points need to be located."
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:14
+msgid "**输出内容：**"
+msgstr "**Output content:**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:16
+msgid "**关键点坐标** (x, y)"
+msgstr "**Key point coordinates** (x, y)"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:17
+msgid "**关键点置信度/可见性** (0~1之间的浮点数)"
+msgstr ""
+"**Keypoint confidence/visibility** (floating point number between 0~1)"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:18
+msgid "**物体边界框** (可选)"
+msgstr "**Object bounding box** (optional)"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:19
+msgid "**姿态骨架连接** (可选)"
+msgstr "**Posture Skeleton Connection** (optional)"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:22
+msgid "适用场景"
+msgstr "Applicable scenarios"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:24
+msgid "关键点检测模型适用于以下场景："
+msgstr ""
+"The key point detection model is suitable for the following scenarios:"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:26
+msgid "**人体姿态估计**：健身动作识别、体态分析、动作捕捉"
+msgstr ""
+"**Human posture estimation**: fitness action recognition, body posture "
+"analysis, motion capture"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:27
+msgid "**手势识别**：手部关键点检测、手语识别、AR交互"
+msgstr ""
+"**Gesture recognition**: hand key point detection, sign language "
+"recognition, AR interaction"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:28
+msgid "**人脸关键点**：面部特征定位、表情识别、美颜滤镜"
+msgstr ""
+"**Facial key points**: Facial feature positioning, expression recognition, "
+"beauty filters"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:29
+msgid "**运动分析**：体育动作分析、步态识别、康复训练"
+msgstr ""
+"**Sports Analysis**: Sports action analysis, gait recognition, "
+"rehabilitation training"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:30
+msgid "**工业检测**：零件关键点定位、装配引导"
+msgstr ""
+"**Industrial Inspection**: Positioning of key points of parts, assembly "
+"guidance"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:31
+msgid "**动物行为分析**：动物姿态跟踪、行为研究"
+msgstr ""
+"**Animal Behavior Analysis**: Animal posture tracking, behavior research"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:32
+msgid "**车辆关键点**：车辆关键部位定位、损伤检测"
+msgstr ""
+"**Key points of the vehicle**: Positioning of key parts of the vehicle and "
+"damage detection"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:35
+msgid "输出格式"
+msgstr "Output format"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:37
+msgid "关键点检测模型的输出包含检测到的所有实例及其关键点信息："
+msgstr ""
+"The output of the keypoint detection model contains all detected instances "
+"and their keypoint information:"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:100
+msgid "**字段说明：**"
+msgstr "**Field description:**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:102
+msgid "``class``: 物体类别"
+msgstr "``class``: object class"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:103
+msgid "``confidence``: 检测整体置信度"
+msgstr "``confidence``: overall confidence of the test"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:104
+msgid "``bbox``: 物体边界框"
+msgstr "``bbox``: object bounding box"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:105
+msgid "``keypoints``: 关键点列表"
+msgstr "``keypoints``: list of key points"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:107
+msgid "``name``: 关键点名称"
+msgstr "``name``: key point name"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:108
+msgid "``x``, ``y``: 关键点坐标"
+msgstr "``x``, ``y``: key point coordinates"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:109
+msgid "``confidence``: 该关键点的置信度"
+msgstr "``confidence``: the confidence of the key point"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:110
+msgid "``visible``: 关键点是否可见（未被遮挡）"
+msgstr "``visible``: Whether the key point is visible (not blocked)"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:112
+msgid "``skeleton``: 骨架连接关系（定义哪些关键点之间有连接）"
+msgstr ""
+"``skeleton``: skeleton connection relationship (defining which key points "
+"are connected)"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:113
+msgid "``instance_id``: 实例唯一标识符"
+msgstr "``instance_id``: unique identifier of the instance"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:116
+msgid "常见关键点集合"
+msgstr "Common key point collections"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:118
+msgid "**人体姿态关键点 (17点 - COCO格式)**"
+msgstr "**Human posture key points (17 points - COCO format)**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:140
+msgid "**手部关键点 (21点)**"
+msgstr "**Hand key points (21 points)**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:142
+msgid "手掌根部、5个手指各4个关节点"
+msgstr ""
+"There are 4 joint points at the base of the palm and each of the 5 fingers."
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:144
+msgid "**人脸关键点 (68点/98点)**"
+msgstr "**Face key points (68 points/98 points)**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:146
+msgid "面部轮廓、眉毛、眼睛、鼻子、嘴巴的特征点"
+msgstr "Feature points of facial contours, eyebrows, eyes, nose, and mouth"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:149
+msgid "配置示例"
+msgstr "Configuration example"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:151
+msgid "**人体姿态检测**"
+msgstr "**Human posture detection**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:162
+msgid "**高精度动作分析**"
+msgstr "**High-precision motion analysis**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:176
+msgid "**多人姿态检测**"
+msgstr "**Multiple person pose detection**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:191
+msgid "使用技巧与最佳实践"
+msgstr "Tips and best practices"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:193
+msgid "**置信度阈值设置**"
+msgstr "**Confidence threshold setting**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:195
+msgid "整体检测置信度：0.5-0.7"
+msgstr "Overall detection confidence: 0.5-0.7"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:196
+msgid "单个关键点置信度：0.3-0.5（关键点部分遮挡时会降低）"
+msgstr ""
+"Single key point confidence: 0.3-0.5 (will be reduced when the key point is "
+"partially obscured)"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:197
+msgid "关键应用（如医疗）：0.8-0.9"
+msgstr "Critical applications (e.g. medical): 0.8-0.9"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:199
+msgid "**处理遮挡情况**"
+msgstr "**Handle occlusion situations**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:201
+msgid "检查每个关键点的 ``visible`` 标志"
+msgstr "Check the ``visible`` flag for each keypoint"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:202
+msgid "过滤掉 ``confidence`` 过低的关键点"
+msgstr "Filter out key points with too low ``confidence``"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:203
+msgid "使用骨架连接关系推断被遮挡的关键点"
+msgstr "Use skeleton connection relationships to infer occluded keypoints"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:205
+msgid "**多人场景处理**"
+msgstr "**Multiplayer scene processing**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:207
+msgid "通过 ``instance_id`` 区分不同的人"
+msgstr "Distinguish different people through ``instance_id``"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:208
+msgid "使用边界框信息辅助追踪"
+msgstr "Use bounding box information to assist tracking"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:209
+msgid "关注 ``count`` 字段获取总人数"
+msgstr ""
+"Pay attention to the ``count`` field to get the total number of people"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:211
+msgid "**动作识别应用**"
+msgstr "**Action Recognition Application**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:213
+msgid "计算关键点之间的角度判断姿态"
+msgstr "Calculate the angle between key points to determine the posture"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:214
+msgid "追踪关键点运动轨迹分析动作"
+msgstr "Track key point movement trajectories and analyze actions"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:215
+msgid "使用骨架长度比例进行姿态标准化"
+msgstr "Pose normalization using skeleton length scale"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:217
+msgid "**性能优化**"
+msgstr "**Performance Optimization**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:219
+msgid "关键点检测计算量较大，建议使用GPU"
+msgstr ""
+"Key point detection requires a large amount of calculation, so it is "
+"recommended to use GPU"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:220
+msgid "对于实时应用，可适当降低输入分辨率"
+msgstr ""
+"For real-time applications, the input resolution can be appropriately "
+"reduced"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:221
+msgid "多人场景下性能随人数增加而降低"
+msgstr ""
+"In multiplayer scenarios, performance decreases as the number of people "
+"increases"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:224
+msgid "常见问题"
+msgstr "FAQ"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:226
+msgid "**Q: 关键点坐标是归一化的还是绝对坐标？**"
+msgstr ""
+"**Q: Are the key point coordinates normalized or absolute coordinates?**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:228
+msgid "A: 关键点坐标为绝对像素坐标，与输入图像尺寸对应。"
+msgstr ""
+"A: The key point coordinates are absolute pixel coordinates, corresponding "
+"to the input image size."
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:230
+msgid "**Q: 如何判断某个关键点是否被遮挡？**"
+msgstr "**Q: How to determine whether a key point is occluded?**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:232
+msgid ""
+"A: 检查该关键点的 ``visible`` 标志和 ``confidence`` 值。如果 ``visible`` 为 false 或 "
+"``confidence`` 很低（如<0.3），说明该点可能被遮挡。"
+msgstr ""
+"A: Check the keypoint's ``visible`` flag and ``confidence`` value.If "
+"``visible`` is false or ``confidence`` is very low (such as <0.3), the point"
+" may be obscured."
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:234
+msgid "**Q: 检测不到关键点怎么办？**"
+msgstr "**Q: What should I do if the key points cannot be detected?**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:236
+msgid "A: 可能的原因和解决方案："
+msgstr "A: Possible causes and solutions:"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:238
+msgid "图像质量差：提高图像分辨率和清晰度"
+msgstr "Poor image quality: Improve image resolution and clarity"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:239
+msgid "姿态极端：确保训练数据包含各种姿态"
+msgstr ""
+"Pose extremes: ensure that the training data contains a variety of poses"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:240
+msgid "遮挡严重：降低关键点置信度阈值"
+msgstr "Severe occlusion: reduce key point confidence threshold"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:241
+msgid "光照不佳：改善拍摄条件或使用数据增强"
+msgstr "Poor lighting: improve shooting conditions or use data enhancement"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:243
+msgid "**Q: 如何计算两个关键点之间的角度？**"
+msgstr "**Q: How to calculate the angle between two key points?**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:245
+msgid "A: 使用三个关键点的坐标，通过向量夹角公式计算："
+msgstr ""
+"A: Use the coordinates of three key points and calculate it through the "
+"vector angle formula:"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:263
+msgid "**Q: 可以检测多个人吗？**"
+msgstr "**Q: Can multiple people be tested?**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:265
+msgid "A: 可以。模型会为每个检测到的人输出独立的关键点集合，通过 ``instance_id`` 区分。"
+msgstr ""
+"A: Yes.The model will output a separate set of keypoints for each detected "
+"person, distinguished by ``instance_id``."
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:268
+msgid "应用案例"
+msgstr "Application cases"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:270
+msgid "**案例1：健身动作检测**"
+msgstr "**Case 1: Fitness action detection**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:272
+msgid "检测用户的健身动作是否标准，如深蹲、俯卧撑等。"
+msgstr ""
+"Detect whether the user's fitness movements are standard, such as squats, "
+"push-ups, etc."
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:282
+msgid "**应用逻辑：**"
+msgstr "**Application logic:**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:284
+msgid "检测关键点位置"
+msgstr "Detect key point locations"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:285
+msgid "计算关节角度（如膝盖角度、手臂角度）"
+msgstr "Calculate joint angles (such as knee angle, arm angle)"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:286
+msgid "与标准动作对比"
+msgstr "Compare with standard action"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:287
+msgid "给出实时反馈"
+msgstr "Give real-time feedback"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:289
+msgid "**案例2：跌倒检测**"
+msgstr "**Case 2: Fall Detection**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:291
+msgid "监测老人或患者的姿态，检测跌倒事件。"
+msgstr ""
+"Monitor the posture of the elderly or patients and detect fall events."
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:301
+msgid "**检测逻辑：**"
+msgstr "**Detection logic:**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:303
+msgid "计算身体主轴（头部到臀部）与垂直方向的角度"
+msgstr ""
+"Calculate the angle between the main axis of the body (head to hips) and the"
+" vertical direction"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:304
+msgid "如果角度>60度且头部高度低于臀部，触发跌倒警报"
+msgstr ""
+"If the angle is >60 degrees and the head height is lower than the hips, "
+"trigger a fall alarm"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:306
+msgid "**案例3：手势识别**"
+msgstr "**Case 3: Gesture recognition**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:308
+msgid "识别手部关键点，实现手势控制。"
+msgstr "Identify hand key points to achieve gesture control."
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:321
+msgid "**应用场景：**"
+msgstr "**Application scenario:**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:323
+msgid "非接触式界面控制"
+msgstr "Contactless interface control"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:324
+msgid "手语翻译"
+msgstr "sign language interpreter"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:325
+msgid "AR/VR交互"
+msgstr "AR/VR interaction"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:327
+msgid "**案例4：体育动作分析**"
+msgstr "**Case 4: Sports action analysis**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:329
+msgid "分析运动员的动作技术，用于训练改进。"
+msgstr "Analyze athletes' movement techniques for training improvement."
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:339
+msgid "**分析内容：**"
+msgstr "**Analysis content:**"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:341
+msgid "投篮/挥拍动作的标准性"
+msgstr "Standardity of shooting/swing movements"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:342
+msgid "跑步姿态分析"
+msgstr "Running posture analysis"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:343
+msgid "关节角度和运动轨迹追踪"
+msgstr "Joint angle and motion trajectory tracking"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:346
+msgid "性能参考"
+msgstr "Performance reference"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:352
+msgid "场景"
+msgstr "scene"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:353
+msgid "推荐配置"
+msgstr "Recommended configuration"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:354
+msgid "预期性能"
+msgstr "Expected performance"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:355
+msgid "单人实时检测"
+msgstr "Single person real-time detection"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:356
+msgid "640×480, GPU"
+msgstr "640×480, GPU"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:357
+msgid "30+ FPS"
+msgstr "30+ FPS"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:358
+msgid "多人场景（<5人）"
+msgstr "Multiplayer scene (<5 people)"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:359
+msgid "1280×720, GPU"
+msgstr "1280×720, GPU"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:360
+msgid "15-25 FPS"
+msgstr "15-25 FPS"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:361
+msgid "高精度分析"
+msgstr "High-precision analysis"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:362
+msgid "1920×1080, GPU"
+msgstr "1920×1080, GPU"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:363
+msgid "5-10 FPS"
+msgstr "5-10 FPS"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:366
+msgid "相关链接"
+msgstr "Related links"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:368
+msgid ":ref:`DaoAI World模型主页 <DaoAI World模型>`"
+msgstr ":ref:`DaoAI World model homepage <DaoAI World model>`"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:369
+msgid ":ref:`目标检测模型 <daoai_world_object_detection>` - 先定位人物再检测关键点"
+msgstr ""
+":ref:`Object detection model <daoai_world_object_detection>` - locate people"
+" first and then detect key points"
+
+#: ../../source/block_gallery/models/daoai_world_keypoint_detection.rst:370
+msgid ":ref:`实例分割模型 <daoai_world_instance_segmentation>` - 结合使用获得完整信息"
+msgstr ""
+":ref:`Instance Segmentation Model <daoai_world_instance_segmentation>` - use"
+" together to get complete information"

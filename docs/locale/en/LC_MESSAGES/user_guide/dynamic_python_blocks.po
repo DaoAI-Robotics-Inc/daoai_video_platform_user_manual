@@ -1,0 +1,228 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:4
+msgid "自定义 Python 模块"
+msgstr "Custom Python modules"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:6
+msgid ""
+"本章节介绍如何在 DaoAI 天眼系统的工作流中编写与使用“自定义Python 模块”（Custom Python Blocks）。 通过自定义 "
+"Python 代码，您可以实现特定业务逻辑、后处理、数据转换、与外部系统交互等能力，并与平台内置模块一起构建完整的 AI 视觉工作流。"
+msgstr ""
+"This chapter introduces how to write and use \"Custom Python Blocks\" in the"
+" workflow of the DaoAI Video Analysis Platform.By customizing Python code, you can "
+"implement specific business logic, post-processing, data conversion, "
+"interaction with external systems, and other capabilities, and build a "
+"complete AI vision workflow together with the platform's built-in modules."
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:15
+msgid "适用场景"
+msgstr "Applicable scenarios"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:17
+msgid "内置模块无法覆盖的业务规则或特定算法逻辑；"
+msgstr ""
+"Business rules or specific algorithm logic that cannot be covered by built-"
+"in modules;"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:18
+msgid "对模型输出进行后处理（筛选、聚合、统计、重排）；"
+msgstr ""
+"Post-process the model output (filtering, aggregation, statistics, "
+"rearrangement);"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:19
+msgid "将工作流结果转为下游系统可用的数据格式；"
+msgstr ""
+"Convert workflow results into data formats usable by downstream systems;"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:20
+msgid "轻量的外部调用（如 HTTP 请求）或状态记录（注意时延与可靠性）。"
+msgstr ""
+"Lightweight external calls (such as HTTP requests) or status logging (pay "
+"attention to latency and reliability)."
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:23
+msgid "状态管理最佳实践"
+msgstr "State Management Best Practices"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:25
+msgid "在自定义 Python 模块中，状态（state）主要用于缓存高成本计算和优化工件、依赖的加载："
+msgstr ""
+"In custom Python modules, state is mainly used to cache high-cost "
+"calculations and optimize the loading of artifacts and dependencies:"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:27
+msgid "不要依赖状态进行关键数据持久化：重要数据请使用外部存储（数据库、对象存储等）；"
+msgstr ""
+"Do not rely on state for key data persistence: please use external storage "
+"(database, object storage, etc.) for important data;"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:28
+msgid "状态可能随时丢失：服务器重启或容器弹性伸缩都会导致状态丢失；"
+msgstr ""
+"The state may be lost at any time: server restart or container auto-scaling "
+"will cause state loss;"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:29
+msgid "初始化默认值：为模块作用域内的变量设置合理默认值，以应对“冷启动”；"
+msgstr ""
+"Initialization default values: Set reasonable default values ​​for variables"
+" within the module scope to cope with \"cold start\";"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:30
+msgid "保持状态轻量：大型对象会占用内存并影响性能。"
+msgstr ""
+"Keep state lightweight: Large objects take up memory and impact performance."
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:33
+msgid "原理概述（Theory）"
+msgstr "Overview of principles (Theory)"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:35
+msgid "自定义 Python 模块的高层工作机制如下："
+msgstr ""
+"The high-level working mechanism of custom Python modules is as follows:"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:37
+msgid "用户以 JSON 文档形式提供动态模块的定义；"
+msgstr ""
+"Users provide definitions of dynamic modules in the form of JSON documents;"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:38
+msgid ""
+"该定义包含由执行引擎（Execution Engine）构造 WorkflowBlockManifest 与 WorkflowBlock 所需的信息；"
+msgstr ""
+"This definition contains the information required by the Execution Engine to"
+" construct WorkflowBlockManifest and WorkflowBlock;"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:39
+msgid "在运行时，编译器（Compiler）会将该定义转译为动态创建的 Python 类——其行为等同于静态定义的模块；"
+msgstr ""
+"At runtime, the compiler translates this definition into a dynamically "
+"created Python class - which behaves like a statically defined module;"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:40
+msgid "在工作流定义中，您可以像使用标准静态模块一样声明与连接动态模块步骤。"
+msgstr ""
+"In a workflow definition, you declare and wire dynamic module steps just "
+"like standard static modules."
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:44
+msgid "创建一个 Python 模块"
+msgstr "Create a Python module"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:46
+msgid "您可以在工作流编辑器中添加“Python 模块”并填写代码。一个典型的 Python 模块包含："
+msgstr ""
+"You can add a \"Python module\" and fill in the code in the workflow "
+"editor.A typical Python module contains:"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:48
+msgid "Python Block Editor"
+msgstr "Python Block Editor"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:53
+msgid "参数定义：作为模块的可配置项（例如检测结果、布尔条件或整数参数等）；"
+msgstr ""
+"Parameter definition: as a configurable item of the module (such as "
+"detection results, Boolean conditions or integer parameters, etc.);"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:54
+msgid "入口方法：平台在运行时调用该方法，传入工作流的输入与模块参数；"
+msgstr ""
+"Entry method: The platform calls this method at runtime and passes in the "
+"input and module parameters of the workflow;"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:55
+msgid "返回值：返回 JSON 可序列化的结构，供后续模块或输出使用。"
+msgstr ""
+"Return value: Returns a JSON serializable structure for use by subsequent "
+"modules or output."
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:59
+msgid "可用的标准库与依赖"
+msgstr "Available standard libraries and dependencies"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:61
+msgid "在python模块编辑页面，您可以点击 可用库 查看当前环境支持的标准库与第三方依赖包列表。"
+msgstr ""
+"On the python module editing page, you can click Available Libraries to view"
+" the list of standard libraries and third-party dependency packages "
+"supported by the current environment."
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:63
+msgid "请避免使用未列出的包，以免运行时报错。"
+msgstr "Please avoid using unlisted packages to avoid errors when running."
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:65
+msgid "Available Libraries"
+msgstr "Available Libraries"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:72
+msgid "示例：根据当前时间切换昼夜两种模型"
+msgstr ""
+"Example: Switch between day and night models based on the current time"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:74
+msgid "下面示例展示一个最简单的 Python 模块：获取当前时间，并根据时间段返回不同的模型ID, 来切换昼夜两种模型。"
+msgstr ""
+"The following example shows the simplest Python module: getting the current "
+"time and returning different model IDs according to the time period to "
+"switch between day and night models."
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:97
+msgid "在工作流中的连接方式："
+msgstr "How to connect in a workflow:"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:99
+msgid "将模型节点的模型ID 输入端连接该 Python 模块的 ``Model_ID`` 输出字段。"
+msgstr ""
+"Wire the model node's model ID input to the Python module's ``Model_ID`` "
+"output field."
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:103
+msgid "示例：统计目标数量并用http请求发送"
+msgstr "Example: Count the number of targets and send them with http requests"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:105
+msgid "示例说明："
+msgstr "Example description:"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:107
+msgid "功能描述："
+msgstr "Function description:"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:108
+msgid ""
+"从 ``prediction`` 中统计类别为 ``car`` 的目标数量，并以 JSON 负载通过 ``input_url`` 向外部 HTTP "
+"服务发送；"
+msgstr ""
+"Count the number of targets with category ``car`` from ``prediction`` and "
+"send it to the external HTTP service through ``input_url`` as a JSON "
+"payload;"
+
+#: ../../source/user_guide/dynamic_python_blocks.rst:109
+msgid "返回外部服务的 ``status_code`` 与 ``message``，便于在日志或事件保存模块中记录。"
+msgstr ""
+"Return the ``status_code`` and ``message`` of the external service to "
+"facilitate recording in the log or event saving module."

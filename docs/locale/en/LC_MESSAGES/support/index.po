@@ -1,0 +1,490 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/support/index.rst:2
+msgid "常见问题"
+msgstr "FAQ"
+
+#: ../../source/support/index.rst:8
+msgid "工作流保存失败怎么办？"
+msgstr "What should I do if the workflow fails to be saved?"
+
+#: ../../source/support/index.rst:10
+msgid "出现保存失败时，按以下步骤排查："
+msgstr "When saving fails, follow these steps to troubleshoot:"
+
+#: ../../source/support/index.rst:12
+msgid "在工作流编辑页面，点击顶部的 **信息图标（i）** 查看具体报错信息。"
+msgstr ""
+"On the workflow editing page, click the **Information icon (i)** at the top "
+"to view specific error information."
+
+#: ../../source/support/index.rst:13
+msgid "检查必填参数是否完整（例如输入、模型、可视化和输出模块的关键参数）。"
+msgstr ""
+"Check that required parameters are complete (e.g. key parameters for input, "
+"model, visualization and output modules)."
+
+#: ../../source/support/index.rst:14
+msgid "确认工作流中各节点的连线无断链或循环错误。"
+msgstr ""
+"Confirm that there are no broken links or loop errors in the connections "
+"between nodes in the workflow."
+
+#: ../../source/support/index.rst:18
+msgid "相机运行后，FPS 过了几分钟仍然显示为 0？"
+msgstr ""
+"After the camera is running, how many minutes does it take for the FPS to "
+"still show 0?"
+
+#: ../../source/support/index.rst:20
+msgid "这通常说明工作流在运行时出现异常（runtime error）可按以下步骤排查："
+msgstr ""
+"This usually indicates that a runtime error occurred during the workflow, "
+"which can be checked by following the following steps:"
+
+#: ../../source/support/index.rst:22
+msgid "连接至天眼服务器，将端口 **10350** 转发到本地。"
+msgstr ""
+"Connect to the Video Analysis Platform server and forward port **10350** to the local "
+"computer."
+
+#: ../../source/support/index.rst:23
+msgid "在浏览器访问 ``http://localhost:10350`` 的 **Tilt** 页面。"
+msgstr ""
+"Visit the **Tilt** page of ``http://localhost:10350`` in your browser."
+
+#: ../../source/support/index.rst:24
+msgid "点击打开 **Pipeline Manager**，查看日志与报错信息。"
+msgstr "Click to open **Pipeline Manager** to view logs and error messages."
+
+#: ../../source/support/index.rst:27
+msgid "运行多路视频时，帧数很低怎么办？"
+msgstr ""
+"What should I do if the frame rate is very low when running multi-channel "
+"video?"
+
+#: ../../source/support/index.rst:29
+msgid "当多路视频并发运行时，若总帧率下降，可尝试以下优化："
+msgstr ""
+"When multiple videos are running concurrently, if the total frame rate "
+"drops, you can try the following optimizations:"
+
+#: ../../source/support/index.rst:31
+msgid "在 **摄像头输入** 页面，点击右上角的 **提升检测性能** 按钮。"
+msgstr ""
+"On the **Camera Input** page, click the **Improve Detection Performance** "
+"button in the upper right corner."
+
+#: ../../source/support/index.rst:32
+msgid "在 GPU 设置中适当增加模型实例数（每块 GPU 上可同时加载多个实例），以提升并发推理的整体吞吐量。"
+msgstr ""
+"Appropriately increase the number of model instances in the GPU settings "
+"(multiple instances can be loaded simultaneously on each GPU) to improve the"
+" overall throughput of concurrent inference."
+
+#: ../../source/support/index.rst:36
+msgid "不同机型的资源消耗参考"
+msgstr "Resource consumption reference of different models"
+
+#: ../../source/support/index.rst:43
+msgid "机型/内存"
+msgstr "Model/memory"
+
+#: ../../source/support/index.rst:44
+msgid "模型"
+msgstr "Model"
+
+#: ../../source/support/index.rst:45
+msgid "工作流"
+msgstr "Workflow"
+
+#: ../../source/support/index.rst:46
+msgid "路数"
+msgstr "Number of ways"
+
+#: ../../source/support/index.rst:47
+msgid "分辨率"
+msgstr "resolution"
+
+#: ../../source/support/index.rst:48
+msgid "吞吐(实际/配置)"
+msgstr "Throughput (actual/configured)"
+
+#: ../../source/support/index.rst:49
+msgid "CPU%"
+msgstr "CPU%"
+
+#: ../../source/support/index.rst:50
+msgid "GPU%"
+msgstr "GPU%"
+
+#: ../../source/support/index.rst:51
+msgid "VRAM%"
+msgstr "VRAM%"
+
+#: ../../source/support/index.rst:52
+msgid "RAM%"
+msgstr "RAM%"
+
+#: ../../source/support/index.rst:53
+msgid "备注"
+msgstr "Remark"
+
+#: ../../source/support/index.rst:54 ../../source/support/index.rst:65
+#: ../../source/support/index.rst:76 ../../source/support/index.rst:87
+#: ../../source/support/index.rst:98 ../../source/support/index.rst:109
+#: ../../source/support/index.rst:120 ../../source/support/index.rst:131
+msgid "4×4080 Super / 256 GB"
+msgstr "4×4080 Super / 256 GB"
+
+#: ../../source/support/index.rst:55 ../../source/support/index.rst:66
+#: ../../source/support/index.rst:77
+msgid "dummy"
+msgstr "dummy"
+
+#: ../../source/support/index.rst:56 ../../source/support/index.rst:67
+#: ../../source/support/index.rst:78 ../../source/support/index.rst:89
+#: ../../source/support/index.rst:133 ../../source/support/index.rst:144
+#: ../../source/support/index.rst:155 ../../source/support/index.rst:166
+#: ../../source/support/index.rst:177 ../../source/support/index.rst:188
+#: ../../source/support/index.rst:199 ../../source/support/index.rst:210
+#: ../../source/support/index.rst:221
+msgid "model+viz"
+msgstr "model+viz"
+
+#: ../../source/support/index.rst:57 ../../source/support/index.rst:60
+#: ../../source/support/index.rst:68 ../../source/support/index.rst:90
+#: ../../source/support/index.rst:95 ../../source/support/index.rst:101
+#: ../../source/support/index.rst:112
+msgid "48"
+msgstr "48"
+
+#: ../../source/support/index.rst:58 ../../source/support/index.rst:69
+#: ../../source/support/index.rst:80 ../../source/support/index.rst:102
+#: ../../source/support/index.rst:113 ../../source/support/index.rst:124
+#: ../../source/support/index.rst:135 ../../source/support/index.rst:146
+#: ../../source/support/index.rst:168 ../../source/support/index.rst:212
+msgid "1080p"
+msgstr "1080p"
+
+#: ../../source/support/index.rst:59
+msgid "7 / 10"
+msgstr "7 / 10"
+
+#: ../../source/support/index.rst:61 ../../source/support/index.rst:171
+#: ../../source/support/index.rst:182 ../../source/support/index.rst:203
+msgid "37"
+msgstr "37"
+
+#: ../../source/support/index.rst:62 ../../source/support/index.rst:73
+msgid "43"
+msgstr "43"
+
+#: ../../source/support/index.rst:63 ../../source/support/index.rst:118
+msgid "47"
+msgstr "47"
+
+#: ../../source/support/index.rst:64 ../../source/support/index.rst:75
+#: ../../source/support/index.rst:86 ../../source/support/index.rst:97
+#: ../../source/support/index.rst:108 ../../source/support/index.rst:119
+#: ../../source/support/index.rst:130 ../../source/support/index.rst:152
+#: ../../source/support/index.rst:163 ../../source/support/index.rst:174
+#: ../../source/support/index.rst:185 ../../source/support/index.rst:196
+#: ../../source/support/index.rst:207 ../../source/support/index.rst:218
+#: ../../source/support/index.rst:229
+msgid "—"
+msgstr "—"
+
+#: ../../source/support/index.rst:70 ../../source/support/index.rst:81
+#: ../../source/support/index.rst:136 ../../source/support/index.rst:191
+msgid "1 / 1"
+msgstr "1 / 1"
+
+#: ../../source/support/index.rst:71 ../../source/support/index.rst:205
+msgid "18"
+msgstr "18"
+
+#: ../../source/support/index.rst:72
+msgid "40"
+msgstr "40"
+
+#: ../../source/support/index.rst:74
+msgid "63"
+msgstr "63"
+
+#: ../../source/support/index.rst:79 ../../source/support/index.rst:134
+msgid "97"
+msgstr "97"
+
+#: ../../source/support/index.rst:82 ../../source/support/index.rst:192
+msgid "20"
+msgstr "20"
+
+#: ../../source/support/index.rst:83
+msgid "35"
+msgstr "35"
+
+#: ../../source/support/index.rst:84
+msgid "71"
+msgstr "71"
+
+#: ../../source/support/index.rst:85 ../../source/support/index.rst:195
+#: ../../source/support/index.rst:228
+msgid "91"
+msgstr "91"
+
+#: ../../source/support/index.rst:88 ../../source/support/index.rst:99
+#: ../../source/support/index.rst:132 ../../source/support/index.rst:143
+#: ../../source/support/index.rst:154 ../../source/support/index.rst:165
+#: ../../source/support/index.rst:176 ../../source/support/index.rst:187
+#: ../../source/support/index.rst:198
+msgid "1120 nano"
+msgstr "1120 nano"
+
+#: ../../source/support/index.rst:91
+msgid "1080p（max）"
+msgstr "1080p（max）"
+
+#: ../../source/support/index.rst:92 ../../source/support/index.rst:103
+msgid "3.8 / 4"
+msgstr "3.8 / 4"
+
+#: ../../source/support/index.rst:93 ../../source/support/index.rst:96
+msgid "60"
+msgstr "60"
+
+#: ../../source/support/index.rst:94
+msgid "86"
+msgstr "86"
+
+#: ../../source/support/index.rst:100 ../../source/support/index.rst:111
+#: ../../source/support/index.rst:122
+msgid "highway"
+msgstr "highway"
+
+#: ../../source/support/index.rst:104
+msgid "75"
+msgstr "75"
+
+#: ../../source/support/index.rst:105 ../../source/support/index.rst:139
+msgid "77"
+msgstr "77"
+
+#: ../../source/support/index.rst:106 ../../source/support/index.rst:137
+msgid "49"
+msgstr "49"
+
+#: ../../source/support/index.rst:107 ../../source/support/index.rst:128
+msgid "53"
+msgstr "53"
+
+#: ../../source/support/index.rst:110 ../../source/support/index.rst:209
+#: ../../source/support/index.rst:220
+msgid "672 nano/base"
+msgstr "672 nano/base"
+
+#: ../../source/support/index.rst:114 ../../source/support/index.rst:125
+#: ../../source/support/index.rst:147 ../../source/support/index.rst:158
+#: ../../source/support/index.rst:169 ../../source/support/index.rst:180
+#: ../../source/support/index.rst:213 ../../source/support/index.rst:224
+msgid "4 / 4"
+msgstr "4 / 4"
+
+#: ../../source/support/index.rst:115
+msgid "66"
+msgstr "66"
+
+#: ../../source/support/index.rst:116
+msgid "73"
+msgstr "73"
+
+#: ../../source/support/index.rst:117
+msgid "46"
+msgstr "46"
+
+#: ../../source/support/index.rst:121
+msgid "672 nano"
+msgstr "672 nano"
+
+#: ../../source/support/index.rst:123 ../../source/support/index.rst:193
+msgid "59"
+msgstr "59"
+
+#: ../../source/support/index.rst:126
+msgid "72"
+msgstr "72"
+
+#: ../../source/support/index.rst:127
+msgid "84"
+msgstr "84"
+
+#: ../../source/support/index.rst:129
+msgid "56"
+msgstr "56"
+
+#: ../../source/support/index.rst:138
+msgid "62"
+msgstr "62"
+
+#: ../../source/support/index.rst:140
+msgid "99"
+msgstr "99"
+
+#: ../../source/support/index.rst:141
+msgid "内存接近瓶颈"
+msgstr "Memory is close to bottleneck"
+
+#: ../../source/support/index.rst:142 ../../source/support/index.rst:153
+#: ../../source/support/index.rst:164 ../../source/support/index.rst:175
+#: ../../source/support/index.rst:186 ../../source/support/index.rst:197
+#: ../../source/support/index.rst:208 ../../source/support/index.rst:219
+msgid "1×RTX4060Ti 16 GB / 32 GB"
+msgstr "1×RTX4060Ti 16 GB / 32 GB"
+
+#: ../../source/support/index.rst:145 ../../source/support/index.rst:156
+msgid "7"
+msgstr "7"
+
+#: ../../source/support/index.rst:148
+msgid "39"
+msgstr "39"
+
+#: ../../source/support/index.rst:149 ../../source/support/index.rst:151
+msgid "81"
+msgstr "81"
+
+#: ../../source/support/index.rst:150 ../../source/support/index.rst:161
+#: ../../source/support/index.rst:189
+msgid "16"
+msgstr "16"
+
+#: ../../source/support/index.rst:157 ../../source/support/index.rst:179
+msgid "720p（1280×720）"
+msgstr "720p（1280×720）"
+
+#: ../../source/support/index.rst:159
+msgid "36"
+msgstr "36"
+
+#: ../../source/support/index.rst:160 ../../source/support/index.rst:215
+#: ../../source/support/index.rst:226
+msgid "79"
+msgstr "79"
+
+#: ../../source/support/index.rst:162 ../../source/support/index.rst:204
+#: ../../source/support/index.rst:206
+msgid "74"
+msgstr "74"
+
+#: ../../source/support/index.rst:167 ../../source/support/index.rst:178
+msgid "5"
+msgstr "5"
+
+#: ../../source/support/index.rst:170
+msgid "31"
+msgstr "31"
+
+#: ../../source/support/index.rst:172 ../../source/support/index.rst:222
+msgid "14"
+msgstr "14"
+
+#: ../../source/support/index.rst:173 ../../source/support/index.rst:184
+msgid "55"
+msgstr "55"
+
+#: ../../source/support/index.rst:181 ../../source/support/index.rst:194
+msgid "19"
+msgstr "19"
+
+#: ../../source/support/index.rst:183
+msgid "9"
+msgstr "9"
+
+#: ../../source/support/index.rst:190 ../../source/support/index.rst:201
+#: ../../source/support/index.rst:223
+msgid "720p"
+msgstr "720b"
+
+#: ../../source/support/index.rst:200
+msgid "10"
+msgstr "10"
+
+#: ../../source/support/index.rst:202
+msgid "3 / 4"
+msgstr "3 / 4"
+
+#: ../../source/support/index.rst:211
+msgid "13"
+msgstr "13"
+
+#: ../../source/support/index.rst:214
+msgid "45"
+msgstr "45"
+
+#: ../../source/support/index.rst:216 ../../source/support/index.rst:227
+msgid "25"
+msgstr "25"
+
+#: ../../source/support/index.rst:217
+msgid "95"
+msgstr "95"
+
+#: ../../source/support/index.rst:225
+msgid "44"
+msgstr "44"
+
+#: ../../source/support/index.rst:231
+msgid "使用建议："
+msgstr "Suggestions for use:"
+
+#: ../../source/support/index.rst:233
+msgid "内存是高并发时的首要瓶颈，97 路 1080p 场景已接近 100% RAM；如需更多路数，建议降分辨率或增加内存。"
+msgstr ""
+"Memory is the primary bottleneck during high concurrency. The 97-channel "
+"1080p scene is close to 100% RAM; if more channels are needed, it is "
+"recommended to reduce the resolution or increase the memory."
+
+#: ../../source/support/index.rst:234
+msgid "GPU 利用率大多在 70–85% 区间，VRAM 充裕（14–77%）；优先关注 RAM 与单路吞吐配置是否匹配。"
+msgstr ""
+"GPU utilization is mostly in the 70–85% range, and VRAM is sufficient "
+"(14–77%); priority should be paid to whether RAM matches the single-channel "
+"throughput configuration."
+
+#: ../../source/support/index.rst:235
+msgid "720p 场景显著降低 VRAM 与 RAM，占用同路数可多留冗余。"
+msgstr ""
+"The 720p scene significantly reduces VRAM and RAM, and the number of shared "
+"channels can be used to leave more redundancy."
+
+#: ../../source/support/index.rst:236
+msgid "1080p 视频单路约占 1.6 GB 内存，720p 单路约 1.5 GB；若开启 live stream，单路约 1.8 GB。"
+msgstr ""
+"A single channel of 1080p video takes up about 1.6 GB of memory, and a "
+"single channel of 720p video takes up about 1.5 GB; if live streaming is "
+"turned on, a single channel takes up about 1.8 GB."
+
+#: ../../source/support/index.rst:237
+msgid "单路相机+stream 约占用 1 个线程；以 24 线程为标准，可开 16+ 路线程尚可，但往往先受限于 RAM。"
+msgstr ""
+"A single camera + stream occupies about 1 thread; based on 24 threads as a "
+"standard, 16+ lines can be opened, but it is often limited by RAM."

@@ -1,0 +1,155 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/quick_start/index.rst:2
+msgid "DaoAI 天眼系统简介"
+msgstr "Introduction to DaoAI Video Analysis Platform"
+
+#: ../../source/quick_start/index.rst:4
+msgid ""
+"DaoAI 天眼系统是一套以 **AI 视觉工作流为核心的工业智能分析平台**， 帮助用户通过可视化方式快速搭建、部署和管理机器视觉应用， "
+"实现从“数据接入”到“算法推理”，再到“业务决策”的全流程自动化闭环。"
+msgstr ""
+"The DaoAI Video Analysis Platform is an industrial intelligent analysis platform** "
+"with **AI vision workflow as the core, helping users quickly build, deploy "
+"and manage machine vision applications through visual methods, realizing a "
+"full-process automated closed loop from \"data access\" to \"algorithm "
+"reasoning\" to \"business decision-making\"."
+
+#: ../../source/quick_start/index.rst:8
+msgid ""
+"系统采用模块化工作流架构设计。用户可以通过拖拽和连接模块的方式， 将图像输入、模型推理、逻辑决策及结果输出等功能节点自由组合， "
+"快速构建符合自身业务场景的 AI 视觉流程，而无需编写复杂代码或具备深度算法背景。"
+msgstr ""
+"The system is designed using a modular workflow architecture.Users can "
+"freely combine functional nodes such as image input, model reasoning, "
+"logical decision-making, and result output by dragging and connecting "
+"modules to quickly build an AI visual process that meets their own business "
+"scenarios without writing complex code or having an in-depth algorithm "
+"background."
+
+#: ../../source/quick_start/index.rst:12
+msgid ""
+"当工作流设计完成后，工作流引擎会自动调度各模块运行， 确保数据在各节点之间高效传递与协同处理， 将设计好的算法流程快速转化为可稳定运行的生产级应用。"
+msgstr ""
+"When the workflow design is completed, the workflow engine will "
+"automatically schedule the operation of each module to ensure efficient "
+"transmission and collaborative processing of data between nodes, and quickly"
+" transform the designed algorithm process into a production-level "
+"application that can run stably."
+
+#: ../../source/quick_start/index.rst:16
+msgid "DaoAI 天眼系统持续提供并扩展丰富的内置模块资源，包括："
+msgstr ""
+"The DaoAI Video Analysis Platform continues to provide and expand a wealth of built-"
+"in module resources, including:"
+
+#: ../../source/quick_start/index.rst:18
+msgid "图像检测、分类、分割等模型模块"
+msgstr "Image detection, classification, segmentation and other model modules"
+
+#: ../../source/quick_start/index.rst:19
+msgid "大型多模态模型（LMMs）智能决策模块"
+msgstr "Large multimodal models (LMMs) intelligent decision-making module"
+
+#: ../../source/quick_start/index.rst:20
+msgid "规则引擎与业务逻辑模块"
+msgstr "Rule engine and business logic module"
+
+#: ../../source/quick_start/index.rst:21
+msgid "结果可视化与告警输出模块"
+msgstr "Results visualization and alarm output module"
+
+#: ../../source/quick_start/index.rst:23
+msgid "用户可根据业务需求按需组合使用，构建灵活、可扩展的 AI 应用体系。"
+msgstr ""
+"Users can use them in combination according to business needs to build a "
+"flexible and scalable AI application system."
+
+#: ../../source/quick_start/index.rst:25
+msgid ""
+"系统同时支持多种部署方式，包括本地私有化部署与云端部署， 可适配工厂产线、边缘设备、数据中心或云平台环境， 满足对实时性、安全性及算力弹性的不同要求。"
+msgstr ""
+"The system supports multiple deployment methods at the same time, including "
+"local privatized deployment and cloud deployment. It can be adapted to "
+"factory production lines, edge devices, data centers or cloud platform "
+"environments to meet different requirements for real-time, security and "
+"computing power flexibility."
+
+#: ../../source/quick_start/index.rst:30
+msgid "通过 DaoAI 天眼系统，您可以："
+msgstr "Through the DaoAI Video Analysis Platform, you can:"
+
+#: ../../source/quick_start/index.rst:32
+msgid "使用先进的 AI 视觉模型，对图像和视频中的目标进行精准检测、识别与分析。"
+msgstr ""
+"Use advanced AI vision models to accurately detect, identify and analyze "
+"targets in images and videos."
+
+#: ../../source/quick_start/index.rst:33
+msgid "在工作流的任意阶段引入大型多模态模型（LMMs），实现复杂业务决策和智能判断。"
+msgstr ""
+"Introduce large-scale multimodal models (LMMs) at any stage of the workflow "
+"to realize complex business decisions and intelligent judgments."
+
+#: ../../source/quick_start/index.rst:34
+msgid "通过可视化规则模块，将模型推理结果快速转化为符合行业场景的业务判定逻辑。"
+msgstr ""
+"Through the visual rule module, model inference results are quickly "
+"transformed into business decision logic that conforms to industry "
+"scenarios."
+
+#: ../../source/quick_start/index.rst:35
+msgid "打通从模型验证、测试调优到现场部署应用的完整闭环。"
+msgstr ""
+"Open up a complete closed loop from model verification, testing and tuning "
+"to on-site deployment of applications."
+
+#: ../../source/quick_start/index.rst:37
+msgid "DaoAI 天眼工作流概览"
+msgstr "DaoAI Tianyan workflow overview"
+
+#: ../../source/quick_start/index.rst:44
+msgid "下一步建议"
+msgstr "Suggestions for next steps"
+
+#: ../../source/quick_start/index.rst:46
+msgid "在接下来的文档中，我们将介绍如何创建、配置并运行工作流， 并通过实际示例帮助您快速上手 DaoAI 天眼系统。"
+msgstr ""
+"In the following documents, we will introduce how to create, configure and "
+"run workflows, and use practical examples to help you quickly get started "
+"with the DaoAI Video Analysis Platform."
+
+#: ../../source/quick_start/index.rst:49
+msgid "您可以继续阅读以下内容："
+msgstr "You can continue reading below:"
+
+#: ../../source/quick_start/index.rst:51
+msgid ":ref:`创建您的第一个工作流`"
+msgstr ":ref:`Create your first workflow`"
+
+#: ../../source/quick_start/index.rst:52
+msgid "浏览 :ref:`典型工作流示例`"
+msgstr "Browse :ref:`Typical Workflow Examples`"
+
+#: ../../source/quick_start/index.rst:53
+msgid "探索全部 :ref:`工作流模块`"
+msgstr "Explore all :ref:`Workflow module`"

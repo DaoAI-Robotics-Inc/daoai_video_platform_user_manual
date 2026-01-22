@@ -1,0 +1,241 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/video/event_order.rst:4
+msgid "事件顺序"
+msgstr "sequence of events"
+
+#: ../../source/block_gallery/video/event_order.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/video/event_order.rst:9
+msgid "跟踪事件完成情况并验证顺序，可用于按顺序检查指定动作标签。"
+msgstr ""
+"Track event completion and verify sequence, which can be used to check "
+"specified action tags in sequence."
+
+#: ../../source/block_gallery/video/event_order.rst:12
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/video/event_order.rst:14
+msgid "输入：检测/跟踪结果 + 区域坐标"
+msgstr "Input: detection/tracking results + area coordinates"
+
+#: ../../source/block_gallery/video/event_order.rst:15
+msgid "输出：按顺序验证的检查结果"
+msgstr "Output: Check results verified in sequence"
+
+#: ../../source/block_gallery/video/event_order.rst:18
+#: ../../source/block_gallery/video/event_order.rst:24
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/video/event_order.rst:25
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/video/event_order.rst:26
+msgid "示例/ ``默认值``"
+msgstr "Example/``DefaultValue``"
+
+#: ../../source/block_gallery/video/event_order.rst:27
+msgid "节点名称"
+msgstr "Node name"
+
+#: ../../source/block_gallery/video/event_order.rst:28
+msgid "工作流中该节点的名称。"
+msgstr "The name of this node in the workflow."
+
+#: ../../source/block_gallery/video/event_order.rst:29
+msgid "``event_order_1``"
+msgstr "``event_order_1``"
+
+#: ../../source/block_gallery/video/event_order.rst:30
+msgid "备注"
+msgstr "Remark"
+
+#: ../../source/block_gallery/video/event_order.rst:31
+msgid "可选备注信息，记录用途。"
+msgstr "Optional remark information to record the purpose."
+
+#: ../../source/block_gallery/video/event_order.rst:32
+msgid "``留空``"
+msgstr "``leave blank``"
+
+#: ../../source/block_gallery/video/event_order.rst:33
+msgid "输入图像"
+msgstr "input image"
+
+#: ../../source/block_gallery/video/event_order.rst:34
+msgid "用于元数据的输入图像。"
+msgstr "Input image for metadata."
+
+#: ../../source/block_gallery/video/event_order.rst:35
+msgid "``input.image``"
+msgstr "``input.image``"
+
+#: ../../source/block_gallery/video/event_order.rst:36
+msgid "触发对象检测（已跟踪）"
+msgstr "Trigger object detection (tracked)"
+
+#: ../../source/block_gallery/video/event_order.rst:37
+msgid "触发对象的跟踪检测结果。"
+msgstr "Triggers tracking detection results for objects."
+
+#: ../../source/block_gallery/video/event_order.rst:38
+msgid "需要object tracker输出的检测结果。"
+msgstr "The detection results output by the object tracker are required."
+
+#: ../../source/block_gallery/video/event_order.rst:39
+msgid "检查动作检测"
+msgstr "Check motion detection"
+
+#: ../../source/block_gallery/video/event_order.rst:40
+msgid "包含检查动作标签的所有检测结果。"
+msgstr "Contains all detection results for inspection action tags."
+
+#: ../../source/block_gallery/video/event_order.rst:41
+msgid "需要模型预测结果。"
+msgstr "Model prediction results are required."
+
+#: ../../source/block_gallery/video/event_order.rst:42
+msgid "检查区域"
+msgstr "Check area"
+
+#: ../../source/block_gallery/video/event_order.rst:43
+msgid "定义检查区域的多边形。"
+msgstr "A polygon that defines the inspection area."
+
+#: ../../source/block_gallery/video/event_order.rst:44
+msgid "点击绘制区域进入绘制页面"
+msgstr "Click the drawing area to enter the drawing page"
+
+#: ../../source/block_gallery/video/event_order.rst:45
+msgid "必需检查项"
+msgstr "Required check items"
+
+#: ../../source/block_gallery/video/event_order.rst:46
+msgid "必须完成的检查动作标签列表。"
+msgstr "A list of check action tags that must be completed."
+
+#: ../../source/block_gallery/video/event_order.rst:47
+msgid "自定义动作标签"
+msgstr "Custom action tag"
+
+#: ../../source/block_gallery/video/event_order.rst:48
+msgid "强制顺序"
+msgstr "forced order"
+
+#: ../../source/block_gallery/video/event_order.rst:49
+msgid "如果为真，检查必须按指定顺序执行。"
+msgstr "If true, checks must be performed in the specified order."
+
+#: ../../source/block_gallery/video/event_order.rst:50
+msgid "``False``"
+msgstr "``False``"
+
+#: ../../source/block_gallery/video/event_order.rst:51
+msgid "区域触发点"
+msgstr "regional trigger point"
+
+#: ../../source/block_gallery/video/event_order.rst:52
+msgid "区域检查的检测锚点。"
+msgstr "Detection anchors for region checks."
+
+#: ../../source/block_gallery/video/event_order.rst:53
+msgid "``CENTER``"
+msgstr "``CENTER``"
+
+#: ../../source/block_gallery/video/event_order.rst:54
+msgid "置信度阈值"
+msgstr "confidence threshold"
+
+#: ../../source/block_gallery/video/event_order.rst:55
+msgid "检查检测的最小置信度。"
+msgstr "Check the minimum confidence level of the detection."
+
+#: ../../source/block_gallery/video/event_order.rst:56
+msgid "``0.5``"
+msgstr "``0.5``"
+
+#: ../../source/block_gallery/video/event_order.rst:57
+msgid "稳定窗口"
+msgstr "stability window"
+
+#: ../../source/block_gallery/video/event_order.rst:58
+msgid "检查必须连续出现的帧数才确认。"
+msgstr "Check the number of frames that must occur consecutively to confirm."
+
+#: ../../source/block_gallery/video/event_order.rst:59
+msgid "``3``"
+msgstr "``3``"
+
+#: ../../source/block_gallery/video/event_order.rst:60
+msgid "稳定阈值"
+msgstr "stability threshold"
+
+#: ../../source/block_gallery/video/event_order.rst:61
+msgid "稳定窗口中必须包含检查的最小帧比例。"
+msgstr ""
+"The minimum frame ratio that must be checked within the stability window."
+
+#: ../../source/block_gallery/video/event_order.rst:62
+msgid "``0.6``"
+msgstr "``0.6``"
+
+#: ../../source/block_gallery/video/event_order.rst:63
+msgid "进入确认帧数"
+msgstr "Enter confirmation frame number"
+
+#: ../../source/block_gallery/video/event_order.rst:64
+msgid "对象必须在区域内的帧数以确认进入。"
+msgstr ""
+"The number of frames an object must be within the zone to confirm entry."
+
+#: ../../source/block_gallery/video/event_order.rst:65
+msgid "``2``"
+msgstr "``2``"
+
+#: ../../source/block_gallery/video/event_order.rst:66
+msgid "退出确认帧数"
+msgstr "Exit confirmation frame number"
+
+#: ../../source/block_gallery/video/event_order.rst:67
+msgid "对象必须离开区域的帧数以确认退出。"
+msgstr "The number of frames an object must leave the zone to confirm exit."
+
+#: ../../source/block_gallery/video/event_order.rst:68
+msgid "``5``"
+msgstr "``5``"
+
+#: ../../source/block_gallery/video/event_order.rst:69
+msgid "最大处理时间（秒）"
+msgstr "Maximum processing time (seconds)"
+
+#: ../../source/block_gallery/video/event_order.rst:70
+msgid "一个处理周期的最大时间。"
+msgstr "The maximum time for a processing cycle."
+
+#: ../../source/block_gallery/video/event_order.rst:71
+msgid "``300``"
+msgstr "``300``"

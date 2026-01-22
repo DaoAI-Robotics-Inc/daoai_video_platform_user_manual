@@ -1,0 +1,550 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/quick_start/offline_setup.rst:2
+msgid "DaoAI World 部署和使用指南"
+msgstr "DaoAI World Deployment and Usage Guide"
+
+#: ../../source/quick_start/offline_setup.rst:4
+msgid "本指南将帮助您在收到服务器后完成电源和网络连接，并通过查看本机 IP 地址，从局域网设备和本机浏览器中访问 DaoAI World 应用。"
+msgstr ""
+"This guide will help you complete power and network connections after "
+"receiving the server, and access the DaoAI World application from a LAN "
+"device and a native browser by viewing the local IP address."
+
+#: ../../source/quick_start/offline_setup.rst:6
+msgid "部署 DaoAI World 服务器需要以下 5 个步骤："
+msgstr "Deploying the DaoAI World server requires the following 5 steps:"
+
+#: ../../source/quick_start/offline_setup.rst:8
+msgid ":ref:`1. 服务器准备`"
+msgstr ":ref:`1. Server preparation`"
+
+#: ../../source/quick_start/offline_setup.rst:9
+msgid ":ref:`2. 开机并登录操作系统`"
+msgstr ":ref:`2. Turn on the computer and log in to the operating system`"
+
+#: ../../source/quick_start/offline_setup.rst:10
+msgid ":ref:`3. 查看本机 IP 地址`"
+msgstr ":ref:`3. View the IP address of this machine`"
+
+#: ../../source/quick_start/offline_setup.rst:11
+msgid ":ref:`4. 局域网其他设备访问`"
+msgstr ":ref:`4. Access from other devices on LAN`"
+
+#: ../../source/quick_start/offline_setup.rst:12
+msgid ":ref:`5. Ubuntu 桌面版本地浏览器访问`"
+msgstr ":ref:`5. Browser access to Ubuntu desktop version`"
+
+#: ../../source/quick_start/offline_setup.rst:15
+msgid "1. 服务器准备"
+msgstr "1. Server preparation"
+
+#: ../../source/quick_start/offline_setup.rst:18
+msgid "1.1 检查配件"
+msgstr "1.1 Check accessories"
+
+#: ../../source/quick_start/offline_setup.rst:20
+msgid "确认收到以下配件： - 服务器主机 - 电源线 - 网线 - 相关说明书"
+msgstr ""
+"Confirm receipt of the following accessories: - Server host - Power cord - "
+"Network cable - Related instructions"
+
+#: ../../source/quick_start/offline_setup.rst:26
+msgid "确保服务器完好无损。"
+msgstr "Make sure the server is intact."
+
+#: ../../source/quick_start/offline_setup.rst:29
+msgid "1.2 连接电源和网线"
+msgstr "1.2 Connect the power supply and network cable"
+
+#: ../../source/quick_start/offline_setup.rst:31
+msgid "将电源线插入服务器电源接口，并连接到电源插座。"
+msgstr ""
+"Plug the power cord into the server power connector and connect it to an "
+"electrical outlet."
+
+#: ../../source/quick_start/offline_setup.rst:32
+msgid "使用网线将服务器网口连接至局域网交换机或路由器，并检查网口灯是否正常亮起。"
+msgstr ""
+"Use a network cable to connect the server network port to the LAN switch or "
+"router, and check whether the network port light is on normally."
+
+#: ../../source/quick_start/offline_setup.rst:36
+msgid "外观示意图"
+msgstr "Appearance diagram"
+
+#: ../../source/quick_start/offline_setup.rst:42
+msgid "图例：服务器外观及电源和网线连接示意图"
+msgstr ""
+"Legend: Server appearance and schematic diagram of power supply and network "
+"cable connection"
+
+#: ../../source/quick_start/offline_setup.rst:46
+msgid "网口灯闪烁表示网络连接正常。"
+msgstr ""
+"The network port light flashes to indicate that the network connection is "
+"normal."
+
+#: ../../source/quick_start/offline_setup.rst:49
+msgid "1.3 其他准备工作"
+msgstr "1.3 Other preparations"
+
+#: ../../source/quick_start/offline_setup.rst:51
+msgid "确保局域网内的路由器或交换机已正常运行。"
+msgstr ""
+"Make sure the router or switch within the LAN is functioning properly."
+
+#: ../../source/quick_start/offline_setup.rst:52
+msgid "如果需要远程管理，请记录服务器的序列号联系北京微链技术支持人员。"
+msgstr ""
+"If remote management is required, please record the server's serial number "
+"and contact Beijing Welink technical support personnel."
+
+#: ../../source/quick_start/offline_setup.rst:64
+msgid "2. 开机并登录操作系统"
+msgstr "2. Turn on the computer and log in to the operating system"
+
+#: ../../source/quick_start/offline_setup.rst:67
+msgid "2.1 开机"
+msgstr "2.1 Power on"
+
+#: ../../source/quick_start/offline_setup.rst:69
+msgid "按下服务器电源按钮，启动服务器。"
+msgstr "Press the server power button to start the server."
+
+#: ../../source/quick_start/offline_setup.rst:72
+msgid "2.2 登录 Ubuntu 桌面"
+msgstr "2.2 Log in to Ubuntu desktop"
+
+#: ../../source/quick_start/offline_setup.rst:74
+msgid "如果服务器连接显示器和键盘：输入管理员账户信息登录 Ubuntu 桌面。 默认用户名：dwuser 默认用户密码：dwuser"
+msgstr ""
+"If the server is connected to a monitor and keyboard: Enter the "
+"administrator account information to log in to the Ubuntu desktop.Default "
+"username: dwuser Default user password: dwuser"
+
+#: ../../source/quick_start/offline_setup.rst:78
+msgid "如果未连接显示器，可通过 SSH 访问服务器（需提前了解到服务器在局域网中的 IP 地址）。"
+msgstr ""
+"If the monitor is not connected, you can access the server through SSH (you "
+"need to know the server's IP address in the LAN in advance)."
+
+#: ../../source/quick_start/offline_setup.rst:80
+msgid "Ubuntu登录界面示意图"
+msgstr "Ubuntu login interface diagram"
+
+#: ../../source/quick_start/offline_setup.rst:86
+msgid "图例：Ubuntu 登录界面示意图"
+msgstr "Legend: Ubuntu login interface diagram"
+
+#: ../../source/quick_start/offline_setup.rst:89
+msgid "3. 查看本机 IP 地址"
+msgstr "3. View the IP address of this machine"
+
+#: ../../source/quick_start/offline_setup.rst:92
+msgid "3.1 方法一：通过 Ubuntu 命令行终端查看"
+msgstr "3.1 Method 1: View through Ubuntu command line terminal"
+
+#: ../../source/quick_start/offline_setup.rst:94
+msgid "按 Ctrl + Alt + T 打开终端。"
+msgstr "Press Ctrl + Alt + T to open the terminal."
+
+#: ../../source/quick_start/offline_setup.rst:95
+msgid "输入以下命令：ifconfig"
+msgstr "Enter the following command: ifconfig"
+
+#: ../../source/quick_start/offline_setup.rst:96
+msgid "在输出结果中找到名称为 eno1 的网卡 IP 地址，例如：inet 192.168.10.61/24"
+msgstr ""
+"Find the IP address of the network card named eno1 in the output, for "
+"example: inet 192.168.10.61/24"
+
+#: ../../source/quick_start/offline_setup.rst:97
+msgid "eno1 网卡的 IP 地址即为服务器的 IP 地址，我们将在下一步访问 DaoAI World。"
+msgstr ""
+"The IP address of the eno1 network card is the IP address of the server. We "
+"will visit DaoAI World in the next step."
+
+#: ../../source/quick_start/offline_setup.rst:100
+msgid "3.2 方法二：通过局域网路由器查看"
+msgstr "3.2 Method 2: View through LAN router"
+
+#: ../../source/quick_start/offline_setup.rst:102
+msgid "登录局域网路由器管理界面，查看设备列表以获取服务器的 IP 地址。"
+msgstr ""
+"Log in to the LAN router management interface and view the device list to "
+"obtain the server's IP address."
+
+#: ../../source/quick_start/offline_setup.rst:103
+msgid "登录路由器管理页面，例如在浏览器中输入 192.168.1.1 进入管理页面。"
+msgstr ""
+"Log in to the router management page, for example, enter 192.168.1.1 in the "
+"browser to enter the management page."
+
+#: ../../source/quick_start/offline_setup.rst:104
+msgid "在 DHCP 列表中，找到设备名为 welinkirt 的设备，查看其 IP 地址。"
+msgstr ""
+"In the DHCP list, find the device with the device name welinkirt and view "
+"its IP address."
+
+#: ../../source/quick_start/offline_setup.rst:106
+msgid "路由器管理页面"
+msgstr "Router management page"
+
+#: ../../source/quick_start/offline_setup.rst:112
+msgid "图例：路由器管理页面"
+msgstr "Legend: Router management page"
+
+#: ../../source/quick_start/offline_setup.rst:116
+msgid "4. 局域网其他设备访问"
+msgstr "4. Access from other devices on LAN"
+
+#: ../../source/quick_start/offline_setup.rst:119
+msgid "4.1 确保其他设备连接同一局域网"
+msgstr "4.1 Make sure other devices are connected to the same LAN"
+
+#: ../../source/quick_start/offline_setup.rst:121
+msgid "确保您的电脑、手机等设备与 DaoAI World 服务器处于同一局域网中。"
+msgstr ""
+"Make sure your computer, mobile phone and other devices are in the same "
+"local area network as the DaoAI World server."
+
+#: ../../source/quick_start/offline_setup.rst:124
+msgid "4.2 通过浏览器访问 DaoAI World 和 DaoAI 天眼平台"
+msgstr "4.2 Access DaoAI World and DaoAI Tianyan platform through the browser"
+
+#: ../../source/quick_start/offline_setup.rst:126
+msgid "在局域网设备的浏览器中输入服务器 IP 地址，例如："
+msgstr ""
+"Enter the server IP address into the browser of your LAN device, for "
+"example:"
+
+#: ../../source/quick_start/offline_setup.rst:127
+msgid "DaoAI World http://192.168.10.61。"
+msgstr "DaoAI World http://192.168.10.61。"
+
+#: ../../source/quick_start/offline_setup.rst:128
+msgid "DaoAI 天眼平台 http://192.168.10.61:38080/dashboard。"
+msgstr "DaoAI Tianyan platform http://192.168.10.61:38080/dashboard."
+
+#: ../../source/quick_start/offline_setup.rst:129
+msgid "如果成功，您将看到 DaoAI World 登录页面 或者DaoAI 天眼平台主界面。"
+msgstr ""
+"If successful, you will see the DaoAI World login page or the DaoAI Tianyan "
+"platform main interface."
+
+#: ../../source/quick_start/offline_setup.rst:140
+msgid "4.3 登录并使用 DaoAI World"
+msgstr "4.3 Log in and use DaoAI World"
+
+#: ../../source/quick_start/offline_setup.rst:142
+msgid "可以使用默认的 DaoAI World 账户进行登录管理："
+msgstr "You can use the default DaoAI World account for login management:"
+
+#: ../../source/quick_start/offline_setup.rst:143
+msgid "默认用户名：dwuser"
+msgstr "Default username: dwuser"
+
+#: ../../source/quick_start/offline_setup.rst:144
+msgid "默认用户密码：dwuser123"
+msgstr "Default user password: dwuser123"
+
+#: ../../source/quick_start/offline_setup.rst:146
+msgid "登录后，您可以进行训练流程、数据管理、模型管理等操作。"
+msgstr ""
+"After logging in, you can perform operations such as training process, data "
+"management, and model management."
+
+#: ../../source/quick_start/offline_setup.rst:150
+msgid "5. Ubuntu 桌面版本地浏览器访问"
+msgstr "5. Browser access to Ubuntu desktop version"
+
+#: ../../source/quick_start/offline_setup.rst:153
+msgid "5.1 打开浏览器"
+msgstr "5.1 Open the browser"
+
+#: ../../source/quick_start/offline_setup.rst:155
+msgid "在 Ubuntu 桌面，点击左下角的应用菜单，找到并打开浏览器（例如 Chrome）。"
+msgstr ""
+"On the Ubuntu desktop, click the application menu in the lower left corner, "
+"find and open the browser (such as Chrome)."
+
+#: ../../source/quick_start/offline_setup.rst:158
+msgid "5.2 输入服务器地址"
+msgstr "5.2 Enter the server address"
+
+#: ../../source/quick_start/offline_setup.rst:160
+msgid "在浏览器地址栏输入：127.0.0.1 您将看到 DaoAI World 登录页面。"
+msgstr ""
+"Enter: 127.0.0.1 in the browser address bar and you will see the DaoAI World"
+" login page."
+
+#: ../../source/quick_start/offline_setup.rst:165
+msgid "6. 常见问题"
+msgstr "6. FAQ"
+
+#: ../../source/quick_start/offline_setup.rst:168
+msgid "6.1 正常显示登录页面，但无法成功登录"
+msgstr ""
+"6.1 The login page is displayed normally, but login cannot be successful."
+
+#: ../../source/quick_start/offline_setup.rst:170
+msgid "如果登录无响应，请按以下操作进入排查流程："
+msgstr ""
+"If there is no response when logging in, please follow the steps below to "
+"enter the troubleshooting process:"
+
+#: ../../source/quick_start/offline_setup.rst:172
+msgid "**在浏览器页面点击 F12，打开开发者工具**"
+msgstr "**Click F12 on the browser page to open the developer tools**"
+
+#: ../../source/quick_start/offline_setup.rst:174
+msgid "浏览器开发者工具截图"
+msgstr "Browser developer tools screenshot"
+
+#: ../../source/quick_start/offline_setup.rst:180
+msgid "图例：按 F12 打开开发者工具。"
+msgstr "Legend: Press F12 to open developer tools."
+
+#: ../../source/quick_start/offline_setup.rst:182
+msgid "**打开网络（Network）标签，查看名称为 Login 的请求**"
+msgstr "**Open the Network tab and view the request named Login**"
+
+#: ../../source/quick_start/offline_setup.rst:184
+msgid "登录请求失败截图"
+msgstr "Screenshot of failed login request"
+
+#: ../../source/quick_start/offline_setup.rst:190
+msgid "图例：以上为 Network 标签中 Login 请求的信息。"
+msgstr ""
+"Legend: The above is the information requested by Login in the Network tab."
+
+#: ../../source/quick_start/offline_setup.rst:192
+msgid "**查看名称为 (Login) 的标签，并判断请求 IP 地址是否正确**"
+msgstr ""
+"**View the label named (Login) and determine whether the requested IP "
+"address is correct**"
+
+#: ../../source/quick_start/offline_setup.rst:194
+msgid "登录信息截图"
+msgstr "Screenshot of login information"
+
+#: ../../source/quick_start/offline_setup.rst:200
+msgid "图例：以上为 Network 标签中 Login 请求的详细信息，其中请求 URL 理应为您的浏览器访问地址。"
+msgstr ""
+"Legend: The above is the details of the Login request in the Network tab, "
+"where the request URL should be your browser access address."
+
+#: ../../source/quick_start/offline_setup.rst:202
+msgid ""
+"**注：** - 请确保 login 请求的 URL 和您当前浏览器访问的 **局域网地址** 保持一致。 - 如果显示为 "
+"172.xxx.xxx.xxx 这样的 **IP 地址**，这可能是由于以下原因："
+msgstr ""
+"**Note:** - Please ensure that the URL requested by login is consistent with"
+" the **LAN address** currently accessed by your browser.- If an **IP "
+"address** appears as 172.xxx.xxx.xxx, this may be due to the following "
+"reasons:"
+
+#: ../../source/quick_start/offline_setup.rst:205
+msgid "**网络问题**：设备未和 DW 服务器处于同一局域网中。"
+msgstr ""
+"**Network Issue**: The device is not on the same LAN as the DW server."
+
+#: ../../source/quick_start/offline_setup.rst:206
+msgid "**服务器未启动**：请检查服务器电源是否正常开启。"
+msgstr ""
+"**Server not started**: Please check whether the server power is turned on "
+"normally."
+
+#: ../../source/quick_start/offline_setup.rst:207
+msgid "**服务未开启**：DW 平台的后端服务地址未成功启动，请联系技术支持团队排查。"
+msgstr ""
+"**Service not started**: The back-end service address of the DW platform has"
+" not been successfully started. Please contact the technical support team "
+"for troubleshooting."
+
+#: ../../source/quick_start/offline_setup.rst:209
+msgid ""
+"**解决办法：** - 请尝试重启 DW 离线版服务器，后端地址会自动更新。 - 请在 F12 页面，网络（Network）标签中选择 "
+"\"禁用缓存\"，并刷新页面，稍后再次尝试登录。 - 请再次检查网络连接是否正常，如有问题，请联系技术支持团队排查。"
+msgstr ""
+"**Solution:** - Please try to restart the DW offline version server, the "
+"backend address will be updated automatically.- Please select \"Disable "
+"Cache\" on the F12 page, Network tab, refresh the page, and try logging in "
+"again later.- Please check again whether the network connection is normal. "
+"If there is any problem, please contact the technical support team for "
+"troubleshooting."
+
+#: ../../source/quick_start/offline_setup.rst:216
+msgid "6.2 我该如何固定我的服务器地址？"
+msgstr "6.2 How do I fix my server address?"
+
+#: ../../source/quick_start/offline_setup.rst:218
+msgid "如果您有固定服务器 IP 的需求以便于长期使用，请按照以下操作在路由器中设置静态 IP 地址。"
+msgstr ""
+"If you have a need for a fixed server IP for long-term use, please follow "
+"the steps below to set a static IP address in your router."
+
+#: ../../source/quick_start/offline_setup.rst:220
+msgid "**登录路由器管理界面**"
+msgstr "**Log in to the router management interface**"
+
+#: ../../source/quick_start/offline_setup.rst:222
+msgid ""
+"打开浏览器，在地址栏输入路由器的管理 IP 地址（例如 192.168.1.1、192.168.0.1 或者其他根据您的路由器设置的 IP 地址）。 "
+"输入管理员账号和密码（通常在路由器的背面贴纸上，或者您设置时配置的用户名和密码）。"
+msgstr ""
+"Open your browser and enter your router's management IP address in the "
+"address bar (for example, 192.168.1.1, 192.168.0.1, or another IP address "
+"based on your router's settings). Enter your administrator account and "
+"password (usually on a sticker on the back of the router, or the username "
+"and password you configured during setup)."
+
+#: ../../source/quick_start/offline_setup.rst:225
+msgid "**找到 DHCP 设置部分**"
+msgstr "**Find the DHCP settings section**"
+
+#: ../../source/quick_start/offline_setup.rst:227
+msgid ""
+"登录后，进入路由器的管理界面。 寻找 **网络设置**、**LAN 设置** 或者 **DHCP 设置** 等选项。具体位置可能不同，通常会在 "
+"**高级设置** 或 **局域网（LAN）设置** 中找到 DHCP 配置选项。"
+msgstr ""
+"After logging in, enter the router’s management interface.Look for options "
+"like **Network Settings**, **LAN Settings**, or **DHCP Settings**.The exact "
+"location may vary, typically DHCP configuration options will be found in "
+"**Advanced Settings** or **Local Area Network (LAN) Settings**."
+
+#: ../../source/quick_start/offline_setup.rst:230
+msgid "**启用静态 IP 分配（DHCP 静态租赁）**"
+msgstr "**Enable Static IP Assignment (DHCP Static Lease)**"
+
+#: ../../source/quick_start/offline_setup.rst:232
+msgid ""
+"在 DHCP 设置页面，找到一个叫做 **DHCP 静态租赁**、**静态 IP 分配** 或类似名称的选项。 - 点击 **添加静态租赁** 或 "
+"**添加 DHCP 保留** 按钮。 - 输入您希望为设备分配的 **静态 IP 地址**，例如 192.168.1.100。 - 在 **设备 MAC"
+" 地址** 框中，输入您要为其分配静态 IP 地址的 **MAC 地址**。 - 在有些路由器中，您可以通过选择已连接设备列表中的设备来自动填入其 "
+"MAC 地址。"
+msgstr ""
+"On the DHCP Settings page, find an option called **DHCP Static Lease**, "
+"**Static IP Assignment**, or something similar.- Click the **Add Static "
+"Lease** or **Add DHCP Reservation** button.- Enter the **static IP address**"
+" you wish to assign to the device, for example 192.168.1.100.- In the "
+"**Device MAC Address** box, enter the **MAC address** to which you want to "
+"assign a static IP address.- In some routers, you can automatically fill in "
+"the MAC address of a device by selecting it in the list of connected "
+"devices."
+
+#: ../../source/quick_start/offline_setup.rst:238
+msgid "**保存并应用设置**"
+msgstr "**Save and apply settings**"
+
+#: ../../source/quick_start/offline_setup.rst:240
+msgid "完成静态 IP 分配后，保存设置并使其生效。 路由器可能会要求重启或者自动应用更改。"
+msgstr ""
+"After completing the static IP assignment, save the settings and make them "
+"effective.The router may ask for a reboot or apply the changes "
+"automatically."
+
+#: ../../source/quick_start/offline_setup.rst:243
+msgid "**验证静态 IP 是否生效**"
+msgstr "**Verify whether the static IP is valid**"
+
+#: ../../source/quick_start/offline_setup.rst:245
+msgid "重启设备（例如计算机、手机等），或者断开并重新连接到网络。"
+msgstr ""
+"Restart your device (e.g. computer, phone, etc.) or disconnect and reconnect"
+" to the network."
+
+#: ../../source/quick_start/offline_setup.rst:246
+msgid "在设备上检查其 IP 地址，应该能够看到您分配的静态 IP 地址。"
+msgstr ""
+"Check its IP address on the device and you should be able to see the static "
+"IP address you assigned."
+
+#: ../../source/quick_start/offline_setup.rst:248
+msgid "**示例步骤（以 TP-Link 路由器为例）**"
+msgstr "**Example steps (taking TP-Link router as an example)**"
+
+#: ../../source/quick_start/offline_setup.rst:250
+msgid "登录到路由器管理页面（通常是 http://192.168.0.1 或 http://tplinkwifi.net）。"
+msgstr ""
+"Log in to the router management page (usually http://192.168.0.1 or "
+"http://tplinkwifi.net)."
+
+#: ../../source/quick_start/offline_setup.rst:251
+msgid "输入用户名和密码（默认为 admin/admin，除非您更改过）。"
+msgstr ""
+"Enter your username and password (default is admin/admin unless you have "
+"changed it)."
+
+#: ../../source/quick_start/offline_setup.rst:252
+msgid "点击 **DHCP** 或 **网络设置**。"
+msgstr "Click **DHCP** or **Network Settings**."
+
+#: ../../source/quick_start/offline_setup.rst:253
+msgid "找到 **地址预留** 或 **静态 DHCP**。"
+msgstr "Find **Address Reservation** or **Static DHCP**."
+
+#: ../../source/quick_start/offline_setup.rst:254
+msgid "输入设备的 **MAC 地址** 和您希望分配的 **IP 地址**。"
+msgstr ""
+"Enter the device's **MAC address** and the **IP address** you wish to "
+"assign."
+
+#: ../../source/quick_start/offline_setup.rst:255
+msgid "保存设置并重启设备。"
+msgstr "Save the settings and restart the device."
+
+#: ../../source/quick_start/offline_setup.rst:257
+msgid ""
+"**注意事项** - **MAC 地址唯一性**：确保为每个设备设置一个唯一的 IP 地址，以避免冲突。 - **IP 地址范围**：确保您分配的静态 "
+"IP 地址位于路由器的 DHCP 范围内，但不要与路由器自动分配的其他 IP 地址重叠。"
+msgstr ""
+"**Note** - **MAC Address Uniqueness**: Make sure to set a unique IP address "
+"for each device to avoid conflicts.- **IP Address Range**: Make sure the "
+"static IP address you assign is within the router's DHCP range, but does not"
+" overlap with other IP addresses automatically assigned by the router."
+
+#: ../../source/quick_start/offline_setup.rst:262
+msgid "6.3 部分操作需提供管理员密码"
+msgstr "6.3 Some operations require the administrator password"
+
+#: ../../source/quick_start/offline_setup.rst:264
+msgid "在目前版本中，因安全考虑，系统部分敏感指令要求输入管理员密码才能执行。（目前考虑到数据隐私，我们暂时不能为您提供管理员密码。）"
+msgstr ""
+"In the current version, due to security considerations, some sensitive "
+"instructions in the system require the administrator password to be "
+"executed.(At this time, due to data privacy concerns, we are unable to "
+"provide you with an administrator password.)"
+
+#: ../../source/quick_start/offline_setup.rst:266
+msgid "**解决办法：** - 请联系技术支持团队，以便为您提供支持。 - 尝试使用 dwuser 账户，进行执行操作。"
+msgstr ""
+"**WORKAROUND:** - Please contact the technical support team to assist you.- "
+"Try to use the dwuser account to perform operations."
+
+#: ../../source/quick_start/offline_setup.rst:270
+msgid "感谢您选择 DaoAI World，如有任何问题，请随时联系技术支持团队获取帮助。 或者发送邮件至 support@daoai.com"
+msgstr ""
+"Thank you for choosing DaoAI World. If you have any questions, please feel "
+"free to contact the technical support team for help. Or send an email to "
+"support@daoai.com"

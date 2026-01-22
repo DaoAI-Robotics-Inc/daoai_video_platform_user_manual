@@ -1,0 +1,601 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:4
+msgid "混合模型 (Mixed Model)"
+msgstr "Mixed Model"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:7
+msgid "本页面介绍DaoAI World模型的混合模型类型。返回 :ref:`DaoAI World模型主页 <DaoAI World模型>`"
+msgstr ""
+"This page introduces the hybrid model types of DaoAI World model.Return "
+":ref:`DaoAI World model homepage <DaoAI World model>`"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:10
+msgid "模型简介"
+msgstr "Model introduction"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:12
+msgid ""
+"混合模型结合了多种计算机视觉任务，可以在一次推理中同时执行多个任务，如同时进行目标检测、分类和关键点检测等。这种模型适用于需要多维度信息的复杂应用场景，既能提高效率，又能保证不同任务之间的信息一致性。"
+msgstr ""
+"Hybrid models combine multiple computer vision tasks and can perform "
+"multiple tasks simultaneously in one inference, such as simultaneous object "
+"detection, classification, and key point detection.This model is suitable "
+"for complex application scenarios that require multi-dimensional "
+"information, which can not only improve efficiency but also ensure "
+"information consistency between different tasks."
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:14
+msgid "**支持的任务组合：**"
+msgstr "**Supported task combinations:**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:16
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:384
+msgid "检测 + 分类"
+msgstr "Detection + Classification"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:17
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:390
+msgid "检测 + 关键点"
+msgstr "Detection + Key Points"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:18
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:387
+msgid "检测 + 分割"
+msgstr "Detection + Segmentation"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:19
+msgid "分类 + 分割"
+msgstr "Classification + Segmentation"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:20
+msgid "检测 + 分类 + 关键点"
+msgstr "Detection + Classification + Key Points"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:21
+msgid "其他自定义组合"
+msgstr "Other custom combinations"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:24
+msgid "适用场景"
+msgstr "Applicable scenarios"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:26
+msgid "混合模型适用于需要综合多种信息的复杂场景："
+msgstr ""
+"Hybrid models are suitable for complex scenarios that require the synthesis "
+"of multiple types of information:"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:28
+msgid "**智能零售**：商品检测 + 品牌分类 + 价格标签OCR"
+msgstr ""
+"**Smart Retail**: Product detection + brand classification + price tag OCR"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:29
+msgid "**智能安防**：人员检测 + 身份识别 + 姿态分析"
+msgstr ""
+"**Intelligent Security**: Personnel Detection + Identity Recognition + "
+"Posture Analysis"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:30
+msgid "**自动驾驶**：车辆检测 + 车型分类 + 关键部位定位"
+msgstr ""
+"**Autonomous driving**: vehicle detection + vehicle classification + key "
+"part positioning"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:31
+msgid "**工业质检**：缺陷检测 + 缺陷分类 + 缺陷区域分割"
+msgstr ""
+"**Industrial quality inspection**: defect detection + defect classification "
+"+ defect area segmentation"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:32
+msgid "**体育分析**：运动员检测 + 动作分类 + 姿态关键点"
+msgstr ""
+"**Sports Analysis**: Athlete detection + action classification + posture key"
+" points"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:33
+msgid "**医疗诊断**：病灶检测 + 类型分类 + 区域分割"
+msgstr ""
+"**Medical Diagnosis**: Lesion Detection + Type Classification + Region "
+"Segmentation"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:34
+msgid "**智能农业**：作物检测 + 成熟度分类 + 病虫害分割"
+msgstr ""
+"**Smart Agriculture**: Crop detection + maturity classification + pest and "
+"disease segmentation"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:37
+msgid "输出格式"
+msgstr "Output format"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:39
+msgid "混合模型的输出包含多个任务的结果，具体格式取决于组合的任务类型："
+msgstr ""
+"The output of a hybrid model contains the results of multiple tasks, in a "
+"format that depends on the type of tasks combined:"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:41
+msgid "**示例1：检测 + 分类 + 关键点**"
+msgstr "**Example 1: Detection + Classification + Keypoints**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:76
+msgid "**示例2：检测 + 分割**"
+msgstr "**Example 2: Detection + Segmentation**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:101
+msgid "**示例3：检测 + 分类（质检场景）**"
+msgstr ""
+"**Example 3: Detection + Classification (Quality Inspection Scenario)**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:128
+msgid "配置示例"
+msgstr "Configuration example"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:130
+msgid "**智能安防：人员检测+属性分析**"
+msgstr "**Intelligent Security: Personnel Detection + Attribute Analysis**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:144
+msgid "**工业质检：缺陷检测+分类**"
+msgstr "**Industrial quality inspection: defect detection + classification**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:161
+msgid "**零售分析：商品识别+属性**"
+msgstr "**Retail Analysis: Product Identification + Attributes**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:177
+msgid "**体育分析：运动员检测+动作识别**"
+msgstr "**Sports Analysis: Athlete Detection + Action Recognition**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:193
+msgid "使用技巧与最佳实践"
+msgstr "Tips and best practices"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:195
+msgid "**任务优先级设置**"
+msgstr "**Task priority setting**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:197
+msgid "为不同任务设置不同的置信度阈值"
+msgstr "Set different confidence thresholds for different tasks"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:198
+msgid "关键任务使用更高的阈值以确保准确性"
+msgstr "Mission-critical use higher thresholds to ensure accuracy"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:199
+msgid "辅助任务可以使用较低的阈值"
+msgstr "Auxiliary tasks can use lower thresholds"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:201
+msgid "**性能优化**"
+msgstr "**Performance Optimization**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:203
+msgid "混合模型比分别运行多个模型更高效"
+msgstr ""
+"Mixing models is more efficient than running multiple models separately"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:204
+msgid "共享特征提取可减少计算量"
+msgstr "Shared feature extraction reduces computational effort"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:205
+msgid "建议使用GPU加速"
+msgstr "It is recommended to use GPU acceleration"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:207
+msgid "**任务相关性利用**"
+msgstr "**Task dependency utilization**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:209
+msgid "检测结果可以指导分类和分割的区域"
+msgstr "Detection results can guide classification and segmentation of areas"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:210
+msgid "分类结果可以优化检测的置信度"
+msgstr "Classification results can optimize detection confidence"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:211
+msgid "关键点可以辅助姿态分类"
+msgstr "Key points can assist pose classification"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:213
+msgid "**结果一致性**"
+msgstr "**Consistency of results**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:215
+msgid "混合模型保证了不同任务看到的是同一特征"
+msgstr "The hybrid model ensures that different tasks see the same features"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:216
+msgid "避免了多次推理可能带来的不一致"
+msgstr "Avoids possible inconsistencies caused by multiple inferences"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:218
+msgid "**置信度策略**"
+msgstr "**Confidence Strategy**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:220
+msgid "主任务（如检测）使用标准阈值"
+msgstr "Main tasks (such as detection) use standard thresholds"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:221
+msgid "子任务（如属性分类）可以使用较低阈值"
+msgstr "Subtasks such as attribute classification can use lower thresholds"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:222
+msgid "综合多个任务的置信度做最终决策"
+msgstr "Combine the confidence of multiple tasks to make final decisions"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:225
+msgid "常见问题"
+msgstr "FAQ"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:227
+msgid "**Q: 混合模型比分别运行多个单一模型有什么优势？**"
+msgstr ""
+"**Q: What are the advantages of hybrid models over running multiple single "
+"models separately?**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:229
+msgid "A:"
+msgstr "A:"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:230
+msgid "**性能优势**：共享特征提取，计算量大幅减少，速度更快"
+msgstr ""
+"**Performance Advantages**: Shared feature extraction, greatly reduced "
+"calculations and faster speed"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:231
+msgid "**一致性**：所有任务基于相同的特征，结果更一致"
+msgstr ""
+"**Consistency**: All tasks are based on the same features, and the results "
+"are more consistent"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:232
+msgid "**准确性**：任务之间可以相互增强，提高整体准确度"
+msgstr ""
+"**Accuracy**: Tasks can reinforce each other to improve overall accuracy"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:233
+msgid "**便捷性**：一次推理获得所有结果，简化工作流"
+msgstr ""
+"**Convenience**: Obtain all results in one inference, simplifying workflow"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:235
+msgid "**Q: 如何理解混合模型的置信度？**"
+msgstr "**Q: How to understand the confidence of a mixed model?**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:237
+msgid "A: 混合模型通常为每个任务输出独立的置信度："
+msgstr ""
+"A: Hybrid models typically output independent confidence scores for each "
+"task:"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:239
+msgid "``detection.confidence``: 检测任务的置信度"
+msgstr "``detection.confidence``: Confidence of the detection task"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:240
+msgid "``classification.confidence``: 分类任务的置信度"
+msgstr "``classification.confidence``: Confidence of the classification task"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:241
+msgid "可以为不同任务设置不同的阈值"
+msgstr "Different thresholds can be set for different tasks"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:243
+msgid "**Q: 混合模型的训练需要什么样的数据？**"
+msgstr "**Q: What kind of data is required for hybrid model training?**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:245
+msgid "A: 需要同时包含多个任务标注的数据集。例如检测+分类模型需要："
+msgstr ""
+"A: A data set containing multiple task annotations is required.For example, "
+"the detection + classification model requires:"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:247
+msgid "物体边界框标注"
+msgstr "Object bounding box annotation"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:248
+msgid "物体类别标注"
+msgstr "Object category annotation"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:249
+msgid "物体属性标注（如果需要）"
+msgstr "Object attribute annotation (if required)"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:251
+msgid "**Q: 所有任务都必须成功才输出结果吗？**"
+msgstr "**Q: Do all tasks have to be successful before results are output?**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:253
+msgid "A: 不是。每个任务独立输出结果。某个任务失败（置信度过低）不影响其他任务的输出。"
+msgstr ""
+"A: No.Each task outputs results independently.Failure of a task (confidence "
+"is too low) does not affect the output of other tasks."
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:255
+msgid "**Q: 如何选择合适的任务组合？**"
+msgstr "**Q: How to choose the right task combination?**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:257
+msgid "A: 基于应用需求选择："
+msgstr "A: Choose based on application requirements:"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:259
+msgid "**需要位置和类别** → 检测 + 分类"
+msgstr "**Requires location and category** → Detect + Classify"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:260
+msgid "**需要精确轮廓** → 检测 + 分割"
+msgstr "**Precise contours required** → Detection + Segmentation"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:261
+msgid "**需要姿态信息** → 检测 + 关键点"
+msgstr "**pose information required** → detection + key points"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:262
+msgid "**需要综合分析** → 检测 + 分类 + 关键点/分割"
+msgstr ""
+"**Comprehensive analysis required** → Detection + Classification + Key "
+"Points/Segmentation"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:265
+msgid "应用案例"
+msgstr "Application cases"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:267
+msgid "**案例1：智能零售 - 商品识别系统**"
+msgstr "**Case 1: Smart Retail - Product Identification System**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:269
+msgid "检测货架上的商品，识别品牌和类别，统计库存。"
+msgstr ""
+"Detect products on shelves, identify brands and categories, and count "
+"inventory."
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:285
+msgid "**输出示例：**"
+msgstr "**Example output:**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:303
+msgid "**案例2：工业质检 - 多维度缺陷检测**"
+msgstr ""
+"**Case 2: Industrial Quality Inspection - Multi-dimensional Defect "
+"Detection**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:305
+msgid "检测产品缺陷，分类缺陷类型，分割缺陷区域。"
+msgstr ""
+"Detect product defects, classify defect types, and segment defect areas."
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:321
+msgid "**决策逻辑：**"
+msgstr "**Decision logic:**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:323
+msgid "检测：是否存在缺陷区域"
+msgstr "Inspection: Is there a defective area?"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:324
+msgid "分类：缺陷属于哪种类型"
+msgstr "Classification: What type of defect does it belong to?"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:325
+msgid "分割：精确的缺陷范围"
+msgstr "Segmentation: precise defect range"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:326
+msgid "计算缺陷面积，判定产品等级"
+msgstr "Calculate defect area and determine product grade"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:328
+msgid "**案例3：智能健身 - 动作指导**"
+msgstr "**Case 3: Intelligent Fitness-Motion Guidance**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:330
+msgid "检测人员，识别动作类型，分析姿态是否标准。"
+msgstr ""
+"Detect people, identify action types, and analyze whether postures are "
+"standard."
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:344
+msgid "**分析流程：**"
+msgstr "**Analysis process:**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:346
+msgid "检测人体位置"
+msgstr "Detect human body position"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:347
+msgid "识别动作类型（深蹲、俯卧撑等）"
+msgstr "Identify movement types (squats, push-ups, etc.)"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:348
+msgid "检测关键点，计算关节角度"
+msgstr "Detect key points and calculate joint angles"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:349
+msgid "判断动作是否标准，给出反馈"
+msgstr "Determine whether the action is standard and give feedback"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:351
+msgid "**案例4：自动驾驶 - 车辆综合分析**"
+msgstr "**Case 4: Autonomous Driving - Comprehensive Vehicle Analysis**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:353
+msgid "检测车辆，分类车型，定位关键部位（车灯、车牌等）。"
+msgstr ""
+"Detect vehicles, classify models, and locate key parts (lights, license "
+"plates, etc.)."
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:368
+msgid "**应用价值：**"
+msgstr "**Application value:**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:370
+msgid "检测：定位车辆"
+msgstr "Detection: Locating the vehicle"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:371
+msgid "分类：识别车型（轿车、卡车、公交等）"
+msgstr "Classification: Identify vehicle types (cars, trucks, buses, etc.)"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:372
+msgid "关键点：定位车牌、车灯位置，用于进一步分析"
+msgstr ""
+"Key points: Locate license plate and car light positions for further "
+"analysis"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:375
+msgid "任务组合对比"
+msgstr "Task mix comparison"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:381
+msgid "任务组合"
+msgstr "task mix"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:382
+msgid "应用场景"
+msgstr "Application scenarios"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:383
+msgid "性能特点"
+msgstr "Performance characteristics"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:385
+msgid "物体识别、质检、零售"
+msgstr "Object recognition, quality inspection, retail"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:386
+msgid "速度快，信息丰富"
+msgstr "Fast and informative"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:388
+msgid "精确定位、抠图、测量"
+msgstr "Precise positioning, cutout, and measurement"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:389
+msgid "精度高，计算量中等"
+msgstr "High accuracy, medium computational effort"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:391
+msgid "姿态分析、动作识别"
+msgstr "Posture analysis, action recognition"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:392
+msgid "信息详细，实时性好"
+msgstr "Detailed information and good real-time performance"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:393
+msgid "检测 + 分类 + 分割"
+msgstr "Detection + Classification + Segmentation"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:394
+msgid "综合质检、医疗诊断"
+msgstr "Comprehensive quality inspection, medical diagnosis"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:395
+msgid "全面分析，计算量大"
+msgstr "Comprehensive analysis, large amount of calculation"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:398
+msgid "性能优势"
+msgstr "Performance advantages"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:400
+msgid "**单一模型 vs 混合模型**"
+msgstr "**Single model vs hybrid model**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:402
+msgid "假设需要同时进行检测、分类、关键点三个任务："
+msgstr ""
+"Assume that three tasks of detection, classification, and key points need to"
+" be performed at the same time:"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:404
+msgid "**分别运行三个模型：**"
+msgstr "**Run three models separately:**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:406
+msgid "检测模型：100ms"
+msgstr "Detection model: 100ms"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:407
+msgid "分类模型：80ms"
+msgstr "Classification model: 80ms"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:408
+msgid "关键点模型：120ms"
+msgstr "Key point model: 120ms"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:409
+msgid "**总耗时：300ms**"
+msgstr "**Total time taken: 300ms**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:411
+msgid "**使用混合模型：**"
+msgstr "**Use Mixed Model:**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:413
+msgid "混合模型：150ms"
+msgstr "Hybrid model: 150ms"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:414
+msgid "**总耗时：150ms**"
+msgstr "**Total time taken: 150ms**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:415
+msgid "**速度提升：50%**"
+msgstr "**Speed ​​increase: 50%**"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:418
+msgid "相关链接"
+msgstr "Related links"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:420
+msgid ":ref:`DaoAI World模型主页 <DaoAI World模型>`"
+msgstr ":ref:`DaoAI World model homepage <DaoAI World model>`"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:421
+msgid ":ref:`目标检测模型 <daoai_world_object_detection>`"
+msgstr ":ref:`Object detection model <daoai_world_object_detection>`"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:422
+msgid ":ref:`分类模型 <daoai_world_classification>`"
+msgstr ":ref:`Classification model <daoai_world_classification>`"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:423
+msgid ":ref:`实例分割模型 <daoai_world_instance_segmentation>`"
+msgstr ""
+":ref:`Instance segmentation model <daoai_world_instance_segmentation>`"
+
+#: ../../source/block_gallery/models/daoai_world_mixed_model.rst:424
+msgid ":ref:`关键点检测模型 <daoai_world_keypoint_detection>`"
+msgstr ":ref:`Keypoint detection model <daoai_world_keypoint_detection>`"

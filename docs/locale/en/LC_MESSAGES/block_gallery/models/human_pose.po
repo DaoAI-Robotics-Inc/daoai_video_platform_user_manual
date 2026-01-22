@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/models/human_pose.rst:4
+msgid "人体姿态评估"
+msgstr "Human posture assessment"
+
+#: ../../source/block_gallery/models/human_pose.rst:7
+msgid "简介"
+msgstr "Overview"
+
+#: ../../source/block_gallery/models/human_pose.rst:9
+msgid "这是一个用于人体姿态评估的模型，可以检测人体的关键点，并给出人体姿态的评估结果。"
+msgstr ""
+"This is a model for human posture assessment that can detect key points of "
+"the human body and give assessment results of human posture."
+
+#: ../../source/block_gallery/models/human_pose.rst:12
+msgid "输入/输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/models/human_pose.rst:14
+msgid "输入（Input）:"
+msgstr "Input:"
+
+#: ../../source/block_gallery/models/human_pose.rst:15
+msgid "图像 （来自上游节点或工作流输入）。"
+msgstr "Image (from upstream node or workflow input)."
+
+#: ../../source/block_gallery/models/human_pose.rst:17
+msgid "输出（Output）:"
+msgstr "Output:"
+
+#: ../../source/block_gallery/models/human_pose.rst:18
+msgid "检测到的人体框位置和置信度"
+msgstr "Detected human frame location and confidence"
+
+#: ../../source/block_gallery/models/human_pose.rst:19
+msgid "对应关节、骨骼的颜色列表"
+msgstr "Color list corresponding to joints and bones"
+
+#: ../../source/block_gallery/models/human_pose.rst:20
+msgid "人体姿态的评估结果"
+msgstr "Human body posture assessment results"
+
+#: ../../source/block_gallery/models/human_pose.rst:21
+msgid "推理是否成功"
+msgstr "Is the reasoning successful?"
+
+#: ../../source/block_gallery/models/human_pose.rst:24
+msgid "该模型只检测人体框和返回人体关键点，想要在前端大屏显示出人体姿态，需要添加一个 :ref:`关键点可视化 <关键显示>` 模块。"
+msgstr ""
+"This model only detects human body frames and returns human body key points."
+" If you want to display the human body posture on the front-end large "
+"screen, you need to add a :ref:`Key point visualization <key display>` "
+"module."
+
+#: ../../source/block_gallery/models/human_pose.rst:27
+msgid "配置参数详解"
+msgstr "Detailed explanation of configuration parameters"
+
+#: ../../source/block_gallery/models/human_pose.rst:32
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/models/human_pose.rst:33
+msgid "说明"
+msgstr "Description"
+
+#: ../../source/block_gallery/models/human_pose.rst:34
+msgid "示例/ ``默认值``"
+msgstr "Example/``DefaultValue``"
+
+#: ../../source/block_gallery/models/human_pose.rst:35
+msgid "节点名称"
+msgstr "Node name"
+
+#: ../../source/block_gallery/models/human_pose.rst:36
+msgid "自定义该节点的名称，用于标识工作流中的该步骤。无需特意编辑，保持默认即可。"
+msgstr ""
+"Customize the name of the node to identify the step in the workflow.No "
+"special editing is required, just keep the default."
+
+#: ../../source/block_gallery/models/human_pose.rst:37
+msgid "``human_pose_estimation_1``"
+msgstr "``human_pose_estimation_1``"
+
+#: ../../source/block_gallery/models/human_pose.rst:38
+msgid "备注"
+msgstr "Remark"
+
+#: ../../source/block_gallery/models/human_pose.rst:39
+msgid "可选的备注信息，用于描述该步骤的用途。"
+msgstr "Optional remarks describing the purpose of this step."
+
+#: ../../source/block_gallery/models/human_pose.rst:40
+msgid "``留空``"
+msgstr "``leave blank``"
+
+#: ../../source/block_gallery/models/human_pose.rst:41
+msgid "图像"
+msgstr "image"
+
+#: ../../source/block_gallery/models/human_pose.rst:42
+msgid "指定输入图像的来源，可以是上游节点的输出或工作流的输入参数。"
+msgstr ""
+"Specifies the source of the input image, which can be the output of an "
+"upstream node or an input parameter of a workflow."
+
+#: ../../source/block_gallery/models/human_pose.rst:43
+msgid "``input image``"
+msgstr "``input image``"
+
+#: ../../source/block_gallery/models/human_pose.rst:44
+msgid "检测模式"
+msgstr "detection mode"
+
+#: ../../source/block_gallery/models/human_pose.rst:45
+msgid "选择检测模式：wholebody（全身含手、脸、脚），body（仅身体），body_with_feet（身体含脚），hand（单手）。"
+msgstr ""
+"Select the detection mode: wholebody (whole body including hands, face, and "
+"feet), body (body only), body_with_feet (body including feet), hand (one "
+"hand)."
+
+#: ../../source/block_gallery/models/human_pose.rst:46
+msgid "``wholebody``"
+msgstr "``wholebody``"
+
+#: ../../source/block_gallery/models/human_pose.rst:47
+msgid "置信度阈值"
+msgstr "confidence threshold"
+
+#: ../../source/block_gallery/models/human_pose.rst:48
+msgid "人体检测的最小置信度阈值，范围为0到1。低于该阈值的检测结果将被过滤掉。"
+msgstr ""
+"Minimum confidence threshold for human detection, ranging from 0 to "
+"1.Detection results below this threshold will be filtered out."
+
+#: ../../source/block_gallery/models/human_pose.rst:49
+msgid "``0.5``"
+msgstr "``0.5``"

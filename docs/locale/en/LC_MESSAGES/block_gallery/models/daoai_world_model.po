@@ -1,0 +1,275 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:4
+msgid "DaoAI World模型"
+msgstr "DaoAI World model"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:9
+msgid ""
+"DaoAI World模型节点用于运行在DaoAI "
+"World平台训练的AI模型，支持多种类型的计算机视觉任务。通过该节点，您可以对图像或视频帧进行目标检测、分类、分割、关键点检测、OCR等推理操作。"
+msgstr ""
+"The DaoAI World model node is used to run AI models trained on the DaoAI "
+"World platform and supports multiple types of computer vision tasks.Through "
+"this node, you can perform inference operations such as target detection, "
+"classification, segmentation, key point detection, and OCR on images or "
+"video frames."
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:12
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:14
+msgid "**输入**：图像（来自上游节点或工作流输入）"
+msgstr "**Input**: Image (from upstream node or workflow input)"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:15
+msgid "**输出**：根据模型类型不同，输出检测框、分类结果、分割掩码、关键点坐标或文字识别结果等"
+msgstr ""
+"**Output**: Depending on the model type, output detection frames, "
+"classification results, segmentation masks, key point coordinates or text "
+"recognition results, etc."
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:18
+msgid "配置参数详解"
+msgstr "Detailed explanation of configuration parameters"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:24
+msgid "参数名称"
+msgstr "Parameter name"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:25
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:26
+msgid "示例/默认值"
+msgstr "Example/Default"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:27
+msgid "**Step Name**"
+msgstr "**Step Name**"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:28
+msgid "步骤名称，用于标识该节点的唯一标识符"
+msgstr "Step name, a unique identifier used to identify this node"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:29
+msgid "``daoai_world_model_1``"
+msgstr "``daoai_world_model_1``"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:30
+msgid "**Comments**"
+msgstr "**Comments**"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:31
+msgid "可选的备注信息，用于描述该步骤的用途"
+msgstr "Optional remarks describing the purpose of this step"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:32
+msgid "留空"
+msgstr "Leave blank"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:33
+msgid "**Image**"
+msgstr "**Image**"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:34
+msgid "指定输入图像的来源，可以是上游节点的输出或工作流的输入参数"
+msgstr ""
+"Specify the source of the input image, which can be the output of an "
+"upstream node or an input parameter of a workflow"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:35
+msgid "``input.image``"
+msgstr "``input.image``"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:36
+msgid "**Model Type**"
+msgstr "**Model Type**"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:37
+msgid "选择模型类型，支持7种类型（详见下方模型类型章节）"
+msgstr ""
+"Select the model type, 7 types are supported (see the model type section "
+"below for details)"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:38
+msgid "``detection``"
+msgstr "``detection``"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:39
+msgid "**Selected Model**"
+msgstr "**Selected Model**"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:40
+msgid "选择已在DaoAI World平台训练完成的模型"
+msgstr "Select a model that has been trained on the DaoAI World platform"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:41
+msgid "点击\"Select Model\"按钮选择"
+msgstr "Click the \"Select Model\" button to select"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:42
+msgid "**Confidence Threshold**"
+msgstr "**Confidence Threshold**"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:43
+msgid "全局置信度阈值，用于过滤低置信度的预测结果（0~1）"
+msgstr ""
+"Global confidence threshold, used to filter low-confidence prediction "
+"results (0~1)"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:44
+msgid "``0.3``"
+msgstr "``0.3``"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:45
+msgid "**Label Confidence Thresholds**"
+msgstr "**Label Confidence Thresholds**"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:46
+msgid "为每个标签单独设置置信度阈值（JSON格式）"
+msgstr "Set confidence thresholds individually for each label (JSON format)"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:47
+#, python-brace-format
+msgid "``{\"car\": 0.5, \"person\": 0.7}``"
+msgstr "``{\"car\": 0.5, \"person\": 0.7}``"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:50
+msgid "支持的模型类型"
+msgstr "Supported model types"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:52
+msgid "DaoAI World模型节点支持以下7种模型类型，每种类型适用于不同的应用场景："
+msgstr ""
+"DaoAI World model node supports the following 7 model types, each type is "
+"suitable for different application scenarios:"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:70
+msgid "模型类型"
+msgstr "Model type"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:71
+msgid "描述"
+msgstr "describe"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:72
+msgid "详细文档"
+msgstr "Detailed documentation"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:73
+msgid "**Object Detection**"
+msgstr "**Object Detection**"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:74
+msgid "目标检测，识别图像中的物体并输出边界框"
+msgstr ""
+"Object detection, identifying objects in images and outputting bounding "
+"boxes"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:75
+msgid ":ref:`目标检测模型 <daoai_world_object_detection>`"
+msgstr ":ref:`Object detection model <daoai_world_object_detection>`"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:76
+msgid "**Classification**"
+msgstr "**Classification**"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:77
+msgid "图像分类，对整张图像进行分类"
+msgstr "Image classification, classify the entire image"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:78
+msgid ":ref:`分类模型 <daoai_world_classification>`"
+msgstr ":ref:`Classification model <daoai_world_classification>`"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:79
+msgid "**Instance Segmentation**"
+msgstr "**Instance Segmentation**"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:80
+msgid "实例分割，识别并分割图像中的每个物体实例"
+msgstr ""
+"Instance segmentation, identifying and segmenting each object instance in "
+"the image"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:81
+msgid ":ref:`实例分割模型 <daoai_world_instance_segmentation>`"
+msgstr ""
+":ref:`Instance segmentation model <daoai_world_instance_segmentation>`"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:82
+msgid "**Keypoint Detection**"
+msgstr "**Keypoint Detection**"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:83
+msgid "关键点检测，识别物体的关键点位置（如人体姿态）"
+msgstr ""
+"Key point detection, identifying key point locations of objects (such as "
+"human body posture)"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:84
+msgid ":ref:`关键点检测模型 <daoai_world_keypoint_detection>`"
+msgstr ":ref:`Keypoint detection model <daoai_world_keypoint_detection>`"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:85
+msgid "**Semantic Segmentation**"
+msgstr "**Semantic Segmentation**"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:86
+msgid "语义分割，对图像中的每个像素进行分类"
+msgstr "Semantic segmentation, classifying every pixel in an image"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:87
+msgid ":ref:`语义分割模型 <daoai_world_semantic_segmentation>`"
+msgstr ""
+":ref:`Semantic segmentation model <daoai_world_semantic_segmentation>`"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:88
+msgid "**Mixed Model**"
+msgstr "**Mixed Model**"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:89
+msgid "混合模型，结合多种任务类型"
+msgstr "Hybrid model, combining multiple task types"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:90
+msgid ":ref:`混合模型 <daoai_world_mixed_model>`"
+msgstr ":ref:`Mixed model <daoai_world_mixed_model>`"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:91
+msgid "**OCR**"
+msgstr "**OCR**"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:92
+msgid "光学字符识别，识别图像中的文字"
+msgstr "Optical character recognition, identifying text in images"
+
+#: ../../source/block_gallery/models/daoai_world_model.rst:93
+msgid ":ref:`OCR模型 <daoai_world_ocr>`"
+msgstr ":ref:`OCR model <daoai_world_ocr>`"

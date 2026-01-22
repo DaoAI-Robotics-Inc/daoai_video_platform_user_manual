@@ -1,0 +1,68 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/industrial_integration/index.rst:2
+msgid "工业集成（5 项）"
+msgstr "Industrial Integration (5 items)"
+
+#: ../../source/block_gallery/industrial_integration/index.rst:4
+msgid "用于与工业协议或消息系统进行数据交互。"
+msgstr "For data interaction with industrial protocols or messaging systems."
+
+#: ../../source/block_gallery/industrial_integration/index.rst:21
+msgid ":ref:`MQTT Writer`"
+msgstr ":ref:`MQTT Writer`"
+
+#: ../../source/block_gallery/industrial_integration/index.rst:23
+msgid "向 MQTT Broker 发布消息"
+msgstr "Post messages to MQTT Broker"
+
+#: ../../source/block_gallery/industrial_integration/index.rst:24
+msgid ":ref:`OPC UA Writer Sink`"
+msgstr ":ref:`OPC UA Writer Sink`"
+
+#: ../../source/block_gallery/industrial_integration/index.rst:26
+msgid "将数据写入 OPC UA 服务端"
+msgstr "Write data to OPC UA server"
+
+#: ../../source/block_gallery/industrial_integration/index.rst:27
+msgid ":ref:`PLC EthernetIP`"
+msgstr ":ref:`PLC EthernetIP`"
+
+#: ../../source/block_gallery/industrial_integration/index.rst:29
+msgid "通过 Ethernet/IP 与 PLC 通信"
+msgstr "Communicate with PLC via Ethernet/IP"
+
+#: ../../source/block_gallery/industrial_integration/index.rst:30
+msgid ":ref:`PLC ModbusTCP`"
+msgstr ":ref:`PLC ModbusTCP`"
+
+#: ../../source/block_gallery/industrial_integration/index.rst:32
+msgid "通过 ModbusTCP 与 PLC 通信"
+msgstr "Communicate with PLC via ModbusTCP"
+
+#: ../../source/block_gallery/industrial_integration/index.rst:33
+msgid ":ref:`WebSocket数据发送`"
+msgstr ":ref:`WebSocket data sending`"
+
+#: ../../source/block_gallery/industrial_integration/index.rst:35
+msgid "向远程 WebSocket Server 发送请求"
+msgstr "Send a request to the remote WebSocket Server"

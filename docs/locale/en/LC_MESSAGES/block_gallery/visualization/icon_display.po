@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/visualization/icon_display.rst:4
+msgid "图标显示"
+msgstr "Icon display"
+
+#: ../../source/block_gallery/visualization/icon_display.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/visualization/icon_display.rst:9
+msgid "在图像中根据检测结果或成或特定静态标位置绘制图标"
+msgstr ""
+"Draw an icon in the image based on the detection result or specific static "
+"marker position"
+
+#: ../../source/block_gallery/visualization/icon_display.rst:12
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/visualization/icon_display.rst:14
+msgid "输入：图像 + 检测结果 + 图标"
+msgstr "Input: image + detection result + icon"
+
+#: ../../source/block_gallery/visualization/icon_display.rst:15
+msgid "输出：带图标的图像"
+msgstr "Output: Image with icon"
+
+#: ../../source/block_gallery/visualization/icon_display.rst:18
+#: ../../source/block_gallery/visualization/icon_display.rst:24
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/visualization/icon_display.rst:25
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/visualization/icon_display.rst:26
+msgid "默认值"
+msgstr "default value"
+
+#: ../../source/block_gallery/visualization/icon_display.rst:27
+msgid "icon_path"
+msgstr "icon_path"
+
+#: ../../source/block_gallery/visualization/icon_display.rst:28
+msgid "图标文件路径"
+msgstr "Icon file path"
+
+#: ../../source/block_gallery/visualization/icon_display.rst:29
+msgid "无"
+msgstr "none"
+
+#: ../../source/block_gallery/visualization/icon_display.rst:30
+msgid "size"
+msgstr "size"
+
+#: ../../source/block_gallery/visualization/icon_display.rst:31
+msgid "图标大小（像素）"
+msgstr "Icon size (pixels)"
+
+#: ../../source/block_gallery/visualization/icon_display.rst:32
+msgid "32"
+msgstr "32"
+
+#: ../../source/block_gallery/visualization/icon_display.rst:35
+msgid "使用步骤"
+msgstr "Steps"
+
+#: ../../source/block_gallery/visualization/icon_display.rst:37
+msgid "在工作流编辑器中添加本模块。"
+msgstr "Add this module in the workflow editor."
+
+#: ../../source/block_gallery/visualization/icon_display.rst:38
+msgid "上传或选择图标文件。"
+msgstr "Upload or select an icon file."
+
+#: ../../source/block_gallery/visualization/icon_display.rst:39
+msgid "调整图标大小，点击保存。"
+msgstr "Resize the icon and click Save."
+
+#: ../../source/block_gallery/visualization/icon_display.rst:42
+msgid "注意事项"
+msgstr "Things to note"
+
+#: ../../source/block_gallery/visualization/icon_display.rst:44
+msgid "支持 PNG 格式透明图标。"
+msgstr "Supports transparent icons in PNG format."

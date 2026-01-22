@@ -1,0 +1,126 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/visualization/dashboard_viz.rst:4
+msgid "仪表板可视化"
+msgstr "Dashboard visualization"
+
+#: ../../source/block_gallery/visualization/dashboard_viz.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/visualization/dashboard_viz.rst:9
+msgid "仪表板可视化节点用于将带有预测可视化效果的图像输出到 **实时警报仪表板**，实现实时监控和展示。"
+msgstr ""
+"The dashboard visualization node is used to output images with predictive "
+"visualization effects to the **Real-time Alert Dashboard** for real-time "
+"monitoring and display."
+
+#: ../../source/block_gallery/visualization/dashboard_viz.rst:11
+msgid ""
+"该节点是可视化流程的终端节点，将经过各种可视化处理后的图像推送到平台的 **实时警报仪表板** 界面，供用户实时查看检测、分类等模型的运行结果。"
+msgstr ""
+"This node is the terminal node of the visualization process. Images after "
+"various visualization processes are pushed to the **Real-time Alert "
+"Dashboard** interface of the platform for users to view the running results "
+"of detection, classification and other models in real time."
+
+#: ../../source/block_gallery/visualization/dashboard_viz.rst:13
+msgid "效果展示："
+msgstr "Effect display:"
+
+#: ../../source/block_gallery/visualization/dashboard_viz.rst:14
+msgid "Dashboard Visualization Example"
+msgstr "Dashboard Visualization Example"
+
+#: ../../source/block_gallery/visualization/dashboard_viz.rst:20
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/visualization/dashboard_viz.rst:22
+msgid "**输入**："
+msgstr "**enter**:"
+
+#: ../../source/block_gallery/visualization/dashboard_viz.rst:24
+msgid "图像（通常是经过可视化处理的图像）"
+msgstr "Image (usually a visualized image)"
+
+#: ../../source/block_gallery/visualization/dashboard_viz.rst:26
+msgid "**输出**："
+msgstr "**Output**:"
+
+#: ../../source/block_gallery/visualization/dashboard_viz.rst:28
+msgid "将图像推送到流式仪表板显示"
+msgstr "Push images to streaming dashboard display"
+
+#: ../../source/block_gallery/visualization/dashboard_viz.rst:31
+msgid "配置参数详解"
+msgstr "Detailed explanation of configuration parameters"
+
+#: ../../source/block_gallery/visualization/dashboard_viz.rst:37
+msgid "参数名称"
+msgstr "Parameter name"
+
+#: ../../source/block_gallery/visualization/dashboard_viz.rst:38
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/visualization/dashboard_viz.rst:39
+msgid "示例/默认值"
+msgstr "Example/Default"
+
+#: ../../source/block_gallery/visualization/dashboard_viz.rst:40
+msgid "**节点名称**"
+msgstr "**Node name**"
+
+#: ../../source/block_gallery/visualization/dashboard_viz.rst:41
+msgid "步骤名称，用于标识该节点的唯一标识符"
+msgstr "Step name, a unique identifier used to identify this node"
+
+#: ../../source/block_gallery/visualization/dashboard_viz.rst:42
+msgid "``dashboard_visualization_1``"
+msgstr "``dashboard_visualization_1``"
+
+#: ../../source/block_gallery/visualization/dashboard_viz.rst:43
+msgid "**备注**"
+msgstr "**Remark**"
+
+#: ../../source/block_gallery/visualization/dashboard_viz.rst:44
+msgid "可选的备注信息，用于描述该步骤的用途"
+msgstr "Optional remarks describing the purpose of this step"
+
+#: ../../source/block_gallery/visualization/dashboard_viz.rst:45
+msgid "留空"
+msgstr "Leave blank"
+
+#: ../../source/block_gallery/visualization/dashboard_viz.rst:46
+msgid "**输入图像**"
+msgstr "**Input image**"
+
+#: ../../source/block_gallery/visualization/dashboard_viz.rst:47
+msgid "指定要显示在仪表板上的图像，通常是上游可视化节点的输出"
+msgstr ""
+"Specifies the image to display on the dashboard, typically the output of the"
+" upstream visualization node"
+
+#: ../../source/block_gallery/visualization/dashboard_viz.rst:48
+msgid "``下拉菜单选择``"
+msgstr "``Drop down menu selection``"

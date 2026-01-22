@@ -1,0 +1,331 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:4
+msgid "边界框显示"
+msgstr "bounding box display"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:9
+msgid ""
+"边界框显示节点用于在图像中检测到的对象周围绘制矩形框，是最常用的可视化方式之一。该节点支持多种颜色方案、自定义样式和灵活的配置选项，可以清晰地展示目标检测、实例分割等模型的预测结果。"
+msgstr ""
+"The bounding box display node is used to draw rectangular boxes around "
+"detected objects in the image and is one of the most commonly used "
+"visualization methods.This node supports multiple color schemes, custom "
+"styles, and flexible configuration options, and can clearly display the "
+"prediction results of models such as target detection and instance "
+"segmentation."
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:11
+msgid "效果展示："
+msgstr "Effect display:"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:13
+msgid "Bounding Box Visualization Example"
+msgstr "Bounding Box Visualization Example"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:19
+msgid "适用场景"
+msgstr "Applicable scenarios"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:21
+msgid "**目标检测可视化**：显示检测到的物体位置和类别"
+msgstr ""
+"**Object Detection Visualization**: Displays detected object locations and "
+"categories"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:22
+msgid "**监控系统**：实时标注监控画面中的目标"
+msgstr ""
+"**Monitoring system**: Mark targets in the monitoring screen in real time"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:23
+msgid "**质量检测**：标注产品缺陷位置"
+msgstr "**Quality Inspection**: Mark the location of product defects"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:24
+msgid "**数据标注验证**：验证模型预测结果的准确性"
+msgstr ""
+"**Data annotation verification**: Verify the accuracy of model prediction "
+"results"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:25
+msgid "**演示和报告**：生成可视化结果用于展示"
+msgstr ""
+"**Presentation and Reporting**: Generate visual results for presentation"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:26
+msgid "**调试分析**：辅助开发者理解模型输出"
+msgstr "**Debug Analysis**: Assist developers in understanding model output"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:29
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:31
+msgid "**输入**："
+msgstr "**enter**:"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:33
+msgid "图像（来自上游节点或工作流输入）"
+msgstr "Image (from upstream node or workflow input)"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:34
+msgid "检测结果（包含边界框坐标、类别、置信度等信息）"
+msgstr ""
+"Detection results (including bounding box coordinates, categories, "
+"confidence and other information)"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:36
+msgid "**输出**："
+msgstr "**Output**:"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:38
+msgid "绘制了边界框的可视化图像"
+msgstr "Visualization with bounding boxes drawn"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:41
+msgid "配置参数详解"
+msgstr "Detailed explanation of configuration parameters"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:47
+msgid "参数名称"
+msgstr "Parameter name"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:48
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:49
+msgid "示例/ ``默认值``"
+msgstr "Example/``DefaultValue``"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:50
+msgid "**节点名称**"
+msgstr "**Node name**"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:51
+msgid "步骤名称，用于标识该节点的唯一标识符"
+msgstr "Step name, a unique identifier used to identify this node"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:52
+msgid "``bounding_box_visualization_1``"
+msgstr "``bounding_box_visualization_1``"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:53
+msgid "**备注**"
+msgstr "**Remark**"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:54
+msgid "可选的备注信息，用于描述该步骤的用途"
+msgstr "Optional remarks describing the purpose of this step"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:55
+msgid "留空"
+msgstr "Leave blank"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:56
+msgid "**输入图像**"
+msgstr "**Input image**"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:57
+msgid "指定输入图像的来源，可以是上游节点的输出或工作流的输入参数"
+msgstr ""
+"Specify the source of the input image, which can be the output of an "
+"upstream node or an input parameter of a workflow"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:58
+msgid "``input.image``"
+msgstr "``input.image``"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:59
+#: ../../source/block_gallery/visualization/bbox_display.rst:87
+msgid "**复制图像**"
+msgstr "**COPY IMAGE**"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:60
+msgid "是否创建输入图像的副本进行可视化，启用后不会修改原始图像"
+msgstr ""
+"Whether to create a copy of the input image for visualization. When enabled,"
+" the original image will not be modified."
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:61
+msgid "``True(推荐)``"
+msgstr "``True(recommended)``"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:62
+msgid "**预测显示**"
+msgstr "**Forecast Display**"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:63
+msgid "要可视化的模型预测结果，选择检测模型的输出"
+msgstr "To visualize model predictions, select Detection Model Outputs"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:64
+msgid "**detection_filter_1 predictions**"
+msgstr "**detection_filter_1 predictions**"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:65
+#: ../../source/block_gallery/visualization/bbox_display.rst:92
+msgid "**调色板**"
+msgstr "**Palette**"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:66
+msgid "颜色调色板方案，用于为不同类别分配颜色"
+msgstr "Color palette scheme for assigning colors to different categories"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:67
+msgid "``DEFAULT``"
+msgstr "``DEFAULT``"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:68
+msgid "**调色板大小**"
+msgstr "**Palette size**"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:69
+msgid "调色板中的颜色数量，适用于使用自定义或Matplotlib调色板时"
+msgstr ""
+"Number of colors in the palette, applicable when using a custom or "
+"Matplotlib palette"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:70
+msgid "``10``"
+msgstr "``10``"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:71
+#: ../../source/block_gallery/visualization/bbox_display.rst:100
+msgid "**自定义颜色**"
+msgstr "**Custom Color**"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:72
+msgid "自定义颜色列表，使用HEX格式定义边界框颜色"
+msgstr "Custom color list, define bounding box color using HEX format"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:73
+msgid "**[\"#FF0000\", \"#00FF00\", \"#0000FF\"]**"
+msgstr "**[\"#FF0000\", \"#00FF00\", \"#0000FF\"]**"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:74
+msgid "**颜色坐标轴**"
+msgstr "**Color Axis**"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:75
+msgid "颜色分配的依据，通常基于类别（CLASS）来着色"
+msgstr ""
+"The basis for color assignment, usually coloring based on category (CLASS)"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:76
+msgid "``CLASS``"
+msgstr "``CLASS``"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:77
+msgid "**边界粗细**"
+msgstr "**Border Thickness**"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:78
+msgid "边界框线条的粗细（像素）"
+msgstr "The thickness of the bounding box lines (pixels)"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:79
+msgid "``2``"
+msgstr "``2``"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:80
+msgid "**圆角粗细**"
+msgstr "**Round thickness**"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:81
+msgid "边界框角的圆角半径，0表示直角,0.5表示轻微圆角,1.0表示明显圆角"
+msgstr ""
+"The corner radius of the bounding box corners, 0 means right angles, 0.5 "
+"means slightly rounded corners, 1.0 means obvious rounded corners."
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:82
+msgid "``0``"
+msgstr "``0``"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:85
+msgid "参数详细说明"
+msgstr "Detailed description of parameters"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:89
+msgid "**True**：创建图像副本，原始图像保持不变，可用于后续其他可视化"
+msgstr ""
+"**True**: A copy of the image is created, the original image remains "
+"unchanged and can be used for other subsequent visualizations"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:90
+msgid "**False**：直接在原图上绘制，节省内存但会修改原图"
+msgstr ""
+"**False**: Draw directly on the original image, saving memory but modifying "
+"the original image."
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:94
+msgid "支持多种调色板方案："
+msgstr "Supports multiple color palette schemes:"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:96
+msgid "``DEFAULT``：系统默认配色方案"
+msgstr "``DEFAULT``: system default color scheme"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:97
+msgid "``MATPLOTLIB``：使用Matplotlib的颜色方案"
+msgstr "``MATPLOTLIB``: Use Matplotlib's color scheme"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:98
+msgid "``CUSTOM``：使用自定义颜色列表（需配置Custom Colors参数）"
+msgstr ""
+"``CUSTOM``: Use a custom color list (need to configure the Custom Colors "
+"parameter)"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:102
+msgid "当选择自定义颜色时，使用HEX格式定义颜色列表："
+msgstr "When selecting custom colors, define the color list using HEX format:"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:108
+msgid "分别对应红色、绿色、蓝色、黄色、紫色，颜色会按顺序分配给不同的类别。"
+msgstr ""
+"Corresponding to red, green, blue, yellow, and purple, the colors will be "
+"assigned to different categories in order."
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:110
+msgid "**颜色坐标轴(在CUSTOM模式下会被忽略)**"
+msgstr "**Color axis (ignored in CUSTOM mode)**"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:112
+msgid "``CLASS``：根据物体类别着色，同类物体使用相同颜色"
+msgstr ""
+"``CLASS``: Color according to object category, similar objects use the same "
+"color"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:113
+msgid "``INDEX``：为每个物体分配不同颜色"
+msgstr "``INDEX``: assign a different color to each object"
+
+#: ../../source/block_gallery/visualization/bbox_display.rst:114
+msgid "``TRACK``：根据Tracker ID着色，每个Tracker ID使用不同颜色"
+msgstr ""
+"``TRACK``: Colored according to Tracker ID, use different colors for each "
+"Tracker ID"

@@ -1,0 +1,252 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/visualization/index.rst:2
+msgid "可视化（26 项）"
+msgstr "Visualization (26 items)"
+
+#: ../../source/block_gallery/visualization/index.rst:4
+msgid "在图像和视频中对检测结果进行可视化显示。"
+msgstr "Visualize detection results in images and videos."
+
+#: ../../source/block_gallery/visualization/index.rst:42
+msgid ":ref:`背景颜色`"
+msgstr ":ref:`Background color`"
+
+#: ../../source/block_gallery/visualization/index.rst:44
+msgid "在图像中，用选择覆盖所有检测到的区域以外的区域"
+msgstr ""
+"In the image, cover all areas outside the detected areas with a selection"
+
+#: ../../source/block_gallery/visualization/index.rst:45
+msgid ":ref:`模糊显示`"
+msgstr ":ref:`Blurred display`"
+
+#: ../../source/block_gallery/visualization/index.rst:47
+msgid "在图像中检测到的对象运行模糊处理"
+msgstr "Run blurring on detected objects in the image"
+
+#: ../../source/block_gallery/visualization/index.rst:48
+msgid ":ref:`边界框显示`"
+msgstr ":ref:`Bounding box display`"
+
+#: ../../source/block_gallery/visualization/index.rst:50
+msgid "在图像中检测到的对象周围绘制矩形"
+msgstr "Draw rectangles around detected objects in the image"
+
+#: ../../source/block_gallery/visualization/index.rst:51
+msgid ":ref:`圆形显示`"
+msgstr ":ref:`Circular display`"
+
+#: ../../source/block_gallery/visualization/index.rst:53
+msgid "在图像中检测到的对象周围绘制圆形"
+msgstr "Draw circles around detected objects in the image"
+
+#: ../../source/block_gallery/visualization/index.rst:54
+msgid ":ref:`分类显示`"
+msgstr ":ref:`Category display`"
+
+#: ../../source/block_gallery/visualization/index.rst:56
+msgid "可视化单标签或多标签分类结果，并支持自定义显示选项"
+msgstr ""
+"Visualize single-label or multi-label classification results and support "
+"custom display options"
+
+#: ../../source/block_gallery/visualization/index.rst:57
+msgid ":ref:`颜色显示`"
+msgstr ":ref:`Color display`"
+
+#: ../../source/block_gallery/visualization/index.rst:59
+msgid "在图像中检测到的对象上绘制颜色"
+msgstr "Draw colors on detected objects in the image"
+
+#: ../../source/block_gallery/visualization/index.rst:60
+msgid ":ref:`角显示`"
+msgstr ":ref:`Corner display`"
+
+#: ../../source/block_gallery/visualization/index.rst:62
+msgid "在图像中检测到的对象的角绘制矩形"
+msgstr "Draw a rectangle at the corners of detected objects in the image"
+
+#: ../../source/block_gallery/visualization/index.rst:63
+msgid ":ref:`裁剪显示`"
+msgstr ":ref:`Crop display`"
+
+#: ../../source/block_gallery/visualization/index.rst:65
+msgid "在场景中绘制放大后的检测作物"
+msgstr "Draw an enlarged detection crop in the scene"
+
+#: ../../source/block_gallery/visualization/index.rst:66
+msgid ":ref:`仪表板可视化`"
+msgstr ":ref:`Dashboard Visualization`"
+
+#: ../../source/block_gallery/visualization/index.rst:68
+msgid "对预测结果进行可视化，可用于在仪表板显示。"
+msgstr "Visualize prediction results and display them on a dashboard."
+
+#: ../../source/block_gallery/visualization/index.rst:69
+msgid ":ref:`点显示`"
+msgstr ":ref:`Point display`"
+
+#: ../../source/block_gallery/visualization/index.rst:71
+msgid "根据提供的检测结果，在图像的特定坐标标位置绘制点"
+msgstr ""
+"Draw points at specific coordinate positions in the image based on the "
+"provided detection results."
+
+#: ../../source/block_gallery/visualization/index.rst:72
+msgid ":ref:`椭圆显示`"
+msgstr ":ref:`ellipse display`"
+
+#: ../../source/block_gallery/visualization/index.rst:74
+msgid "在图像中检测到的对象周围绘制椭圆"
+msgstr "Draw ellipses around detected objects in the image"
+
+#: ../../source/block_gallery/visualization/index.rst:75
+msgid ":ref:`网格显示`"
+msgstr ":ref:`Grid display`"
+
+#: ../../source/block_gallery/visualization/index.rst:77
+msgid "以网格形式显示图像数组"
+msgstr "Display array of images in grid form"
+
+#: ../../source/block_gallery/visualization/index.rst:78
+msgid ":ref:`显示光环`"
+msgstr ":ref:`Show halo`"
+
+#: ../../source/block_gallery/visualization/index.rst:80
+msgid "在图像中检测到的对象周围绘制光晕"
+msgstr "Draw halos around detected objects in the image"
+
+#: ../../source/block_gallery/visualization/index.rst:81
+msgid ":ref:`图标显示`"
+msgstr ":ref:`Icon display`"
+
+#: ../../source/block_gallery/visualization/index.rst:83
+msgid "在图像中根据检测结果或成或特定静态标位置绘制图标"
+msgstr ""
+"Draw an icon in the image based on the detection result or specific static "
+"marker position"
+
+#: ../../source/block_gallery/visualization/index.rst:84
+msgid ":ref:`关键显示`"
+msgstr ":ref:`Key display`"
+
+#: ../../source/block_gallery/visualization/index.rst:86
+msgid "在图像中检测到的对象上绘制关键支链"
+msgstr "Draw critical branches on detected objects in the image"
+
+#: ../../source/block_gallery/visualization/index.rst:87
+msgid ":ref:`标签显示`"
+msgstr ":ref:`Tag display`"
+
+#: ../../source/block_gallery/visualization/index.rst:89
+msgid "根据提供的检测结果，在图像的特定坐标标位置绘制标签"
+msgstr ""
+"Draw labels at specific coordinate positions in the image based on the "
+"provided detection results."
+
+#: ../../source/block_gallery/visualization/index.rst:90
+msgid ":ref:`线条计数显示`"
+msgstr ":ref:`Line count display`"
+
+#: ../../source/block_gallery/visualization/index.rst:92
+msgid "在图像/视频上绘制计数线，统计目标穿过线段的次数，可用于越界/流量统计场景。"
+msgstr ""
+"Draw a counting line on the image/video to count the number of times the "
+"target crosses the line segment, which can be used in cross-border/traffic "
+"statistics scenarios."
+
+#: ../../source/block_gallery/visualization/index.rst:93
+msgid ":ref:`遮罩显示`"
+msgstr ":ref:`Mask display`"
+
+#: ../../source/block_gallery/visualization/index.rst:95
+msgid "在图像中检测到的对象上应用遮罩"
+msgstr "Apply a mask on detected objects in the image"
+
+#: ../../source/block_gallery/visualization/index.rst:96
+msgid ":ref:`模型对比显示`"
+msgstr ":ref:`Model comparison display`"
+
+#: ../../source/block_gallery/visualization/index.rst:98
+msgid "Visualize the difference between two models' detections."
+msgstr "Visualize the difference between two models' detections."
+
+#: ../../source/block_gallery/visualization/index.rst:99
+msgid ":ref:`像素显示`"
+msgstr ":ref:`Pixel display`"
+
+#: ../../source/block_gallery/visualization/index.rst:101
+msgid "在图像中检测到的对象进行像素化处理"
+msgstr "Pixelate detected objects in images"
+
+#: ../../source/block_gallery/visualization/index.rst:102
+msgid ":ref:`多边形显示`"
+msgstr ":ref:`Polygon display`"
+
+#: ../../source/block_gallery/visualization/index.rst:104
+msgid "在图像中检测到的对象周围绘制多边形"
+msgstr "Draw polygons around detected objects in the image"
+
+#: ../../source/block_gallery/visualization/index.rst:105
+msgid ":ref:`多边形区域显示`"
+msgstr ":ref:`Polygon area display`"
+
+#: ../../source/block_gallery/visualization/index.rst:107
+msgid "在图像中多边形区域上应用遮罩"
+msgstr "Apply a mask to a polygonal area in an image"
+
+#: ../../source/block_gallery/visualization/index.rst:108
+msgid ":ref:`参考路径显示`"
+msgstr ":ref:`Reference path display`"
+
+#: ../../source/block_gallery/visualization/index.rst:110
+msgid "在图像中绘制参考路径"
+msgstr "Draw reference paths in images"
+
+#: ../../source/block_gallery/visualization/index.rst:111
+msgid ":ref:`轨迹显示`"
+msgstr ":ref:`Trajectory display`"
+
+#: ../../source/block_gallery/visualization/index.rst:113
+msgid "根据检测跟踪结果绘制轨迹"
+msgstr "Draw trajectories based on detection and tracking results"
+
+#: ../../source/block_gallery/visualization/index.rst:114
+msgid ":ref:`三角显示`"
+msgstr ":ref:`Triangle display`"
+
+#: ../../source/block_gallery/visualization/index.rst:116
+msgid "在图像中根据提供的检测结果，在特定坐标标位置绘制三角形标记"
+msgstr ""
+"Draw triangle marks at specific coordinate positions in the image based on "
+"the provided detection results."
+
+#: ../../source/block_gallery/visualization/index.rst:117
+msgid ":ref:`文本可视化`"
+msgstr ":ref:`Text Visualization`"
+
+#: ../../source/block_gallery/visualization/index.rst:119
+msgid "显示自定义文本覆盖层，支持多行文本和条件格式化"
+msgstr ""
+"Displays custom text overlays with support for multi-line text and "
+"conditional formatting"

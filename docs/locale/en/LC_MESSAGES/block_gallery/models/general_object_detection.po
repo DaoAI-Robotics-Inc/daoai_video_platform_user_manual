@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/models/general_object_detection.rst:4
+msgid "通用物体检测模型"
+msgstr "Universal object detection model"
+
+#: ../../source/block_gallery/models/general_object_detection.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/models/general_object_detection.rst:9
+msgid ""
+"该模块使用通用物体检测模型对图像或视频帧中的物体进行检测和识别，支持详细的物体类别分类检测如手机,男人,女人,轿车，卡车等。 "
+"用户可以通过提示词自定义检测类别，实现更灵活的检测需求。"
+msgstr ""
+"This module uses a general object detection model to detect and identify "
+"objects in images or video frames, and supports detailed object category "
+"classification detection such as mobile phones, men, women, cars, trucks, "
+"etc.Users can customize detection categories through prompt words to achieve"
+" more flexible detection needs."
+
+#: ../../source/block_gallery/models/general_object_detection.rst:11
+msgid "该模块适用于详细物体类别分类的检测场景，需要求较高的资源占用，如果只是进行简单的物体检测，建议使用更轻量级的通用检测模型（快）。"
+msgstr ""
+"This module is suitable for detection scenarios of detailed object category "
+"classification and requires high resource usage. If you only perform simple "
+"object detection, it is recommended to use a more lightweight general "
+"detection model (fast)."
+
+#: ../../source/block_gallery/models/general_object_detection.rst:16
+msgid "输入/输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/models/general_object_detection.rst:18
+msgid "输入（Input）：图像 （来自上游节点或工作流输入）"
+msgstr "Input: Image (from upstream node or workflow input)"
+
+#: ../../source/block_gallery/models/general_object_detection.rst:20
+msgid "输出（Output）：基于用户提示词的检测结果，包含检测到的物体类别、置信度和边界框信息。"
+msgstr ""
+"Output: Detection results based on user prompt words, including detected "
+"object category, confidence and bounding box information."
+
+#: ../../source/block_gallery/models/general_object_detection.rst:36
+msgid "配置参数详解"
+msgstr "Detailed explanation of configuration parameters"
+
+#: ../../source/block_gallery/models/general_object_detection.rst:41
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/models/general_object_detection.rst:42
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/models/general_object_detection.rst:43
+msgid "示例/ ``默认值``"
+msgstr "Example/``DefaultValue``"
+
+#: ../../source/block_gallery/models/general_object_detection.rst:44
+msgid "节点名称"
+msgstr "Node name"
+
+#: ../../source/block_gallery/models/general_object_detection.rst:45
+msgid "自定义该节点的名称，用于标识工作流中的该步骤。无需特意编辑，保持默认即可。"
+msgstr ""
+"Customize the name of the node to identify the step in the workflow.No "
+"special editing is required, just keep the default."
+
+#: ../../source/block_gallery/models/general_object_detection.rst:46
+msgid "``general_object_detection_1``"
+msgstr "``general_object_detection_1``"
+
+#: ../../source/block_gallery/models/general_object_detection.rst:47
+msgid "备注"
+msgstr "Remark"
+
+#: ../../source/block_gallery/models/general_object_detection.rst:48
+msgid "可选的备注信息，用于描述该步骤的用途。"
+msgstr "Optional remarks describing the purpose of this step."
+
+#: ../../source/block_gallery/models/general_object_detection.rst:49
+msgid "``留空``"
+msgstr "``leave blank``"
+
+#: ../../source/block_gallery/models/general_object_detection.rst:50
+msgid "图像"
+msgstr "image"
+
+#: ../../source/block_gallery/models/general_object_detection.rst:51
+msgid "指定输入图像的来源，可以是上游节点的输出或工作流的输入参数。"
+msgstr ""
+"Specifies the source of the input image, which can be the output of an "
+"upstream node or an input parameter of a workflow."
+
+#: ../../source/block_gallery/models/general_object_detection.rst:52
+msgid "``input image``"
+msgstr "``input image``"
+
+#: ../../source/block_gallery/models/general_object_detection.rst:53
+msgid "检测分类"
+msgstr "Detection classification"
+
+#: ../../source/block_gallery/models/general_object_detection.rst:54
+msgid "自定义检测类别的英文提示词，在 ``[\"  \"]`` 中输入需要检测的物体类别，多个类别用逗号分隔。"
+msgstr ""
+"To customize the English prompt word of the detection category, enter the "
+"object category to be detected in ``[\" \"]``. Multiple categories are "
+"separated by commas."
+
+#: ../../source/block_gallery/models/general_object_detection.rst:55
+msgid "**[\"person\", \"car\", \"bicycle\"]**"
+msgstr "**[\"person\", \"car\", \"bicycle\"]**"
+
+#: ../../source/block_gallery/models/general_object_detection.rst:56
+msgid "置信度阈值"
+msgstr "confidence threshold"
+
+#: ../../source/block_gallery/models/general_object_detection.rst:57
+msgid "设置检测结果的置信度阈值，范围为0到1。低于该阈值的检测结果将被过滤掉。"
+msgstr ""
+"Set the confidence threshold of the detection result, ranging from 0 to "
+"1.Detection results below this threshold will be filtered out."
+
+#: ../../source/block_gallery/models/general_object_detection.rst:58
+msgid "**0.3**"
+msgstr "**0.3**"
+
+#: ../../source/block_gallery/models/general_object_detection.rst:59
+msgid "标签置信度阈值"
+msgstr "Label confidence threshold"
+
+#: ../../source/block_gallery/models/general_object_detection.rst:60
+msgid "为每个标签单独设置置信度阈值，使用JSON格式输入。"
+msgstr ""
+"Set the confidence threshold individually for each label, using JSON format "
+"input."
+
+#: ../../source/block_gallery/models/general_object_detection.rst:61
+#, python-brace-format
+msgid "**{\"car\": 0.5, \"person\": 0.7}**"
+msgstr "**{\"car\": 0.5, \"person\": 0.7}**"
+
+#: ../../source/block_gallery/models/general_object_detection.rst:62
+msgid "最大检测数量"
+msgstr "Maximum number of tests"
+
+#: ../../source/block_gallery/models/general_object_detection.rst:63
+msgid "设置每张图像中最多检测出的物体数量，超过该数量的检测结果将被忽略。"
+msgstr ""
+"Set the maximum number of detected objects in each image. Detection results "
+"exceeding this number will be ignored."
+
+#: ../../source/block_gallery/models/general_object_detection.rst:64
+msgid "**100**"
+msgstr "**100**"

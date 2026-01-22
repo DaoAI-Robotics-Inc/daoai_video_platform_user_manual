@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/custom/python_block.rst:4
+msgid "自定义Python块"
+msgstr "Custom Python blocks"
+
+#: ../../source/block_gallery/custom/python_block.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/custom/python_block.rst:9
+msgid "创建一个块来执行自定义 Python 代码，可实现业务逻辑、后处理或外部交互。"
+msgstr ""
+"Create a block to execute custom Python code, whether implementing business "
+"logic, post-processing, or external interaction."
+
+#: ../../source/block_gallery/custom/python_block.rst:12
+msgid "指引"
+msgstr "guidelines"
+
+#: ../../source/block_gallery/custom/python_block.rst:14
+msgid "请参阅用户指南： :ref:`自定义Python块 <自定义Python块>` 获取完整使用说明、示例与最佳实践。"
+msgstr ""
+"See the user guide: :ref:`Custom Python Block <Custom Python Block>` for "
+"complete usage instructions, examples and best practices."

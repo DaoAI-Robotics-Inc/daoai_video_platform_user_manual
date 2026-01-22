@@ -1,0 +1,266 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:4
+msgid "文本可视化"
+msgstr "text visualization"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:9
+msgid "在图像上叠加文本，支持静态文本、模板占位符和条件格式化，可用于状态提示、调试信息或结果标注。"
+msgstr ""
+"Overlay text on images, supporting static text, template placeholders and "
+"conditional formatting, which can be used for status prompts, debugging "
+"information or result annotations."
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:12
+msgid "输入/输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:14
+msgid "输入（Input）: - 图像（来自上游节点或工作流输入）"
+msgstr "Input: - Image (from upstream node or workflow input)"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:17
+msgid "输出（Output）: - 叠加文本后的图像"
+msgstr "Output: - Image with text superimposed"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:21
+msgid "配置参数详解"
+msgstr "Detailed explanation of configuration parameters"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:27
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:28
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:29
+msgid "示例/ ``默认值``"
+msgstr "Example/``DefaultValue``"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:30
+msgid "节点名称"
+msgstr "Node name"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:31
+msgid "工作流中该节点的名称。"
+msgstr "The name of this node in the workflow."
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:32
+msgid "``text_visualization_1``"
+msgstr "``text_visualization_1``"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:33
+msgid "备注"
+msgstr "Remark"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:34
+msgid "可选备注信息，记录用途。"
+msgstr "Optional remark information to record the purpose."
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:35
+msgid "``留空``"
+msgstr "``leave blank``"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:36
+msgid "输入图像"
+msgstr "input image"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:37
+msgid "用于可视化的图像来源。"
+msgstr "Image source used for visualization."
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:38
+msgid "``input.image``"
+msgstr "``input.image``"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:39
+msgid "复制图像"
+msgstr "copy image"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:40
+msgid "是否先复制输入图像再进行可视化，保留原始帧。"
+msgstr ""
+"Whether to copy the input image before visualization, retaining the original"
+" frame."
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:41
+msgid "``True``"
+msgstr "``True``"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:42
+msgid "文本模式"
+msgstr "text mode"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:43
+msgid "文本来源模式，支持 ``Static Text``（静态文本）或模板驱动。"
+msgstr ""
+"Text source mode, supports ``Static Text`` (static text) or template driver."
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:44
+msgid "``Static Text``"
+msgstr "``Static Text``"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:45
+msgid "文本内容"
+msgstr "text content"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:46
+msgid "静态文本内容或绑定字段的占位符。"
+msgstr "Placeholder for static text content or bound fields."
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:47
+msgid "``Hello World``"
+msgstr "``Hello World``"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:48
+msgid "模板"
+msgstr "template"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:49
+#, python-brace-format
+msgid "含占位符的模板字符串（如带 {key} 的格式）。"
+msgstr "Template string with placeholders (e.g. with {key})."
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:50
+#, python-brace-format
+msgid "``Status: {process_status}\\nProgress: {progress}%``"
+msgstr "``Status: {process_status}\\nProgress: {progress}%``"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:51
+msgid "模板数据"
+msgstr "template data"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:52
+msgid "模板替换用的数据（JSON），可选。"
+msgstr "Data for template replacement (JSON), optional."
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:53
+#, python-brace-format
+msgid "``{\"process_status\": \"running\", \"progress\": 75}``"
+msgstr "``{\"process_status\": \"running\", \"progress\": 75}``"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:54
+msgid "文本位置"
+msgstr "text position"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:55
+msgid ""
+"文本在图像上的位置，支持 ``TOP_LEFT``/``TOP_RIGHT``/``BOTTOM_LEFT``/``BOTTOM_RIGHT`` 等。"
+msgstr ""
+"The position of text on the image, supports "
+"``TOP_LEFT``/``TOP_RIGHT``/``BOTTOM_LEFT``/``BOTTOM_RIGHT``, etc."
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:56
+msgid "``TOP_LEFT``"
+msgstr "``TOP_LEFT``"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:57
+msgid "区域"
+msgstr "area"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:58
+msgid "可选多边形区域用于相对定位或裁剪，JSON 数组形式。"
+msgstr ""
+"Optional polygonal region for relative positioning or clipping, as JSON "
+"array."
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:59
+msgid "``[[0,0,0],[100,0,0],[0,100,100]]``"
+msgstr "``[[0,0,0],[100,0,0],[0,100,100]]``"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:60
+msgid "文本大小"
+msgstr "text size"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:61
+msgid "文本字号或缩放因子。"
+msgstr "Text size or scaling factor."
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:62
+msgid "``1``"
+msgstr "``1``"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:63
+msgid "文本粗细"
+msgstr "text weight"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:64
+msgid "文本绘制粗细。"
+msgstr "Text draw weight."
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:65
+msgid "``2``"
+msgstr "``2``"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:66
+msgid "文本内边距"
+msgstr "text padding"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:67
+msgid "文本周围填充的像素数。"
+msgstr "The number of pixels of padding around the text."
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:68
+msgid "``10``"
+msgstr "``10``"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:69
+msgid "边框圆角"
+msgstr "Border rounded corners"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:70
+msgid "标签背景的边框圆角像素。"
+msgstr "The border of the label background is rounded in pixels."
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:71
+msgid "``5``"
+msgstr "``5``"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:72
+msgid "文本颜色"
+msgstr "text color"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:73
+msgid "文本颜色。"
+msgstr "Text color."
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:74
+msgid "``WHITE``"
+msgstr "``WHITE``"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:75
+msgid "背景颜色"
+msgstr "background color"
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:76
+msgid "文本背景颜色。"
+msgstr "Text background color."
+
+#: ../../source/block_gallery/visualization/text_visualization.rst:77
+msgid "``BLACK``"
+msgstr "``BLACK``"

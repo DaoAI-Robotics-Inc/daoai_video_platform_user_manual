@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/visualization/ref_path_display.rst:4
+msgid "参考路径显示"
+msgstr "Reference path display"
+
+#: ../../source/block_gallery/visualization/ref_path_display.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/visualization/ref_path_display.rst:9
+msgid "在图像中绘制参考路径"
+msgstr "Draw reference paths in images"
+
+#: ../../source/block_gallery/visualization/ref_path_display.rst:12
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/visualization/ref_path_display.rst:14
+msgid "输入：图像 + 路径坐标"
+msgstr "Input: image + path coordinates"
+
+#: ../../source/block_gallery/visualization/ref_path_display.rst:15
+msgid "输出：带路径标记的图像"
+msgstr "Output: image with path markers"
+
+#: ../../source/block_gallery/visualization/ref_path_display.rst:18
+#: ../../source/block_gallery/visualization/ref_path_display.rst:24
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/visualization/ref_path_display.rst:25
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/visualization/ref_path_display.rst:26
+msgid "默认值"
+msgstr "default value"
+
+#: ../../source/block_gallery/visualization/ref_path_display.rst:27
+msgid "thickness"
+msgstr "thickness"
+
+#: ../../source/block_gallery/visualization/ref_path_display.rst:28
+msgid "路径线粗细（像素）"
+msgstr "Path line thickness (pixels)"
+
+#: ../../source/block_gallery/visualization/ref_path_display.rst:29
+msgid "3"
+msgstr "3"
+
+#: ../../source/block_gallery/visualization/ref_path_display.rst:30
+msgid "color"
+msgstr "color"
+
+#: ../../source/block_gallery/visualization/ref_path_display.rst:31
+msgid "路径颜色（RGB）"
+msgstr "Path color (RGB)"
+
+#: ../../source/block_gallery/visualization/ref_path_display.rst:32
+msgid "(255, 255, 0)"
+msgstr "(255, 255, 0)"
+
+#: ../../source/block_gallery/visualization/ref_path_display.rst:35
+msgid "使用步骤"
+msgstr "Usage steps"
+
+#: ../../source/block_gallery/visualization/ref_path_display.rst:37
+msgid "在工作流编辑器中添加本模块。"
+msgstr "Add this module in the workflow editor."
+
+#: ../../source/block_gallery/visualization/ref_path_display.rst:38
+msgid "调整路径线粗细和颜色。"
+msgstr "Adjust path line thickness and color."
+
+#: ../../source/block_gallery/visualization/ref_path_display.rst:39
+msgid "点击保存。"
+msgstr "Click Save."
+
+#: ../../source/block_gallery/visualization/ref_path_display.rst:42
+msgid "注意事项"
+msgstr "Notes"
+
+#: ../../source/block_gallery/visualization/ref_path_display.rst:44
+msgid "用于显示预设的运动轨迹或路线。"
+msgstr "Used to display preset movement trajectories or routes."

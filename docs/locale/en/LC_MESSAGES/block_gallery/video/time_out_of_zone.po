@@ -1,0 +1,145 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:4
+msgid "区域外停留时间"
+msgstr "Time spent outside the area"
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:9
+msgid "追踪对象在指定区域外停留的时间。"
+msgstr "Tracks how long an object spends outside a specified area."
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:12
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:14
+msgid "输入：检测/跟踪结果 + 区域坐标"
+msgstr "Input: detection/tracking results + area coordinates"
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:15
+msgid "输出：区域外停留时长"
+msgstr "Output: length of stay outside the area"
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:18
+#: ../../source/block_gallery/video/time_out_of_zone.rst:24
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:25
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:26
+msgid "示例/ ``默认值``"
+msgstr "Example/``DefaultValue``"
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:27
+msgid "节点名称"
+msgstr "Node name"
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:28
+msgid "工作流中该节点的名称。"
+msgstr "The name of this node in the workflow."
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:29
+msgid "``time_out_of_zone_1``"
+msgstr "``time_out_of_zone_1``"
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:30
+msgid "备注"
+msgstr "Remark"
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:31
+msgid "可选备注信息，记录用途。"
+msgstr "Optional remark information to record the purpose."
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:32
+msgid "``留空``"
+msgstr "``leave blank``"
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:33
+msgid "输入图像"
+msgstr "input image"
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:34
+msgid "输入图像来源。"
+msgstr "Enter the image source."
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:35
+msgid "``input.image``"
+msgstr "``input.image``"
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:36
+msgid "检测结果"
+msgstr "Test results"
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:37
+msgid "使用模型预测结果，无需使用object tracker输出的检测结果。"
+msgstr ""
+"Use the model prediction results without using the detection results output "
+"by the object tracker."
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:38
+msgid "选择上游检测/跟踪输出"
+msgstr "Select upstream detection/trace output"
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:39
+msgid "监控区域"
+msgstr "Monitoring area"
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:40
+msgid "监控区域多边形坐标。"
+msgstr "Monitoring area polygon coordinates."
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:41
+msgid "点击绘制区域进入绘制页面"
+msgstr "Click the drawing area to enter the drawing page"
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:42
+msgid "触发点"
+msgstr "trigger point"
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:43
+msgid "检测对象必须在区域内的点位，常用 ``CENTER``。"
+msgstr ""
+"The detection object must be at a point within the area, commonly used "
+"``CENTER``."
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:44
+msgid "``CENTER``"
+msgstr "``CENTER``"
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:45
+msgid "目标标签"
+msgstr "target label"
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:46
+msgid "监控区域占用的类别标签。"
+msgstr "Category labels for monitoring area occupancy."
+
+#: ../../source/block_gallery/video/time_out_of_zone.rst:47
+msgid "``person``"
+msgstr "``person``"

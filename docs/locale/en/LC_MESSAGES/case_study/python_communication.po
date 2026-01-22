@@ -1,0 +1,107 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/case_study/python_communication.rst:2
+msgid "Python 动态模块外部通信方法"
+msgstr "Python dynamic module external communication method"
+
+#: ../../source/case_study/python_communication.rst:4
+msgid ""
+"本案例演示如何在工作流中通过 Python 动态模块将识别结果可靠地推送到外部系统，涵盖 HTTP 与 WebSocket 两类常见通信方式。"
+msgstr ""
+"This case demonstrates how to reliably push recognition results to external "
+"systems through Python dynamic modules in the workflow, covering two common "
+"communication methods: HTTP and WebSocket."
+
+#: ../../source/case_study/python_communication.rst:8
+msgid "组成与流程"
+msgstr "Composition and process"
+
+#: ../../source/case_study/python_communication.rst:10
+#: ../../source/case_study/python_communication.rst:20
+msgid "Python 外部通信工作流"
+msgstr "Python external communication workflow"
+
+#: ../../source/case_study/python_communication.rst:14
+msgid "人脸识别模块：运行，输出人脸预测与身份信息（含 unknown 判定）。"
+msgstr ""
+"Face recognition module: Run, output face prediction and identity "
+"information (including unknown determination)."
+
+#: ../../source/case_study/python_communication.rst:15
+msgid "边界框可视化：绘制检测框以便查看识别位置。"
+msgstr ""
+"Bounding box visualization: Draw detection boxes to view recognition "
+"locations."
+
+#: ../../source/case_study/python_communication.rst:16
+msgid "标签可视化：在图像上叠加类别标签（身份名称）。"
+msgstr ""
+"Label visualization: Overlay category labels (identity names) on images."
+
+#: ../../source/case_study/python_communication.rst:17
+msgid "仪表盘展示：将可视化图像推送到仪表盘页面。"
+msgstr "Dashboard display: Push visual images to the dashboard page."
+
+#: ../../source/case_study/python_communication.rst:18
+msgid "自定义 Python 模块：整理身份识别结果，构造消息并向外部服务 `url` 发送 HTTP POST；返回状态码与调试信息。"
+msgstr ""
+"Custom Python module: Collates identification results, constructs messages "
+"and sends HTTP POST to external service `url`; returns status code and "
+"debugging information."
+
+#: ../../source/case_study/python_communication.rst:25
+msgid "工作流定义"
+msgstr "Workflow definition"
+
+#: ../../source/case_study/python_communication.rst
+msgid "查看工作流 JSON"
+msgstr "View workflow JSON"
+
+#: ../../source/case_study/python_communication.rst:36
+msgid "外部通信示例"
+msgstr "External communication example"
+
+#: ../../source/case_study/python_communication.rst:38
+msgid "下面给出两种常见通信方式的参考实现，可直接复制到 Python 动态模块中使用。请根据实际需求修改目标 `url` 地址与消息内容格式。"
+msgstr ""
+"Reference implementations of two common communication methods are given "
+"below, which can be directly copied to Python dynamic modules for use.Please"
+" modify the target `url` address and message content format according to "
+"actual needs."
+
+#: ../../source/case_study/python_communication.rst:41
+msgid "HTTP 通信"
+msgstr "HTTP communication"
+
+#: ../../source/case_study/python_communication.rst:43
+msgid "示例：使用 HTTP POST 发送当前时间戳。"
+msgstr "Example: Send the current timestamp using HTTP POST."
+
+#: ../../source/case_study/python_communication.rst:73
+msgid "WebSocket 通信"
+msgstr "WebSocket communication"
+
+#: ../../source/case_study/python_communication.rst:75
+msgid "使用原生库实现的最小 WebSocket 客户端，同样以发送当前时间戳为例。"
+msgstr ""
+"A minimal WebSocket client implemented using native libraries, also taking "
+"sending the current timestamp as an example."

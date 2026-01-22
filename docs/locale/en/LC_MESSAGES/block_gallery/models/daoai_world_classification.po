@@ -1,0 +1,388 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:4
+msgid "分类模型 (Classification)"
+msgstr "Classification model (Classification)"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:7
+msgid "本页面介绍DaoAI World模型的图像分类类型。返回 :ref:`DaoAI World模型主页 <DaoAI World模型>`"
+msgstr ""
+"This page introduces the image classification types of DaoAI World "
+"model.Return :ref:`DaoAI World model homepage <DaoAI World model>`"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:10
+msgid "模型简介"
+msgstr "Model introduction"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:12
+msgid ""
+"分类模型用于对整张图像进行类别判断，为图像分配一个或多个类别标签及其对应的置信度分数。与目标检测不同，分类模型不输出物体的位置信息，而是对整体图像内容进行识别。"
+msgstr ""
+"The classification model is used to judge the category of the entire image "
+"and assign one or more category labels and their corresponding confidence "
+"scores to the image.Different from target detection, the classification "
+"model does not output the location information of the object, but identifies"
+" the overall image content."
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:15
+msgid "适用场景"
+msgstr "Applicable scenarios"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:17
+msgid "图像分类模型适用于以下场景："
+msgstr ""
+"The image classification model is suitable for the following scenarios:"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:19
+msgid "**质量检测**：良品/不良品分类、缺陷类型识别"
+msgstr ""
+"**Quality Inspection**: Classification of good/defective products, "
+"identification of defect types"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:20
+msgid "**医疗影像**：病症分类、X光片诊断辅助"
+msgstr ""
+"**Medical Imaging**: Disease classification, X-ray diagnostic assistance"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:21
+msgid "**内容审核**：图片内容分类、不当内容识别"
+msgstr ""
+"**Content review**: Image content classification, inappropriate content "
+"identification"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:22
+msgid "**场景识别**：室内/室外、白天/夜晚等场景分类"
+msgstr ""
+"**Scene recognition**: Indoor/outdoor, day/night, etc. scene classification"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:23
+msgid "**产品识别**：产品型号识别、品牌识别"
+msgstr ""
+"**Product identification**: product model identification, brand "
+"identification"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:24
+msgid "**动植物识别**：物种分类、品种鉴定"
+msgstr ""
+"**Animal and plant identification**: species classification, variety "
+"identification"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:27
+msgid "输出格式"
+msgstr "Output format"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:29
+msgid "分类模型的输出为JSON格式，包含预测的类别及置信度："
+msgstr ""
+"The output of the classification model is in JSON format, including the "
+"predicted category and confidence:"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:31
+msgid "**单标签分类输出：**"
+msgstr "**Single label classification output:**"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:54
+msgid "**多标签分类输出：**"
+msgstr "**Multi-label classification output:**"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:76
+msgid "**字段说明：**"
+msgstr "**Field description:**"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:78
+msgid "``predictions``: 所有类别的预测结果（按置信度降序排列）"
+msgstr ""
+"``predictions``: prediction results for all categories (in descending order "
+"of confidence)"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:79
+msgid "``class``: 类别名称"
+msgstr "``class``: category name"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:80
+msgid "``confidence``: 该类别的置信度（0~1）"
+msgstr "``confidence``: the confidence of this category (0~1)"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:81
+msgid "``top_class``: 置信度最高的类别（单标签分类）"
+msgstr ""
+"``top_class``: the class with the highest confidence (single-label "
+"classification)"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:82
+msgid "``top_confidence``: 最高置信度值（单标签分类）"
+msgstr ""
+"``top_confidence``: highest confidence value (single label classification)"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:83
+msgid "``active_labels``: 超过阈值的所有标签（多标签分类）"
+msgstr ""
+"``active_labels``: all labels exceeding the threshold (multi-label "
+"classification)"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:86
+msgid "配置示例"
+msgstr "Configuration example"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:88
+msgid "**基础单标签分类**"
+msgstr "**Basic single label classification**"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:99
+msgid "**多标签分类配置**"
+msgstr "**Multi-label classification configuration**"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:117
+msgid "**质量检测应用**"
+msgstr "**Quality Inspection Application**"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:133
+msgid "使用技巧与最佳实践"
+msgstr "Tips and best practices"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:135
+msgid "**置信度阈值设置**"
+msgstr "**Confidence threshold setting**"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:137
+msgid "**单标签分类**：建议0.5-0.7，可直接使用top_class"
+msgstr ""
+"**Single label classification**: 0.5-0.7 is recommended, top_class can be "
+"used directly"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:138
+msgid "**多标签分类**：建议0.6-0.8，避免过多误判标签"
+msgstr ""
+"**Multi-label classification**: 0.6-0.8 is recommended to avoid too many "
+"misjudged labels"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:139
+msgid "**质量检测**：建议0.8-0.95，确保高精度"
+msgstr "**Quality Inspection**: Recommended 0.8-0.95 to ensure high accuracy"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:141
+msgid "**处理不确定结果**"
+msgstr "**Handling Uncertain Results**"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:143
+msgid "当top_confidence < 0.5时，建议标记为\"不确定\"或进行人工复核"
+msgstr ""
+"When top_confidence < 0.5, it is recommended to mark it as \"uncertain\" or "
+"perform manual review"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:144
+msgid "可设置多个置信度区间，执行不同的后续操作"
+msgstr ""
+"Multiple confidence intervals can be set to perform different follow-up "
+"operations"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:146
+msgid "**类别不平衡处理**"
+msgstr "**Category imbalance processing**"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:148
+msgid "对少数类别降低阈值以提高召回率"
+msgstr "Lower the threshold for minority classes to improve recall"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:149
+msgid "对关键类别提高阈值以确保精确度"
+msgstr "Raise thresholds on key categories to ensure accuracy"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:151
+msgid "**性能优化**"
+msgstr "**Performance Optimization**"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:153
+msgid "分类模型通常比检测模型更快，适合实时应用"
+msgstr ""
+"Classification models are generally faster than detection models and "
+"suitable for real-time applications"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:154
+msgid "批量处理可显著提升吞吐量"
+msgstr "Batch processing significantly improves throughput"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:156
+msgid "**图像预处理**"
+msgstr "**Image preprocessing**"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:158
+msgid "确保输入图像质量良好（清晰度、光照）"
+msgstr "Make sure the input image quality is good (sharpness, lighting)"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:159
+msgid "保持与训练数据相似的图像风格和分辨率"
+msgstr "Maintain image style and resolution similar to the training data"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:162
+msgid "常见问题"
+msgstr "FAQ"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:164
+msgid "**Q: 分类结果的所有类别置信度加起来等于1吗？**"
+msgstr ""
+"**Q: Does the sum of the confidence levels of all categories in the "
+"classification results equal 1?**"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:166
+msgid "A: 对于单标签分类（使用softmax），所有类别置信度之和为1。对于多标签分类（使用sigmoid），每个类别独立计算，总和不一定为1。"
+msgstr ""
+"A: For single-label classification (using softmax), the sum of all class "
+"confidences is 1.For multi-label classification (using sigmoid), each "
+"category is calculated independently and does not necessarily sum to 1."
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:168
+msgid "**Q: 如何判断模型对结果的确定程度？**"
+msgstr "**Q: How to judge how certain the model is about the results?**"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:170
+msgid "A: 查看 ``top_confidence`` 值："
+msgstr "A: Check the ``top_confidence`` value:"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:172
+msgid "> 0.9：高度确定"
+msgstr "> 0.9: Highly certain"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:173
+msgid "0.7-0.9：较为确定"
+msgstr "0.7-0.9: relatively certain"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:174
+msgid "0.5-0.7：中等确定"
+msgstr "0.5-0.7: Moderately certain"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:175
+msgid "< 0.5：不确定，建议复核"
+msgstr "< 0.5: Unsure, it is recommended to review"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:177
+msgid "**Q: 图像中有多个物体时，分类结果是什么？**"
+msgstr ""
+"**Q: What is the classification result when there are multiple objects in "
+"the image?**"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:179
+msgid "A: 分类模型对整张图像进行分类，通常会输出最显著物体的类别或整体场景的类别。如需识别多个物体，建议使用目标检测模型。"
+msgstr ""
+"A: A classification model classifies the entire image, usually outputting "
+"the category of the most salient object or the category of the overall "
+"scene.If you need to recognize multiple objects, it is recommended to use "
+"the object detection model."
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:181
+msgid "**Q: 可以同时输出多个类别吗？**"
+msgstr "**Q: Can multiple categories be output at the same time?**"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:183
+msgid "A: 可以。这取决于模型训练方式："
+msgstr "A: Yes.This depends on how the model is trained:"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:185
+msgid "**单标签分类**：只选择置信度最高的一个类别"
+msgstr ""
+"**Single label classification**: Only select the category with the highest "
+"confidence"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:186
+msgid "**多标签分类**：可输出多个超过阈值的类别"
+msgstr ""
+"**Multi-label classification**: multiple categories that exceed the "
+"threshold can be output"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:189
+msgid "应用案例"
+msgstr "Application cases"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:191
+msgid "**案例1：工业质检**"
+msgstr "**Case 1: Industrial quality inspection**"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:193
+msgid "对生产线产品进行良品/不良品分类，并识别缺陷类型。"
+msgstr ""
+"Classify production line products as good/defective and identify defect "
+"types."
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:209
+msgid "工作流逻辑："
+msgstr "Workflow logic:"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:211
+msgid "如果输出为 \"good\" 且 confidence > 0.8，则通过检测"
+msgstr "The detection passes if the output is \"good\" and confidence > 0.8"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:212
+msgid "如果输出为缺陷类型且 confidence > 0.9，则标记为不良品"
+msgstr ""
+"If the output is defect type and confidence > 0.9, mark it as defective"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:213
+msgid "如果所有 confidence < 0.8，则转人工复核"
+msgstr "If all confidences < 0.8, switch to manual review"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:215
+msgid "**案例2：场景识别**"
+msgstr "**Case 2: Scene Recognition**"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:217
+msgid "识别图像中的多个场景属性（多标签分类）。"
+msgstr ""
+"Identify multiple scene attributes in images (multi-label classification)."
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:233
+msgid "输出示例：``[\"outdoor\", \"urban\", \"daytime\", \"crowded\"]``"
+msgstr "Output example: ``[\"outdoor\", \"urban\", \"daytime\", \"crowded\"]``"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:235
+msgid "**案例3：医疗影像辅助诊断**"
+msgstr "**Case 3: Medical imaging-assisted diagnosis**"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:237
+msgid "对医学影像进行病症分类，辅助医生诊断。"
+msgstr "Classify medical images to assist doctors in diagnosis."
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:253
+msgid "医疗应用需要设置极高的置信度阈值，且结果仅供参考，不能替代专业医生诊断。"
+msgstr ""
+"Medical applications need to set extremely high confidence thresholds, and "
+"the results are for reference only and cannot replace the diagnosis of "
+"professional doctors."
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:256
+msgid "相关链接"
+msgstr "Related links"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:258
+msgid ":ref:`DaoAI World模型主页 <DaoAI World模型>`"
+msgstr ":ref:`DaoAI World model homepage <DaoAI World model>`"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:259
+msgid ":ref:`目标检测模型 <daoai_world_object_detection>` - 如需定位物体位置"
+msgstr ""
+":ref:`Object detection model <daoai_world_object_detection>` - if you need "
+"to locate the object position"
+
+#: ../../source/block_gallery/models/daoai_world_classification.rst:260
+msgid ":ref:`混合模型 <daoai_world_mixed_model>` - 结合分类和检测"
+msgstr ""
+":ref:`Mixed model <daoai_world_mixed_model>` - combines classification and "
+"detection"

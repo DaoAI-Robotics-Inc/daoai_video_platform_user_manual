@@ -1,0 +1,175 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/user_guide/alarm_management.rst:2
+msgid "查看报警记录"
+msgstr "View alarm records"
+
+#: ../../source/user_guide/alarm_management.rst:4
+msgid ""
+"您可以在 **实时警报** 页面查看当前产生的报警条目，点击任意一条即可打开报警详情。 也可以通过顶部导航进入 **历史** "
+"页面，查看所有历史报警记录并支持筛选与导出。"
+msgstr ""
+"You can view the currently generated alarm entries on the **Real-time "
+"Alarm** page, and click on any one to open the alarm details.You can also "
+"enter the **History** page through the top navigation to view all historical"
+" alarm records and support filtering and exporting."
+
+#: ../../source/user_guide/alarm_management.rst:7
+msgid "报警详情包含以下信息："
+msgstr "Alarm details include the following information:"
+
+#: ../../source/user_guide/alarm_management.rst:9
+msgid "报警详情页面"
+msgstr "Alarm details page"
+
+#: ../../source/user_guide/alarm_management.rst:14
+msgid "事件可视化图片：在详情页可播放事件发生前后 **15 秒** 的视频片段；"
+msgstr ""
+"Event visualization pictures: **15 seconds** video clips before and after "
+"the event can be played on the details page;"
+
+#: ../../source/user_guide/alarm_management.rst:15
+msgid "记录基础信息："
+msgstr "Record basic information:"
+
+#: ../../source/user_guide/alarm_management.rst:16
+msgid "事件 ID"
+msgstr "Event ID"
+
+#: ../../source/user_guide/alarm_management.rst:17
+msgid "发生时间"
+msgstr "Occurrence time"
+
+#: ../../source/user_guide/alarm_management.rst:18
+msgid "摄像头 ID"
+msgstr "Camera ID"
+
+#: ../../source/user_guide/alarm_management.rst:19
+msgid "摄像头名称"
+msgstr "Camera name"
+
+#: ../../source/user_guide/alarm_management.rst:20
+msgid "警报类型（由工作流里的事件记录模块定义）"
+msgstr "Alert type (defined by the event recording module in the workflow)"
+
+#: ../../source/user_guide/alarm_management.rst:21
+msgid "视频 URL"
+msgstr "Video URL"
+
+#: ../../source/user_guide/alarm_management.rst:22
+msgid "当前状态"
+msgstr "Current status"
+
+#: ../../source/user_guide/alarm_management.rst:23
+msgid "反馈状态"
+msgstr "feedback status"
+
+#: ../../source/user_guide/alarm_management.rst:24
+msgid "原始图片下载"
+msgstr "Original image download"
+
+#: ../../source/user_guide/alarm_management.rst:27
+msgid "在详情页面的操作"
+msgstr "Operations on the details page"
+
+#: ../../source/user_guide/alarm_management.rst:29
+msgid "确认并处理警报：操作员可将报警标记为 **已解决**；"
+msgstr ""
+"Acknowledge and handle alerts: Operators can mark alerts as **resolved**;"
+
+#: ../../source/user_guide/alarm_management.rst:30
+msgid "添加备注：记录现场检查情况或处理建议，便于后续追踪；"
+msgstr ""
+"Add notes: record the on-site inspection situation or processing suggestions"
+" to facilitate follow-up tracking;"
+
+#: ../../source/user_guide/alarm_management.rst:31
+msgid "变更状态：从“待检查”切换为“处理中 / 已解决”等，纳入流程化管理。"
+msgstr ""
+"Change status: Switch from \"pending inspection\" to "
+"\"processing/resolved\", etc., and incorporate it into process management."
+
+#: ../../source/user_guide/alarm_management.rst:34
+msgid "历史记录筛选与查询"
+msgstr "Historical record filtering and querying"
+
+#: ../../source/user_guide/alarm_management.rst:36
+msgid "在 **历史** 页面，支持使用过滤器进行精准查询："
+msgstr "On the **History** page, filters are supported for precise query:"
+
+#: ../../source/user_guide/alarm_management.rst:38
+msgid "按日期范围；"
+msgstr "by date range;"
+
+#: ../../source/user_guide/alarm_management.rst:39
+msgid "按摄像头名称；"
+msgstr "Press camera name;"
+
+#: ../../source/user_guide/alarm_management.rst:40
+msgid "按工作流名称；"
+msgstr "By workflow name;"
+
+#: ../../source/user_guide/alarm_management.rst:41
+msgid "按状态（待检查 / 处理中 / 已解决等）；"
+msgstr "By status (to be checked/processing/resolved, etc.);"
+
+#: ../../source/user_guide/alarm_management.rst:42
+msgid "按事件类型（如“人员离岗”“进入禁区”等）。"
+msgstr ""
+"By event type (such as \"personnel leaving the post\", \"entering the "
+"restricted area\", etc.)."
+
+#: ../../source/user_guide/alarm_management.rst:44
+msgid "报警历史页面"
+msgstr "Alarm history page"
+
+#: ../../source/user_guide/alarm_management.rst:49
+msgid "提示：支持导出查询结果为 CSV/JSON（若已在系统中启用），便于报表与复盘。"
+msgstr ""
+"Tip: Supports exporting query results to CSV/JSON (if enabled in the system)"
+" to facilitate reporting and review."
+
+#: ../../source/user_guide/alarm_management.rst:52
+msgid "数据导出"
+msgstr "Data export"
+
+#: ../../source/user_guide/alarm_management.rst:54
+msgid "报警导出功能"
+msgstr "Alarm export function"
+
+#: ../../source/user_guide/alarm_management.rst:59
+msgid "在页面右上角的 **设置** → **导出** 中，可以导出报警事件数据；"
+msgstr ""
+"In **Settings** → **Export** in the upper right corner of the page, you can "
+"export alarm event data;"
+
+#: ../../source/user_guide/alarm_management.rst:60
+msgid "支持先使用过滤器筛选（按日期、摄像头、工作流、状态、事件类型），再导出对应的报警记录；"
+msgstr ""
+"Supports filtering (by date, camera, workflow, status, event type) first, "
+"and then exporting the corresponding alarm records;"
+
+#: ../../source/user_guide/alarm_management.rst:61
+msgid "导出格式为 **CSV** 文件，便于在 Excel 或 BI 工具中进行统计分析。"
+msgstr ""
+"Export format is **CSV** file for easy statistical analysis in Excel or BI "
+"tools."

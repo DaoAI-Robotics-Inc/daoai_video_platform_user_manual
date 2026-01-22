@@ -1,0 +1,124 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/classical_cv/index.rst:2
+msgid "经典计算机视觉（15 项）"
+msgstr "Classical Computer Vision (15 items)"
+
+#: ../../source/block_gallery/classical_cv/index.rst:4
+msgid "使用传统计算机视觉算法进行图像处理。"
+msgstr "Image processing using traditional computer vision algorithms."
+
+#: ../../source/block_gallery/classical_cv/index.rst:31
+msgid ":ref:`相机对焦`"
+msgstr ":ref:`Camera focus`"
+
+#: ../../source/block_gallery/classical_cv/index.rst:33
+#: ../../source/block_gallery/classical_cv/index.rst:45
+#: ../../source/block_gallery/classical_cv/index.rst:48
+#: ../../source/block_gallery/classical_cv/index.rst:51
+#: ../../source/block_gallery/classical_cv/index.rst:57
+#: ../../source/block_gallery/classical_cv/index.rst:60
+#: ../../source/block_gallery/classical_cv/index.rst:63
+#: ../../source/block_gallery/classical_cv/index.rst:66
+#: ../../source/block_gallery/classical_cv/index.rst:75
+msgid "显示设置"
+msgstr "display settings"
+
+#: ../../source/block_gallery/classical_cv/index.rst:34
+msgid ":ref:`对比均衡`"
+msgstr ":ref:`Contrast Balance`"
+
+#: ../../source/block_gallery/classical_cv/index.rst:36
+msgid "对输入图像应用对比度均衡处理"
+msgstr "Apply contrast equalization to the input image"
+
+#: ../../source/block_gallery/classical_cv/index.rst:37
+msgid ":ref:`距离测量`"
+msgstr ":ref:`distance measurement`"
+
+#: ../../source/block_gallery/classical_cv/index.rst:39
+msgid "计算两个边界在二维平面上的距离"
+msgstr "Calculate the distance between two boundaries on a 2D plane"
+
+#: ../../source/block_gallery/classical_cv/index.rst:40
+msgid ":ref:`主色`"
+msgstr ":ref:`Main color`"
+
+#: ../../source/block_gallery/classical_cv/index.rst:42
+msgid "获取图像的主导颜色（RGB格式）"
+msgstr "Get the dominant color of an image (RGB format)"
+
+#: ../../source/block_gallery/classical_cv/index.rst:43
+msgid ":ref:`图像模糊`"
+msgstr ":ref:`image blur`"
+
+#: ../../source/block_gallery/classical_cv/index.rst:46
+msgid ":ref:`图像轮廓`"
+msgstr ":ref:`image outline`"
+
+#: ../../source/block_gallery/classical_cv/index.rst:49
+msgid ":ref:`图像灰度化`"
+msgstr ":ref:`Image grayscale`"
+
+#: ../../source/block_gallery/classical_cv/index.rst:52
+msgid ":ref:`图像预处理`"
+msgstr ":ref:`Image preprocessing`"
+
+#: ../../source/block_gallery/classical_cv/index.rst:54
+msgid "调整、翻转或旋转图像"
+msgstr "Resize, flip or rotate an image"
+
+#: ../../source/block_gallery/classical_cv/index.rst:55
+msgid ":ref:`图像阈值`"
+msgstr ":ref:`Image threshold`"
+
+#: ../../source/block_gallery/classical_cv/index.rst:58
+msgid ":ref:`形态变换`"
+msgstr ":ref:`morphological transformation`"
+
+#: ../../source/block_gallery/classical_cv/index.rst:61
+msgid ":ref:`像素颜色数`"
+msgstr ":ref:`pixel color number`"
+
+#: ../../source/block_gallery/classical_cv/index.rst:64
+msgid ":ref:`SIFT`"
+msgstr ":ref:`SIFT`"
+
+#: ../../source/block_gallery/classical_cv/index.rst:67
+msgid ":ref:`SIFT比较`"
+msgstr ":ref:`SIFT comparison`"
+
+#: ../../source/block_gallery/classical_cv/index.rst:69
+msgid "比较多张图像的SIFT描述符"
+msgstr "Comparing SIFT descriptors of multiple images"
+
+#: ../../source/block_gallery/classical_cv/index.rst:70
+msgid ":ref:`尺寸测量`"
+msgstr ":ref:`Dimensional measurement`"
+
+#: ../../source/block_gallery/classical_cv/index.rst:72
+msgid "测量对象相对于参考对象的尺寸"
+msgstr "Measure the dimensions of an object relative to a reference object"
+
+#: ../../source/block_gallery/classical_cv/index.rst:73
+msgid ":ref:`模板匹配`"
+msgstr ":ref:`Template matching`"

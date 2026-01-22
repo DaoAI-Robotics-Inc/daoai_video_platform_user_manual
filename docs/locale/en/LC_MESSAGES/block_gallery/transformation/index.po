@@ -1,0 +1,134 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/transformation/index.rst:2
+msgid "变换（13 项）"
+msgstr "Transformations (13 items)"
+
+#: ../../source/block_gallery/transformation/index.rst:4
+msgid "对图像和检测结果进行各种变换操作。"
+msgstr ""
+"Perform various transformation operations on images and detection results."
+
+#: ../../source/block_gallery/transformation/index.rst:29
+msgid ":ref:`绝对静态裁剪`"
+msgstr ":ref:`Absolute static cropping`"
+
+#: ../../source/block_gallery/transformation/index.rst:31
+msgid "按固定坐标裁剪图像"
+msgstr "Crop image by fixed coordinates"
+
+#: ../../source/block_gallery/transformation/index.rst:32
+msgid ":ref:`边界框`"
+msgstr ":ref:`bounding box`"
+
+#: ../../source/block_gallery/transformation/index.rst:34
+msgid "找到检测到的多边形周围的最小包围框"
+msgstr "Find the minimum bounding box around the detected polygon"
+
+#: ../../source/block_gallery/transformation/index.rst:35
+msgid ":ref:`相机标定`"
+msgstr ":ref:`Camera Calibration`"
+
+#: ../../source/block_gallery/transformation/index.rst:37
+msgid "使用校准从图像中去除桶形畸变"
+msgstr "Remove barrel distortion from images using calibration"
+
+#: ../../source/block_gallery/transformation/index.rst:38
+msgid ":ref:`检测偏移`"
+msgstr ":ref:`Detect offset`"
+
+#: ../../source/block_gallery/transformation/index.rst:40
+msgid "在检测到的对象宽度和高度周围添加填充"
+msgstr "Add padding around detected object width and height"
+
+#: ../../source/block_gallery/transformation/index.rst:41
+msgid ":ref:`检测结果组合`"
+msgstr ":ref:`Detection result combination`"
+
+#: ../../source/block_gallery/transformation/index.rst:43
+msgid "将两个预测集合并为一个预测集"
+msgstr "Merge two prediction sets into one prediction set"
+
+#: ../../source/block_gallery/transformation/index.rst:44
+msgid ":ref:`检测框合并`"
+msgstr ":ref:`Detection frame merging`"
+
+#: ../../source/block_gallery/transformation/index.rst:46
+msgid "将多个检测结果合并为一个边界框"
+msgstr "Combine multiple detections into a single bounding box"
+
+#: ../../source/block_gallery/transformation/index.rst:47
+msgid ":ref:`检测变换`"
+msgstr ":ref:`Detect transformation`"
+
+#: ../../source/block_gallery/transformation/index.rst:49
+msgid "对检测到的边界框应用变换"
+msgstr "Apply a transformation to the detected bounding box"
+
+#: ../../source/block_gallery/transformation/index.rst:50
+msgid ":ref:`动态裁剪`"
+msgstr ":ref:`Dynamic Cropping`"
+
+#: ../../source/block_gallery/transformation/index.rst:52
+msgid "使用检测模型的边界框裁剪图像"
+msgstr "Crop image using bounding box of detection model"
+
+#: ../../source/block_gallery/transformation/index.rst:53
+msgid ":ref:`重叠过滤`"
+msgstr ":ref:`Overlap filtering`"
+
+#: ../../source/block_gallery/transformation/index.rst:55
+msgid "过滤与其他类叠加的对象"
+msgstr "Filter objects that overlap with other classes"
+
+#: ../../source/block_gallery/transformation/index.rst:56
+msgid ":ref:`二维码生成器`"
+msgstr ":ref:`QR code generator`"
+
+#: ../../source/block_gallery/transformation/index.rst:58
+msgid "从文本输入生成二维码图像"
+msgstr "Generate QR code image from text input"
+
+#: ../../source/block_gallery/transformation/index.rst:59
+msgid ":ref:`相对静态裁剪`"
+msgstr ":ref:`relative static cropping`"
+
+#: ../../source/block_gallery/transformation/index.rst:61
+msgid "按比例（%）裁剪图像尺寸"
+msgstr "Crop image size proportionally (%)"
+
+#: ../../source/block_gallery/transformation/index.rst:62
+msgid ":ref:`静态物体检测`"
+msgstr ":ref:`Static Object Detection`"
+
+#: ../../source/block_gallery/transformation/index.rst:64
+msgid "从用户定义的边界框创建静态物体检测结果"
+msgstr ""
+"Create static object detection results from user-defined bounding boxes"
+
+#: ../../source/block_gallery/transformation/index.rst:65
+msgid ":ref:`拼图图像`"
+msgstr ":ref:`Puzzle image`"
+
+#: ../../source/block_gallery/transformation/index.rst:67
+msgid "通过共同路径拼接两个图像"
+msgstr "Splice two images through a common path"

@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/visualization/line_display.rst:4
+msgid "线条计数显示"
+msgstr "Line count display"
+
+#: ../../source/block_gallery/visualization/line_display.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/visualization/line_display.rst:9
+msgid "在图像/视频上绘制计数线，统计目标穿过线段的次数，可用于越界/流量统计场景。"
+msgstr ""
+"Draw a counting line on the image/video to count the number of times the "
+"target crosses the line segment, which can be used in cross-border/traffic "
+"statistics scenarios."
+
+#: ../../source/block_gallery/visualization/line_display.rst:12
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/visualization/line_display.rst:14
+msgid "输入：图像 + 线段坐标"
+msgstr "Input: image + line segment coordinates"
+
+#: ../../source/block_gallery/visualization/line_display.rst:15
+msgid "输出：叠加计数线和文本后的图像，以及计数结果"
+msgstr ""
+"Output: Image with counting lines and text superimposed, and counting "
+"results"
+
+#: ../../source/block_gallery/visualization/line_display.rst:18
+msgid "配置参数"
+msgstr "Configuration parameters"
+
+#: ../../source/block_gallery/visualization/line_display.rst:24
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/visualization/line_display.rst:25
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/visualization/line_display.rst:26
+msgid "示例/ ``默认值``"
+msgstr "Example/``DefaultValue``"
+
+#: ../../source/block_gallery/visualization/line_display.rst:27
+msgid "节点名称"
+msgstr "Node name"
+
+#: ../../source/block_gallery/visualization/line_display.rst:28
+msgid "工作流中该节点的名称。"
+msgstr "The name of this node in the workflow."
+
+#: ../../source/block_gallery/visualization/line_display.rst:29
+msgid "``line_counter_visualization_1``"
+msgstr "``line_counter_visualization_1``"
+
+#: ../../source/block_gallery/visualization/line_display.rst:30
+msgid "备注"
+msgstr "Remark"
+
+#: ../../source/block_gallery/visualization/line_display.rst:31
+msgid "可选备注信息，记录用途。"
+msgstr "Optional remark information to record the purpose."
+
+#: ../../source/block_gallery/visualization/line_display.rst:32
+msgid "``留空``"
+msgstr "``leave blank``"
+
+#: ../../source/block_gallery/visualization/line_display.rst:33
+msgid "输入图像"
+msgstr "input image"
+
+#: ../../source/block_gallery/visualization/line_display.rst:34
+msgid "用于可视化的图像来源。"
+msgstr "Image source used for visualization."
+
+#: ../../source/block_gallery/visualization/line_display.rst:35
+msgid "``input.image``"
+msgstr "``input.image``"
+
+#: ../../source/block_gallery/visualization/line_display.rst:36
+msgid "复制图像"
+msgstr "copy image"
+
+#: ../../source/block_gallery/visualization/line_display.rst:37
+msgid "是否先复制输入图像再进行可视化，保留原始帧。"
+msgstr ""
+"Whether to copy the input image before visualization, retaining the original"
+" frame."
+
+#: ../../source/block_gallery/visualization/line_display.rst:38
+msgid "``True``"
+msgstr "``True``"
+
+#: ../../source/block_gallery/visualization/line_display.rst:39
+msgid "线条坐标"
+msgstr "Line coordinates"
+
+#: ../../source/block_gallery/visualization/line_display.rst:40
+msgid "由两点坐标定义的线段列表，形如 ``[[x1, y1], [x2, y2]]``。"
+msgstr ""
+"A list of line segments defined by the coordinates of two points, in the "
+"form ``[[x1, y1], [x2, y2]]``."
+
+#: ../../source/block_gallery/visualization/line_display.rst:41
+msgid "``[[0,0],[50,50],[100,100]]``"
+msgstr "``[[0,0],[50,50],[100,100]]``"
+
+#: ../../source/block_gallery/visualization/line_display.rst:42
+msgid "线条颜色"
+msgstr "line color"
+
+#: ../../source/block_gallery/visualization/line_display.rst:43
+msgid "线段/区域颜色（HEX）。"
+msgstr "Line/area color (HEX)."
+
+#: ../../source/block_gallery/visualization/line_display.rst:44
+msgid "``#5bb573``"
+msgstr "E#khbhhghghghghghghghgh"
+
+#: ../../source/block_gallery/visualization/line_display.rst:45
+msgid "线条粗细"
+msgstr "line thickness"
+
+#: ../../source/block_gallery/visualization/line_display.rst:46
+msgid "线条宽度（像素）。"
+msgstr "Line width (pixels)."
+
+#: ../../source/block_gallery/visualization/line_display.rst:47
+msgid "``2``"
+msgstr "``2``"
+
+#: ../../source/block_gallery/visualization/line_display.rst:48
+msgid "文本粗细"
+msgstr "text weight"
+
+#: ../../source/block_gallery/visualization/line_display.rst:49
+msgid "计数字体粗细（像素）。"
+msgstr "Count font weight in pixels."
+
+#: ../../source/block_gallery/visualization/line_display.rst:50
+#: ../../source/block_gallery/visualization/line_display.rst:53
+msgid "``1``"
+msgstr "``1``"
+
+#: ../../source/block_gallery/visualization/line_display.rst:51
+msgid "文本大小"
+msgstr "text size"
+
+#: ../../source/block_gallery/visualization/line_display.rst:52
+msgid "计数字体大小（像素）。"
+msgstr "Count font size in pixels."
+
+#: ../../source/block_gallery/visualization/line_display.rst:54
+msgid "计数"
+msgstr "count"
+
+#: ../../source/block_gallery/visualization/line_display.rst:55
+msgid "参考进入线区域的对象数量（输入/绑定字段）。"
+msgstr ""
+"Reference to the number of objects entering the line area (input/binding "
+"field)."
+
+#: ../../source/block_gallery/visualization/line_display.rst:56
+msgid "一般配对 ``line_counter`` 的计数输入"
+msgstr "Count input for general pairing ``line_counter``"
+
+#: ../../source/block_gallery/visualization/line_display.rst:57
+msgid "计数输出"
+msgstr "Count output"
+
+#: ../../source/block_gallery/visualization/line_display.rst:58
+msgid "参考穿过线区域的对象数量（输入/绑定字段）。"
+msgstr ""
+"Reference to the number of objects crossing the line area (input/binding "
+"field)."
+
+#: ../../source/block_gallery/visualization/line_display.rst:59
+msgid "一般配对 ``line_counter`` 的计数输出"
+msgstr "Count output of general pairing ``line_counter``"
+
+#: ../../source/block_gallery/visualization/line_display.rst:60
+msgid "透明度"
+msgstr "transparency"
+
+#: ../../source/block_gallery/visualization/line_display.rst:61
+msgid "覆盖叠加层的透明度（0~1）。"
+msgstr "The transparency of the overlay overlay (0~1)."
+
+#: ../../source/block_gallery/visualization/line_display.rst:62
+msgid "``0.3``"
+msgstr "``0.3``"

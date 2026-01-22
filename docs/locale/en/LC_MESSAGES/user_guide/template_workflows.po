@@ -1,0 +1,591 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/user_guide/template_workflows.rst:2
+msgid "典型工作流示例"
+msgstr "Typical workflow example"
+
+#: ../../source/user_guide/template_workflows.rst:4
+msgid "本页汇总 DaoAI 天眼系统内置的“模板工作流”示例。可在工作流编辑器中导入、查看并按需调整参数与区域配置。"
+msgstr ""
+"This page summarizes the \"template workflow\" examples built into the DaoAI"
+" Video Analysis Platform.Parameters and zone configurations can be imported, viewed, "
+"and adjusted as needed in the workflow editor."
+
+#: ../../source/user_guide/template_workflows.rst:12
+msgid "办公场景"
+msgstr "Office scene"
+
+#: ../../source/user_guide/template_workflows.rst:15
+msgid "人员离岗检测"
+msgstr "Personnel off-duty detection"
+
+#: ../../source/user_guide/template_workflows.rst:17
+msgid "用途：识别人员是否离开指定办公区域（离岗/值班空缺）。需在编辑器中配置“监控区域”坐标。"
+msgstr ""
+"Purpose: Identify whether a person leaves the designated office area (off "
+"duty/duty vacancy).The \"monitoring area\" coordinates need to be configured"
+" in the editor."
+
+#: ../../source/user_guide/template_workflows.rst:18
+#: ../../source/user_guide/template_workflows.rst:45
+#: ../../source/user_guide/template_workflows.rst:65
+#: ../../source/user_guide/template_workflows.rst:84
+#: ../../source/user_guide/template_workflows.rst:109
+#: ../../source/user_guide/template_workflows.rst:131
+#: ../../source/user_guide/template_workflows.rst:153
+#: ../../source/user_guide/template_workflows.rst:179
+#: ../../source/user_guide/template_workflows.rst:198
+#: ../../source/user_guide/template_workflows.rst:218
+#: ../../source/user_guide/template_workflows.rst:238
+#: ../../source/user_guide/template_workflows.rst:261
+#: ../../source/user_guide/template_workflows.rst:299
+msgid "组成与流程："
+msgstr "Composition and process:"
+
+#: ../../source/user_guide/template_workflows.rst:19
+msgid "通用检测模型：标签输入 ``person`` 检测场景中的人员；"
+msgstr ""
+"General detection model: label input ``person`` detects people in the scene;"
+
+#: ../../source/user_guide/template_workflows.rst:20
+msgid "检测过滤: 过滤出置信度低于0.5的检测结果；"
+msgstr ""
+"Detection filtering: Filter out detection results with a confidence level "
+"lower than 0.5;"
+
+#: ../../source/user_guide/template_workflows.rst:21
+msgid "高速追踪：为检测到的对象分配并维护稳定的轨迹/ID，便于持续分析；"
+msgstr ""
+"High-speed tracking: Assign and maintain stable trajectories/IDs for "
+"detected objects to facilitate continuous analysis;"
+
+#: ../../source/user_guide/template_workflows.rst:22
+msgid "区域内存在时间：统计在区域内或者外停留时长；"
+msgstr ""
+"Existence time in the area: counts the time spent in or outside the area;"
+
+#: ../../source/user_guide/template_workflows.rst:23
+msgid "属性定义: 提取区域内存在时间节点的 离开区域的时间值 ``time_out_of_zone``；"
+msgstr ""
+"Attribute definition: Extract the time value ``time_out_of_zone`` of the "
+"time node that exists in the zone leaving the zone;"
+
+#: ../../source/user_guide/template_workflows.rst:24
+msgid "条件继续：当停留时长 ``>= 15`` 秒时，进入后续步骤（可视化/事件保存）；"
+msgstr ""
+"Conditional continuation: When the dwell time is ``>= 15`` seconds, enter "
+"the subsequent steps (visualization/event saving);"
+
+#: ../../source/user_guide/template_workflows.rst:25
+msgid "可视化与事件保存:"
+msgstr "Visualization and event storage:"
+
+#: ../../source/user_guide/template_workflows.rst:27
+msgid "在图像上绘制“监控区域”多边形与半透明遮罩；"
+msgstr ""
+"Draw \"surveillance area\" polygons and semi-transparent masks on the image;"
+
+#: ../../source/user_guide/template_workflows.rst:28
+msgid "在仪表盘中展示带标注的图像；"
+msgstr "Display annotated images in dashboards;"
+
+#: ../../source/user_guide/template_workflows.rst:29
+msgid "保存事件与视频片段。"
+msgstr "Save events and video clips."
+
+#: ../../source/user_guide/template_workflows.rst
+msgid "查看工作流 JSON"
+msgstr "View workflow JSON"
+
+#: ../../source/user_guide/template_workflows.rst:42
+msgid "人员聚集检测"
+msgstr "People gathering detection"
+
+#: ../../source/user_guide/template_workflows.rst:44
+msgid "用途：识别指定区域内的人员聚集/拥挤情况。"
+msgstr "Purpose: Identify gathering/crowding of people in designated areas."
+
+#: ../../source/user_guide/template_workflows.rst:46
+msgid "人员检测：标签输入 ``person`` 检测画面中的人员；"
+msgstr "Person detection: Tag input ``person`` detects people in the screen;"
+
+#: ../../source/user_guide/template_workflows.rst:47
+msgid "区域过滤：在设定区域内筛选检测结果；"
+msgstr "Area filtering: Filter test results within a set area;"
+
+#: ../../source/user_guide/template_workflows.rst:48
+msgid "条件继续：当区域内人数 ``>= 4`` 时，进入后续步骤；"
+msgstr ""
+"Condition continues: When the number of people in the area ``>= 4``, enter "
+"the subsequent steps;"
+
+#: ../../source/user_guide/template_workflows.rst:49
+msgid "可视化与事件保存：叠加框与标签并保存事件。"
+msgstr ""
+"Visualization and event saving: Overlay boxes and labels and save events."
+
+#: ../../source/user_guide/template_workflows.rst:62
+msgid "异常行为检测"
+msgstr "Abnormal behavior detection"
+
+#: ../../source/user_guide/template_workflows.rst:64
+msgid "用途：识别抽烟、打电话、玩手机、摔倒、睡岗、翻越围栏等异常/不当行为（需自训练对应模型）。"
+msgstr ""
+"Purpose: Identify abnormal/inappropriate behaviors such as smoking, talking "
+"on the phone, playing with mobile phones, falling, sleeping on the post, "
+"climbing over fences, etc. (requires self-training of corresponding models)."
+
+#: ../../source/user_guide/template_workflows.rst:66
+msgid "行为检测模型：输出异常行为类别与位置；"
+msgstr ""
+"Behavior detection model: output abnormal behavior categories and locations;"
+
+#: ../../source/user_guide/template_workflows.rst:67
+msgid "类别过滤：仅保留目标异常类别；"
+msgstr "Category filtering: only retain target anomaly categories;"
+
+#: ../../source/user_guide/template_workflows.rst:68
+msgid "条件继续：当检测数量 ``>= 1`` 时，进入后续步骤；"
+msgstr ""
+"Condition continues: When the detection quantity ``>= 1``, ​​enter the "
+"subsequent steps;"
+
+#: ../../source/user_guide/template_workflows.rst:69
+msgid "可视化与事件保存：绘制框与标签、保存事件并在仪表盘展示。"
+msgstr ""
+"Visualization and event saving: draw boxes and labels, save events and "
+"display them on the dashboard."
+
+#: ../../source/user_guide/template_workflows.rst:81
+msgid "长时停留检测"
+msgstr "Long stay detection"
+
+#: ../../source/user_guide/template_workflows.rst:83
+msgid "用途：统计目标在指定区域内的停留时长，识别过长停留（如长时间玩手机）。"
+msgstr ""
+"Purpose: Count how long a target stays in a designated area, and identify "
+"excessive stays (such as playing with mobile phones for a long time)."
+
+#: ../../source/user_guide/template_workflows.rst:85
+msgid "通用检测模型：检测场景中的目标对象；"
+msgstr "Universal detection model: detect target objects in the scene;"
+
+#: ../../source/user_guide/template_workflows.rst:86
+msgid "检测过滤：按需要在设定区域或类别上筛选用于跟踪的检测结果；"
+msgstr ""
+"Detection filtering: Filter detection results for tracking in set areas or "
+"categories as needed;"
+
+#: ../../source/user_guide/template_workflows.rst:87
+msgid "目标跟踪：为检测到的对象分配并维护稳定的轨迹/ID；"
+msgstr ""
+"Object tracking: Assign and maintain stable trajectories/IDs for detected "
+"objects;"
+
+#: ../../source/user_guide/template_workflows.rst:88
+msgid "区域内存在时间：统计在区内停留时长；"
+msgstr "Existence time in the area: counts the length of stay in the area;"
+
+#: ../../source/user_guide/template_workflows.rst:89
+msgid "属性定义: 提取区域内存在时间节点的 离开区域的时间值 ``time_in_zone``；"
+msgstr ""
+"Attribute definition: Extract the time value ``time_in_zone`` of the time "
+"node that exists in the zone leaving the zone;"
+
+#: ../../source/user_guide/template_workflows.rst:90
+msgid "条件继续：当停留时间达到阈值（示例为 ``>= 1``，实际可在编辑器设定秒数）时，进入后续步骤（可视化/事件保存）；"
+msgstr ""
+"Conditional continuation: When the residence time reaches the threshold "
+"(example is ``>= 1``, ​​the number of seconds can actually be set in the "
+"editor), enter the subsequent steps (visualization/event saving);"
+
+#: ../../source/user_guide/template_workflows.rst:91
+msgid "可视化与事件保存：叠加框与“Time In Zone”标签，保存事件与视频片段；"
+msgstr ""
+"Visualization and event storage: overlay box and \"Time In Zone\" label to "
+"save events and video clips;"
+
+#: ../../source/user_guide/template_workflows.rst:103
+msgid "Highway 场景"
+msgstr "Highway scene"
+
+#: ../../source/user_guide/template_workflows.rst:106
+msgid "交通拥堵检测"
+msgstr "Traffic jam detection"
+
+#: ../../source/user_guide/template_workflows.rst:108
+msgid "用途：结合车辆检测、跟踪与速度估计，识别道路拥堵程度（轻度/中度/重度），并输出事件类型与摘要。"
+msgstr ""
+"Purpose: Combine vehicle detection, tracking and speed estimation to "
+"identify road congestion levels (mild/moderate/severe), and output event "
+"types and summaries."
+
+#: ../../source/user_guide/template_workflows.rst:110
+#: ../../source/user_guide/template_workflows.rst:154
+msgid "目标检测：检测车、卡车、摩托等对象；"
+msgstr ""
+"Target detection: detecting objects such as cars, trucks, motorcycles;"
+
+#: ../../source/user_guide/template_workflows.rst:111
+msgid "目标跟踪：为车辆分配并维护稳定轨迹/ID；"
+msgstr ""
+"Target tracking: assign and maintain stable trajectories/IDs for vehicles;"
+
+#: ../../source/user_guide/template_workflows.rst:112
+msgid "速度估计：依据标定多边形、方向点与边缘距离计算车速（km/h）；"
+msgstr ""
+"Speed ​​estimation: Calculate the vehicle speed (km/h) based on the "
+"calibration polygon, direction point and edge distance;"
+
+#: ../../source/user_guide/template_workflows.rst:113
+msgid "在区时长：统计车辆在指定区域的停留时间；"
+msgstr "Time in zone: counts the time a vehicle stays in a designated area;"
+
+#: ../../source/user_guide/template_workflows.rst:114
+msgid "拥堵综合分析：融合检测、轨迹、速度与停留信息，计算占用率与拥堵等级，并输出事件类型；"
+msgstr ""
+"Comprehensive congestion analysis: fuse detection, trajectory, speed and "
+"stay information, calculate occupancy and congestion levels, and output "
+"event types;"
+
+#: ../../source/user_guide/template_workflows.rst:115
+msgid "逻辑判断：当拥堵条件为真时继续进入可视化与事件保存；"
+msgstr ""
+"Logical judgment: when the congestion condition is true, continue to enter "
+"visualization and event saving;"
+
+#: ../../source/user_guide/template_workflows.rst:116
+msgid "可视化与事件保存：叠加事件标签、保存图像与视频片段，并可在仪表盘展示。"
+msgstr ""
+"Visualization and event storage: Overlay event labels, save images and video"
+" clips, and display them on the dashboard."
+
+#: ../../source/user_guide/template_workflows.rst:128
+msgid "昼夜模型切换"
+msgstr "Day and night model switching"
+
+#: ../../source/user_guide/template_workflows.rst:130
+msgid "用途：根据时间自动切换白天/夜间检测模型，适应光照变化，保证识别稳定性（需配置模型 UID）。"
+msgstr ""
+"Purpose: Automatically switch day/night detection models according to time, "
+"adapt to lighting changes, and ensure recognition stability (model UID needs"
+" to be configured)."
+
+#: ../../source/user_guide/template_workflows.rst:132
+msgid "自定义 Python 模块：根据当前时间输出应使用的模型 UID，；"
+msgstr ""
+"Custom Python module: output the model UID that should be used based on the "
+"current time;"
+
+#: ../../source/user_guide/template_workflows.rst:133
+msgid "通用检测：按动态 UID 选择并运行检测模型；"
+msgstr "Universal detection: select and run detection models by dynamic UID;"
+
+#: ../../source/user_guide/template_workflows.rst:134
+msgid "目标跟踪、速度估计、在区时长：与拥堵检测一致，分别统计轨迹、速度与在区停留；"
+msgstr ""
+"Target tracking, speed estimation, and time in the zone: consistent with "
+"congestion detection, counting trajectory, speed, and stay in the zone "
+"respectively;"
+
+#: ../../source/user_guide/template_workflows.rst:135
+msgid "违法/拥堵判定：输出是否违规/拥堵及事件类型；"
+msgstr ""
+"Illegal/congestion determination: output whether it is illegal/congested and"
+" the event type;"
+
+#: ../../source/user_guide/template_workflows.rst:136
+msgid "逻辑判断：当触发条件成立时进入可视化与事件保存；"
+msgstr ""
+"Logical judgment: when the trigger condition is established, enter "
+"visualization and event saving;"
+
+#: ../../source/user_guide/template_workflows.rst:137
+msgid "可视化与事件保存：绘制事件信息并保存图像/视频，支持仪表盘展示。"
+msgstr ""
+"Visualization and event saving: Draw event information and save "
+"images/videos, supporting dashboard display."
+
+#: ../../source/user_guide/template_workflows.rst:150
+msgid "车速与行驶轨迹检测"
+msgstr "Vehicle speed and driving trajectory detection"
+
+#: ../../source/user_guide/template_workflows.rst:152
+msgid "用途：实时检测车辆速度并分析行驶轨迹，用于识别超速、异常减速、逆行、频繁变道等行为，辅助交通安全监管。"
+msgstr ""
+"Purpose: Real-time detection of vehicle speed and analysis of driving "
+"trajectories, used to identify behaviors such as speeding, abnormal "
+"deceleration, retrograde driving, frequent lane changes, etc., and assist in"
+" traffic safety supervision."
+
+#: ../../source/user_guide/template_workflows.rst:155
+msgid "目标跟踪：维护稳定的车辆轨迹/ID；"
+msgstr "Target tracking: maintain stable vehicle trajectory/ID;"
+
+#: ../../source/user_guide/template_workflows.rst:156
+msgid "速度估计：通过标定与方向点计算车速；"
+msgstr ""
+"Speed ​​estimation: Calculate vehicle speed through calibration and "
+"direction points;"
+
+#: ../../source/user_guide/template_workflows.rst:157
+msgid "在区时长：统计在指定车道或区域的停留时间；"
+msgstr "Time in zone: counts the time spent in a designated lane or area;"
+
+#: ../../source/user_guide/template_workflows.rst:158
+msgid "违规/轨迹分析：综合速度、轨迹与停留信息识别超速、逆行、异常变道等；"
+msgstr ""
+"Violation/trajectory analysis: comprehensive speed, trajectory and stop "
+"information to identify speeding, retrograde driving, abnormal lane changes,"
+" etc.;"
+
+#: ../../source/user_guide/template_workflows.rst:159
+msgid "逻辑判断：当违规条件为真时进入可视化与事件保存；"
+msgstr ""
+"Logical judgment: when the violation condition is true, enter visualization "
+"and event saving;"
+
+#: ../../source/user_guide/template_workflows.rst:160
+msgid "可视化与事件保存：叠加事件标签，保存图像/视频，并可在仪表盘展示。"
+msgstr ""
+"Visualization and event saving: overlay event labels, save images/videos, "
+"and display them on the dashboard."
+
+#: ../../source/user_guide/template_workflows.rst:173
+msgid "Construction Site 场景"
+msgstr "Construction Site scene"
+
+#: ../../source/user_guide/template_workflows.rst:176
+msgid "工地热人数统计"
+msgstr "Construction site hot people statistics"
+
+#: ../../source/user_guide/template_workflows.rst:178
+msgid "用途：统计画面中人员数量，便于了解现场人员密度与热度。"
+msgstr ""
+"Purpose: Count the number of people in the screen to facilitate "
+"understanding of the density and popularity of people on site."
+
+#: ../../source/user_guide/template_workflows.rst:180
+#: ../../source/user_guide/template_workflows.rst:262
+msgid "目标检测：检测人员；"
+msgstr "Target detection: detection personnel;"
+
+#: ../../source/user_guide/template_workflows.rst:181
+msgid "检测过滤：仅保留人员且置信度 >= 0.5；"
+msgstr "Detection filtering: only keep people with confidence level >= 0.5;"
+
+#: ../../source/user_guide/template_workflows.rst:182
+msgid "属性提取：计算检测数量用于事件类型或展示；"
+msgstr ""
+"Attribute extraction: Calculate the number of detections for event type or "
+"display;"
+
+#: ../../source/user_guide/template_workflows.rst:183
+msgid "可视化与事件保存：叠加框与标签，按人数保存事件与视频片段。"
+msgstr ""
+"Visualization and event storage: overlay boxes and labels, save events and "
+"video clips by number of people."
+
+#: ../../source/user_guide/template_workflows.rst:195
+msgid "区域占用检测"
+msgstr "Area occupancy detection"
+
+#: ../../source/user_guide/template_workflows.rst:197
+msgid "用途：检测指定区域是否被物体占用（车、卡车、摩托、大件物品等），需在编辑器配置区域坐标。"
+msgstr ""
+"Purpose: To detect whether the specified area is occupied by objects (cars, "
+"trucks, motorcycles, large items, etc.), the area coordinates need to be "
+"configured in the editor."
+
+#: ../../source/user_guide/template_workflows.rst:199
+msgid "目标检测：检测目标类别；"
+msgstr "Target detection: detect target category;"
+
+#: ../../source/user_guide/template_workflows.rst:200
+msgid "区域过滤：在目标区域筛选检测结果；"
+msgstr "Area filtering: Filter detection results in the target area;"
+
+#: ../../source/user_guide/template_workflows.rst:201
+msgid "目标跟踪：维护稳定轨迹与 ID；"
+msgstr "Target tracking: maintain stable trajectory and ID;"
+
+#: ../../source/user_guide/template_workflows.rst:202
+msgid "条件继续：当区域内存在目标（数量 >= 1）进入可视化与事件保存；"
+msgstr ""
+"Conditional continuation: When there are targets in the area (number >= 1), "
+"enter visualization and event saving;"
+
+#: ../../source/user_guide/template_workflows.rst:203
+msgid "可视化与事件保存：绘制框与标签并保存事件。"
+msgstr ""
+"Visualization and event saving: draw boxes and labels and save events."
+
+#: ../../source/user_guide/template_workflows.rst:215
+msgid "作业区人员距离检测"
+msgstr "Personnel distance detection in working area"
+
+#: ../../source/user_guide/template_workflows.rst:217
+msgid "用途：检测危险/作业区域是否有人员靠近，辅助安全管控；需在编辑器配置区域坐标。"
+msgstr ""
+"Purpose: Detect whether there are people approaching dangerous/working areas"
+" to assist safety control; the area coordinates need to be configured in the"
+" editor."
+
+#: ../../source/user_guide/template_workflows.rst:219
+msgid "目标检测：检测人员（staff）；"
+msgstr "Target detection: detection staff (staff);"
+
+#: ../../source/user_guide/template_workflows.rst:220
+msgid "区域过滤：在危险区域筛选检测结果；"
+msgstr "Area filtering: Filter test results in dangerous areas;"
+
+#: ../../source/user_guide/template_workflows.rst:221
+msgid "条件继续：当区域内存在人员（数量 >= 1）进入可视化；"
+msgstr ""
+"Condition continues: when there are people in the area (number >= 1) enter "
+"the visualization;"
+
+#: ../../source/user_guide/template_workflows.rst:222
+msgid "可视化与事件保存：绘制框与标签并保存事件与视频。"
+msgstr ""
+"Visualization and event saving: draw boxes and labels and save events and "
+"videos."
+
+#: ../../source/user_guide/template_workflows.rst:235
+msgid "灭火器存在检测"
+msgstr "Fire extinguisher presence detection"
+
+#: ../../source/user_guide/template_workflows.rst:237
+msgid "用途：检测特定区域是否存在灭火器；可用于发现灭火器缺失或被挪走。"
+msgstr ""
+"Purpose: Detect whether there is a fire extinguisher in a specific area; can"
+" be used to find that the fire extinguisher is missing or has been moved."
+
+#: ../../source/user_guide/template_workflows.rst:239
+msgid "目标检测：检测灭火器；"
+msgstr "Target detection: detecting fire extinguishers;"
+
+#: ../../source/user_guide/template_workflows.rst:240
+msgid "目标跟踪与可视化：绘制框与标签；"
+msgstr "Target tracking and visualization: drawing boxes and labels;"
+
+#: ../../source/user_guide/template_workflows.rst:241
+msgid "越界/在区时长：统计灭火器离开区域的时间并聚合；"
+msgstr ""
+"Cross-border/in-zone time: count the time the fire extinguisher leaves the "
+"zone and aggregate it;"
+
+#: ../../source/user_guide/template_workflows.rst:242
+msgid "条件继续：当离区时长达到阈值（示例 3s）进入事件保存；"
+msgstr ""
+"Conditional continuation: When the out-of-zone duration reaches the "
+"threshold (example 3s), enter the event save;"
+
+#: ../../source/user_guide/template_workflows.rst:243
+msgid "事件保存与仪表盘：保存图片/视频并在仪表盘展示。"
+msgstr ""
+"Event saving and dashboard: Save pictures/videos and display them on the "
+"dashboard."
+
+#: ../../source/user_guide/template_workflows.rst:255
+msgid "通用"
+msgstr "Universal"
+
+#: ../../source/user_guide/template_workflows.rst:258
+msgid "发送HTTP消息"
+msgstr "Send HTTP message"
+
+#: ../../source/user_guide/template_workflows.rst:260
+msgid "用途：当检测到目标（示例：人员）时，触发自定义 Python 生成消息并通过 Webhook 推送到外部系统。"
+msgstr ""
+"Purpose: When a target (example: person) is detected, trigger a custom "
+"Python message to be generated and pushed to an external system via a "
+"webhook."
+
+#: ../../source/user_guide/template_workflows.rst:263
+msgid "条件继续：当检测数量 >= 1 时，进入后续步骤；"
+msgstr ""
+"Conditional continuation: when the number of detections >= 1, enter the "
+"subsequent steps;"
+
+#: ../../source/user_guide/template_workflows.rst:264
+msgid "自定义模块：生成文本消息；"
+msgstr "Custom module: generate text messages;"
+
+#: ../../source/user_guide/template_workflows.rst:277
+msgid "数据采集与标注"
+msgstr "Data collection and annotation"
+
+#: ../../source/user_guide/template_workflows.rst:279
+msgid "用途：检测目标并将统计结果通过 HTTP 协议发送到外部服务。 组成与流程："
+msgstr ""
+"Purpose: Detect targets and send statistical results to external services "
+"through HTTP protocol.Composition and process:"
+
+#: ../../source/user_guide/template_workflows.rst:281
+msgid "目标检测：检测目标类别（car）。"
+msgstr "Target detection: detect target category (car)."
+
+#: ../../source/user_guide/template_workflows.rst:282
+msgid "自定义模块：发送 HTTP 请求，载荷包含 \"number_of_cars_detected\" 统计结果；"
+msgstr ""
+"Custom module: Send HTTP request, the payload contains "
+"\"number_of_cars_detected\" statistical results;"
+
+#: ../../source/user_guide/template_workflows.rst:283
+msgid "可视化：绘制检测框用于结果展示；"
+msgstr "Visualization: draw detection boxes for result display;"
+
+#: ../../source/user_guide/template_workflows.rst:296
+msgid "多模型逻辑检测"
+msgstr "Multi-model logic detection"
+
+#: ../../source/user_guide/template_workflows.rst:298
+msgid "用途：并行/串行运行多模型，通过与/或逻辑组合实现复杂条件判定和结果融合（需替换具体模型 UID）。"
+msgstr ""
+"Purpose: Run multiple models in parallel/serial, and achieve complex "
+"condition determination and result fusion through AND/OR logical combination"
+" (the specific model UID needs to be replaced)."
+
+#: ../../source/user_guide/template_workflows.rst:300
+msgid "检测模型 A：初始目标检测；"
+msgstr "Detection model A: initial target detection;"
+
+#: ../../source/user_guide/template_workflows.rst:301
+msgid "条件筛选 + 动态裁剪：对指定目标生成裁剪区域；"
+msgstr ""
+"Conditional filtering + dynamic cropping: generate a cropping area for the "
+"specified target;"
+
+#: ../../source/user_guide/template_workflows.rst:302
+msgid "分类模型 B/C：对裁剪图进行分类；"
+msgstr "Classification model B/C: Classify cropped images;"
+
+#: ../../source/user_guide/template_workflows.rst:303
+msgid "类别替换与融合：将检测与分类结果融合，替换类别并组合为最终输出；"
+msgstr ""
+"Category replacement and fusion: fuse detection and classification results, "
+"replace categories and combine them into the final output;"
+
+#: ../../source/user_guide/template_workflows.rst:304
+msgid "可视化：叠加框与标签用于展示。"
+msgstr "Visualization: Overlay boxes and labels are used for presentation."

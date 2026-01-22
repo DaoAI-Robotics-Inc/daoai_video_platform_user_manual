@@ -1,0 +1,95 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/advanced/perspective_correction.rst:4
+msgid "透视校正"
+msgstr "perspective correction"
+
+#: ../../source/block_gallery/advanced/perspective_correction.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/advanced/perspective_correction.rst:9
+msgid "将检测变换从多边形定义的平面图察到指定宽度和高度的直角平面"
+msgstr ""
+"Transforms the detection from a plane defined by a polygon to a rectangular "
+"plane of specified width and height"
+
+#: ../../source/block_gallery/advanced/perspective_correction.rst:12
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/advanced/perspective_correction.rst:14
+msgid "输入：图像 + 多边形坐标"
+msgstr "Input: image + polygon coordinates"
+
+#: ../../source/block_gallery/advanced/perspective_correction.rst:15
+msgid "输出：校正后的图像"
+msgstr "Output: corrected image"
+
+#: ../../source/block_gallery/advanced/perspective_correction.rst:18
+#: ../../source/block_gallery/advanced/perspective_correction.rst:24
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/advanced/perspective_correction.rst:25
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/advanced/perspective_correction.rst:26
+msgid "默认值"
+msgstr "default value"
+
+#: ../../source/block_gallery/advanced/perspective_correction.rst:27
+msgid "output_size"
+msgstr "output_size"
+
+#: ../../source/block_gallery/advanced/perspective_correction.rst:28
+msgid "输出尺寸（宽x高）"
+msgstr "Output size (width x height)"
+
+#: ../../source/block_gallery/advanced/perspective_correction.rst:29
+msgid "800x600"
+msgstr "800x600"
+
+#: ../../source/block_gallery/advanced/perspective_correction.rst:32
+msgid "使用步骤"
+msgstr "Usage steps"
+
+#: ../../source/block_gallery/advanced/perspective_correction.rst:34
+msgid "在工作流编辑器中添加本模块。"
+msgstr "Add this module in the workflow editor."
+
+#: ../../source/block_gallery/advanced/perspective_correction.rst:35
+msgid "标记四个透视点。"
+msgstr "Mark four perspective points."
+
+#: ../../source/block_gallery/advanced/perspective_correction.rst:36
+msgid "设置输出尺寸，点击保存。"
+msgstr "Set the output size and click Save."
+
+#: ../../source/block_gallery/advanced/perspective_correction.rst:39
+msgid "注意事项"
+msgstr "Things to note"
+
+#: ../../source/block_gallery/advanced/perspective_correction.rst:41
+msgid "用于俯视图转换或文档矫正。"
+msgstr "Used for top view conversion or document correction."

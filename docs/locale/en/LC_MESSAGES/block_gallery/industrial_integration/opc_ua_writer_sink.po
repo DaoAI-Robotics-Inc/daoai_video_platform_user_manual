@@ -1,0 +1,135 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:4
+msgid "OPC UA Writer Sink"
+msgstr "OPC UA Writer Sink"
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:9
+msgid "将数据写入 OPC UA 服务端节点。"
+msgstr "Write data to the OPC UA server node."
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:12
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:14
+msgid "输入：待写入的数据"
+msgstr "Input: data to be written"
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:15
+msgid "输出：写入状态"
+msgstr "Output: write status"
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:18
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:24
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:25
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:26
+msgid "示例/ ``默认值``"
+msgstr "Example/``DefaultValue``"
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:27
+msgid "节点名称"
+msgstr "Node name"
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:28
+msgid "工作流中该节点的名称。"
+msgstr "The name of this node in the workflow."
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:29
+msgid "``opc_ua_writer_sink_1``"
+msgstr "``opc_ua_writer_sink_1``"
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:30
+msgid "备注"
+msgstr "Remark"
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:31
+msgid "可选备注信息，记录用途。"
+msgstr "Optional remark information to record the purpose."
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:32
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:44
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:47
+msgid "``留空``"
+msgstr "``leave blank``"
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:33
+msgid "服务器地址"
+msgstr "Server address"
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:34
+msgid "OPC UA Server 地址。"
+msgstr "OPC UA Server address."
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:35
+msgid "``opc.tcp://localhost:4840``"
+msgstr "``opc.tcp://localhost:4840``"
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:36
+msgid "节点ID"
+msgstr "Node ID"
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:37
+msgid "目标写入的 NodeId。"
+msgstr "The NodeId of the target write."
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:38
+msgid "``ns=2;s=MyNode``"
+msgstr "``ns=2;s=MyNode``"
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:39
+msgid "写入数据"
+msgstr "Write data"
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:40
+msgid "要写入的值来源。"
+msgstr "The source of the value to be written."
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:41
+msgid "选择上游数据"
+msgstr "Select upstream data"
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:42
+msgid "用户名"
+msgstr "username"
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:43
+msgid "可选认证用户名。"
+msgstr "Optional authentication username."
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:45
+msgid "密码"
+msgstr "password"
+
+#: ../../source/block_gallery/industrial_integration/opc_ua_writer_sink.rst:46
+msgid "可选认证密码。"
+msgstr "Optional authentication password."

@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/advanced/index.rst:2
+msgid "高级（17 项）"
+msgstr "Advanced (17 items)"
+
+#: ../../source/block_gallery/advanced/index.rst:4
+msgid "高级功能和工具模块。"
+msgstr "Advanced features and tools module."
+
+#: ../../source/block_gallery/advanced/index.rst:33
+msgid ":ref:`缓存获取`"
+msgstr ":ref:`cache acquisition`"
+
+#: ../../source/block_gallery/advanced/index.rst:35
+msgid "从缓存条目中获取之前存储的值"
+msgstr "Get previously stored value from cache entry"
+
+#: ../../source/block_gallery/advanced/index.rst:36
+msgid ":ref:`缓存设置`"
+msgstr ":ref:`cache settings`"
+
+#: ../../source/block_gallery/advanced/index.rst:38
+msgid "将值存储在缓存条目中以便后续检索"
+msgstr "Store values ​​in cache entries for subsequent retrieval"
+
+#: ../../source/block_gallery/advanced/index.rst:39
+msgid ":ref:`余弦相似度`"
+msgstr ":ref:`Cosine Similarity`"
+
+#: ../../source/block_gallery/advanced/index.rst:41
+msgid "计算两个嵌入向量之间的余弦相似度"
+msgstr "Compute cosine similarity between two embedding vectors"
+
+#: ../../source/block_gallery/advanced/index.rst:42
+msgid ":ref:`检测类别替换`"
+msgstr ":ref:`Detect Category Replacement`"
+
+#: ../../source/block_gallery/advanced/index.rst:44
+msgid "用单独分类模型预测的类别替换检测到的类别"
+msgstr ""
+"Replace detected classes with classes predicted by a separate classification"
+" model"
+
+#: ../../source/block_gallery/advanced/index.rst:45
+msgid ":ref:`检测拼接`"
+msgstr ":ref:`Detect Splicing`"
+
+#: ../../source/block_gallery/advanced/index.rst:47
+msgid "将对于多类输入图像的检测结果合并为某一检测结果"
+msgstr ""
+"Combine the detection results of multiple types of input images into a "
+"certain detection result"
+
+#: ../../source/block_gallery/advanced/index.rst:48
+msgid ":ref:`维度折叠`"
+msgstr ":ref:`Dimension folding`"
+
+#: ../../source/block_gallery/advanced/index.rst:50
+msgid "将嵌套数据聚合为每个别列或位置组"
+msgstr "Aggregate nested data into each separate column or position group"
+
+#: ../../source/block_gallery/advanced/index.rst:51
+msgid ":ref:`动态区域`"
+msgstr ":ref:`Dynamic Region`"
+
+#: ../../source/block_gallery/advanced/index.rst:53
+msgid "简化多边形，使其几何上方凸，并且仅包含所有需数据的顶点"
+msgstr ""
+"Simplify the polygon so that its geometry is convex and contains only all "
+"vertices that require data"
+
+#: ../../source/block_gallery/advanced/index.rst:54
+msgid ":ref:`环境密钥存储`"
+msgstr ":ref:`Environment Key Storage`"
+
+#: ../../source/block_gallery/advanced/index.rst:56
+msgid "从环境变量中获取密钥"
+msgstr "Get key from environment variable"
+
+#: ../../source/block_gallery/advanced/index.rst:57
+msgid ":ref:`表达式`"
+msgstr ":ref:`expression`"
+
+#: ../../source/block_gallery/advanced/index.rst:59
+msgid "根据定义的输入变量和配置的规则创建特定输出"
+msgstr ""
+"Create specific outputs based on defined input variables and configured "
+"rules"
+
+#: ../../source/block_gallery/advanced/index.rst:60
+msgid ":ref:`首先非空或默认值`"
+msgstr ":ref:`First not empty or default value`"
+
+#: ../../source/block_gallery/advanced/index.rst:62
+msgid "取第一个非空数据元素或默认值"
+msgstr "Get the first non-null data element or default value"
+
+#: ../../source/block_gallery/advanced/index.rst:63
+msgid ":ref:`图像切片`"
+msgstr ":ref:`image slice`"
+
+#: ../../source/block_gallery/advanced/index.rst:65
+msgid "将输入图像分割为一系列较小的图像以进行小物体检测"
+msgstr ""
+"Split the input image into a series of smaller images for small object "
+"detection"
+
+#: ../../source/block_gallery/advanced/index.rst:66
+msgid ":ref:`JSON解析器`"
+msgstr ":ref:`JSON parser`"
+
+#: ../../source/block_gallery/advanced/index.rst:68
+msgid "将原始字符串解析为 JSON"
+msgstr "Parse raw string into JSON"
+
+#: ../../source/block_gallery/advanced/index.rst:69
+msgid ":ref:`透视校正`"
+msgstr ":ref:`Perspective Correction`"
+
+#: ../../source/block_gallery/advanced/index.rst:71
+msgid "将检测变换从多边形定义的平面图察到指定宽度和高度的直角平面"
+msgstr ""
+"Transforms the detection from a plane defined by a polygon to a rectangular "
+"plane of specified width and height"
+
+#: ../../source/block_gallery/advanced/index.rst:72
+msgid ":ref:`属性定义`"
+msgstr ":ref:`property definition`"
+
+#: ../../source/block_gallery/advanced/index.rst:74
+msgid "从模型预测中定义变量，例如类别名称、置信度或检测数量"
+msgstr ""
+"Define variables from model predictions, such as class name, confidence, or "
+"number of detections"
+
+#: ../../source/block_gallery/advanced/index.rst:75
+msgid ":ref:`拼接OCR检测`"
+msgstr ":ref:`Splicing OCR detection`"
+
+#: ../../source/block_gallery/advanced/index.rst:77
+msgid "通过按空间对位置组织检测结果，将OCR检测结果组合成连串的文本字符串"
+msgstr ""
+"Combine OCR detection results into consecutive text strings by organizing "
+"detection results by spatial pair location"
+
+#: ../../source/block_gallery/advanced/index.rst:78
+msgid ":ref:`VLM分类器`"
+msgstr ":ref:`VLM classifier`"
+
+#: ../../source/block_gallery/advanced/index.rst:80
+msgid "将原始字符串解析为分类预测"
+msgstr "Parse raw string into classification prediction"
+
+#: ../../source/block_gallery/advanced/index.rst:81
+msgid ":ref:`检测器VLM`"
+msgstr ":ref:`Detector VLM`"
+
+#: ../../source/block_gallery/advanced/index.rst:83
+msgid "将原始字符串解析为对象检测预测结果"
+msgstr "Parse raw string into object detection predictions"

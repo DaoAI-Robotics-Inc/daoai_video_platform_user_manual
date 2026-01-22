@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:4
+msgid "事件保存"
+msgstr "event save"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:9
+msgid "储存警报事件和一段视频录像到数据库。"
+msgstr "Store alarm events and a video recording into the database."
+
+#: ../../source/block_gallery/data_storage/event_save.rst:17
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:19
+msgid "输入：原始图像，指定处理后的图像"
+msgstr "Input: original image, specified processed image"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:20
+msgid "输出：处理后的视频与自定义的报警事件"
+msgstr "Output: processed video and customized alarm events"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:30
+#: ../../source/block_gallery/data_storage/event_save.rst:36
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:37
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:38
+msgid "默认值/ ``示例``"
+msgstr "Default/ ``example``"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:39
+msgid "**节点名称**"
+msgstr "**Node name**"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:40
+msgid "步骤名称，用于标识该节点的唯一标识符"
+msgstr "Step name, a unique identifier used to identify this node"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:41
+msgid "``event_saver_1``"
+msgstr "``event_saver_1``"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:42
+msgid "**备注**"
+msgstr "**Remark**"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:43
+msgid "可选的备注信息，用于描述该步骤的用途"
+msgstr "Optional remarks describing the purpose of this step"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:44
+#: ../../source/block_gallery/data_storage/event_save.rst:65
+msgid "``留空``"
+msgstr "``leave blank``"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:45
+msgid "**事件类型**"
+msgstr "**Event Type**"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:46
+msgid "自定义事件的警报类型名称，用于标识不同类型的事件"
+msgstr ""
+"Alert type names for custom events, used to identify different types of "
+"events"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:47
+msgid "``违规操作``"
+msgstr "``Illegal operation``"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:48
+msgid "**输入图像**"
+msgstr "**Input image**"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:49
+msgid "指定输入图像的来源，通常选择处理后的图像以确保保存的图像包含所需信息"
+msgstr ""
+"Specify the source of the input image, typically selecting a processed image"
+" to ensure the saved image contains the required information"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:50
+msgid "``label_visualization_1 image``"
+msgstr "``label_visualization_1 image``"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:51
+msgid "**原始输入图像**"
+msgstr "**Original input image**"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:52
+msgid "指定原始输入图像的来源，不需要用户更改，保持原始的 ``input.image`` 即可"
+msgstr ""
+"Specify the source of the original input image, no user changes are "
+"required, just keep the original ``input.image``"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:53
+msgid "``input.image``"
+msgstr "``input.image``"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:54
+msgid "**是否保存视频**"
+msgstr "**Whether to save the video**"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:55
+msgid "选择是否保存与事件相关的视频片段"
+msgstr "Choose whether to save video clips related to the event"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:56
+msgid "``True``"
+msgstr "``True``"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:57
+msgid "**最大视频时长**"
+msgstr "**Maximum video duration**"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:58
+msgid "设置保存视频的最大时长，单位为秒"
+msgstr "Set the maximum duration of saved videos in seconds"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:59
+#: ../../source/block_gallery/data_storage/event_save.rst:68
+msgid "``30``"
+msgstr "``30``"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:60
+msgid "**冷却时长**"
+msgstr "**Cooling time**"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:61
+msgid "设置两次保存事件之间的最小间隔时间，单位为秒"
+msgstr "Set the minimum interval between two save events, in seconds"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:62
+msgid "``60``"
+msgstr "``60``"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:63
+msgid "**冷却键**"
+msgstr "**Cooling Button**"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:64
+msgid "用于区分不同事件的标识符，通常保持默认即可"
+msgstr ""
+"Identifier used to distinguish different events, usually keep the default"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:66
+msgid "**事件冷却时长**"
+msgstr "**Event cooldown time**"
+
+#: ../../source/block_gallery/data_storage/event_save.rst:67
+msgid "设置同一种类事件发生后再次保存该事件的最小间隔时间，单位为秒"
+msgstr ""
+"Set the minimum interval time between saving the event again after the same "
+"type of event occurs, in seconds"

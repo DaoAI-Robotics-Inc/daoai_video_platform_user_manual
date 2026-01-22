@@ -1,0 +1,169 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/models/general_classification.rst:4
+msgid "通用分类模型"
+msgstr "Universal classification model"
+
+#: ../../source/block_gallery/models/general_classification.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/models/general_classification.rst:9
+msgid "Zero-shot 图像分类，支持为每个标签提供多个提示/描述词，无需训练即可输出类别及置信度。"
+msgstr ""
+"Zero-shot image classification supports multiple hints/descriptors for each "
+"label, and can output categories and confidence without training."
+
+#: ../../source/block_gallery/models/general_classification.rst:12
+msgid "输入/输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/models/general_classification.rst:14
+msgid "输入（Input）: - 图像（来自上游节点或工作流输入）"
+msgstr "Input: - Image (from upstream node or workflow input)"
+
+#: ../../source/block_gallery/models/general_classification.rst:17
+msgid "输出（Output）: - 预测的类别标签及置信度 - Top-K 排序结果（按置信度降序）"
+msgstr ""
+"Output: - Predicted category labels and confidence - Top-K sorting results "
+"(in descending order of confidence)"
+
+#: ../../source/block_gallery/models/general_classification.rst:22
+msgid "配置参数详解"
+msgstr "Detailed explanation of configuration parameters"
+
+#: ../../source/block_gallery/models/general_classification.rst:28
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/models/general_classification.rst:29
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/models/general_classification.rst:30
+msgid "示例/ ``默认值``"
+msgstr "Example/``DefaultValue``"
+
+#: ../../source/block_gallery/models/general_classification.rst:31
+msgid "节点名称"
+msgstr "Node name"
+
+#: ../../source/block_gallery/models/general_classification.rst:32
+msgid "工作流中该节点的名称。"
+msgstr "The name of this node in the workflow."
+
+#: ../../source/block_gallery/models/general_classification.rst:33
+msgid "``general_classification_1``"
+msgstr "``general_classification_1``"
+
+#: ../../source/block_gallery/models/general_classification.rst:34
+msgid "备注"
+msgstr "Remark"
+
+#: ../../source/block_gallery/models/general_classification.rst:35
+msgid "可选备注信息，记录用途。"
+msgstr "Optional remark information to record the purpose."
+
+#: ../../source/block_gallery/models/general_classification.rst:36
+msgid "``留空``"
+msgstr "``leave blank``"
+
+#: ../../source/block_gallery/models/general_classification.rst:37
+msgid "图像"
+msgstr "image"
+
+#: ../../source/block_gallery/models/general_classification.rst:38
+msgid "指定输入图像来源。"
+msgstr "Specify the input image source."
+
+#: ../../source/block_gallery/models/general_classification.rst:39
+msgid "``input.image``"
+msgstr "``input.image``"
+
+#: ../../source/block_gallery/models/general_classification.rst:40
+msgid "分类标签"
+msgstr "Classification tags"
+
+#: ../../source/block_gallery/models/general_classification.rst:41
+msgid "使用 JSON 配置，每个标签可给出多个提示/描述词。描述越具体（外观、材质、用途等）分类越准确。"
+msgstr ""
+"Using JSON configuration, multiple hints/descriptors can be given per "
+"tag.The more specific the description (appearance, material, use, etc.), the"
+" more accurate the classification."
+
+#: ../../source/block_gallery/models/general_classification.rst:42
+msgid "见下方示例"
+msgstr "See example below"
+
+#: ../../source/block_gallery/models/general_classification.rst:43
+msgid "模型大小"
+msgstr "Model size"
+
+#: ../../source/block_gallery/models/general_classification.rst:44
+msgid "base=最快，medium=平衡，large=最准确。"
+msgstr "base=fastest, medium=balanced, large=most accurate."
+
+#: ../../source/block_gallery/models/general_classification.rst:45
+msgid "``base``"
+msgstr "``base``"
+
+#: ../../source/block_gallery/models/general_classification.rst:46
+msgid "推理精度"
+msgstr "Reasoning accuracy"
+
+#: ../../source/block_gallery/models/general_classification.rst:47
+msgid "FP32（32位浮点）更准确；FP16（16位浮点）更快但精度略低。"
+msgstr ""
+"FP32 (32-bit floating point) is more accurate; FP16 (16-bit floating point) "
+"is faster but slightly less accurate."
+
+#: ../../source/block_gallery/models/general_classification.rst:48
+msgid "``fp32``"
+msgstr "``fp32``"
+
+#: ../../source/block_gallery/models/general_classification.rst:49
+msgid "置信度阈值"
+msgstr "confidence threshold"
+
+#: ../../source/block_gallery/models/general_classification.rst:50
+msgid "过滤低于阈值的预测。"
+msgstr "Filter predictions below a threshold."
+
+#: ../../source/block_gallery/models/general_classification.rst:51
+msgid "``0.3``"
+msgstr "``0.3``"
+
+#: ../../source/block_gallery/models/general_classification.rst:52
+msgid "Top-K"
+msgstr "Top-K"
+
+#: ../../source/block_gallery/models/general_classification.rst:53
+msgid "返回置信度最高的前 K 个结果。"
+msgstr "Returns the top K results with the highest confidence."
+
+#: ../../source/block_gallery/models/general_classification.rst:54
+msgid "``5``"
+msgstr "``5``"
+
+#: ../../source/block_gallery/models/general_classification.rst:57
+msgid "分类标签示例"
+msgstr "Classification label example"

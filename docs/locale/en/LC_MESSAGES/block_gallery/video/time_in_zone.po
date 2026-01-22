@@ -1,0 +1,152 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/video/time_in_zone.rst:4
+msgid "区域内存在时间"
+msgstr "Existence time in the area"
+
+#: ../../source/block_gallery/video/time_in_zone.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/video/time_in_zone.rst:9
+msgid "计算检测对象在指定区域内的停留时长。"
+msgstr "Calculate how long the detection object stays in the specified area."
+
+#: ../../source/block_gallery/video/time_in_zone.rst:12
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/video/time_in_zone.rst:14
+msgid "输入：检测/跟踪结果 + 区域坐标"
+msgstr "Input: detection/tracking results + area coordinates"
+
+#: ../../source/block_gallery/video/time_in_zone.rst:15
+msgid "输出：区域内停留时长"
+msgstr "Output: length of stay in the area"
+
+#: ../../source/block_gallery/video/time_in_zone.rst:18
+#: ../../source/block_gallery/video/time_in_zone.rst:24
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/video/time_in_zone.rst:25
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/video/time_in_zone.rst:26
+msgid "示例/ ``默认值``"
+msgstr "Example/``DefaultValue``"
+
+#: ../../source/block_gallery/video/time_in_zone.rst:27
+msgid "节点名称"
+msgstr "Node name"
+
+#: ../../source/block_gallery/video/time_in_zone.rst:28
+msgid "工作流中该节点的名称。"
+msgstr "The name of this node in the workflow."
+
+#: ../../source/block_gallery/video/time_in_zone.rst:29
+msgid "``time_in_zone_1``"
+msgstr "``time_in_zone_1``"
+
+#: ../../source/block_gallery/video/time_in_zone.rst:30
+msgid "备注"
+msgstr "Remark"
+
+#: ../../source/block_gallery/video/time_in_zone.rst:31
+msgid "可选备注信息，记录用途。"
+msgstr "Optional remark information to record the purpose."
+
+#: ../../source/block_gallery/video/time_in_zone.rst:32
+msgid "``留空``"
+msgstr "``leave blank``"
+
+#: ../../source/block_gallery/video/time_in_zone.rst:33
+msgid "图像"
+msgstr "image"
+
+#: ../../source/block_gallery/video/time_in_zone.rst:34
+msgid "本步骤的输入图像。"
+msgstr "Input image for this step."
+
+#: ../../source/block_gallery/video/time_in_zone.rst:35
+msgid "``input.image``"
+msgstr "``input.image``"
+
+#: ../../source/block_gallery/video/time_in_zone.rst:36
+msgid "检测"
+msgstr "Detection"
+
+#: ../../source/block_gallery/video/time_in_zone.rst:37
+msgid "需要object tracker输出的检测结果。"
+msgstr "The detection results output by the object tracker are required."
+
+#: ../../source/block_gallery/video/time_in_zone.rst:38
+msgid "选择上游检测/跟踪输出"
+msgstr "Select upstream detection/trace output"
+
+#: ../../source/block_gallery/video/time_in_zone.rst:39
+msgid "区域"
+msgstr "area"
+
+#: ../../source/block_gallery/video/time_in_zone.rst:40
+msgid "目标区域的坐标，多边形点列表。"
+msgstr "The coordinates of the target area, a list of polygon points."
+
+#: ../../source/block_gallery/video/time_in_zone.rst:41
+msgid "点击绘制区域进入绘制页面"
+msgstr "Click the drawing area to enter the drawing page"
+
+#: ../../source/block_gallery/video/time_in_zone.rst:42
+msgid "判定点"
+msgstr "decision point"
+
+#: ../../source/block_gallery/video/time_in_zone.rst:43
+msgid "目标需在区域内的判断点，常用 ``CENTER``。"
+msgstr ""
+"The target needs to be at the judgment point within the area. ``CENTER`` is "
+"commonly used."
+
+#: ../../source/block_gallery/video/time_in_zone.rst:44
+msgid "``CENTER``"
+msgstr "``CENTER``"
+
+#: ../../source/block_gallery/video/time_in_zone.rst:45
+msgid "移除区域外的检测结果"
+msgstr "Remove detection results outside the zone"
+
+#: ../../source/block_gallery/video/time_in_zone.rst:46
+msgid "如果为真，在区域外发现的检测结果将被过滤。"
+msgstr "If true, detections found outside the zone will be filtered."
+
+#: ../../source/block_gallery/video/time_in_zone.rst:47
+#: ../../source/block_gallery/video/time_in_zone.rst:50
+msgid "``True``"
+msgstr "``True``"
+
+#: ../../source/block_gallery/video/time_in_zone.rst:48
+msgid "离开区域时重置计时"
+msgstr "Reset timer when leaving area"
+
+#: ../../source/block_gallery/video/time_in_zone.rst:49
+msgid "如果为真，在区域外发现的检测结果将重置时间。"
+msgstr "If true, detections found outside the zone will reset the time."

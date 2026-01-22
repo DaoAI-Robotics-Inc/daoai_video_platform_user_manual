@@ -1,0 +1,169 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/visualization/background_color.rst:4
+msgid "背景颜色"
+msgstr "background color"
+
+#: ../../source/block_gallery/visualization/background_color.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/visualization/background_color.rst:9
+msgid ""
+"背景颜色模块用于在图像中用指定颜色覆盖所有检测到的区域**以外**的区域，从而突出显示检测目标。该模块可以帮助用户聚焦关注检测到的对象，隐藏背景干扰信息。"
+msgstr ""
+"The background color module is used to highlight the detection target by "
+"covering all detected areas** except** with the specified color in the "
+"image.This module can help users focus on detected objects and hide "
+"background interference information."
+
+#: ../../source/block_gallery/visualization/background_color.rst:11
+msgid "效果展示："
+msgstr "Effect display:"
+
+#: ../../source/block_gallery/visualization/background_color.rst:12
+msgid "Background Color Visualization Example"
+msgstr "Background Color Visualization Example"
+
+#: ../../source/block_gallery/visualization/background_color.rst:18
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/visualization/background_color.rst:20
+msgid "**输入**：图像 + 预测结果（检测框/分割掩码等）"
+msgstr ""
+"**Input**: image + prediction result (detection box/segmentation mask, etc.)"
+
+#: ../../source/block_gallery/visualization/background_color.rst:21
+msgid "**输出**：处理后的可视化图像"
+msgstr "**Output**: Processed visualization image"
+
+#: ../../source/block_gallery/visualization/background_color.rst:24
+msgid "配置参数详解"
+msgstr "Detailed explanation of configuration parameters"
+
+#: ../../source/block_gallery/visualization/background_color.rst:30
+msgid "参数名称"
+msgstr "Parameter name"
+
+#: ../../source/block_gallery/visualization/background_color.rst:31
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/visualization/background_color.rst:32
+msgid "示例/默认值"
+msgstr "Example/Default"
+
+#: ../../source/block_gallery/visualization/background_color.rst:33
+msgid "**节点名称**"
+msgstr "**Node name**"
+
+#: ../../source/block_gallery/visualization/background_color.rst:34
+msgid "步骤名称，用于标识该节点的唯一标识符"
+msgstr "Step name, a unique identifier used to identify this node"
+
+#: ../../source/block_gallery/visualization/background_color.rst:35
+msgid "``background_color_visualization_1``"
+msgstr "``background_color_visualization_1``"
+
+#: ../../source/block_gallery/visualization/background_color.rst:36
+msgid "**备注**"
+msgstr "**Remark**"
+
+#: ../../source/block_gallery/visualization/background_color.rst:37
+msgid "可选的备注信息，用于描述该步骤的用途"
+msgstr "Optional remarks describing the purpose of this step"
+
+#: ../../source/block_gallery/visualization/background_color.rst:38
+msgid "留空"
+msgstr "Leave blank"
+
+#: ../../source/block_gallery/visualization/background_color.rst:39
+msgid "**输入图像**"
+msgstr "**Input image**"
+
+#: ../../source/block_gallery/visualization/background_color.rst:40
+msgid "指定输入图像的来源，可以是上游节点的输出或工作流的输入参数"
+msgstr ""
+"Specify the source of the input image, which can be the output of an "
+"upstream node or an input parameter of a workflow"
+
+#: ../../source/block_gallery/visualization/background_color.rst:41
+msgid "``input.image``"
+msgstr "``input.image``"
+
+#: ../../source/block_gallery/visualization/background_color.rst:42
+msgid "**复制图像**"
+msgstr "**COPY IMAGE**"
+
+#: ../../source/block_gallery/visualization/background_color.rst:43
+msgid "启用此选项以创建输入图像的副本并可视化，保留原始图像。在叠加多个可视化节点时有用。"
+msgstr ""
+"Enable this option to create a copy of the input image and visualize it, "
+"preserving the original image.Useful when overlaying multiple visualization "
+"nodes."
+
+#: ../../source/block_gallery/visualization/background_color.rst:44
+msgid "``True``"
+msgstr "``True``"
+
+#: ../../source/block_gallery/visualization/background_color.rst:45
+msgid "**预测显示**"
+msgstr "**Forecast Display**"
+
+#: ../../source/block_gallery/visualization/background_color.rst:46
+msgid "提供预测显示结果，指定上游预测节点的输出"
+msgstr ""
+"Provide prediction display results and specify the output of the upstream "
+"prediction node"
+
+#: ../../source/block_gallery/visualization/background_color.rst:47
+msgid "``daoai_world_model_1.predictions``"
+msgstr "``daoai_world_model_1.predictions``"
+
+#: ../../source/block_gallery/visualization/background_color.rst:48
+msgid "**背景颜色**"
+msgstr "**Background Color**"
+
+#: ../../source/block_gallery/visualization/background_color.rst:49
+msgid "设置背景覆盖的颜色，可选值包括常见颜色名称或RGB值"
+msgstr ""
+"Set the color of the background overlay. Optional values ​​include common "
+"color names or RGB values."
+
+#: ../../source/block_gallery/visualization/background_color.rst:50
+msgid "``BLACK``"
+msgstr "``BLACK``"
+
+#: ../../source/block_gallery/visualization/background_color.rst:51
+msgid "**透明度**"
+msgstr "**transparency**"
+
+#: ../../source/block_gallery/visualization/background_color.rst:52
+msgid "设置背景覆盖的透明度（0~1之间），0为完全透明，1为完全不透明"
+msgstr ""
+"Set the transparency of the background coverage (between 0 and 1), 0 is "
+"completely transparent, 1 is completely opaque"
+
+#: ../../source/block_gallery/visualization/background_color.rst:53
+msgid "``0.5``"
+msgstr "``0.5``"

@@ -1,0 +1,466 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:4
+msgid "分类显示"
+msgstr "Classification display"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:9
+msgid "分类显示节点用于在图像上可视化 **分类模型** 的预测结果，支持单标签和多标签分类的展示。"
+msgstr ""
+"The classification display node is used to visualize the prediction results "
+"of the **classification model** on the image, supporting the display of "
+"single-label and multi-label classification."
+
+#: ../../source/block_gallery/visualization/classification_display.rst:11
+msgid "该节点提供丰富的文本样式配置选项，包括字体大小、颜色、对齐方式、背景色等，可以清晰地展示分类结果及其置信度信息。"
+msgstr ""
+"This node provides rich text style configuration options, including font "
+"size, color, alignment, background color, etc., which can clearly display "
+"the classification results and their confidence information."
+
+#: ../../source/block_gallery/visualization/classification_display.rst:15
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:17
+msgid "**输入**："
+msgstr "**enter**:"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:19
+msgid "图像（来自上游节点或工作流输入）"
+msgstr "Image (from upstream node or workflow input)"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:20
+msgid "分类结果（包含类别标签、置信度等信息）"
+msgstr ""
+"Classification results (including category labels, confidence and other "
+"information)"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:22
+msgid "**输出**："
+msgstr "**Output**:"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:24
+msgid "绘制了分类标签的可视化图像"
+msgstr "Visualization of classification labels drawn"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:27
+msgid "配置参数详解"
+msgstr "Detailed explanation of configuration parameters"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:33
+msgid "参数名称"
+msgstr "Parameter name"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:34
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:35
+msgid "示例/默认值"
+msgstr "Example/Default"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:36
+msgid "**节点名称**"
+msgstr "**Node name**"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:37
+msgid "步骤名称，用于标识该节点的唯一标识符"
+msgstr "Step name, a unique identifier used to identify this node"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:38
+msgid "``classification_label_visualization_1``"
+msgstr "``classification_label_visualization_1``"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:39
+msgid "**备注**"
+msgstr "**Remark**"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:40
+msgid "可选的备注信息，用于描述该步骤的用途"
+msgstr "Optional remarks describing the purpose of this step"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:41
+msgid "留空"
+msgstr "Leave blank"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:42
+msgid "**输入图像**"
+msgstr "**Input image**"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:43
+msgid "指定输入图像的来源，可以是上游节点的输出或工作流的输入参数"
+msgstr ""
+"Specify the source of the input image, which can be the output of an "
+"upstream node or an input parameter of a workflow"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:44
+msgid "``input.image``"
+msgstr "``input.image``"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:45
+#: ../../source/block_gallery/visualization/classification_display.rst:88
+msgid "**复制图像**"
+msgstr "**COPY IMAGE**"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:46
+msgid "是否创建输入图像的副本进行可视化，启用后不会修改原始图像"
+msgstr ""
+"Whether to create a copy of the input image for visualization. When enabled,"
+" the original image will not be modified."
+
+#: ../../source/block_gallery/visualization/classification_display.rst:47
+msgid "``True(推荐)``"
+msgstr "``True(recommended)``"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:48
+#: ../../source/block_gallery/visualization/classification_display.rst:93
+msgid "**预测标注**"
+msgstr "**Predictive Annotation**"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:49
+msgid "分类预测"
+msgstr "Classification prediction"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:50
+msgid "``下拉菜单选择``"
+msgstr "``Drop down menu selection``"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:51
+#: ../../source/block_gallery/visualization/classification_display.rst:97
+msgid "**调色板**"
+msgstr "**Palette**"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:52
+msgid "颜色调色板方案，用于为不同类别分配颜色"
+msgstr "Color palette scheme for assigning colors to different categories"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:53
+msgid "``DEFAULT``"
+msgstr "``DEFAULT``"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:54
+msgid "**调色板大小**"
+msgstr "**Palette size**"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:55
+msgid "调色板中的颜色数量，适用于使用自定义或Matplotlib调色板时"
+msgstr ""
+"Number of colors in the palette, applicable when using a custom or "
+"Matplotlib palette"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:56
+#: ../../source/block_gallery/visualization/classification_display.rst:80
+msgid "``10``"
+msgstr "``10``"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:57
+#: ../../source/block_gallery/visualization/classification_display.rst:105
+msgid "**自定义颜色**"
+msgstr "**Custom Color**"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:58
+msgid "自定义颜色列表，使用HEX格式定义文本颜色"
+msgstr "Custom color list, define text color using HEX format"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:59
+msgid "``[\"#FF0000\", \"#00FF00\", \"#0000FF\"]``"
+msgstr "``[\"#FF0000\", \"#00FF00\", \"#0000FF\"]``"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:60
+#: ../../source/block_gallery/visualization/classification_display.rst:115
+msgid "**颜色坐标轴**"
+msgstr "**Color Axis**"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:61
+msgid "颜色分配的依据，通常基于类别（CLASS）来着色"
+msgstr ""
+"The basis for color assignment, usually coloring based on category (CLASS)"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:62
+msgid "``CLASS``"
+msgstr "``CLASS``"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:63
+#: ../../source/block_gallery/visualization/classification_display.rst:123
+msgid "**文本标签**"
+msgstr "**text label**"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:64
+msgid "文本标签的显示内容"
+msgstr "Display content of text label"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:65
+msgid "``Class``"
+msgstr "``Class``"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:66
+msgid "**文本位置**"
+msgstr "**text position**"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:67
+msgid "文本在图像上的对齐位置"
+msgstr "Alignment of text on image"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:68
+msgid "``TOP_LEFT``"
+msgstr "``TOP_LEFT``"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:69
+#: ../../source/block_gallery/visualization/classification_display.rst:131
+msgid "**文本颜色**"
+msgstr "**Text Color**"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:70
+msgid "文本的颜色"
+msgstr "text color"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:71
+msgid "``WHITE``"
+msgstr "``WHITE``"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:72
+#: ../../source/block_gallery/visualization/classification_display.rst:142
+msgid "**文本大小**"
+msgstr "**text size**"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:73
+msgid "文本字体的大小比例"
+msgstr "Text font size ratio"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:74
+#: ../../source/block_gallery/visualization/classification_display.rst:77
+msgid "``1``"
+msgstr "``1``"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:75
+#: ../../source/block_gallery/visualization/classification_display.rst:150
+msgid "**文本粗细**"
+msgstr "**Text Weight**"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:76
+msgid "文本字体的粗细程度"
+msgstr "Text font thickness"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:78
+#: ../../source/block_gallery/visualization/classification_display.rst:158
+msgid "**文本内边距**"
+msgstr "**text padding**"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:79
+msgid "文本周围填充的像素数"
+msgstr "Number of pixels to pad around text"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:81
+#: ../../source/block_gallery/visualization/classification_display.rst:162
+msgid "**边框圆角**"
+msgstr "**Border rounded corners**"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:82
+msgid "标签的半径"
+msgstr "the radius of the label"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:83
+msgid "``0``"
+msgstr "``0``"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:86
+msgid "参数详细说明"
+msgstr "Detailed description of parameters"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:90
+msgid "**True**：创建图像副本，原始图像保持不变，可用于后续其他可视化操作"
+msgstr ""
+"**True**: Create a copy of the image, the original image remains unchanged "
+"and can be used for other subsequent visualization operations"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:91
+msgid "**False**：直接在原图上绘制，节省内存但会修改原图"
+msgstr ""
+"**False**: Draw directly on the original image, saving memory but modifying "
+"the original image."
+
+#: ../../source/block_gallery/visualization/classification_display.rst:95
+msgid "选择要可视化的 **分类模型** 的预测输出。从下拉菜单中选择上游分类模型节点的输出结果，支持单标签和多标签分类。"
+msgstr ""
+"Select the predicted output of the **classification model** to be "
+"visualized.Select the output of the upstream classification model node from "
+"the drop-down menu, supporting single-label and multi-label classification."
+
+#: ../../source/block_gallery/visualization/classification_display.rst:99
+msgid "支持多种颜色调色板方案："
+msgstr "Supports multiple color palette schemes:"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:101
+msgid "``DEFAULT``：系统默认配色方案"
+msgstr "``DEFAULT``: system default color scheme"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:102
+msgid "``MATPLOTLIB``：使用Matplotlib的颜色方案"
+msgstr "``MATPLOTLIB``: Use Matplotlib's color scheme"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:103
+msgid "``CUSTOM``：使用自定义颜色列表（需配置自定义颜色参数）"
+msgstr ""
+"``CUSTOM``: Use a custom color list (custom color parameters need to be "
+"configured)"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:107
+msgid "当调色板选择 ``CUSTOM`` 时，使用HEX格式定义颜色列表："
+msgstr ""
+"When ``CUSTOM`` is selected for the palette, use HEX format to define the "
+"color list:"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:113
+msgid "分别对应红色、绿色、蓝色、黄色、紫色，颜色会按顺序分配给不同的类别。"
+msgstr ""
+"Corresponding to red, green, blue, yellow, and purple, the colors will be "
+"assigned to different categories in order."
+
+#: ../../source/block_gallery/visualization/classification_display.rst:117
+msgid "决定如何为分类结果分配颜色："
+msgstr "Decide how to assign colors to classification results:"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:119
+msgid "``CLASS``：根据分类类别着色，同一类别使用相同颜色"
+msgstr ""
+"``CLASS``: Color according to classification category, use the same color "
+"for the same category"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:120
+msgid "``INDEX``：为每个预测结果分配不同颜色"
+msgstr "``INDEX``: Assign a different color to each prediction result"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:121
+msgid "``TRACK``：该节点不能使用此选项"
+msgstr "``TRACK``: This option cannot be used for this node"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:125
+msgid "设置文本标签的显示内容类型："
+msgstr "Set the display content type of text labels:"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:127
+msgid "``Class``：仅显示类别名称"
+msgstr "``Class``: Show only the class name"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:128
+msgid "``Confidence``：仅显示置信度"
+msgstr "``Confidence``: only shows confidence"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:129
+msgid "``Class + Confidence``：显示类别名称和置信度"
+msgstr "``Class + Confidence``: Display class name and confidence"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:133
+msgid "设置文本的颜色，常用颜色选项："
+msgstr "Set the color of text, common color options:"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:135
+msgid "``WHITE``：白色（默认）"
+msgstr "``WHITE``: white (default)"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:136
+msgid "``BLACK``：黑色"
+msgstr "``BLACK``: black"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:137
+msgid "``RED``：红色"
+msgstr "``RED``: red"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:138
+msgid "``GREEN``：绿色"
+msgstr "``GREEN``: green"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:139
+msgid "``BLUE``：蓝色"
+msgstr "``BLUE``: blue"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:140
+msgid "或使用自定义HEX颜色值"
+msgstr "Or use custom HEX color value"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:144
+msgid "控制字体大小的比例因子。默认值为 ``1``，值越大字体越大。例如："
+msgstr ""
+"Scaling factor that controls font size.The default value is ``1``, the "
+"larger the value, the larger the font.For example:"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:146
+msgid "``0.5``：较小字体"
+msgstr "``0.5``: smaller font"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:147
+msgid "``1``：标准字体（默认）"
+msgstr "``1``: standard font (default)"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:148
+msgid "``2``：较大字体"
+msgstr "``2``: Larger font"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:152
+msgid "控制字体线条的粗细程度。默认值为 ``1``，值越大字体越粗。例如："
+msgstr ""
+"Controls the thickness of font lines.The default value is ``1``, the larger "
+"the value, the bolder the font.For example:"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:154
+msgid "``1``：正常粗细（默认）"
+msgstr "``1``: normal thickness (default)"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:155
+msgid "``2``：粗体"
+msgstr "``2``: bold"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:156
+msgid "``3``：更粗"
+msgstr "``3``: thicker"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:160
+msgid "设置文本周围的填充像素数，用于在文本和边框之间创建空间。默认值为 ``10`` 像素。较大的值会使标签背景更宽敞，提高可读性。"
+msgstr ""
+"Sets the number of padding pixels around the text, used to create space "
+"between the text and the border.The default value is ``10`` pixels.Larger "
+"values ​​make the label background wider, improving readability."
+
+#: ../../source/block_gallery/visualization/classification_display.rst:164
+msgid "设置标签边框的圆角半径："
+msgstr "Set the corner radius of the label border:"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:166
+msgid "``0``：直角边框（默认）"
+msgstr "``0``: right-angled border (default)"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:167
+msgid "``5``：轻微圆角"
+msgstr "``5``: Slightly rounded corners"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:168
+msgid "``10`` 及以上：明显圆角效果"
+msgstr "``10`` and above: Obvious rounded corners effect"
+
+#: ../../source/block_gallery/visualization/classification_display.rst:170
+msgid "圆角值越大，边框越圆润。"
+msgstr "The larger the fillet value, the rounder the border."

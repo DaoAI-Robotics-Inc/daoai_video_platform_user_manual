@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/classical_cv/template_matching.rst:4
+msgid "模板匹配"
+msgstr "template matching"
+
+#: ../../source/block_gallery/classical_cv/template_matching.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/classical_cv/template_matching.rst:9
+msgid "显示设置"
+msgstr "display settings"
+
+#: ../../source/block_gallery/classical_cv/template_matching.rst:12
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/classical_cv/template_matching.rst:14
+msgid "输入：图像 + 模板图像"
+msgstr "Input: image + template image"
+
+#: ../../source/block_gallery/classical_cv/template_matching.rst:15
+msgid "输出：匹配位置和置信度"
+msgstr "Output: match position and confidence"
+
+#: ../../source/block_gallery/classical_cv/template_matching.rst:18
+#: ../../source/block_gallery/classical_cv/template_matching.rst:24
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/classical_cv/template_matching.rst:25
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/classical_cv/template_matching.rst:26
+msgid "默认值"
+msgstr "default value"
+
+#: ../../source/block_gallery/classical_cv/template_matching.rst:27
+msgid "method"
+msgstr "method"
+
+#: ../../source/block_gallery/classical_cv/template_matching.rst:28
+msgid "匹配方法（TM_CCOEFF/TM_CCORR）"
+msgstr "Matching method (TM_CCOEFF/TM_CCORR)"
+
+#: ../../source/block_gallery/classical_cv/template_matching.rst:29
+msgid "TM_CCOEFF"
+msgstr "TM_CCOEFF"
+
+#: ../../source/block_gallery/classical_cv/template_matching.rst:30
+msgid "threshold"
+msgstr "threshold"
+
+#: ../../source/block_gallery/classical_cv/template_matching.rst:31
+msgid "匹配阈值"
+msgstr "match threshold"
+
+#: ../../source/block_gallery/classical_cv/template_matching.rst:32
+msgid "0.8"
+msgstr "0.8"
+
+#: ../../source/block_gallery/classical_cv/template_matching.rst:35
+msgid "使用步骤"
+msgstr "Usage steps"
+
+#: ../../source/block_gallery/classical_cv/template_matching.rst:37
+msgid "在工作流编辑器中添加本模块。"
+msgstr "Add this module in the workflow editor."
+
+#: ../../source/block_gallery/classical_cv/template_matching.rst:38
+msgid "上传模板图像并设置阈值。"
+msgstr "Upload the template image and set the threshold."
+
+#: ../../source/block_gallery/classical_cv/template_matching.rst:39
+msgid "点击保存。"
+msgstr "Click Save."
+
+#: ../../source/block_gallery/classical_cv/template_matching.rst:42
+msgid "注意事项"
+msgstr "Things to note"
+
+#: ../../source/block_gallery/classical_cv/template_matching.rst:44
+msgid "用于查找特定模式或对象。"
+msgstr "Used to find specific patterns or objects."

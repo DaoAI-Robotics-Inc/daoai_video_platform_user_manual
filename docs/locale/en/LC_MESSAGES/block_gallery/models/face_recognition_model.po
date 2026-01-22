@@ -1,0 +1,140 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:4
+msgid "人脸识别模型"
+msgstr "face recognition model"
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:9
+msgid "在图像中检测和识别人脸，并可基于已知人脸库进行身份匹配，适合门禁核验、考勤、访客登记等场景。"
+msgstr ""
+"Detect and recognize faces in images, and perform identity matching based on"
+" known face databases, suitable for access control verification, attendance,"
+" visitor registration and other scenarios."
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:12
+msgid "输入/输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:14
+msgid "输入（Input）: - 图像 / 视频帧（来自上游节点或工作流输入）"
+msgstr "Input: - Image/video frame (from upstream node or workflow input)"
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:17
+msgid "输出（Output）: - 人脸框位置及置信度 - 人脸特征向量或匹配到的身份信息（如可用） - 推理是否成功、耗时"
+msgstr ""
+"Output: - Face frame position and confidence - Face feature vector or "
+"matched identity information (if available) - Whether inference is "
+"successful and time-consuming"
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:23
+msgid "配置参数详解"
+msgstr "Detailed explanation of configuration parameters"
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:29
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:30
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:31
+msgid "示例/ ``默认值``"
+msgstr "Example/``DefaultValue``"
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:32
+msgid "节点名称"
+msgstr "Node name"
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:33
+msgid "工作流中该节点的名称。"
+msgstr "The name of this node in the workflow."
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:34
+msgid "``face_recognition_1``"
+msgstr "``face_recognition_1``"
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:35
+msgid "备注"
+msgstr "Remark"
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:36
+msgid "可选备注信息，记录用途。"
+msgstr "Optional remark information to record the purpose."
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:37
+msgid "``留空``"
+msgstr "``leave blank``"
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:38
+msgid "图像"
+msgstr "image"
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:39
+msgid "指定输入图像来源。"
+msgstr "Specify the input image source."
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:40
+msgid "``input.image``"
+msgstr "``input.image``"
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:41
+msgid "置信度阈值"
+msgstr "confidence threshold"
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:42
+msgid "人脸检测的最小置信度，低于阈值的结果会被过滤。"
+msgstr ""
+"The minimum confidence level for face detection. Results below the threshold"
+" will be filtered."
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:43
+msgid "``0.5``"
+msgstr "``0.5``"
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:44
+msgid "人脸库"
+msgstr "Face database"
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:45
+msgid "选择或配置用于比对的已知人脸库。"
+msgstr "Select or configure a database of known faces for comparison."
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:46
+msgid "``default_face_db``"
+msgstr "``default_face_db``"
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:47
+msgid "特征模式"
+msgstr "characteristic pattern"
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:48
+msgid "输出特征向量或直接输出匹配身份。"
+msgstr "Output feature vectors or directly output matching identities."
+
+#: ../../source/block_gallery/models/face_recognition_model.rst:49
+msgid "``embedding`` / ``match``"
+msgstr "``embedding`` / ``match``"

@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/transformation/stitch_images.rst:4
+msgid "拼图图像"
+msgstr "puzzle image"
+
+#: ../../source/block_gallery/transformation/stitch_images.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/transformation/stitch_images.rst:9
+msgid "通过共同路径拼接两个图像"
+msgstr "Splice two images through a common path"
+
+#: ../../source/block_gallery/transformation/stitch_images.rst:12
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/transformation/stitch_images.rst:14
+msgid "输入：两张图像"
+msgstr "Input: two images"
+
+#: ../../source/block_gallery/transformation/stitch_images.rst:15
+msgid "输出：拼接后的图像"
+msgstr "Output: stitched image"
+
+#: ../../source/block_gallery/transformation/stitch_images.rst:18
+#: ../../source/block_gallery/transformation/stitch_images.rst:24
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/transformation/stitch_images.rst:25
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/transformation/stitch_images.rst:26
+msgid "默认值"
+msgstr "default value"
+
+#: ../../source/block_gallery/transformation/stitch_images.rst:27
+msgid "direction"
+msgstr "direction"
+
+#: ../../source/block_gallery/transformation/stitch_images.rst:28
+msgid "拼接方向（horizontal/vertical）"
+msgstr "Splicing direction (horizontal/vertical)"
+
+#: ../../source/block_gallery/transformation/stitch_images.rst:29
+msgid "horizontal"
+msgstr "horizontal"
+
+#: ../../source/block_gallery/transformation/stitch_images.rst:32
+msgid "使用步骤"
+msgstr "Usage steps"
+
+#: ../../source/block_gallery/transformation/stitch_images.rst:34
+msgid "在工作流编辑器中添加本模块。"
+msgstr "Add this module in the workflow editor."
+
+#: ../../source/block_gallery/transformation/stitch_images.rst:35
+msgid "选择拼接方向。"
+msgstr "Select the stitching direction."
+
+#: ../../source/block_gallery/transformation/stitch_images.rst:36
+msgid "点击保存。"
+msgstr "Click Save."
+
+#: ../../source/block_gallery/transformation/stitch_images.rst:39
+msgid "注意事项"
+msgstr "Things to note"
+
+#: ../../source/block_gallery/transformation/stitch_images.rst:41
+msgid "用于全景拼接或多视角合成。"
+msgstr "Used for panoramic stitching or multi-view synthesis."

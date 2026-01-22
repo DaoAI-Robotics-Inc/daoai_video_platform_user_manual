@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/logic_processor/index.rst:2
+msgid "逻辑处理（5 项）"
+msgstr "Logical processing (5 items)"
+
+#: ../../source/block_gallery/logic_processor/index.rst:4
+msgid "对工作流进行条件判断和逻辑控制。"
+msgstr "Perform conditional judgment and logical control on workflow."
+
+#: ../../source/block_gallery/logic_processor/index.rst:21
+msgid ":ref:`继续执行`"
+msgstr ":ref:`Continue execution`"
+
+#: ../../source/block_gallery/logic_processor/index.rst:23
+msgid "有条件地阻止分支的执行"
+msgstr "Conditionally prevent branch execution"
+
+#: ../../source/block_gallery/logic_processor/index.rst:24
+msgid ":ref:`Delta滤波器`"
+msgstr ":ref:`Delta filter`"
+
+#: ../../source/block_gallery/logic_processor/index.rst:26
+msgid "显示设置"
+msgstr "display settings"
+
+#: ../../source/block_gallery/logic_processor/index.rst:27
+msgid ":ref:`检测共识`"
+msgstr ":ref:`Detect Consensus`"
+
+#: ../../source/block_gallery/logic_processor/index.rst:29
+msgid "结合多个检测模型的预测结果以判断对象是否存在"
+msgstr ""
+"Combine the prediction results of multiple detection models to determine "
+"whether an object exists"
+
+#: ../../source/block_gallery/logic_processor/index.rst:30
+msgid ":ref:`检测过滤`"
+msgstr ":ref:`Detection Filter`"
+
+#: ../../source/block_gallery/logic_processor/index.rst:32
+msgid "有条件地过滤模型预测结果"
+msgstr "Conditionally filter model predictions"
+
+#: ../../source/block_gallery/logic_processor/index.rst:33
+msgid ":ref:`限速器`"
+msgstr ":ref:`Speed ​​limiter`"
+
+#: ../../source/block_gallery/logic_processor/index.rst:35
+msgid "限制工作流分支的运行速率"
+msgstr "Limit the run rate of workflow branches"

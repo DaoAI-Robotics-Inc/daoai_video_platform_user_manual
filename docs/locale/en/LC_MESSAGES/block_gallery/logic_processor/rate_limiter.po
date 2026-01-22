@@ -1,0 +1,136 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:4
+msgid "限速器"
+msgstr "speed limiter"
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:9
+msgid "限制工作流分支的运行速率（冷却时长），在指定时间间隔内只允许一次执行。"
+msgstr ""
+"Limit the running rate (cooling time) of workflow branches, allowing only "
+"one execution within a specified time interval."
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:12
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:14
+msgid "输入：任意数据流"
+msgstr "Input: any data stream"
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:15
+msgid "输出：限速后的数据流"
+msgstr "Output: Data stream after speed limit"
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:18
+msgid "配置参数"
+msgstr "Configuration parameters"
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:24
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:25
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:26
+msgid "示例/ ``默认值``"
+msgstr "Example/``DefaultValue``"
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:27
+msgid "节点名称"
+msgstr "Node name"
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:28
+msgid "工作流中该节点的名称。"
+msgstr "The name of this node in the workflow."
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:29
+msgid "``rate_limiter_1``"
+msgstr "``rate_limiter_1``"
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:30
+msgid "备注"
+msgstr "Remark"
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:31
+msgid "可选备注信息，记录用途。"
+msgstr "Optional remark information to record the purpose."
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:32
+msgid "``留空``"
+msgstr "``leave blank``"
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:33
+msgid "冷却时长"
+msgstr "Cooldown time"
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:34
+msgid "允许执行之间的最短间隔时间（秒），范围 0~∞。"
+msgstr "The minimum allowed interval between executions (seconds), range 0~∞."
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:35
+msgid "``1.0``"
+msgstr "``1.0``"
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:36
+msgid "依赖字段"
+msgstr "Dependent fields"
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:37
+msgid "此区块之前的步骤/分支选择。"
+msgstr "Step/branch selection before this block."
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:38
+msgid "``下拉选择上游节点``"
+msgstr "``Pull down to select the upstream node``"
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:39
+msgid "下一步"
+msgstr "Next step"
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:40
+msgid "在速率限制允许的情况下执行的步骤。"
+msgstr "Steps to perform if rate limiting allows."
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:41
+msgid "``下拉选择下游节点``"
+msgstr "``Pull down to select the downstream node``"
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:42
+msgid "视频参考图像"
+msgstr "Video reference image"
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:43
+msgid "参考视频帧用于时间戳生成（仅节流时运行速度或帧率受限时可选）。"
+msgstr ""
+"Reference video frame for timestamp generation (optional only if running "
+"speed or frame rate limited when throttling)."
+
+#: ../../source/block_gallery/logic_processor/rate_limiter.rst:44
+msgid "``inputs.image`` 或留空"
+msgstr "``inputs.image`` or leave blank"

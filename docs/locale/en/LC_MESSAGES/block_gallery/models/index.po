@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/models/index.rst:2
+msgid "模型（9 项）"
+msgstr "Models (9 items)"
+
+#: ../../source/block_gallery/models/index.rst:4
+msgid "使用各类AI模型对图像和视频进行分析和预测。"
+msgstr "Use various AI models to analyze and predict images and videos."
+
+#: ../../source/block_gallery/models/index.rst:25
+msgid ":ref:`自动分割模型` 无需训练即可进行实例分割。"
+msgstr ""
+":ref:`Automatic segmentation model` performs instance segmentation without "
+"training."
+
+#: ../../source/block_gallery/models/index.rst:27
+msgid ":ref:`DaoAI World模型` 使用 DaoAI World 训练的模型对图像进行推理。"
+msgstr ""
+":ref:`DaoAI World model` uses a model trained by DaoAI World to perform "
+"inference on images."
+
+#: ../../source/block_gallery/models/index.rst:29
+msgid ":ref:`人脸识别模型` 在图像中检测和识别人脸，通过搜索已知人脸库识别身份。"
+msgstr ""
+":ref:`Face recognition model` detects and recognizes faces in images and "
+"identifies identities by searching a library of known faces."
+
+#: ../../source/block_gallery/models/index.rst:32
+msgid ":ref:`通用分析模型` 无需训练即可使用属性对检测到的物体进行分类。"
+msgstr ""
+":ref:`Universal Analysis Model` uses attributes to classify detected objects"
+" without training."
+
+#: ../../source/block_gallery/models/index.rst:34
+msgid ":ref:`通用分类模型` 无需训练即可运行通用图像分类模型。"
+msgstr ""
+":ref:`Universal Classification Model` Runs a general image classification "
+"model without training."
+
+#: ../../source/block_gallery/models/index.rst:36
+msgid ":ref:`通用检测模型(快)` 无需训练即可运行物体检测模型。"
+msgstr ""
+":ref:`Universal Detection Model (Fast)` Runs object detection models without"
+" training."
+
+#: ../../source/block_gallery/models/index.rst:39
+msgid ":ref:`通用实例分割模型` 使用通用模型进行实例分割。"
+msgstr ""
+":ref:`Universal Instance Segmentation Model` Use a universal model for "
+"instance segmentation."
+
+#: ../../source/block_gallery/models/index.rst:41
+msgid ":ref:`通用物体检测模型` 使用通用模型进行物体检测。"
+msgstr ""
+":ref:`Universal Object Detection Model` Use a universal model for object "
+"detection."
+
+#: ../../source/block_gallery/models/index.rst:43
+msgid ":ref:`人体姿态评估` 进行人体姿态估计。"
+msgstr ":ref:`Human pose assessment` performs human pose estimation."

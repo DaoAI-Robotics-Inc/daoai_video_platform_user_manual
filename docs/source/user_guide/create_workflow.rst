@@ -29,9 +29,17 @@
 4. 输入工作流名称，例如 ``新工作流``。
 5. 点击保存。
 
-    .. image:: images/workflow_overview.png
-        :alt: DaoAI 天眼工作流概览
-        :width: 80%
+    .. only:: zh
+
+        .. image:: images/workflow_overview.png
+            :alt: DaoAI 天眼工作流概览
+            :width: 80%
+
+    .. only:: en
+
+        .. image:: images/workflow_overview.png
+            :alt: DaoAI Video Analysis Platform workflow overview
+            :width: 80%
 
 
 步骤 2：添加模型推理模块
@@ -128,17 +136,33 @@
 下面示例展示了一个最常见的工作流结构，
 实现“目标检测 → 结果可视化 → 输出保存”的完整流程：
 
-.. code-block:: text
+.. only:: zh
 
-   [数据输入]
-        ↓
-   [目标检测模型]
-        ↓
-   [业务逻辑判断]
-        ↓
-   [可视化显示]
-        ↓
-   [事件保存]
+    .. code-block:: text
+
+       [数据输入]
+            ↓
+       [目标检测模型]
+            ↓
+       [业务逻辑判断]
+            ↓
+       [可视化显示]
+            ↓
+       [事件保存]
+
+.. only:: en
+
+    .. code-block:: text
+
+       [Data Input]
+            ↓
+       [Object Detection Model]
+            ↓
+       [Business Logic]
+            ↓
+       [Visualization]
+            ↓
+       [Event Saver]
 
 运行工作流的多种方式
 ------------------------------------------
@@ -371,7 +395,7 @@
          "type": "daoai/event_saver@v1",
          "name": "event_saver_1",
          "comments": null,
-         "event_type": "人流量高",
+         "event_type": "High foot traffic",
          "image": "$steps.label_visualization_1.image",
          "original_image": "$inputs.image",
          "save_video": true,

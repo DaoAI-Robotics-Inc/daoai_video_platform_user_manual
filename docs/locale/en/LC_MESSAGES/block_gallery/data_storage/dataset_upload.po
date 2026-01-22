@@ -1,0 +1,337 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:4
+msgid "数据集上传"
+msgstr "Dataset upload"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:8
+msgid ""
+"数据上传模块用于将工作流收集和处理后的图像和预测上传到DaoAI世界数据集。该模块方便用户将AI自动标注好的数据同步到DaoAI "
+"World平台，便于后续的数据管理和模型训练。通过配置上传参数，用户可以灵活控制上传频率和数据量，实现高效的数据存储和管理。"
+msgstr ""
+"The data upload module is used to upload the images and predictions "
+"collected and processed by the workflow to the DaoAI world dataset.This "
+"module facilitates users to synchronize AI automatically labeled data to the"
+" DaoAI World platform to facilitate subsequent data management and model "
+"training.By configuring upload parameters, users can flexibly control the "
+"upload frequency and data volume to achieve efficient data storage and "
+"management."
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:17
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:19
+msgid "输入：图像 + 预测模型结果"
+msgstr "Input: Image + Predictive Model Results"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:21
+msgid "输出：上传到指定UID的DaoAI World数据集"
+msgstr "Output: DaoAI World dataset uploaded to the specified UID"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:24
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:30
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:31
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:32
+msgid "默认值/ ``示例``"
+msgstr "Default/ ``example``"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:33
+msgid "**节点名称**"
+msgstr "**Node name**"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:34
+msgid "步骤名称，用于标识该节点的唯一标识符"
+msgstr "Step name, a unique identifier used to identify this node"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:35
+msgid "``dataset_upload_1``"
+msgstr "``dataset_upload_1``"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:36
+msgid "**备注**"
+msgstr "**Remark**"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:37
+msgid "可选的备注信息，用于描述该步骤的用途"
+msgstr "Optional remarks describing the purpose of this step"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:38
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:71
+msgid "``留空``"
+msgstr "``leave blank``"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:39
+msgid "**输入图像**"
+msgstr "**Input image**"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:40
+msgid "指定输入图像的来源，尽量保持为原始 ``input.image`` 以确保图片数据的完整性"
+msgstr ""
+"Specify the source of the input image, try to keep it as the original "
+"``input.image`` to ensure the integrity of the image data"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:41
+msgid "``input.image``"
+msgstr "``input.image``"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:42
+msgid "**目标项目**"
+msgstr "**Target Project**"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:43
+msgid ""
+"选择要上传到的DaoAI World数据集的UID，UID一般为url的第二个 ``/`` 后面的部分. (例如: "
+"daoai.com/Keqg_LLfOQciTF2DFv1irg/ **PvIwJC6jg5tEWJUfdCaveg**/upload )"
+msgstr ""
+"Select the UID of the DaoAI World data set to be uploaded to. The UID is "
+"generally the second part of the URL after ``/``. (For example: "
+"daoai.com/Keqg_LLfOQciTF2DFv1irg/ **PvIwJC6jg5tEWJUfdCaveg**/upload )"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:44
+msgid "``PvIwJC6jg5tEWJUfdCaveg``"
+msgstr "``PvIwJC6jg5tEWJUfdCaveg``"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:45
+msgid "**预测显示**"
+msgstr "**Forecast Display**"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:46
+msgid "选择要上传的模型预测结果，通常选择检测模型的输出"
+msgstr ""
+"Select the model prediction results to upload, usually the output of the "
+"detection model"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:47
+msgid "``detection_filter_1 predictions``"
+msgstr "``detection_filter_1 predictions``"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:48
+msgid "**数据百分比**"
+msgstr "**Data Percentage**"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:49
+msgid "设置保存数据的百分比，范围0-100，随机上传百分比的数据来控制上传的数据量"
+msgstr ""
+"Set the percentage of saved data, ranging from 0-100, and randomly upload "
+"the percentage of data to control the amount of uploaded data."
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:50
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:56
+msgid "``100``"
+msgstr "``100``"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:51
+msgid "**每分钟使用限制**"
+msgstr "**Per minute usage limit**"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:52
+msgid "设置每分钟上传的最大图像数量，防止上传过快导致服务器压力过大"
+msgstr ""
+"Set the maximum number of images uploaded per minute to prevent excessive "
+"server pressure caused by uploading too quickly"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:53
+msgid "``10``"
+msgstr "``10``"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:54
+msgid "**每小时使用限制**"
+msgstr "**Hourly usage limit**"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:55
+msgid "设置每小时上传的最大图像数量，防止上传过快导致服务器压力过大"
+msgstr ""
+"Set the maximum number of images uploaded per hour to prevent excessive "
+"server pressure caused by uploading too quickly"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:57
+msgid "**每日使用限制**"
+msgstr "**Daily usage limit**"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:58
+msgid "设置每日上传的最大图像数量，防止上传过快导致服务器压力过大"
+msgstr ""
+"Set the maximum number of images uploaded daily to prevent excessive server "
+"pressure caused by uploading too quickly"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:59
+msgid "``1000``"
+msgstr "``1000``"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:60
+msgid "**使用配额名称**"
+msgstr "**Use quota name**"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:61
+msgid "用于追踪使用配额的唯一标识符，保持默认即可"
+msgstr "Unique identifier used to track usage quota, just leave it as default"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:62
+msgid "``ggbond``"
+msgstr "``ggbond``"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:63
+msgid "**最大图像尺寸**"
+msgstr "**Maximum image size**"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:64
+msgid "设置上传图像的最大尺寸，超过该尺寸的图像将被缩放以节省存储空间"
+msgstr ""
+"Set the maximum size of uploaded images, images exceeding this size will be "
+"scaled to save storage space"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:65
+msgid "``[1920,1080]``"
+msgstr "``[1920,1080]``"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:66
+msgid "**压缩级别**"
+msgstr "**Compression Level**"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:67
+msgid "设置图像压缩级别，范围1-100，值越大图像质量越高但文件越大"
+msgstr ""
+"Set the image compression level, ranging from 1-100. The larger the value, "
+"the higher the image quality but the larger the file size."
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:68
+msgid "``85``"
+msgstr "``85``"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:69
+msgid "**注册标签**"
+msgstr "**Register Tag**"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:70
+msgid "给开发人员用来设置的标签，一般保持为空即可"
+msgstr "A label for developers to set. Generally, it can be left empty."
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:72
+msgid "**保留预测**"
+msgstr "**HOLD PREDICTION**"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:73
+msgid "是否将模型预测结果与图像一同保存，一般保持为True即可"
+msgstr ""
+"Whether to save the model prediction results together with the image, "
+"generally keep it as True"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:74
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:80
+msgid "``True``"
+msgstr "``True``"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:75
+msgid "**禁用接收器**"
+msgstr "**Disable Receiver**"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:76
+msgid "布尔标志以禁用区块执行，保持默认False即可"
+msgstr "Boolean flag to disable block execution, keep the default False"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:77
+msgid "``False``"
+msgstr "``False``"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:78
+msgid "**即发即忘**"
+msgstr "**Send it and forget it**"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:79
+msgid "布尔标志用于多路复用执行，启用后区块不会等待上传完成再继续执行下游区块，保持默认True即可最大化执行效率"
+msgstr ""
+"The Boolean flag is used for multiplexed execution. When enabled, the block "
+"will not wait for the upload to complete before continuing to execute "
+"downstream blocks. Keeping the default True can maximize execution "
+"efficiency."
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:81
+msgid "**标注批次前缀**"
+msgstr "**Mark batch prefix**"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:82
+msgid "用于为上传的图像分配批次名称的前缀，便于后续数据管理"
+msgstr ""
+"Prefix used to assign batch names to uploaded images to facilitate "
+"subsequent data management"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:83
+msgid "``auto_batch_``"
+msgstr "``auto_batch_``"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:84
+msgid "**标注批次创建频率**"
+msgstr "**Mark batch creation frequency**"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:85
+msgid "设置创建新标注批次的频率，可选包括：从不（never），每天（daily），每周（weekly），每月（monthly）"
+msgstr ""
+"Set the frequency of creating new annotation batches, options include: "
+"never, daily, weekly, monthly"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:86
+msgid "``daily``"
+msgstr "``daily``"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:89
+msgid "使用步骤"
+msgstr "Usage steps"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:91
+msgid "在工作流编辑器中添加本模块。"
+msgstr "Add this module in the workflow editor."
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:92
+msgid "输入DaoAI数据集UID。"
+msgstr "Enter the DaoAI dataset UID."
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:93
+msgid "设置上传间隔，点击保存。"
+msgstr "Set the upload interval and click Save."
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:96
+msgid "注意事项"
+msgstr "Things to note"
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:98
+msgid "配置完后，启用工作流开始数据上传。"
+msgstr "After configuration, enable the workflow to start data upload."
+
+#: ../../source/block_gallery/data_storage/dataset_upload.rst:99
+msgid ""
+"如果不知道预测结果符不符合要求时，可以先点击右上角的 ``测试`` 来用单张图像测试效果。图像会上传到DaoAI World数据集，方便查看效果。"
+msgstr ""
+"If you don't know that the prediction result does not meet the requirements,"
+" you can first click \"Test\" in the upper right corner to test the effect "
+"with a single image.The image will be uploaded to the DaoAI World data set "
+"for easy viewing of the effect."

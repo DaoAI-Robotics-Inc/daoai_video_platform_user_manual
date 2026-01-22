@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/video/index.rst:2
+msgid "视频（11 项）"
+msgstr "Videos (11 items)"
+
+#: ../../source/block_gallery/video/index.rst:4
+msgid "处理视频流中的对象跟踪、计数和分析。"
+msgstr "Handles object tracking, counting, and analysis in video streams."
+
+#: ../../source/block_gallery/video/index.rst:27
+msgid ":ref:`缓冲区`"
+msgstr ":ref:`buffer`"
+
+#: ../../source/block_gallery/video/index.rst:29
+msgid "返回传递给它的最后 'length' 个值的数组"
+msgstr "Returns an array of the last 'length' values ​​passed to it"
+
+#: ../../source/block_gallery/video/index.rst:30
+msgid ":ref:`物体追踪器`"
+msgstr ":ref:`Object Tracker`"
+
+#: ../../source/block_gallery/video/index.rst:32
+msgid "通过 ObjectTracker 跟踪并更新视频帧中的对象位置"
+msgstr "Track and update object positions in video frames via ObjectTracker"
+
+#: ../../source/block_gallery/video/index.rst:33
+msgid ":ref:`检测稳定器`"
+msgstr ":ref:`Detect Stabilizer`"
+
+#: ../../source/block_gallery/video/index.rst:35
+msgid "对对频帧应用平滑算法以减少噪声间隔"
+msgstr ""
+"Apply smoothing algorithm to frequency frames to reduce noise intervals"
+
+#: ../../source/block_gallery/video/index.rst:36
+msgid ":ref:`识别更改`"
+msgstr ":ref:`Recognize changes`"
+
+#: ../../source/block_gallery/video/index.rst:38
+msgid "通过较入问数识别与先前数据的差异"
+msgstr "Identify differences from previous data by comparing numbers"
+
+#: ../../source/block_gallery/video/index.rst:39
+msgid ":ref:`异常检测`"
+msgstr ":ref:`Anomaly Detection`"
+
+#: ../../source/block_gallery/video/index.rst:41
+msgid "识别与先前数据相比的异常数入向量"
+msgstr "Identify anomalies compared to previous data into a vector"
+
+#: ../../source/block_gallery/video/index.rst:42
+msgid ":ref:`线条计数`"
+msgstr ":ref:`Line count`"
+
+#: ../../source/block_gallery/video/index.rst:44
+msgid "统计穿过线条的检测数量"
+msgstr "Count the number of detections that cross the line"
+
+#: ../../source/block_gallery/video/index.rst:45
+msgid ":ref:`路径偏移`"
+msgstr ":ref:`Path offset`"
+
+#: ../../source/block_gallery/video/index.rst:47
+msgid "计算对象与参考路径之间的距离或距离"
+msgstr ""
+"Calculate the distance or distance between an object and a reference path"
+
+#: ../../source/block_gallery/video/index.rst:48
+msgid ":ref:`区域内存在时间`"
+msgstr ":ref:`Existence time in area`"
+
+#: ../../source/block_gallery/video/index.rst:50
+msgid "在区域内跟踪对象时间"
+msgstr "Track object time within a region"
+
+#: ../../source/block_gallery/video/index.rst:51
+msgid ":ref:`速度`"
+msgstr ":ref:`Speed`"
+
+#: ../../source/block_gallery/video/index.rst:53
+msgid "计算跟踪对象的速度和速度，并进行平滑处理和单位转换"
+msgstr ""
+"Calculate the speed and speed of tracked objects and perform smoothing and "
+"unit conversion"
+
+#: ../../source/block_gallery/video/index.rst:54
+msgid ":ref:`区域外停留时间`"
+msgstr ":ref:`Time outside the area`"
+
+#: ../../source/block_gallery/video/index.rst:56
+msgid "追踪对象在指定区域外停留的时间"
+msgstr "Track how long an object spends outside a specified area"
+
+#: ../../source/block_gallery/video/index.rst:57
+msgid ":ref:`事件顺序`"
+msgstr ":ref:`Sequence of events`"
+
+#: ../../source/block_gallery/video/index.rst:59
+msgid "跟踪事件完成情况并验证顺序"
+msgstr "Track event completion and verify sequence"

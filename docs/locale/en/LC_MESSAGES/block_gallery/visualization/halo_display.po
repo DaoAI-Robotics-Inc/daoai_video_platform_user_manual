@@ -1,0 +1,284 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:4
+msgid "显示光环"
+msgstr "Show aura"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:9
+msgid "在图像中检测到的对象周围绘制光晕,与边界框显示类似，但更具视觉冲击力。适用于突出显示重要对象。"
+msgstr ""
+"Draws a halo around detected objects in the image, similar to the bounding "
+"box display, but with more visual impact.Suitable for highlighting important"
+" objects."
+
+#: ../../source/block_gallery/visualization/halo_display.rst:11
+msgid "效果展示："
+msgstr "Effect display:"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:13
+msgid "显示光环效果"
+msgstr "Show halo effect"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:22
+msgid "适用场景"
+msgstr "Applicable scenarios"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:23
+msgid "**目标检测可视化**：显示检测到的物体位置和类别"
+msgstr ""
+"**Object Detection Visualization**: Displays detected object locations and "
+"categories"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:24
+msgid "**监控系统**：实时标注监控画面中的目标"
+msgstr ""
+"**Monitoring system**: Mark targets in the monitoring screen in real time"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:25
+msgid "**质量检测**：标注产品缺陷位置"
+msgstr "**Quality Inspection**: Mark the location of product defects"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:26
+msgid "**数据标注验证**：验证模型预测结果的准确性"
+msgstr ""
+"**Data annotation verification**: Verify the accuracy of model prediction "
+"results"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:27
+msgid "**演示和报告**：生成可视化结果用于展示"
+msgstr ""
+"**Presentation and Reporting**: Generate visual results for presentation"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:28
+msgid "**调试分析**：辅助开发者理解模型输出"
+msgstr "**Debug Analysis**: Assist developers in understanding model output"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:32
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:34
+msgid "**输入**："
+msgstr "**enter**:"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:36
+msgid "图像（来自上游节点或工作流输入）"
+msgstr "Image (from upstream node or workflow input)"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:37
+msgid "检测结果（包含边界框坐标、类别、置信度等信息）"
+msgstr ""
+"Detection results (including bounding box coordinates, categories, "
+"confidence and other information)"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:39
+msgid "**输出**："
+msgstr "**Output**:"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:41
+msgid "绘制了边界框的可视化图像"
+msgstr "Visualization with bounding boxes drawn"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:44
+msgid "配置参数详解"
+msgstr "Detailed explanation of configuration parameters"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:50
+msgid "参数名称"
+msgstr "Parameter name"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:51
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:52
+msgid "示例/ ``默认值``"
+msgstr "Example/``DefaultValue``"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:53
+msgid "**节点名称**"
+msgstr "**Node name**"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:54
+msgid "步骤名称，用于标识该节点的唯一标识符"
+msgstr "Step name, a unique identifier used to identify this node"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:55
+msgid "``halo_visualization_1``"
+msgstr "``halo_visualization_1``"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:56
+msgid "**备注**"
+msgstr "**Remark**"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:57
+msgid "可选的备注信息，用于描述该步骤的用途"
+msgstr "Optional remarks describing the purpose of this step"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:58
+msgid "``留空``"
+msgstr "``leave blank``"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:59
+msgid "**输入图像**"
+msgstr "**Input image**"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:60
+msgid "指定输入图像的来源，可以是上游节点的输出或工作流的输入参数"
+msgstr ""
+"Specify the source of the input image, which can be the output of an "
+"upstream node or an input parameter of a workflow"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:61
+msgid "``input.image``"
+msgstr "``input.image``"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:62
+msgid "**复制图像**"
+msgstr "**COPY IMAGE**"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:63
+msgid "是否创建输入图像的副本进行可视化，启用后不会修改原始图像"
+msgstr ""
+"Whether to create a copy of the input image for visualization. When enabled,"
+" the original image will not be modified."
+
+#: ../../source/block_gallery/visualization/halo_display.rst:64
+msgid "``True(推荐)``"
+msgstr "``True(recommended)``"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:65
+msgid "**预测配置**"
+msgstr "**Forecast Configuration**"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:66
+msgid "要可视化的模型预测结果，选择检测模型的输出"
+msgstr "To visualize model predictions, select Detection Model Outputs"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:67
+msgid "**detection_filter_1 predictions**"
+msgstr "**detection_filter_1 predictions**"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:68
+msgid "**调色板**"
+msgstr "**Palette**"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:69
+msgid "颜色调色板方案，用于为不同类别分配颜色"
+msgstr "Color palette scheme for assigning colors to different categories"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:70
+msgid "``DEFAULT``"
+msgstr "``DEFAULT``"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:71
+msgid "**调色板大小**"
+msgstr "**Palette size**"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:72
+msgid "调色板中的颜色数量，适用于使用自定义或Matplotlib调色板时"
+msgstr ""
+"Number of colors in the palette, applicable when using a custom or "
+"Matplotlib palette"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:73
+msgid "``10``"
+msgstr "``10``"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:74
+msgid "**自定义颜色**"
+msgstr "**Custom Color**"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:75
+msgid "自定义颜色列表，使用HEX格式定义边界框颜色"
+msgstr "Custom color list, define bounding box color using HEX format"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:76
+msgid "**[\"#FF0000\", \"#00FF00\", \"#0000FF\"] (红，绿，蓝)**"
+msgstr "**[\"#FF0000\", \"#00FF00\", \"#0000FF\"] (red, green, blue)**"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:77
+msgid "**颜色坐标轴**"
+msgstr "**Color Axis**"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:78
+msgid "颜色分配的依据，通常基于类别（CLASS）来着色"
+msgstr ""
+"The basis for color assignment, usually coloring based on category (CLASS)"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:79
+msgid "``CLASS``"
+msgstr "``CLASS``"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:80
+msgid "**边界粗细**"
+msgstr "**Border Thickness**"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:81
+msgid "边界框线条的粗细（像素）"
+msgstr "The thickness of the bounding box lines (pixels)"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:82
+msgid "``2``"
+msgstr "``2``"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:83
+msgid "**圆角粗细**"
+msgstr "**Round thickness**"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:84
+msgid "边界框角的圆角半径，0表示直角,0.5表示轻微圆角,1.0表示明显圆角"
+msgstr ""
+"The corner radius of the bounding box corners, 0 means right angles, 0.5 "
+"means slightly rounded corners, 1.0 means obvious rounded corners."
+
+#: ../../source/block_gallery/visualization/halo_display.rst:85
+msgid "``0``"
+msgstr "``0``"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:88
+msgid "使用步骤"
+msgstr "Usage steps"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:90
+msgid "在工作流编辑器中添加本模块。"
+msgstr "Add this module in the workflow editor."
+
+#: ../../source/block_gallery/visualization/halo_display.rst:91
+msgid "调整光晕大小、颜色和不透明度。"
+msgstr "Adjust the glow size, color and opacity."
+
+#: ../../source/block_gallery/visualization/halo_display.rst:92
+msgid "点击保存。"
+msgstr "Click Save."
+
+#: ../../source/block_gallery/visualization/halo_display.rst:95
+msgid "注意事项"
+msgstr "Things to note"
+
+#: ../../source/block_gallery/visualization/halo_display.rst:97
+msgid "光晕效果可增强视觉效果，突出重点对象。"
+msgstr "The halo effect enhances visuals and highlights key objects."

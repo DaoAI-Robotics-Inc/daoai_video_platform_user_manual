@@ -1,0 +1,114 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:4
+msgid "图像预处理"
+msgstr "Image preprocessing"
+
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:9
+msgid "调整、翻转或旋转图像"
+msgstr "Resize, flip or rotate an image"
+
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:12
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:14
+msgid "输入：图像"
+msgstr "Input: image"
+
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:15
+msgid "输出：处理后的图像"
+msgstr "Output: processed image"
+
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:18
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:24
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:25
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:26
+msgid "默认值"
+msgstr "default value"
+
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:27
+msgid "resize"
+msgstr "resize"
+
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:28
+msgid "调整大小（宽x高）"
+msgstr "Resize (width x height)"
+
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:29
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:35
+msgid "无"
+msgstr "none"
+
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:30
+msgid "rotate"
+msgstr "rotate"
+
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:31
+msgid "旋转角度（度）"
+msgstr "Rotation angle (degrees)"
+
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:32
+msgid "0"
+msgstr "0"
+
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:33
+msgid "flip"
+msgstr "flip"
+
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:34
+msgid "翻转方式（horizontal/vertical/both）"
+msgstr "Flip mode (horizontal/vertical/both)"
+
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:38
+msgid "使用步骤"
+msgstr "Usage steps"
+
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:40
+msgid "在工作流编辑器中添加本模块。"
+msgstr "Add this module in the workflow editor."
+
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:41
+msgid "配置调整大小、旋转、翻转参数。"
+msgstr "Configure resizing, rotation, and flip parameters."
+
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:42
+msgid "点击保存。"
+msgstr "Click Save."
+
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:45
+msgid "注意事项"
+msgstr "Things to note"
+
+#: ../../source/block_gallery/classical_cv/image_preprocessing.rst:47
+msgid "常用于模型输入预处理。"
+msgstr "Commonly used for model input preprocessing."

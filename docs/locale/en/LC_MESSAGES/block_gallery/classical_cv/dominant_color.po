@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/classical_cv/dominant_color.rst:4
+msgid "主色"
+msgstr "main color"
+
+#: ../../source/block_gallery/classical_cv/dominant_color.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/classical_cv/dominant_color.rst:9
+msgid "获取图像的主导颜色（RGB格式）"
+msgstr "Get the dominant color of an image (RGB format)"
+
+#: ../../source/block_gallery/classical_cv/dominant_color.rst:12
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/classical_cv/dominant_color.rst:14
+msgid "输入：图像"
+msgstr "Input: image"
+
+#: ../../source/block_gallery/classical_cv/dominant_color.rst:15
+msgid "输出：RGB颜色值"
+msgstr "Output: RGB color value"
+
+#: ../../source/block_gallery/classical_cv/dominant_color.rst:18
+#: ../../source/block_gallery/classical_cv/dominant_color.rst:24
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/classical_cv/dominant_color.rst:25
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/classical_cv/dominant_color.rst:26
+msgid "默认值"
+msgstr "default value"
+
+#: ../../source/block_gallery/classical_cv/dominant_color.rst:27
+msgid "num_colors"
+msgstr "num_colors"
+
+#: ../../source/block_gallery/classical_cv/dominant_color.rst:28
+msgid "颜色数量"
+msgstr "Color quantity"
+
+#: ../../source/block_gallery/classical_cv/dominant_color.rst:29
+msgid "1"
+msgstr "1"
+
+#: ../../source/block_gallery/classical_cv/dominant_color.rst:32
+msgid "使用步骤"
+msgstr "Usage steps"
+
+#: ../../source/block_gallery/classical_cv/dominant_color.rst:34
+msgid "在工作流编辑器中添加本模块。"
+msgstr "Add this module in the workflow editor."
+
+#: ../../source/block_gallery/classical_cv/dominant_color.rst:35
+msgid "设置要提取的颜色数量。"
+msgstr "Set the number of colors to extract."
+
+#: ../../source/block_gallery/classical_cv/dominant_color.rst:36
+msgid "点击保存。"
+msgstr "Click Save."
+
+#: ../../source/block_gallery/classical_cv/dominant_color.rst:39
+msgid "注意事项"
+msgstr "Things to note"
+
+#: ../../source/block_gallery/classical_cv/dominant_color.rst:41
+msgid "基于K-means聚类算法。"
+msgstr "Based on K-means clustering algorithm."

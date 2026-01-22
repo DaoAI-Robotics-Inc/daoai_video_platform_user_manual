@@ -1,0 +1,105 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2021-2025 DaoAI Robotics Inc.
+# This file is distributed under the same license as the DaoAI 天眼系统用户手册
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: DaoAI 天眼系统用户手册 2025.5.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-01-21 15:15-0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: en <LL@li.org>\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Generated-By: Babel 2.17.0\n"
+
+#: ../../source/block_gallery/data_storage/csv_formatter.rst:4
+msgid "CSV格式化"
+msgstr "CSV formatting"
+
+#: ../../source/block_gallery/data_storage/csv_formatter.rst:7
+msgid "简介"
+msgstr "Introduction"
+
+#: ../../source/block_gallery/data_storage/csv_formatter.rst:9
+msgid "按指定列创建CSV文件"
+msgstr "Create CSV file by specified columns"
+
+#: ../../source/block_gallery/data_storage/csv_formatter.rst:12
+msgid "输入 / 输出"
+msgstr "input/output"
+
+#: ../../source/block_gallery/data_storage/csv_formatter.rst:14
+msgid "输入：结构化数据"
+msgstr "Input: structured data"
+
+#: ../../source/block_gallery/data_storage/csv_formatter.rst:15
+msgid "输出：CSV文件"
+msgstr "Output: CSV file"
+
+#: ../../source/block_gallery/data_storage/csv_formatter.rst:18
+#: ../../source/block_gallery/data_storage/csv_formatter.rst:24
+msgid "参数"
+msgstr "parameter"
+
+#: ../../source/block_gallery/data_storage/csv_formatter.rst:25
+msgid "说明"
+msgstr "illustrate"
+
+#: ../../source/block_gallery/data_storage/csv_formatter.rst:26
+msgid "默认值"
+msgstr "default value"
+
+#: ../../source/block_gallery/data_storage/csv_formatter.rst:27
+msgid "output_path"
+msgstr "output_path"
+
+#: ../../source/block_gallery/data_storage/csv_formatter.rst:28
+msgid "输出文件路径"
+msgstr "Output file path"
+
+#: ../../source/block_gallery/data_storage/csv_formatter.rst:29
+msgid "./output.csv"
+msgstr "./output.csv"
+
+#: ../../source/block_gallery/data_storage/csv_formatter.rst:30
+msgid "columns"
+msgstr "columns"
+
+#: ../../source/block_gallery/data_storage/csv_formatter.rst:31
+msgid "列名列表"
+msgstr "column name list"
+
+#: ../../source/block_gallery/data_storage/csv_formatter.rst:32
+msgid "自动"
+msgstr "automatic"
+
+#: ../../source/block_gallery/data_storage/csv_formatter.rst:35
+msgid "使用步骤"
+msgstr "Usage steps"
+
+#: ../../source/block_gallery/data_storage/csv_formatter.rst:37
+msgid "在工作流编辑器中添加本模块。"
+msgstr "Add this module in the workflow editor."
+
+#: ../../source/block_gallery/data_storage/csv_formatter.rst:38
+msgid "配置输出路径和列名。"
+msgstr "Configure the output path and column names."
+
+#: ../../source/block_gallery/data_storage/csv_formatter.rst:39
+msgid "点击保存。"
+msgstr "Click Save."
+
+#: ../../source/block_gallery/data_storage/csv_formatter.rst:42
+msgid "注意事项"
+msgstr "Things to note"
+
+#: ../../source/block_gallery/data_storage/csv_formatter.rst:44
+msgid "自动追加新数据到现有CSV文件。"
+msgstr "Automatically append new data to existing CSV files."
