@@ -31,6 +31,28 @@ This user manual is powered by Read the Docs, which works as a hosting provider 
    ```
 5. Output files can be found under `docs/_build`. Open `docs/_build/html/index.html` to view the result.
 
+## Build and maintain Chinese + English (single-source i18n)
+
+This repo uses **one Chinese source** in `docs/source/**/*.rst`, and **English translations** in `docs/locale/en/LC_MESSAGES/**/*.po` (compiled to `.mo`).
+
+- **Windows**: run `docs/build_all.bat`
+- **Linux/Docker**: run `docs/build_all.sh`
+
+What these scripts do:
+- Build Chinese HTML to `docs/_build/html/zh`
+- Extract gettext catalogs to `docs/_build/gettext`
+- Update English `.po` from catalogs
+- Compile English `.mo`
+- Build English HTML to `docs/_build/html/en`
+
+### Deployment idea (build once, serve two languages)
+
+When deploying with nginx, serve Chinese as default and English under `/en/`:
+- **default root**: `docs/_build/html/zh`
+- **/en/**: `docs/_build/html/en`
+
+This avoids maintaining two branches and deploying twice.
+
 ## How to contribute to the documentation (requires write permission for a repository)
 
 1. Create a new branch from the `main` branch of the documentation repository you want to contribute to.
